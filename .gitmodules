@@ -1,0 +1,9 @@
+[submodule "sdl2"]
+	path = sdl2
+	url = git@git.sr.ht:~vladh/hare-sdl2
+[submodule "glm"]
+	path = glm
+	url = git@git.sr.ht:~vladh/hare-glm
+[submodule "gl"]
+	path = gl
+	url = git@git.sr.ht:~vladh/hare-gl
