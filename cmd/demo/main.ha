@@ -1,9 +1,10 @@
 use fmt;
 use fs;
-use gl;
+use gl::gl;
+use glm::glm;
 use math;
-use sdl2::{ event_type, keycode, window_flags };
-use sdl2;
+use sdl2::sdl2::{ event_type, keycode, window_flags };
+use sdl2::sdl2;
 use strings;
 
 def WINDOW_WIDTH: int = 800;
@@ -80,7 +81,7 @@ fn init_gl() void = {
 	gl::load_identity();
 	let mat: [16]f32 = [0.0...];
 	let aspect = WINDOW_WIDTH: f32 / WINDOW_HEIGHT: f32;
-	make_perspective(&mat, 70.0, aspect, 0.1, 100.0);
+	glm::make_perspective(&mat, 70.0, aspect, 0.1, 100.0);
 	gl::load_matrix_f32(&mat[0]);
 };
 
@@ -132,47 +133,4 @@ fn draw(state: *state) (void | sdl2::error) = {
 	gl::end();
 
 	sdl2::gl_swap_window(state.window);
-};
-
-fn make_perspective(
-	matrix: *[16]f32,
-	fovy_in_deg: f32,
-	aspect_ratio: f32,
-	znear: f32,
-	zfar: f32
-) void = {
-	let ymax = znear * (math::tanf64(fovy_in_deg * math::PI / 360.0): f32);
-	let xmax = ymax * aspect_ratio;
-	make_frustum(matrix, -xmax, xmax, -ymax, ymax, znear, zfar);
-};
-
-fn make_frustum(
-	matrix: *[16]f32,
-	left: f32,
-	right: f32,
-	bottom: f32,
-	top: f32,
-	znear: f32,
-	zfar: f32
-) void = {
-	let t0 = 2.0 * znear;
-	let t1 = right - left;
-	let t2 = top - bottom;
-	let t3 = zfar - znear;
-	matrix[0] = t0 / t1;
-	matrix[1] = 0.0;
-	matrix[2] = 0.0;
-	matrix[3] = 0.0;
-	matrix[4] = 0.0;
-	matrix[5] = t0 / t2;
-	matrix[6] = 0.0;
-	matrix[7] = 0.0;
-	matrix[8] = (right + left) / t1;
-	matrix[9] = (top + bottom) / t2;
-	matrix[10] = (-zfar - znear) / t3;
-	matrix[11] = -1.0;
-	matrix[12] = 0.0;
-	matrix[13] = 0.0;
-	matrix[14] = (-t0 * zfar) / t3;
-	matrix[15] = 0.0;
 };
