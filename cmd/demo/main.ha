@@ -71,7 +71,7 @@ fn update(state: *state) (void | sdl2::error) = {
 };
 
 fn init_gl() void = {
-	gl::viewport(0, 0, WINDOW_WIDTH: size, WINDOW_HEIGHT: size);
+	gl::viewport(0, 0, WINDOW_WIDTH: i32, WINDOW_HEIGHT: i32);
 
 	gl::clear_depth(1.0);
 	gl::clear_color(1.0, 1.0, 1.0, 1.0);
@@ -82,7 +82,7 @@ fn init_gl() void = {
 	let mat: [16]f32 = [0.0...];
 	let aspect = WINDOW_WIDTH: f32 / WINDOW_HEIGHT: f32;
 	glm::make_perspective(&mat, 70.0, aspect, 0.1, 100.0);
-	gl::load_matrix_f32(&mat[0]);
+	gl::load_matrix_f(&mat[0]);
 };
 
 fn draw(state: *state) (void | sdl2::error) = {
@@ -90,46 +90,46 @@ fn draw(state: *state) (void | sdl2::error) = {
 
 	gl::matrix_mode(gl::MODELVIEW);
 	gl::load_identity();
-	gl::translatef(0.0, 0.0, -4.0);
-	gl::rotatef(state.rotation, 0.0, 1.0, 0.0);
-	gl::rotatef(state.rotation / 2.0, 1.0, 0.0, 1.0);
+	gl::translate_f(0.0, 0.0, -4.0);
+	gl::rotate_f(state.rotation, 0.0, 1.0, 0.0);
+	gl::rotate_f(state.rotation / 2.0, 1.0, 0.0, 1.0);
 
 	gl::begin(gl::QUADS);
-	gl::color3f(0.0, 1.0, 0.0);
-	gl::vertex3f( 1.0, 1.0, -1.0);
-	gl::vertex3f(-1.0, 1.0, -1.0);
-	gl::vertex3f(-1.0, 1.0,  1.0);
-	gl::vertex3f( 1.0, 1.0,  1.0);
+	gl::color_3f(0.0, 1.0, 0.0);
+	gl::vertex_3f( 1.0, 1.0, -1.0);
+	gl::vertex_3f(-1.0, 1.0, -1.0);
+	gl::vertex_3f(-1.0, 1.0,  1.0);
+	gl::vertex_3f( 1.0, 1.0,  1.0);
 
-	gl::color3f(1.0, 0.5, 0.0);
-	gl::vertex3f( 1.0, -1.0,  1.0);
-	gl::vertex3f(-1.0, -1.0,  1.0);
-	gl::vertex3f(-1.0, -1.0, -1.0);
-	gl::vertex3f( 1.0, -1.0, -1.0);
+	gl::color_3f(1.0, 0.5, 0.0);
+	gl::vertex_3f( 1.0, -1.0,  1.0);
+	gl::vertex_3f(-1.0, -1.0,  1.0);
+	gl::vertex_3f(-1.0, -1.0, -1.0);
+	gl::vertex_3f( 1.0, -1.0, -1.0);
 
-	gl::color3f(1.0, 0.0, 0.0);
-	gl::vertex3f( 1.0,  1.0, 1.0);
-	gl::vertex3f(-1.0,  1.0, 1.0);
-	gl::vertex3f(-1.0, -1.0, 1.0);
-	gl::vertex3f( 1.0, -1.0, 1.0);
+	gl::color_3f(1.0, 0.0, 0.0);
+	gl::vertex_3f( 1.0,  1.0, 1.0);
+	gl::vertex_3f(-1.0,  1.0, 1.0);
+	gl::vertex_3f(-1.0, -1.0, 1.0);
+	gl::vertex_3f( 1.0, -1.0, 1.0);
 
-	gl::color3f(1.0, 1.0, 0.0);
-	gl::vertex3f( 1.0, -1.0, -1.0);
-	gl::vertex3f(-1.0, -1.0, -1.0);
-	gl::vertex3f(-1.0,  1.0, -1.0);
-	gl::vertex3f( 1.0,  1.0, -1.0);
+	gl::color_3f(1.0, 1.0, 0.0);
+	gl::vertex_3f( 1.0, -1.0, -1.0);
+	gl::vertex_3f(-1.0, -1.0, -1.0);
+	gl::vertex_3f(-1.0,  1.0, -1.0);
+	gl::vertex_3f( 1.0,  1.0, -1.0);
 
-	gl::color3f(0.0, 0.0, 1.0);
-	gl::vertex3f(-1.0,  1.0,  1.0);
-	gl::vertex3f(-1.0,  1.0, -1.0);
-	gl::vertex3f(-1.0, -1.0, -1.0);
-	gl::vertex3f(-1.0, -1.0,  1.0);
+	gl::color_3f(0.0, 0.0, 1.0);
+	gl::vertex_3f(-1.0,  1.0,  1.0);
+	gl::vertex_3f(-1.0,  1.0, -1.0);
+	gl::vertex_3f(-1.0, -1.0, -1.0);
+	gl::vertex_3f(-1.0, -1.0,  1.0);
 
-	gl::color3f(1.0, 0.0, 1.0);
-	gl::vertex3f(1.0,  1.0, -1.0);
-	gl::vertex3f(1.0,  1.0,  1.0);
-	gl::vertex3f(1.0, -1.0,  1.0);
-	gl::vertex3f(1.0, -1.0, -1.0);
+	gl::color_3f(1.0, 0.0, 1.0);
+	gl::vertex_3f(1.0,  1.0, -1.0);
+	gl::vertex_3f(1.0,  1.0,  1.0);
+	gl::vertex_3f(1.0, -1.0,  1.0);
+	gl::vertex_3f(1.0, -1.0, -1.0);
 	gl::end();
 
 	sdl2::gl_swap_window(state.window);
