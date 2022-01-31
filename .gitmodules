@@ -4,6 +4,3 @@
 [submodule "glm"]
 	path = glm
 	url = git@git.sr.ht:~vladh/hare-glm
-[submodule "gl"]
-	path = gl
-	url = git@git.sr.ht:~vladh/hare-gl
