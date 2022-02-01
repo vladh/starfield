@@ -4,9 +4,9 @@
 LIBS=-lc -lSDL2_image -lSDL2 -lEGL
 
 demo:
-	hare build $(LIBS) cmd/demo
+	LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} hare build $(LIBS) cmd/demo
 
 run:
-	hare run $(LIBS) cmd/demo
+	LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} hare run $(LIBS) cmd/demo
 
 .PHONY: demo run
