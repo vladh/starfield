@@ -23,5 +23,5 @@ fn process_events(state: *state) (void | sdl2::error) = {
 export fn update(state: *state) (void | sdl2::error) = {
 	process_events(state)?;
 
-	state.engine_state.rotation += 1.0;
+	state.engine.rotation += 1.0;
 };

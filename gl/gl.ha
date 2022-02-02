@@ -52,22 +52,15 @@ export type GLVULKANPROCNV = fn() void;
 // Constants
 export def _1PASS_EXT: uint = 0x80A1;
 export def _1PASS_SGIS: uint = 0x80A1;
-export def _2D: uint = 0x0600;
 export def _2PASS_0_EXT: uint = 0x80A2;
 export def _2PASS_0_SGIS: uint = 0x80A2;
 export def _2PASS_1_EXT: uint = 0x80A3;
 export def _2PASS_1_SGIS: uint = 0x80A3;
 export def _2X_BIT_ATI: uint = 0x00000001;
-export def _2_BYTES: uint = 0x1407;
-export def _3D: uint = 0x0601;
-export def _3D_COLOR: uint = 0x0602;
-export def _3D_COLOR_TEXTURE: uint = 0x0603;
-export def _3_BYTES: uint = 0x1408;
 export def _422_AVERAGE_EXT: uint = 0x80CE;
 export def _422_EXT: uint = 0x80CC;
 export def _422_REV_AVERAGE_EXT: uint = 0x80CF;
 export def _422_REV_EXT: uint = 0x80CD;
-export def _4D_COLOR_TEXTURE: uint = 0x0604;
 export def _4PASS_0_EXT: uint = 0x80A4;
 export def _4PASS_0_SGIS: uint = 0x80A4;
 export def _4PASS_1_EXT: uint = 0x80A5;
@@ -77,17 +70,9 @@ export def _4PASS_2_SGIS: uint = 0x80A6;
 export def _4PASS_3_EXT: uint = 0x80A7;
 export def _4PASS_3_SGIS: uint = 0x80A7;
 export def _4X_BIT_ATI: uint = 0x00000002;
-export def _4_BYTES: uint = 0x1409;
 export def _8X_BIT_ATI: uint = 0x00000004;
 export def ABGR_EXT: uint = 0x8000;
-export def ACCUM: uint = 0x0100;
 export def ACCUM_ADJACENT_PAIRS_NV: uint = 0x90AD;
-export def ACCUM_ALPHA_BITS: uint = 0x0D5B;
-export def ACCUM_BLUE_BITS: uint = 0x0D5A;
-export def ACCUM_BUFFER_BIT: uint = 0x00000200;
-export def ACCUM_CLEAR_VALUE: uint = 0x0B80;
-export def ACCUM_GREEN_BITS: uint = 0x0D59;
-export def ACCUM_RED_BITS: uint = 0x0D58;
 export def ACTIVE_ATOMIC_COUNTER_BUFFERS: uint = 0x92D9;
 export def ACTIVE_ATTRIBUTES: uint = 0x8B89;
 export def ACTIVE_ATTRIBUTE_MAX_LENGTH: uint = 0x8B8A;
@@ -110,21 +95,17 @@ export def ACTIVE_VARIABLES: uint = 0x9305;
 export def ACTIVE_VARYINGS_NV: uint = 0x8C81;
 export def ACTIVE_VARYING_MAX_LENGTH_NV: uint = 0x8C82;
 export def ACTIVE_VERTEX_UNITS_ARB: uint = 0x86A5;
-export def ADD: uint = 0x0104;
 export def ADD_ATI: uint = 0x8963;
-export def ADD_SIGNED: uint = 0x8574;
 export def ADD_SIGNED_ARB: uint = 0x8574;
 export def ADD_SIGNED_EXT: uint = 0x8574;
 export def ADJACENT_PAIRS_NV: uint = 0x90AE;
 export def AFFINE_2D_NV: uint = 0x9092;
 export def AFFINE_3D_NV: uint = 0x9094;
 export def ALIASED_LINE_WIDTH_RANGE: uint = 0x846E;
-export def ALIASED_POINT_SIZE_RANGE: uint = 0x846D;
 export def ALLOW_DRAW_FRG_HINT_PGI: uint = 0x1A210;
 export def ALLOW_DRAW_MEM_HINT_PGI: uint = 0x1A211;
 export def ALLOW_DRAW_OBJ_HINT_PGI: uint = 0x1A20E;
 export def ALLOW_DRAW_WIN_HINT_PGI: uint = 0x1A20F;
-export def ALL_ATTRIB_BITS: uint = 0xFFFFFFFF;
 export def ALL_BARRIER_BITS: uint = 0xFFFFFFFF;
 export def ALL_BARRIER_BITS_EXT: uint = 0xFFFFFFFF;
 export def ALL_COMPLETED_NV: uint = 0x84F2;
@@ -132,9 +113,7 @@ export def ALL_PIXELS_AMD: uint = 0xFFFFFFFF;
 export def ALL_SHADER_BITS: uint = 0xFFFFFFFF;
 export def ALL_STATIC_DATA_IBM: uint = 103060;
 export def ALPHA: uint = 0x1906;
-export def ALPHA12: uint = 0x803D;
 export def ALPHA12_EXT: uint = 0x803D;
-export def ALPHA16: uint = 0x803E;
 export def ALPHA16F_ARB: uint = 0x881C;
 export def ALPHA16F_EXT: uint = 0x881C;
 export def ALPHA16I_EXT: uint = 0x8D8A;
@@ -145,15 +124,11 @@ export def ALPHA32F_ARB: uint = 0x8816;
 export def ALPHA32F_EXT: uint = 0x8816;
 export def ALPHA32I_EXT: uint = 0x8D84;
 export def ALPHA32UI_EXT: uint = 0x8D72;
-export def ALPHA4: uint = 0x803B;
 export def ALPHA4_EXT: uint = 0x803B;
-export def ALPHA8: uint = 0x803C;
 export def ALPHA8I_EXT: uint = 0x8D90;
 export def ALPHA8UI_EXT: uint = 0x8D7E;
 export def ALPHA8_EXT: uint = 0x803C;
 export def ALPHA8_SNORM: uint = 0x9014;
-export def ALPHA_BIAS: uint = 0x0D1D;
-export def ALPHA_BITS: uint = 0x0D55;
 export def ALPHA_FLOAT16_APPLE: uint = 0x881C;
 export def ALPHA_FLOAT16_ATI: uint = 0x881C;
 export def ALPHA_FLOAT32_APPLE: uint = 0x8816;
@@ -164,11 +139,7 @@ export def ALPHA_MAX_SGIX: uint = 0x8321;
 export def ALPHA_MIN_CLAMP_INGR: uint = 0x8563;
 export def ALPHA_MIN_SGIX: uint = 0x8320;
 export def ALPHA_REF_COMMAND_NV: uint = 0x000F;
-export def ALPHA_SCALE: uint = 0x0D1C;
 export def ALPHA_SNORM: uint = 0x9010;
-export def ALPHA_TEST: uint = 0x0BC0;
-export def ALPHA_TEST_FUNC: uint = 0x0BC1;
-export def ALPHA_TEST_REF: uint = 0x0BC2;
 export def ALPHA_TO_COVERAGE_DITHER_DEFAULT_NV: uint = 0x934D;
 export def ALPHA_TO_COVERAGE_DITHER_DISABLE_NV: uint = 0x934F;
 export def ALPHA_TO_COVERAGE_DITHER_ENABLE_NV: uint = 0x934E;
@@ -177,8 +148,6 @@ export def ALREADY_SIGNALED: uint = 0x911A;
 export def ALWAYS: uint = 0x0207;
 export def ALWAYS_FAST_HINT_PGI: uint = 0x1A20C;
 export def ALWAYS_SOFT_HINT_PGI: uint = 0x1A20D;
-export def AMBIENT: uint = 0x1200;
-export def AMBIENT_AND_DIFFUSE: uint = 0x1602;
 export def AND: uint = 0x1501;
 export def AND_INVERTED: uint = 0x1504;
 export def AND_REVERSE: uint = 0x1502;
@@ -227,14 +196,7 @@ export def ATTRIB_ARRAY_POINTER_NV: uint = 0x8645;
 export def ATTRIB_ARRAY_SIZE_NV: uint = 0x8623;
 export def ATTRIB_ARRAY_STRIDE_NV: uint = 0x8624;
 export def ATTRIB_ARRAY_TYPE_NV: uint = 0x8625;
-export def ATTRIB_STACK_DEPTH: uint = 0x0BB0;
 export def AUTO_GENERATE_MIPMAP: uint = 0x8295;
-export def AUTO_NORMAL: uint = 0x0D80;
-export def AUX0: uint = 0x0409;
-export def AUX1: uint = 0x040A;
-export def AUX2: uint = 0x040B;
-export def AUX3: uint = 0x040C;
-export def AUX_BUFFERS: uint = 0x0C00;
 export def AUX_DEPTH_STENCIL_APPLE: uint = 0x8A14;
 export def AVERAGE_EXT: uint = 0x8335;
 export def AVERAGE_HP: uint = 0x8160;
@@ -249,8 +211,10 @@ export def BGR: uint = 0x80E0;
 export def BGRA: uint = 0x80E1;
 export def BGRA8_EXT: uint = 0x93A1;
 export def BGRA_EXT: uint = 0x80E1;
+export def BGRA_INTEGER: uint = 0x8D9B;
 export def BGRA_INTEGER_EXT: uint = 0x8D9B;
 export def BGR_EXT: uint = 0x80E0;
+export def BGR_INTEGER: uint = 0x8D9A;
 export def BGR_INTEGER_EXT: uint = 0x8D9A;
 export def BIAS_BIT_ATI: uint = 0x00000008;
 export def BIAS_BY_NEGATIVE_ONE_HALF_NV: uint = 0x8541;
@@ -258,8 +222,6 @@ export def BINORMAL_ARRAY_EXT: uint = 0x843A;
 export def BINORMAL_ARRAY_POINTER_EXT: uint = 0x8443;
 export def BINORMAL_ARRAY_STRIDE_EXT: uint = 0x8441;
 export def BINORMAL_ARRAY_TYPE_EXT: uint = 0x8440;
-export def BITMAP: uint = 0x1A00;
-export def BITMAP_TOKEN: uint = 0x0704;
 export def BLACKHOLE_RENDER_INTEL: uint = 0x83FC;
 export def BLEND: uint = 0x0BE2;
 export def BLEND_ADVANCED_COHERENT_KHR: uint = 0x9285;
@@ -287,14 +249,12 @@ export def BLEND_SRC_RGB: uint = 0x80C9;
 export def BLEND_SRC_RGB_EXT: uint = 0x80C9;
 export def BLOCK_INDEX: uint = 0x92FD;
 export def BLUE: uint = 0x1905;
-export def BLUE_BIAS: uint = 0x0D1B;
-export def BLUE_BITS: uint = 0x0D54;
 export def BLUE_BIT_ATI: uint = 0x00000004;
+export def BLUE_INTEGER: uint = 0x8D96;
 export def BLUE_INTEGER_EXT: uint = 0x8D96;
 export def BLUE_MAX_CLAMP_INGR: uint = 0x8566;
 export def BLUE_MIN_CLAMP_INGR: uint = 0x8562;
 export def BLUE_NV: uint = 0x1905;
-export def BLUE_SCALE: uint = 0x0D1A;
 export def BOLD_BIT_NV: uint = 0x01;
 export def BOOL: uint = 0x8B56;
 export def BOOL_ARB: uint = 0x8B56;
@@ -309,6 +269,7 @@ export def BOUNDING_BOX_OF_BOUNDING_BOXES_NV: uint = 0x909C;
 export def BUFFER: uint = 0x82E0;
 export def BUFFER_ACCESS: uint = 0x88BB;
 export def BUFFER_ACCESS_ARB: uint = 0x88BB;
+export def BUFFER_ACCESS_FLAGS: uint = 0x911F;
 export def BUFFER_BINDING: uint = 0x9302;
 export def BUFFER_DATA_SIZE: uint = 0x9303;
 export def BUFFER_FLUSHING_UNMAP_APPLE: uint = 0x8A13;
@@ -316,6 +277,8 @@ export def BUFFER_GPU_ADDRESS_NV: uint = 0x8F1D;
 export def BUFFER_IMMUTABLE_STORAGE: uint = 0x821F;
 export def BUFFER_MAPPED: uint = 0x88BC;
 export def BUFFER_MAPPED_ARB: uint = 0x88BC;
+export def BUFFER_MAP_LENGTH: uint = 0x9120;
+export def BUFFER_MAP_OFFSET: uint = 0x9121;
 export def BUFFER_MAP_POINTER: uint = 0x88BD;
 export def BUFFER_MAP_POINTER_ARB: uint = 0x88BD;
 export def BUFFER_OBJECT_APPLE: uint = 0x85B3;
@@ -336,18 +299,14 @@ export def BUMP_ROT_MATRIX_SIZE_ATI: uint = 0x8776;
 export def BUMP_TARGET_ATI: uint = 0x877C;
 export def BUMP_TEX_UNITS_ATI: uint = 0x8778;
 export def BYTE: uint = 0x1400;
-export def C3F_V3F: uint = 0x2A24;
-export def C4F_N3F_V3F: uint = 0x2A26;
-export def C4UB_V2F: uint = 0x2A22;
-export def C4UB_V3F: uint = 0x2A23;
 export def CALLIGRAPHIC_FRAGMENT_SGIX: uint = 0x8183;
 export def CAVEAT_SUPPORT: uint = 0x82B8;
 export def CCW: uint = 0x0901;
 export def CIRCULAR_CCW_ARC_TO_NV: uint = 0xF8;
 export def CIRCULAR_CW_ARC_TO_NV: uint = 0xFA;
 export def CIRCULAR_TANGENT_ARC_TO_NV: uint = 0xFC;
-export def CLAMP: uint = 0x2900;
 export def CLAMP_FRAGMENT_COLOR_ARB: uint = 0x891B;
+export def CLAMP_READ_COLOR: uint = 0x891C;
 export def CLAMP_READ_COLOR_ARB: uint = 0x891C;
 export def CLAMP_TO_BORDER: uint = 0x812D;
 export def CLAMP_TO_BORDER_ARB: uint = 0x812D;
@@ -358,36 +317,32 @@ export def CLAMP_VERTEX_COLOR_ARB: uint = 0x891A;
 export def CLEAR: uint = 0x1500;
 export def CLEAR_BUFFER: uint = 0x82B4;
 export def CLEAR_TEXTURE: uint = 0x9365;
-export def CLIENT_ACTIVE_TEXTURE: uint = 0x84E1;
 export def CLIENT_ACTIVE_TEXTURE_ARB: uint = 0x84E1;
-export def CLIENT_ALL_ATTRIB_BITS: uint = 0xFFFFFFFF;
-export def CLIENT_ATTRIB_STACK_DEPTH: uint = 0x0BB1;
 export def CLIENT_MAPPED_BUFFER_BARRIER_BIT: uint = 0x00004000;
-export def CLIENT_PIXEL_STORE_BIT: uint = 0x00000001;
 export def CLIENT_STORAGE_BIT: uint = 0x0200;
-export def CLIENT_VERTEX_ARRAY_BIT: uint = 0x00000002;
 export def CLIPPING_INPUT_PRIMITIVES: uint = 0x82F6;
 export def CLIPPING_INPUT_PRIMITIVES_ARB: uint = 0x82F6;
 export def CLIPPING_OUTPUT_PRIMITIVES: uint = 0x82F7;
 export def CLIPPING_OUTPUT_PRIMITIVES_ARB: uint = 0x82F7;
 export def CLIP_DEPTH_MODE: uint = 0x935D;
+export def CLIP_DISTANCE0: uint = 0x3000;
+export def CLIP_DISTANCE1: uint = 0x3001;
+export def CLIP_DISTANCE2: uint = 0x3002;
+export def CLIP_DISTANCE3: uint = 0x3003;
+export def CLIP_DISTANCE4: uint = 0x3004;
+export def CLIP_DISTANCE5: uint = 0x3005;
+export def CLIP_DISTANCE6: uint = 0x3006;
+export def CLIP_DISTANCE7: uint = 0x3007;
 export def CLIP_DISTANCE_NV: uint = 0x8C7A;
 export def CLIP_FAR_HINT_PGI: uint = 0x1A221;
 export def CLIP_NEAR_HINT_PGI: uint = 0x1A220;
 export def CLIP_ORIGIN: uint = 0x935C;
-export def CLIP_PLANE0: uint = 0x3000;
-export def CLIP_PLANE1: uint = 0x3001;
-export def CLIP_PLANE2: uint = 0x3002;
-export def CLIP_PLANE3: uint = 0x3003;
-export def CLIP_PLANE4: uint = 0x3004;
-export def CLIP_PLANE5: uint = 0x3005;
 export def CLIP_VOLUME_CLIPPING_HINT_EXT: uint = 0x80F0;
 export def CLOSE_PATH_NV: uint = 0x00;
 export def CMYKA_EXT: uint = 0x800D;
 export def CMYK_EXT: uint = 0x800C;
 export def CND0_ATI: uint = 0x896B;
 export def CND_ATI: uint = 0x896A;
-export def COEFF: uint = 0x0A00;
 export def COLOR: uint = 0x1800;
 export def COLOR3_BIT_PGI: uint = 0x00010000;
 export def COLOR4_BIT_PGI: uint = 0x00020000;
@@ -396,9 +351,7 @@ export def COLORBURN_NV: uint = 0x929A;
 export def COLORDODGE_KHR: uint = 0x9299;
 export def COLORDODGE_NV: uint = 0x9299;
 export def COLOR_ALPHA_PAIRING_ATI: uint = 0x8975;
-export def COLOR_ARRAY: uint = 0x8076;
 export def COLOR_ARRAY_ADDRESS_NV: uint = 0x8F23;
-export def COLOR_ARRAY_BUFFER_BINDING: uint = 0x8898;
 export def COLOR_ARRAY_BUFFER_BINDING_ARB: uint = 0x8898;
 export def COLOR_ARRAY_COUNT_EXT: uint = 0x8084;
 export def COLOR_ARRAY_EXT: uint = 0x8076;
@@ -406,13 +359,9 @@ export def COLOR_ARRAY_LENGTH_NV: uint = 0x8F2D;
 export def COLOR_ARRAY_LIST_IBM: uint = 103072;
 export def COLOR_ARRAY_LIST_STRIDE_IBM: uint = 103082;
 export def COLOR_ARRAY_PARALLEL_POINTERS_INTEL: uint = 0x83F7;
-export def COLOR_ARRAY_POINTER: uint = 0x8090;
 export def COLOR_ARRAY_POINTER_EXT: uint = 0x8090;
-export def COLOR_ARRAY_SIZE: uint = 0x8081;
 export def COLOR_ARRAY_SIZE_EXT: uint = 0x8081;
-export def COLOR_ARRAY_STRIDE: uint = 0x8083;
 export def COLOR_ARRAY_STRIDE_EXT: uint = 0x8083;
-export def COLOR_ARRAY_TYPE: uint = 0x8082;
 export def COLOR_ARRAY_TYPE_EXT: uint = 0x8082;
 export def COLOR_ATTACHMENT0: uint = 0x8CE0;
 export def COLOR_ATTACHMENT0_EXT: uint = 0x8CE0;
@@ -429,10 +378,26 @@ export def COLOR_ATTACHMENT14: uint = 0x8CEE;
 export def COLOR_ATTACHMENT14_EXT: uint = 0x8CEE;
 export def COLOR_ATTACHMENT15: uint = 0x8CEF;
 export def COLOR_ATTACHMENT15_EXT: uint = 0x8CEF;
+export def COLOR_ATTACHMENT16: uint = 0x8CF0;
+export def COLOR_ATTACHMENT17: uint = 0x8CF1;
+export def COLOR_ATTACHMENT18: uint = 0x8CF2;
+export def COLOR_ATTACHMENT19: uint = 0x8CF3;
 export def COLOR_ATTACHMENT1_EXT: uint = 0x8CE1;
 export def COLOR_ATTACHMENT2: uint = 0x8CE2;
+export def COLOR_ATTACHMENT20: uint = 0x8CF4;
+export def COLOR_ATTACHMENT21: uint = 0x8CF5;
+export def COLOR_ATTACHMENT22: uint = 0x8CF6;
+export def COLOR_ATTACHMENT23: uint = 0x8CF7;
+export def COLOR_ATTACHMENT24: uint = 0x8CF8;
+export def COLOR_ATTACHMENT25: uint = 0x8CF9;
+export def COLOR_ATTACHMENT26: uint = 0x8CFA;
+export def COLOR_ATTACHMENT27: uint = 0x8CFB;
+export def COLOR_ATTACHMENT28: uint = 0x8CFC;
+export def COLOR_ATTACHMENT29: uint = 0x8CFD;
 export def COLOR_ATTACHMENT2_EXT: uint = 0x8CE2;
 export def COLOR_ATTACHMENT3: uint = 0x8CE3;
+export def COLOR_ATTACHMENT30: uint = 0x8CFE;
+export def COLOR_ATTACHMENT31: uint = 0x8CFF;
 export def COLOR_ATTACHMENT3_EXT: uint = 0x8CE3;
 export def COLOR_ATTACHMENT4: uint = 0x8CE4;
 export def COLOR_ATTACHMENT4_EXT: uint = 0x8CE4;
@@ -452,23 +417,17 @@ export def COLOR_CLEAR_VALUE: uint = 0x0C22;
 export def COLOR_COMPONENTS: uint = 0x8283;
 export def COLOR_ENCODING: uint = 0x8296;
 export def COLOR_FLOAT_APPLE: uint = 0x8A0F;
-export def COLOR_INDEX: uint = 0x1900;
 export def COLOR_INDEX12_EXT: uint = 0x80E6;
 export def COLOR_INDEX16_EXT: uint = 0x80E7;
 export def COLOR_INDEX1_EXT: uint = 0x80E2;
 export def COLOR_INDEX2_EXT: uint = 0x80E3;
 export def COLOR_INDEX4_EXT: uint = 0x80E4;
 export def COLOR_INDEX8_EXT: uint = 0x80E5;
-export def COLOR_INDEXES: uint = 0x1603;
 export def COLOR_LOGIC_OP: uint = 0x0BF2;
-export def COLOR_MATERIAL: uint = 0x0B57;
-export def COLOR_MATERIAL_FACE: uint = 0x0B55;
-export def COLOR_MATERIAL_PARAMETER: uint = 0x0B56;
 export def COLOR_MATRIX_SGI: uint = 0x80B1;
 export def COLOR_MATRIX_STACK_DEPTH_SGI: uint = 0x80B2;
 export def COLOR_RENDERABLE: uint = 0x8286;
 export def COLOR_SAMPLES_NV: uint = 0x8E20;
-export def COLOR_SUM: uint = 0x8458;
 export def COLOR_SUM_ARB: uint = 0x8458;
 export def COLOR_SUM_CLAMP_NV: uint = 0x854F;
 export def COLOR_SUM_EXT: uint = 0x8458;
@@ -484,7 +443,6 @@ export def COLOR_TABLE_SCALE_SGI: uint = 0x80D6;
 export def COLOR_TABLE_SGI: uint = 0x80D0;
 export def COLOR_TABLE_WIDTH_SGI: uint = 0x80D9;
 export def COLOR_WRITEMASK: uint = 0x0C23;
-export def COMBINE: uint = 0x8570;
 export def COMBINE4_NV: uint = 0x8503;
 export def COMBINER0_NV: uint = 0x8550;
 export def COMBINER1_NV: uint = 0x8551;
@@ -505,39 +463,33 @@ export def COMBINER_MAPPING_NV: uint = 0x8543;
 export def COMBINER_MUX_SUM_NV: uint = 0x8547;
 export def COMBINER_SCALE_NV: uint = 0x8548;
 export def COMBINER_SUM_OUTPUT_NV: uint = 0x854C;
-export def COMBINE_ALPHA: uint = 0x8572;
 export def COMBINE_ALPHA_ARB: uint = 0x8572;
 export def COMBINE_ALPHA_EXT: uint = 0x8572;
 export def COMBINE_ARB: uint = 0x8570;
 export def COMBINE_EXT: uint = 0x8570;
-export def COMBINE_RGB: uint = 0x8571;
 export def COMBINE_RGB_ARB: uint = 0x8571;
 export def COMBINE_RGB_EXT: uint = 0x8571;
 export def COMMAND_BARRIER_BIT: uint = 0x00000040;
 export def COMMAND_BARRIER_BIT_EXT: uint = 0x00000040;
 export def COMPARE_REF_DEPTH_TO_TEXTURE_EXT: uint = 0x884E;
-export def COMPARE_R_TO_TEXTURE: uint = 0x884E;
+export def COMPARE_REF_TO_TEXTURE: uint = 0x884E;
 export def COMPARE_R_TO_TEXTURE_ARB: uint = 0x884E;
 export def COMPATIBLE_SUBROUTINES: uint = 0x8E4B;
-export def COMPILE: uint = 0x1300;
-export def COMPILE_AND_EXECUTE: uint = 0x1301;
 export def COMPILE_STATUS: uint = 0x8B81;
 export def COMPLETION_STATUS_ARB: uint = 0x91B1;
 export def COMPLETION_STATUS_KHR: uint = 0x91B1;
-export def COMPRESSED_ALPHA: uint = 0x84E9;
 export def COMPRESSED_ALPHA_ARB: uint = 0x84E9;
-export def COMPRESSED_INTENSITY: uint = 0x84EC;
 export def COMPRESSED_INTENSITY_ARB: uint = 0x84EC;
-export def COMPRESSED_LUMINANCE: uint = 0x84EA;
-export def COMPRESSED_LUMINANCE_ALPHA: uint = 0x84EB;
 export def COMPRESSED_LUMINANCE_ALPHA_ARB: uint = 0x84EB;
 export def COMPRESSED_LUMINANCE_ALPHA_LATC2_EXT: uint = 0x8C72;
 export def COMPRESSED_LUMINANCE_ARB: uint = 0x84EA;
 export def COMPRESSED_LUMINANCE_LATC1_EXT: uint = 0x8C70;
 export def COMPRESSED_R11_EAC: uint = 0x9270;
+export def COMPRESSED_RED: uint = 0x8225;
 export def COMPRESSED_RED_GREEN_RGTC2_EXT: uint = 0x8DBD;
 export def COMPRESSED_RED_RGTC1: uint = 0x8DBB;
 export def COMPRESSED_RED_RGTC1_EXT: uint = 0x8DBB;
+export def COMPRESSED_RG: uint = 0x8226;
 export def COMPRESSED_RG11_EAC: uint = 0x9272;
 export def COMPRESSED_RGB: uint = 0x84ED;
 export def COMPRESSED_RGB8_ETC2: uint = 0x9274;
@@ -559,13 +511,16 @@ export def COMPRESSED_RGBA_ASTC_6x6_KHR: uint = 0x93B4;
 export def COMPRESSED_RGBA_ASTC_8x5_KHR: uint = 0x93B5;
 export def COMPRESSED_RGBA_ASTC_8x6_KHR: uint = 0x93B6;
 export def COMPRESSED_RGBA_ASTC_8x8_KHR: uint = 0x93B7;
+export def COMPRESSED_RGBA_BPTC_UNORM: uint = 0x8E8C;
 export def COMPRESSED_RGBA_BPTC_UNORM_ARB: uint = 0x8E8C;
 export def COMPRESSED_RGBA_FXT1_3DFX: uint = 0x86B1;
 export def COMPRESSED_RGBA_S3TC_DXT1_EXT: uint = 0x83F1;
 export def COMPRESSED_RGBA_S3TC_DXT3_EXT: uint = 0x83F2;
 export def COMPRESSED_RGBA_S3TC_DXT5_EXT: uint = 0x83F3;
 export def COMPRESSED_RGB_ARB: uint = 0x84ED;
+export def COMPRESSED_RGB_BPTC_SIGNED_FLOAT: uint = 0x8E8E;
 export def COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB: uint = 0x8E8E;
+export def COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT: uint = 0x8E8F;
 export def COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB: uint = 0x8E8F;
 export def COMPRESSED_RGB_FXT1_3DFX: uint = 0x86B0;
 export def COMPRESSED_RGB_S3TC_DXT1_EXT: uint = 0x83F0;
@@ -578,8 +533,6 @@ export def COMPRESSED_SIGNED_RED_RGTC1: uint = 0x8DBC;
 export def COMPRESSED_SIGNED_RED_RGTC1_EXT: uint = 0x8DBC;
 export def COMPRESSED_SIGNED_RG11_EAC: uint = 0x9273;
 export def COMPRESSED_SIGNED_RG_RGTC2: uint = 0x8DBE;
-export def COMPRESSED_SLUMINANCE: uint = 0x8C4A;
-export def COMPRESSED_SLUMINANCE_ALPHA: uint = 0x8C4B;
 export def COMPRESSED_SLUMINANCE_ALPHA_EXT: uint = 0x8C4B;
 export def COMPRESSED_SLUMINANCE_EXT: uint = 0x8C4A;
 export def COMPRESSED_SRGB: uint = 0x8C48;
@@ -601,6 +554,7 @@ export def COMPRESSED_SRGB8_ALPHA8_ETC2_EAC: uint = 0x9279;
 export def COMPRESSED_SRGB8_ETC2: uint = 0x9275;
 export def COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2: uint = 0x9277;
 export def COMPRESSED_SRGB_ALPHA: uint = 0x8C49;
+export def COMPRESSED_SRGB_ALPHA_BPTC_UNORM: uint = 0x8E8D;
 export def COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB: uint = 0x8E8D;
 export def COMPRESSED_SRGB_ALPHA_EXT: uint = 0x8C49;
 export def COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: uint = 0x8C4D;
@@ -635,11 +589,9 @@ export def CONSERVATIVE_RASTER_MODE_POST_SNAP_NV: uint = 0x954E;
 export def CONSERVATIVE_RASTER_MODE_PRE_SNAP_NV: uint = 0x9550;
 export def CONSERVATIVE_RASTER_MODE_PRE_SNAP_TRIANGLES_NV: uint = 0x954F;
 export def CONSERVE_MEMORY_HINT_PGI: uint = 0x1A1FD;
-export def CONSTANT: uint = 0x8576;
 export def CONSTANT_ALPHA: uint = 0x8003;
 export def CONSTANT_ALPHA_EXT: uint = 0x8003;
 export def CONSTANT_ARB: uint = 0x8576;
-export def CONSTANT_ATTENUATION: uint = 0x1207;
 export def CONSTANT_BORDER_HP: uint = 0x8151;
 export def CONSTANT_COLOR: uint = 0x8001;
 export def CONSTANT_COLOR0_NV: uint = 0x852A;
@@ -647,11 +599,16 @@ export def CONSTANT_COLOR1_NV: uint = 0x852B;
 export def CONSTANT_COLOR_EXT: uint = 0x8001;
 export def CONSTANT_EXT: uint = 0x8576;
 export def CONST_EYE_NV: uint = 0x86E5;
+export def CONTEXT_COMPATIBILITY_PROFILE_BIT: uint = 0x00000002;
+export def CONTEXT_CORE_PROFILE_BIT: uint = 0x00000001;
+export def CONTEXT_FLAGS: uint = 0x821E;
 export def CONTEXT_FLAG_DEBUG_BIT: uint = 0x00000002;
+export def CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT: uint = 0x00000001;
 export def CONTEXT_FLAG_NO_ERROR_BIT: uint = 0x00000008;
 export def CONTEXT_FLAG_NO_ERROR_BIT_KHR: uint = 0x00000008;
 export def CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB: uint = 0x00000004;
 export def CONTEXT_LOST: uint = 0x0507;
+export def CONTEXT_PROFILE_MASK: uint = 0x9126;
 export def CONTEXT_RELEASE_BEHAVIOR: uint = 0x82FB;
 export def CONTEXT_RELEASE_BEHAVIOR_FLUSH: uint = 0x82FC;
 export def CONTEXT_ROBUST_ACCESS: uint = 0x90F3;
@@ -700,14 +657,14 @@ export def CON_6_ATI: uint = 0x8947;
 export def CON_7_ATI: uint = 0x8948;
 export def CON_8_ATI: uint = 0x8949;
 export def CON_9_ATI: uint = 0x894A;
-export def COORD_REPLACE: uint = 0x8862;
 export def COORD_REPLACE_ARB: uint = 0x8862;
 export def COORD_REPLACE_NV: uint = 0x8862;
 export def COPY: uint = 0x1503;
 export def COPY_INVERTED: uint = 0x150C;
-export def COPY_PIXEL_TOKEN: uint = 0x0706;
 export def COPY_READ_BUFFER: uint = 0x8F36;
+export def COPY_READ_BUFFER_BINDING: uint = 0x8F36;
 export def COPY_WRITE_BUFFER: uint = 0x8F37;
+export def COPY_WRITE_BUFFER_BINDING: uint = 0x8F37;
 export def COUNTER_RANGE_AMD: uint = 0x8BC1;
 export def COUNTER_TYPE_AMD: uint = 0x8BC0;
 export def COUNT_DOWN_NV: uint = 0x9089;
@@ -728,35 +685,20 @@ export def CULL_VERTEX_IBM: uint = 103050;
 export def CULL_VERTEX_OBJECT_POSITION_EXT: uint = 0x81AC;
 export def CURRENT_ATTRIB_NV: uint = 0x8626;
 export def CURRENT_BINORMAL_EXT: uint = 0x843C;
-export def CURRENT_BIT: uint = 0x00000001;
-export def CURRENT_COLOR: uint = 0x0B00;
-export def CURRENT_FOG_COORD: uint = 0x8453;
-export def CURRENT_FOG_COORDINATE: uint = 0x8453;
 export def CURRENT_FOG_COORDINATE_EXT: uint = 0x8453;
-export def CURRENT_INDEX: uint = 0x0B01;
 export def CURRENT_MATRIX_ARB: uint = 0x8641;
 export def CURRENT_MATRIX_INDEX_ARB: uint = 0x8845;
 export def CURRENT_MATRIX_NV: uint = 0x8641;
 export def CURRENT_MATRIX_STACK_DEPTH_ARB: uint = 0x8640;
 export def CURRENT_MATRIX_STACK_DEPTH_NV: uint = 0x8640;
-export def CURRENT_NORMAL: uint = 0x0B02;
 export def CURRENT_OCCLUSION_QUERY_ID_NV: uint = 0x8865;
 export def CURRENT_PALETTE_MATRIX_ARB: uint = 0x8843;
 export def CURRENT_PROGRAM: uint = 0x8B8D;
 export def CURRENT_QUERY: uint = 0x8865;
 export def CURRENT_QUERY_ARB: uint = 0x8865;
-export def CURRENT_RASTER_COLOR: uint = 0x0B04;
-export def CURRENT_RASTER_DISTANCE: uint = 0x0B09;
-export def CURRENT_RASTER_INDEX: uint = 0x0B05;
 export def CURRENT_RASTER_NORMAL_SGIX: uint = 0x8406;
-export def CURRENT_RASTER_POSITION: uint = 0x0B07;
-export def CURRENT_RASTER_POSITION_VALID: uint = 0x0B08;
-export def CURRENT_RASTER_SECONDARY_COLOR: uint = 0x845F;
-export def CURRENT_RASTER_TEXTURE_COORDS: uint = 0x0B06;
-export def CURRENT_SECONDARY_COLOR: uint = 0x8459;
 export def CURRENT_SECONDARY_COLOR_EXT: uint = 0x8459;
 export def CURRENT_TANGENT_EXT: uint = 0x843B;
-export def CURRENT_TEXTURE_COORDS: uint = 0x0B03;
 export def CURRENT_TIME_NV: uint = 0x8E28;
 export def CURRENT_VERTEX_ATTRIB: uint = 0x8626;
 export def CURRENT_VERTEX_ATTRIB_ARB: uint = 0x8626;
@@ -826,7 +768,6 @@ export def DEBUG_TYPE_PORTABILITY_ARB: uint = 0x824F;
 export def DEBUG_TYPE_PUSH_GROUP: uint = 0x8269;
 export def DEBUG_TYPE_UNDEFINED_BEHAVIOR: uint = 0x824E;
 export def DEBUG_TYPE_UNDEFINED_BEHAVIOR_ARB: uint = 0x824E;
-export def DECAL: uint = 0x2101;
 export def DECODE_EXT: uint = 0x8A49;
 export def DECR: uint = 0x1E03;
 export def DECR_WRAP: uint = 0x8508;
@@ -846,8 +787,6 @@ export def DEPTH32F_STENCIL8: uint = 0x8CAD;
 export def DEPTH32F_STENCIL8_NV: uint = 0x8DAC;
 export def DEPTH_ATTACHMENT: uint = 0x8D00;
 export def DEPTH_ATTACHMENT_EXT: uint = 0x8D00;
-export def DEPTH_BIAS: uint = 0x0D1F;
-export def DEPTH_BITS: uint = 0x0D56;
 export def DEPTH_BOUNDS_EXT: uint = 0x8891;
 export def DEPTH_BOUNDS_TEST_EXT: uint = 0x8890;
 export def DEPTH_BUFFER_BIT: uint = 0x00000100;
@@ -874,7 +813,6 @@ export def DEPTH_FUNC: uint = 0x0B74;
 export def DEPTH_RANGE: uint = 0x0B70;
 export def DEPTH_RENDERABLE: uint = 0x8287;
 export def DEPTH_SAMPLES_NV: uint = 0x932D;
-export def DEPTH_SCALE: uint = 0x0D1E;
 export def DEPTH_STENCIL: uint = 0x84F9;
 export def DEPTH_STENCIL_ATTACHMENT: uint = 0x821A;
 export def DEPTH_STENCIL_EXT: uint = 0x84F9;
@@ -883,7 +821,6 @@ export def DEPTH_STENCIL_TEXTURE_MODE: uint = 0x90EA;
 export def DEPTH_STENCIL_TO_BGRA_NV: uint = 0x886F;
 export def DEPTH_STENCIL_TO_RGBA_NV: uint = 0x886E;
 export def DEPTH_TEST: uint = 0x0B71;
-export def DEPTH_TEXTURE_MODE: uint = 0x884B;
 export def DEPTH_TEXTURE_MODE_ARB: uint = 0x884B;
 export def DEPTH_WRITEMASK: uint = 0x0B72;
 export def DETACHED_BUFFERS_NV: uint = 0x95AB;
@@ -899,7 +836,6 @@ export def DEVICE_NODE_MASK_EXT: uint = 0x959A;
 export def DEVICE_UUID_EXT: uint = 0x9597;
 export def DIFFERENCE_KHR: uint = 0x929E;
 export def DIFFERENCE_NV: uint = 0x929E;
-export def DIFFUSE: uint = 0x1201;
 export def DISCARD_ATI: uint = 0x8763;
 export def DISCARD_NV: uint = 0x8530;
 export def DISCRETE_AMD: uint = 0x9006;
@@ -909,12 +845,9 @@ export def DISPATCH_INDIRECT_BUFFER_BINDING: uint = 0x90EF;
 export def DISTANCE_ATTENUATION_EXT: uint = 0x8129;
 export def DISTANCE_ATTENUATION_SGIS: uint = 0x8129;
 export def DITHER: uint = 0x0BD0;
-export def DOMAIN: uint = 0x0A02;
 export def DONT_CARE: uint = 0x1100;
 export def DOT2_ADD_ATI: uint = 0x896C;
 export def DOT3_ATI: uint = 0x8966;
-export def DOT3_RGB: uint = 0x86AE;
-export def DOT3_RGBA: uint = 0x86AF;
 export def DOT3_RGBA_ARB: uint = 0x86AF;
 export def DOT3_RGBA_EXT: uint = 0x8741;
 export def DOT3_RGB_ARB: uint = 0x86AE;
@@ -1023,7 +956,6 @@ export def DRAW_INDIRECT_BUFFER_BINDING: uint = 0x8F43;
 export def DRAW_INDIRECT_LENGTH_NV: uint = 0x8F42;
 export def DRAW_INDIRECT_UNIFIED_NV: uint = 0x8F40;
 export def DRAW_PIXELS_APPLE: uint = 0x8A0A;
-export def DRAW_PIXEL_TOKEN: uint = 0x0705;
 export def DRIVER_UUID_EXT: uint = 0x9598;
 export def DSDT8_MAG8_INTENSITY8_NV: uint = 0x870B;
 export def DSDT8_MAG8_NV: uint = 0x870A;
@@ -1071,19 +1003,14 @@ export def DYNAMIC_READ: uint = 0x88E9;
 export def DYNAMIC_READ_ARB: uint = 0x88E9;
 export def DYNAMIC_STORAGE_BIT: uint = 0x0100;
 export def EDGEFLAG_BIT_PGI: uint = 0x00040000;
-export def EDGE_FLAG: uint = 0x0B43;
-export def EDGE_FLAG_ARRAY: uint = 0x8079;
 export def EDGE_FLAG_ARRAY_ADDRESS_NV: uint = 0x8F26;
-export def EDGE_FLAG_ARRAY_BUFFER_BINDING: uint = 0x889B;
 export def EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB: uint = 0x889B;
 export def EDGE_FLAG_ARRAY_COUNT_EXT: uint = 0x808D;
 export def EDGE_FLAG_ARRAY_EXT: uint = 0x8079;
 export def EDGE_FLAG_ARRAY_LENGTH_NV: uint = 0x8F30;
 export def EDGE_FLAG_ARRAY_LIST_IBM: uint = 103075;
 export def EDGE_FLAG_ARRAY_LIST_STRIDE_IBM: uint = 103085;
-export def EDGE_FLAG_ARRAY_POINTER: uint = 0x8093;
 export def EDGE_FLAG_ARRAY_POINTER_EXT: uint = 0x8093;
-export def EDGE_FLAG_ARRAY_STRIDE: uint = 0x808C;
 export def EDGE_FLAG_ARRAY_STRIDE_EXT: uint = 0x808C;
 export def EFFECTIVE_RASTER_SAMPLES_EXT: uint = 0x932C;
 export def EIGHTH_BIT_ATI: uint = 0x00000020;
@@ -1106,12 +1033,9 @@ export def ELEMENT_ARRAY_UNIFIED_NV: uint = 0x8F1F;
 export def EMBOSS_CONSTANT_NV: uint = 0x855E;
 export def EMBOSS_LIGHT_NV: uint = 0x855D;
 export def EMBOSS_MAP_NV: uint = 0x855F;
-export def EMISSION: uint = 0x1600;
-export def ENABLE_BIT: uint = 0x00002000;
 export def EQUAL: uint = 0x0202;
 export def EQUIV: uint = 0x1509;
 export def EVAL_2D_NV: uint = 0x86C0;
-export def EVAL_BIT: uint = 0x00010000;
 export def EVAL_FRACTIONAL_TESSELLATION_NV: uint = 0x86C5;
 export def EVAL_TRIANGULAR_2D_NV: uint = 0x86C1;
 export def EVAL_VERTEX_ATTRIB0_NV: uint = 0x86C6;
@@ -1133,15 +1057,12 @@ export def EVAL_VERTEX_ATTRIB9_NV: uint = 0x86CF;
 export def EXCLUSION_KHR: uint = 0x92A0;
 export def EXCLUSION_NV: uint = 0x92A0;
 export def EXCLUSIVE_EXT: uint = 0x8F11;
-export def EXP: uint = 0x0800;
-export def EXP2: uint = 0x0801;
 export def EXPAND_NEGATE_NV: uint = 0x8539;
 export def EXPAND_NORMAL_NV: uint = 0x8538;
 export def EXTENSIONS: uint = 0x1F03;
 export def EXTERNAL_VIRTUAL_MEMORY_BUFFER_AMD: uint = 0x9160;
 export def EYE_DISTANCE_TO_LINE_SGIS: uint = 0x81F2;
 export def EYE_DISTANCE_TO_POINT_SGIS: uint = 0x81F0;
-export def EYE_LINEAR: uint = 0x2400;
 export def EYE_LINE_SGIS: uint = 0x81F6;
 export def EYE_PLANE: uint = 0x2502;
 export def EYE_PLANE_ABSOLUTE_NV: uint = 0x855C;
@@ -1153,10 +1074,6 @@ export def FACTOR_MIN_AMD: uint = 0x901C;
 export def FAILURE_NV: uint = 0x9030;
 export def FALSE: u8 = 0;
 export def FASTEST: uint = 0x1101;
-export def FEEDBACK: uint = 0x1C01;
-export def FEEDBACK_BUFFER_POINTER: uint = 0x0DF0;
-export def FEEDBACK_BUFFER_SIZE: uint = 0x0DF1;
-export def FEEDBACK_BUFFER_TYPE: uint = 0x0DF2;
 export def FENCE_APPLE: uint = 0x8A0B;
 export def FENCE_CONDITION_NV: uint = 0x84F4;
 export def FENCE_STATUS_NV: uint = 0x84F3;
@@ -1173,8 +1090,8 @@ export def FIRST_VERTEX_CONVENTION: uint = 0x8E4D;
 export def FIRST_VERTEX_CONVENTION_EXT: uint = 0x8E4D;
 export def FIXED: uint = 0x140C;
 export def FIXED_OES: uint = 0x140C;
+export def FIXED_ONLY: uint = 0x891D;
 export def FIXED_ONLY_ARB: uint = 0x891D;
-export def FLAT: uint = 0x1D00;
 export def FLOAT: uint = 0x1406;
 export def FLOAT16_MAT2_AMD: uint = 0x91C5;
 export def FLOAT16_MAT2x3_AMD: uint = 0x91C8;
@@ -1224,45 +1141,23 @@ export def FLOAT_VEC3_ARB: uint = 0x8B51;
 export def FLOAT_VEC4: uint = 0x8B52;
 export def FLOAT_VEC4_ARB: uint = 0x8B52;
 export def FOG: uint = 0x0B60;
-export def FOG_BIT: uint = 0x00000080;
-export def FOG_COLOR: uint = 0x0B66;
-export def FOG_COORD: uint = 0x8451;
-export def FOG_COORDINATE: uint = 0x8451;
-export def FOG_COORDINATE_ARRAY: uint = 0x8457;
-export def FOG_COORDINATE_ARRAY_BUFFER_BINDING: uint = 0x889D;
 export def FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB: uint = 0x889D;
 export def FOG_COORDINATE_ARRAY_EXT: uint = 0x8457;
 export def FOG_COORDINATE_ARRAY_LIST_IBM: uint = 103076;
 export def FOG_COORDINATE_ARRAY_LIST_STRIDE_IBM: uint = 103086;
-export def FOG_COORDINATE_ARRAY_POINTER: uint = 0x8456;
 export def FOG_COORDINATE_ARRAY_POINTER_EXT: uint = 0x8456;
-export def FOG_COORDINATE_ARRAY_STRIDE: uint = 0x8455;
 export def FOG_COORDINATE_ARRAY_STRIDE_EXT: uint = 0x8455;
-export def FOG_COORDINATE_ARRAY_TYPE: uint = 0x8454;
 export def FOG_COORDINATE_ARRAY_TYPE_EXT: uint = 0x8454;
 export def FOG_COORDINATE_EXT: uint = 0x8451;
-export def FOG_COORDINATE_SOURCE: uint = 0x8450;
 export def FOG_COORDINATE_SOURCE_EXT: uint = 0x8450;
-export def FOG_COORD_ARRAY: uint = 0x8457;
 export def FOG_COORD_ARRAY_ADDRESS_NV: uint = 0x8F28;
-export def FOG_COORD_ARRAY_BUFFER_BINDING: uint = 0x889D;
 export def FOG_COORD_ARRAY_LENGTH_NV: uint = 0x8F32;
-export def FOG_COORD_ARRAY_POINTER: uint = 0x8456;
-export def FOG_COORD_ARRAY_STRIDE: uint = 0x8455;
-export def FOG_COORD_ARRAY_TYPE: uint = 0x8454;
-export def FOG_COORD_SRC: uint = 0x8450;
-export def FOG_DENSITY: uint = 0x0B62;
 export def FOG_DISTANCE_MODE_NV: uint = 0x855A;
-export def FOG_END: uint = 0x0B64;
 export def FOG_FUNC_POINTS_SGIS: uint = 0x812B;
 export def FOG_FUNC_SGIS: uint = 0x812A;
-export def FOG_HINT: uint = 0x0C54;
-export def FOG_INDEX: uint = 0x0B61;
-export def FOG_MODE: uint = 0x0B65;
 export def FOG_OFFSET_SGIX: uint = 0x8198;
 export def FOG_OFFSET_VALUE_SGIX: uint = 0x8199;
 export def FOG_SPECULAR_TEXTURE_WIN: uint = 0x80EC;
-export def FOG_START: uint = 0x0B63;
 export def FONT_ASCENDER_BIT_NV: uint = 0x00200000;
 export def FONT_DESCENDER_BIT_NV: uint = 0x00400000;
 export def FONT_GLYPHS_AVAILABLE_NV: uint = 0x9368;
@@ -1292,7 +1187,6 @@ export def FRAGMENT_COLOR_MATERIAL_PARAMETER_SGIX: uint = 0x8403;
 export def FRAGMENT_COLOR_MATERIAL_SGIX: uint = 0x8401;
 export def FRAGMENT_COVERAGE_COLOR_NV: uint = 0x92DE;
 export def FRAGMENT_COVERAGE_TO_COLOR_NV: uint = 0x92DD;
-export def FRAGMENT_DEPTH: uint = 0x8452;
 export def FRAGMENT_DEPTH_EXT: uint = 0x8452;
 export def FRAGMENT_INPUT_NV: uint = 0x936D;
 export def FRAGMENT_INTERPOLATION_OFFSET_BITS: uint = 0x8E5D;
@@ -1335,6 +1229,7 @@ export def FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: uint = 0x8210;
 export def FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: uint = 0x8211;
 export def FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: uint = 0x8216;
 export def FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: uint = 0x8213;
+export def FRAMEBUFFER_ATTACHMENT_LAYERED: uint = 0x8DA7;
 export def FRAMEBUFFER_ATTACHMENT_LAYERED_ARB: uint = 0x8DA7;
 export def FRAMEBUFFER_ATTACHMENT_LAYERED_EXT: uint = 0x8DA7;
 export def FRAMEBUFFER_ATTACHMENT_OBJECT_NAME: uint = 0x8CD1;
@@ -1376,6 +1271,7 @@ export def FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT: uint = 0x8CDB;
 export def FRAMEBUFFER_INCOMPLETE_FORMATS_EXT: uint = 0x8CDA;
 export def FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB: uint = 0x8DA9;
 export def FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT: uint = 0x8DA9;
+export def FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS: uint = 0x8DA8;
 export def FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB: uint = 0x8DA8;
 export def FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT: uint = 0x8DA8;
 export def FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: uint = 0x8CD7;
@@ -1416,19 +1312,20 @@ export def FUNC_REVERSE_SUBTRACT: uint = 0x800B;
 export def FUNC_REVERSE_SUBTRACT_EXT: uint = 0x800B;
 export def FUNC_SUBTRACT: uint = 0x800A;
 export def FUNC_SUBTRACT_EXT: uint = 0x800A;
-export def GENERATE_MIPMAP: uint = 0x8191;
-export def GENERATE_MIPMAP_HINT: uint = 0x8192;
 export def GENERATE_MIPMAP_HINT_SGIS: uint = 0x8192;
 export def GENERATE_MIPMAP_SGIS: uint = 0x8191;
 export def GENERIC_ATTRIB_NV: uint = 0x8C7D;
 export def GEOMETRY_DEFORMATION_BIT_SGIX: uint = 0x00000002;
 export def GEOMETRY_DEFORMATION_SGIX: uint = 0x8194;
+export def GEOMETRY_INPUT_TYPE: uint = 0x8917;
 export def GEOMETRY_INPUT_TYPE_ARB: uint = 0x8DDB;
 export def GEOMETRY_INPUT_TYPE_EXT: uint = 0x8DDB;
+export def GEOMETRY_OUTPUT_TYPE: uint = 0x8918;
 export def GEOMETRY_OUTPUT_TYPE_ARB: uint = 0x8DDC;
 export def GEOMETRY_OUTPUT_TYPE_EXT: uint = 0x8DDC;
 export def GEOMETRY_PROGRAM_NV: uint = 0x8C26;
 export def GEOMETRY_PROGRAM_PARAMETER_BUFFER_NV: uint = 0x8DA3;
+export def GEOMETRY_SHADER: uint = 0x8DD9;
 export def GEOMETRY_SHADER_ARB: uint = 0x8DD9;
 export def GEOMETRY_SHADER_BIT: uint = 0x00000004;
 export def GEOMETRY_SHADER_EXT: uint = 0x8DD9;
@@ -1438,6 +1335,7 @@ export def GEOMETRY_SHADER_PRIMITIVES_EMITTED_ARB: uint = 0x82F3;
 export def GEOMETRY_SUBROUTINE: uint = 0x92EB;
 export def GEOMETRY_SUBROUTINE_UNIFORM: uint = 0x92F1;
 export def GEOMETRY_TEXTURE: uint = 0x829E;
+export def GEOMETRY_VERTICES_OUT: uint = 0x8916;
 export def GEOMETRY_VERTICES_OUT_ARB: uint = 0x8DDA;
 export def GEOMETRY_VERTICES_OUT_EXT: uint = 0x8DDA;
 export def GEQUAL: uint = 0x0206;
@@ -1462,14 +1360,12 @@ export def GPU_MEMORY_INFO_EVICTION_COUNT_NVX: uint = 0x904A;
 export def GPU_MEMORY_INFO_TOTAL_AVAILABLE_MEMORY_NVX: uint = 0x9048;
 export def GREATER: uint = 0x0204;
 export def GREEN: uint = 0x1904;
-export def GREEN_BIAS: uint = 0x0D19;
-export def GREEN_BITS: uint = 0x0D53;
 export def GREEN_BIT_ATI: uint = 0x00000002;
+export def GREEN_INTEGER: uint = 0x8D95;
 export def GREEN_INTEGER_EXT: uint = 0x8D95;
 export def GREEN_MAX_CLAMP_INGR: uint = 0x8565;
 export def GREEN_MIN_CLAMP_INGR: uint = 0x8561;
 export def GREEN_NV: uint = 0x1904;
-export def GREEN_SCALE: uint = 0x0D18;
 export def GUILTY_CONTEXT_RESET: uint = 0x8253;
 export def GUILTY_CONTEXT_RESET_ARB: uint = 0x8253;
 export def HALF_APPLE: uint = 0x140B;
@@ -1495,7 +1391,6 @@ export def HIGH_INT: uint = 0x8DF5;
 export def HILO16_NV: uint = 0x86F8;
 export def HILO8_NV: uint = 0x885E;
 export def HILO_NV: uint = 0x86F4;
-export def HINT_BIT: uint = 0x00008000;
 export def HISTOGRAM_ALPHA_SIZE_EXT: uint = 0x802B;
 export def HISTOGRAM_BLUE_SIZE_EXT: uint = 0x802A;
 export def HISTOGRAM_EXT: uint = 0x8024;
@@ -1589,35 +1484,23 @@ export def INCLUSIVE_EXT: uint = 0x8F10;
 export def INCR: uint = 0x1E02;
 export def INCR_WRAP: uint = 0x8507;
 export def INCR_WRAP_EXT: uint = 0x8507;
-export def INDEX_ARRAY: uint = 0x8077;
 export def INDEX_ARRAY_ADDRESS_NV: uint = 0x8F24;
-export def INDEX_ARRAY_BUFFER_BINDING: uint = 0x8899;
 export def INDEX_ARRAY_BUFFER_BINDING_ARB: uint = 0x8899;
 export def INDEX_ARRAY_COUNT_EXT: uint = 0x8087;
 export def INDEX_ARRAY_EXT: uint = 0x8077;
 export def INDEX_ARRAY_LENGTH_NV: uint = 0x8F2E;
 export def INDEX_ARRAY_LIST_IBM: uint = 103073;
 export def INDEX_ARRAY_LIST_STRIDE_IBM: uint = 103083;
-export def INDEX_ARRAY_POINTER: uint = 0x8091;
 export def INDEX_ARRAY_POINTER_EXT: uint = 0x8091;
-export def INDEX_ARRAY_STRIDE: uint = 0x8086;
 export def INDEX_ARRAY_STRIDE_EXT: uint = 0x8086;
-export def INDEX_ARRAY_TYPE: uint = 0x8085;
 export def INDEX_ARRAY_TYPE_EXT: uint = 0x8085;
-export def INDEX_BITS: uint = 0x0D51;
 export def INDEX_BIT_PGI: uint = 0x00080000;
-export def INDEX_CLEAR_VALUE: uint = 0x0C20;
-export def INDEX_LOGIC_OP: uint = 0x0BF1;
 export def INDEX_MATERIAL_EXT: uint = 0x81B8;
 export def INDEX_MATERIAL_FACE_EXT: uint = 0x81BA;
 export def INDEX_MATERIAL_PARAMETER_EXT: uint = 0x81B9;
-export def INDEX_MODE: uint = 0x0C30;
-export def INDEX_OFFSET: uint = 0x0D13;
-export def INDEX_SHIFT: uint = 0x0D12;
 export def INDEX_TEST_EXT: uint = 0x81B5;
 export def INDEX_TEST_FUNC_EXT: uint = 0x81B6;
 export def INDEX_TEST_REF_EXT: uint = 0x81B7;
-export def INDEX_WRITEMASK: uint = 0x0C21;
 export def INFO_LOG_LENGTH: uint = 0x8B84;
 export def INNOCENT_CONTEXT_RESET: uint = 0x8254;
 export def INNOCENT_CONTEXT_RESET_ARB: uint = 0x8254;
@@ -1640,10 +1523,7 @@ export def INT8_NV: uint = 0x8FE0;
 export def INT8_VEC2_NV: uint = 0x8FE1;
 export def INT8_VEC3_NV: uint = 0x8FE2;
 export def INT8_VEC4_NV: uint = 0x8FE3;
-export def INTENSITY: uint = 0x8049;
-export def INTENSITY12: uint = 0x804C;
 export def INTENSITY12_EXT: uint = 0x804C;
-export def INTENSITY16: uint = 0x804D;
 export def INTENSITY16F_ARB: uint = 0x881D;
 export def INTENSITY16I_EXT: uint = 0x8D8B;
 export def INTENSITY16UI_EXT: uint = 0x8D79;
@@ -1652,9 +1532,7 @@ export def INTENSITY16_SNORM: uint = 0x901B;
 export def INTENSITY32F_ARB: uint = 0x8817;
 export def INTENSITY32I_EXT: uint = 0x8D85;
 export def INTENSITY32UI_EXT: uint = 0x8D73;
-export def INTENSITY4: uint = 0x804A;
 export def INTENSITY4_EXT: uint = 0x804A;
-export def INTENSITY8: uint = 0x804B;
 export def INTENSITY8I_EXT: uint = 0x8D91;
 export def INTENSITY8UI_EXT: uint = 0x8D7F;
 export def INTENSITY8_EXT: uint = 0x804B;
@@ -1669,6 +1547,7 @@ export def INTERLACE_OML: uint = 0x8980;
 export def INTERLACE_READ_INGR: uint = 0x8568;
 export def INTERLACE_READ_OML: uint = 0x8981;
 export def INTERLACE_SGIX: uint = 0x8094;
+export def INTERLEAVED_ATTRIBS: uint = 0x8C8C;
 export def INTERLEAVED_ATTRIBS_EXT: uint = 0x8C8C;
 export def INTERLEAVED_ATTRIBS_NV: uint = 0x8C8C;
 export def INTERNALFORMAT_ALPHA_SIZE: uint = 0x8274;
@@ -1686,7 +1565,6 @@ export def INTERNALFORMAT_SHARED_SIZE: uint = 0x8277;
 export def INTERNALFORMAT_STENCIL_SIZE: uint = 0x8276;
 export def INTERNALFORMAT_STENCIL_TYPE: uint = 0x827D;
 export def INTERNALFORMAT_SUPPORTED: uint = 0x826F;
-export def INTERPOLATE: uint = 0x8575;
 export def INTERPOLATE_ARB: uint = 0x8575;
 export def INTERPOLATE_EXT: uint = 0x8575;
 export def INT_2_10_10_10_REV: uint = 0x8D9F;
@@ -1712,17 +1590,26 @@ export def INT_IMAGE_CUBE: uint = 0x905B;
 export def INT_IMAGE_CUBE_EXT: uint = 0x905B;
 export def INT_IMAGE_CUBE_MAP_ARRAY: uint = 0x905F;
 export def INT_IMAGE_CUBE_MAP_ARRAY_EXT: uint = 0x905F;
+export def INT_SAMPLER_1D: uint = 0x8DC9;
+export def INT_SAMPLER_1D_ARRAY: uint = 0x8DCE;
 export def INT_SAMPLER_1D_ARRAY_EXT: uint = 0x8DCE;
 export def INT_SAMPLER_1D_EXT: uint = 0x8DC9;
+export def INT_SAMPLER_2D: uint = 0x8DCA;
+export def INT_SAMPLER_2D_ARRAY: uint = 0x8DCF;
 export def INT_SAMPLER_2D_ARRAY_EXT: uint = 0x8DCF;
 export def INT_SAMPLER_2D_EXT: uint = 0x8DCA;
 export def INT_SAMPLER_2D_MULTISAMPLE: uint = 0x9109;
 export def INT_SAMPLER_2D_MULTISAMPLE_ARRAY: uint = 0x910C;
+export def INT_SAMPLER_2D_RECT: uint = 0x8DCD;
 export def INT_SAMPLER_2D_RECT_EXT: uint = 0x8DCD;
+export def INT_SAMPLER_3D: uint = 0x8DCB;
 export def INT_SAMPLER_3D_EXT: uint = 0x8DCB;
+export def INT_SAMPLER_BUFFER: uint = 0x8DD0;
 export def INT_SAMPLER_BUFFER_AMD: uint = 0x9002;
 export def INT_SAMPLER_BUFFER_EXT: uint = 0x8DD0;
+export def INT_SAMPLER_CUBE: uint = 0x8DCC;
 export def INT_SAMPLER_CUBE_EXT: uint = 0x8DCC;
+export def INT_SAMPLER_CUBE_MAP_ARRAY: uint = 0x900E;
 export def INT_SAMPLER_CUBE_MAP_ARRAY_ARB: uint = 0x900E;
 export def INT_SAMPLER_RENDERBUFFER_NV: uint = 0x8E57;
 export def INT_VEC2: uint = 0x8B53;
@@ -1780,31 +1667,16 @@ export def LEQUAL: uint = 0x0203;
 export def LERP_ATI: uint = 0x8969;
 export def LESS: uint = 0x0201;
 export def LGPU_SEPARATE_STORAGE_BIT_NVX: uint = 0x0800;
-export def LIGHT0: uint = 0x4000;
-export def LIGHT1: uint = 0x4001;
-export def LIGHT2: uint = 0x4002;
-export def LIGHT3: uint = 0x4003;
-export def LIGHT4: uint = 0x4004;
-export def LIGHT5: uint = 0x4005;
-export def LIGHT6: uint = 0x4006;
-export def LIGHT7: uint = 0x4007;
 export def LIGHTEN_KHR: uint = 0x9298;
 export def LIGHTEN_NV: uint = 0x9298;
-export def LIGHTING: uint = 0x0B50;
-export def LIGHTING_BIT: uint = 0x00000040;
 export def LIGHT_ENV_MODE_SGIX: uint = 0x8407;
-export def LIGHT_MODEL_AMBIENT: uint = 0x0B53;
-export def LIGHT_MODEL_COLOR_CONTROL: uint = 0x81F8;
 export def LIGHT_MODEL_COLOR_CONTROL_EXT: uint = 0x81F8;
-export def LIGHT_MODEL_LOCAL_VIEWER: uint = 0x0B51;
 export def LIGHT_MODEL_SPECULAR_VECTOR_APPLE: uint = 0x85B0;
-export def LIGHT_MODEL_TWO_SIDE: uint = 0x0B52;
 export def LINE: uint = 0x1B01;
 export def LINEAR: uint = 0x2601;
 export def LINEARBURN_NV: uint = 0x92A5;
 export def LINEARDODGE_NV: uint = 0x92A4;
 export def LINEARLIGHT_NV: uint = 0x92A7;
-export def LINEAR_ATTENUATION: uint = 0x1208;
 export def LINEAR_CLIPMAP_LINEAR_SGIX: uint = 0x8170;
 export def LINEAR_CLIPMAP_NEAREST_SGIX: uint = 0x844F;
 export def LINEAR_DETAIL_ALPHA_SGIS: uint = 0x8098;
@@ -1817,32 +1689,23 @@ export def LINEAR_SHARPEN_COLOR_SGIS: uint = 0x80AF;
 export def LINEAR_SHARPEN_SGIS: uint = 0x80AD;
 export def LINEAR_TILING_EXT: uint = 0x9585;
 export def LINES: uint = 0x0001;
+export def LINES_ADJACENCY: uint = 0x000A;
 export def LINES_ADJACENCY_ARB: uint = 0x000A;
 export def LINES_ADJACENCY_EXT: uint = 0x000A;
-export def LINE_BIT: uint = 0x00000004;
 export def LINE_LOOP: uint = 0x0002;
-export def LINE_RESET_TOKEN: uint = 0x0707;
 export def LINE_SMOOTH: uint = 0x0B20;
 export def LINE_SMOOTH_HINT: uint = 0x0C52;
-export def LINE_STIPPLE: uint = 0x0B24;
-export def LINE_STIPPLE_PATTERN: uint = 0x0B25;
-export def LINE_STIPPLE_REPEAT: uint = 0x0B26;
 export def LINE_STRIP: uint = 0x0003;
+export def LINE_STRIP_ADJACENCY: uint = 0x000B;
 export def LINE_STRIP_ADJACENCY_ARB: uint = 0x000B;
 export def LINE_STRIP_ADJACENCY_EXT: uint = 0x000B;
-export def LINE_TOKEN: uint = 0x0702;
 export def LINE_TO_NV: uint = 0x04;
 export def LINE_WIDTH: uint = 0x0B21;
 export def LINE_WIDTH_COMMAND_NV: uint = 0x000D;
 export def LINE_WIDTH_GRANULARITY: uint = 0x0B23;
 export def LINE_WIDTH_RANGE: uint = 0x0B22;
 export def LINK_STATUS: uint = 0x8B82;
-export def LIST_BASE: uint = 0x0B32;
-export def LIST_BIT: uint = 0x00020000;
-export def LIST_INDEX: uint = 0x0B33;
-export def LIST_MODE: uint = 0x0B30;
 export def LIST_PRIORITY_SGIX: uint = 0x8182;
-export def LOAD: uint = 0x0101;
 export def LOCAL_CONSTANT_DATATYPE_EXT: uint = 0x87ED;
 export def LOCAL_CONSTANT_EXT: uint = 0x87C3;
 export def LOCAL_CONSTANT_VALUE_EXT: uint = 0x87EC;
@@ -1850,7 +1713,6 @@ export def LOCAL_EXT: uint = 0x87C4;
 export def LOCATION: uint = 0x930E;
 export def LOCATION_COMPONENT: uint = 0x934A;
 export def LOCATION_INDEX: uint = 0x930F;
-export def LOGIC_OP: uint = 0x0BF1;
 export def LOGIC_OP_MODE: uint = 0x0BF0;
 export def LOSE_CONTEXT_ON_RESET: uint = 0x8252;
 export def LOSE_CONTEXT_ON_RESET_ARB: uint = 0x8252;
@@ -1860,19 +1722,13 @@ export def LOW_INT: uint = 0x8DF3;
 export def LO_BIAS_NV: uint = 0x8715;
 export def LO_SCALE_NV: uint = 0x870F;
 export def LUID_SIZE_EXT: uint = 8;
-export def LUMINANCE: uint = 0x1909;
-export def LUMINANCE12: uint = 0x8041;
-export def LUMINANCE12_ALPHA12: uint = 0x8047;
 export def LUMINANCE12_ALPHA12_EXT: uint = 0x8047;
-export def LUMINANCE12_ALPHA4: uint = 0x8046;
 export def LUMINANCE12_ALPHA4_EXT: uint = 0x8046;
 export def LUMINANCE12_EXT: uint = 0x8041;
-export def LUMINANCE16: uint = 0x8042;
 export def LUMINANCE16F_ARB: uint = 0x881E;
 export def LUMINANCE16F_EXT: uint = 0x881E;
 export def LUMINANCE16I_EXT: uint = 0x8D8C;
 export def LUMINANCE16UI_EXT: uint = 0x8D7A;
-export def LUMINANCE16_ALPHA16: uint = 0x8048;
 export def LUMINANCE16_ALPHA16_EXT: uint = 0x8048;
 export def LUMINANCE16_ALPHA16_SNORM: uint = 0x901A;
 export def LUMINANCE16_EXT: uint = 0x8042;
@@ -1881,21 +1737,15 @@ export def LUMINANCE32F_ARB: uint = 0x8818;
 export def LUMINANCE32F_EXT: uint = 0x8818;
 export def LUMINANCE32I_EXT: uint = 0x8D86;
 export def LUMINANCE32UI_EXT: uint = 0x8D74;
-export def LUMINANCE4: uint = 0x803F;
-export def LUMINANCE4_ALPHA4: uint = 0x8043;
 export def LUMINANCE4_ALPHA4_EXT: uint = 0x8043;
 export def LUMINANCE4_EXT: uint = 0x803F;
-export def LUMINANCE6_ALPHA2: uint = 0x8044;
 export def LUMINANCE6_ALPHA2_EXT: uint = 0x8044;
-export def LUMINANCE8: uint = 0x8040;
 export def LUMINANCE8I_EXT: uint = 0x8D92;
 export def LUMINANCE8UI_EXT: uint = 0x8D80;
-export def LUMINANCE8_ALPHA8: uint = 0x8045;
 export def LUMINANCE8_ALPHA8_EXT: uint = 0x8045;
 export def LUMINANCE8_ALPHA8_SNORM: uint = 0x9016;
 export def LUMINANCE8_EXT: uint = 0x8040;
 export def LUMINANCE8_SNORM: uint = 0x9015;
-export def LUMINANCE_ALPHA: uint = 0x190A;
 export def LUMINANCE_ALPHA16F_ARB: uint = 0x881F;
 export def LUMINANCE_ALPHA16F_EXT: uint = 0x881F;
 export def LUMINANCE_ALPHA16I_EXT: uint = 0x8D8D;
@@ -1921,20 +1771,10 @@ export def LUMINANCE_SNORM: uint = 0x9011;
 export def MAD_ATI: uint = 0x8968;
 export def MAGNITUDE_BIAS_NV: uint = 0x8718;
 export def MAGNITUDE_SCALE_NV: uint = 0x8712;
+export def MAJOR_VERSION: uint = 0x821B;
 export def MANUAL_GENERATE_MIPMAP: uint = 0x8294;
 export def MAP1_BINORMAL_EXT: uint = 0x8446;
-export def MAP1_COLOR_4: uint = 0x0D90;
-export def MAP1_GRID_DOMAIN: uint = 0x0DD0;
-export def MAP1_GRID_SEGMENTS: uint = 0x0DD1;
-export def MAP1_INDEX: uint = 0x0D91;
-export def MAP1_NORMAL: uint = 0x0D92;
 export def MAP1_TANGENT_EXT: uint = 0x8444;
-export def MAP1_TEXTURE_COORD_1: uint = 0x0D93;
-export def MAP1_TEXTURE_COORD_2: uint = 0x0D94;
-export def MAP1_TEXTURE_COORD_3: uint = 0x0D95;
-export def MAP1_TEXTURE_COORD_4: uint = 0x0D96;
-export def MAP1_VERTEX_3: uint = 0x0D97;
-export def MAP1_VERTEX_4: uint = 0x0D98;
 export def MAP1_VERTEX_ATTRIB0_4_NV: uint = 0x8660;
 export def MAP1_VERTEX_ATTRIB10_4_NV: uint = 0x866A;
 export def MAP1_VERTEX_ATTRIB11_4_NV: uint = 0x866B;
@@ -1952,18 +1792,7 @@ export def MAP1_VERTEX_ATTRIB7_4_NV: uint = 0x8667;
 export def MAP1_VERTEX_ATTRIB8_4_NV: uint = 0x8668;
 export def MAP1_VERTEX_ATTRIB9_4_NV: uint = 0x8669;
 export def MAP2_BINORMAL_EXT: uint = 0x8447;
-export def MAP2_COLOR_4: uint = 0x0DB0;
-export def MAP2_GRID_DOMAIN: uint = 0x0DD2;
-export def MAP2_GRID_SEGMENTS: uint = 0x0DD3;
-export def MAP2_INDEX: uint = 0x0DB1;
-export def MAP2_NORMAL: uint = 0x0DB2;
 export def MAP2_TANGENT_EXT: uint = 0x8445;
-export def MAP2_TEXTURE_COORD_1: uint = 0x0DB3;
-export def MAP2_TEXTURE_COORD_2: uint = 0x0DB4;
-export def MAP2_TEXTURE_COORD_3: uint = 0x0DB5;
-export def MAP2_TEXTURE_COORD_4: uint = 0x0DB6;
-export def MAP2_VERTEX_3: uint = 0x0DB7;
-export def MAP2_VERTEX_4: uint = 0x0DB8;
 export def MAP2_VERTEX_ATTRIB0_4_NV: uint = 0x8670;
 export def MAP2_VERTEX_ATTRIB10_4_NV: uint = 0x867A;
 export def MAP2_VERTEX_ATTRIB11_4_NV: uint = 0x867B;
@@ -1983,13 +1812,11 @@ export def MAP2_VERTEX_ATTRIB9_4_NV: uint = 0x8679;
 export def MAP_ATTRIB_U_ORDER_NV: uint = 0x86C3;
 export def MAP_ATTRIB_V_ORDER_NV: uint = 0x86C4;
 export def MAP_COHERENT_BIT: uint = 0x0080;
-export def MAP_COLOR: uint = 0x0D10;
 export def MAP_FLUSH_EXPLICIT_BIT: uint = 0x0010;
 export def MAP_INVALIDATE_BUFFER_BIT: uint = 0x0008;
 export def MAP_INVALIDATE_RANGE_BIT: uint = 0x0004;
 export def MAP_PERSISTENT_BIT: uint = 0x0040;
 export def MAP_READ_BIT: uint = 0x0001;
-export def MAP_STENCIL: uint = 0x0D11;
 export def MAP_TESSELLATION_NV: uint = 0x86C2;
 export def MAP_UNSYNCHRONIZED_BIT: uint = 0x0020;
 export def MAP_WRITE_BIT: uint = 0x0002;
@@ -2040,7 +1867,6 @@ export def MATRIX_INDEX_ARRAY_POINTER_ARB: uint = 0x8849;
 export def MATRIX_INDEX_ARRAY_SIZE_ARB: uint = 0x8846;
 export def MATRIX_INDEX_ARRAY_STRIDE_ARB: uint = 0x8848;
 export def MATRIX_INDEX_ARRAY_TYPE_ARB: uint = 0x8847;
-export def MATRIX_MODE: uint = 0x0BA0;
 export def MATRIX_PALETTE_ARB: uint = 0x8840;
 export def MATRIX_STRIDE: uint = 0x92FF;
 export def MAT_AMBIENT_AND_DIFFUSE_BIT_PGI: uint = 0x00200000;
@@ -2055,6 +1881,7 @@ export def MAX_3D_TEXTURE_SIZE: uint = 0x8073;
 export def MAX_3D_TEXTURE_SIZE_EXT: uint = 0x8073;
 export def MAX_4D_TEXTURE_SIZE_SGIS: uint = 0x8138;
 export def MAX_ACTIVE_LIGHTS_SGIX: uint = 0x8405;
+export def MAX_ARRAY_TEXTURE_LAYERS: uint = 0x88FF;
 export def MAX_ARRAY_TEXTURE_LAYERS_EXT: uint = 0x88FF;
 export def MAX_ASYNC_DRAW_PIXELS_SGIX: uint = 0x8360;
 export def MAX_ASYNC_HISTOGRAM_SGIX: uint = 0x832D;
@@ -2062,12 +1889,10 @@ export def MAX_ASYNC_READ_PIXELS_SGIX: uint = 0x8361;
 export def MAX_ASYNC_TEX_IMAGE_SGIX: uint = 0x835F;
 export def MAX_ATOMIC_COUNTER_BUFFER_BINDINGS: uint = 0x92DC;
 export def MAX_ATOMIC_COUNTER_BUFFER_SIZE: uint = 0x92D8;
-export def MAX_ATTRIB_STACK_DEPTH: uint = 0x0D35;
 export def MAX_BINDABLE_UNIFORM_SIZE_EXT: uint = 0x8DED;
-export def MAX_CLIENT_ATTRIB_STACK_DEPTH: uint = 0x0D3B;
 export def MAX_CLIPMAP_DEPTH_SGIX: uint = 0x8177;
 export def MAX_CLIPMAP_VIRTUAL_DEPTH_SGIX: uint = 0x8178;
-export def MAX_CLIP_PLANES: uint = 0x0D32;
+export def MAX_CLIP_DISTANCES: uint = 0x0D32;
 export def MAX_COARSE_FRAGMENT_SAMPLES_NV: uint = 0x955F;
 export def MAX_COLOR_ATTACHMENTS: uint = 0x8CDF;
 export def MAX_COLOR_ATTACHMENTS_EXT: uint = 0x8CDF;
@@ -2141,13 +1966,13 @@ export def MAX_ELEMENTS_INDICES_EXT: uint = 0x80E9;
 export def MAX_ELEMENTS_VERTICES: uint = 0x80E8;
 export def MAX_ELEMENTS_VERTICES_EXT: uint = 0x80E8;
 export def MAX_ELEMENT_INDEX: uint = 0x8D6B;
-export def MAX_EVAL_ORDER: uint = 0x0D30;
 export def MAX_EXT: uint = 0x8008;
 export def MAX_FOG_FUNC_POINTS_SGIS: uint = 0x812C;
 export def MAX_FRAGMENT_ATOMIC_COUNTERS: uint = 0x92D6;
 export def MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS: uint = 0x92D0;
 export def MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT: uint = 0x8DE3;
 export def MAX_FRAGMENT_IMAGE_UNIFORMS: uint = 0x90CE;
+export def MAX_FRAGMENT_INPUT_COMPONENTS: uint = 0x9125;
 export def MAX_FRAGMENT_INTERPOLATION_OFFSET: uint = 0x8E5C;
 export def MAX_FRAGMENT_INTERPOLATION_OFFSET_NV: uint = 0x8E5C;
 export def MAX_FRAGMENT_LIGHTS_SGIX: uint = 0x8404;
@@ -2167,16 +1992,22 @@ export def MAX_GEOMETRY_ATOMIC_COUNTERS: uint = 0x92D5;
 export def MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS: uint = 0x92CF;
 export def MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT: uint = 0x8DE4;
 export def MAX_GEOMETRY_IMAGE_UNIFORMS: uint = 0x90CD;
+export def MAX_GEOMETRY_INPUT_COMPONENTS: uint = 0x9123;
+export def MAX_GEOMETRY_OUTPUT_COMPONENTS: uint = 0x9124;
+export def MAX_GEOMETRY_OUTPUT_VERTICES: uint = 0x8DE0;
 export def MAX_GEOMETRY_OUTPUT_VERTICES_ARB: uint = 0x8DE0;
 export def MAX_GEOMETRY_OUTPUT_VERTICES_EXT: uint = 0x8DE0;
 export def MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV: uint = 0x8E5A;
 export def MAX_GEOMETRY_SHADER_INVOCATIONS: uint = 0x8E5A;
 export def MAX_GEOMETRY_SHADER_STORAGE_BLOCKS: uint = 0x90D7;
+export def MAX_GEOMETRY_TEXTURE_IMAGE_UNITS: uint = 0x8C29;
 export def MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB: uint = 0x8C29;
 export def MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT: uint = 0x8C29;
+export def MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS: uint = 0x8DE1;
 export def MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB: uint = 0x8DE1;
 export def MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT: uint = 0x8DE1;
 export def MAX_GEOMETRY_UNIFORM_BLOCKS: uint = 0x8A2C;
+export def MAX_GEOMETRY_UNIFORM_COMPONENTS: uint = 0x8DDF;
 export def MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB: uint = 0x8DDF;
 export def MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT: uint = 0x8DDF;
 export def MAX_GEOMETRY_VARYING_COMPONENTS_ARB: uint = 0x8DDD;
@@ -2190,8 +2021,6 @@ export def MAX_INTEGER_SAMPLES: uint = 0x9110;
 export def MAX_LABEL_LENGTH: uint = 0x82E8;
 export def MAX_LAYERS: uint = 0x8281;
 export def MAX_LGPU_GPUS_NVX: uint = 0x92BA;
-export def MAX_LIGHTS: uint = 0x0D31;
-export def MAX_LIST_NESTING: uint = 0x0B31;
 export def MAX_MAP_TESSELLATION_NV: uint = 0x86D6;
 export def MAX_MATRIX_PALETTE_STACK_DEPTH_ARB: uint = 0x8841;
 export def MAX_MESH_ATOMIC_COUNTERS_NV: uint = 0x8E65;
@@ -2207,10 +2036,8 @@ export def MAX_MESH_UNIFORM_COMPONENTS_NV: uint = 0x8E63;
 export def MAX_MESH_VIEWS_NV: uint = 0x9557;
 export def MAX_MESH_WORK_GROUP_INVOCATIONS_NV: uint = 0x95A2;
 export def MAX_MESH_WORK_GROUP_SIZE_NV: uint = 0x953B;
-export def MAX_MODELVIEW_STACK_DEPTH: uint = 0x0D36;
 export def MAX_MULTISAMPLE_COVERAGE_MODES_NV: uint = 0x8E11;
 export def MAX_NAME_LENGTH: uint = 0x92F6;
-export def MAX_NAME_STACK_DEPTH: uint = 0x0D37;
 export def MAX_NUM_ACTIVE_VARIABLES: uint = 0x92F7;
 export def MAX_NUM_COMPATIBLE_SUBROUTINES: uint = 0x92F8;
 export def MAX_OPTIMIZED_VERTEX_SHADER_INSTRUCTIONS_EXT: uint = 0x87CA;
@@ -2220,7 +2047,6 @@ export def MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT: uint = 0x87CC;
 export def MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT: uint = 0x87CB;
 export def MAX_PALETTE_MATRICES_ARB: uint = 0x8842;
 export def MAX_PATCH_VERTICES: uint = 0x8E7D;
-export def MAX_PIXEL_MAP_TABLE: uint = 0x0D34;
 export def MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT: uint = 0x8337;
 export def MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI: uint = 0x87F1;
 export def MAX_PROGRAM_ADDRESS_REGISTERS_ARB: uint = 0x88B1;
@@ -2256,17 +2082,19 @@ export def MAX_PROGRAM_RESULT_COMPONENTS_NV: uint = 0x8909;
 export def MAX_PROGRAM_SUBROUTINE_NUM_NV: uint = 0x8F45;
 export def MAX_PROGRAM_SUBROUTINE_PARAMETERS_NV: uint = 0x8F44;
 export def MAX_PROGRAM_TEMPORARIES_ARB: uint = 0x88A5;
+export def MAX_PROGRAM_TEXEL_OFFSET: uint = 0x8905;
 export def MAX_PROGRAM_TEXEL_OFFSET_EXT: uint = 0x8905;
 export def MAX_PROGRAM_TEXEL_OFFSET_NV: uint = 0x8905;
 export def MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB: uint = 0x8F9F;
+export def MAX_PROGRAM_TEXTURE_GATHER_OFFSET: uint = 0x8E5F;
 export def MAX_PROGRAM_TEXTURE_GATHER_OFFSET_ARB: uint = 0x8E5F;
 export def MAX_PROGRAM_TEXTURE_GATHER_OFFSET_NV: uint = 0x8E5F;
 export def MAX_PROGRAM_TEX_INDIRECTIONS_ARB: uint = 0x880D;
 export def MAX_PROGRAM_TEX_INSTRUCTIONS_ARB: uint = 0x880C;
 export def MAX_PROGRAM_TOTAL_OUTPUT_COMPONENTS_NV: uint = 0x8C28;
-export def MAX_PROJECTION_STACK_DEPTH: uint = 0x0D38;
 export def MAX_RASTER_SAMPLES_EXT: uint = 0x9329;
 export def MAX_RATIONAL_EVAL_ORDER_NV: uint = 0x86D7;
+export def MAX_RECTANGLE_TEXTURE_SIZE: uint = 0x84F8;
 export def MAX_RECTANGLE_TEXTURE_SIZE_ARB: uint = 0x84F8;
 export def MAX_RECTANGLE_TEXTURE_SIZE_NV: uint = 0x84F8;
 export def MAX_RENDERBUFFER_SIZE: uint = 0x84E8;
@@ -2324,9 +2152,9 @@ export def MAX_TESS_EVALUATION_UNIFORM_BLOCKS: uint = 0x8E8A;
 export def MAX_TESS_EVALUATION_UNIFORM_COMPONENTS: uint = 0x8E80;
 export def MAX_TESS_GEN_LEVEL: uint = 0x8E7E;
 export def MAX_TESS_PATCH_COMPONENTS: uint = 0x8E84;
+export def MAX_TEXTURE_BUFFER_SIZE: uint = 0x8C2B;
 export def MAX_TEXTURE_BUFFER_SIZE_ARB: uint = 0x8C2B;
 export def MAX_TEXTURE_BUFFER_SIZE_EXT: uint = 0x8C2B;
-export def MAX_TEXTURE_COORDS: uint = 0x8871;
 export def MAX_TEXTURE_COORDS_ARB: uint = 0x8871;
 export def MAX_TEXTURE_COORDS_NV: uint = 0x8871;
 export def MAX_TEXTURE_IMAGE_UNITS: uint = 0x8872;
@@ -2337,17 +2165,18 @@ export def MAX_TEXTURE_LOD_BIAS_EXT: uint = 0x84FD;
 export def MAX_TEXTURE_MAX_ANISOTROPY: uint = 0x84FF;
 export def MAX_TEXTURE_MAX_ANISOTROPY_EXT: uint = 0x84FF;
 export def MAX_TEXTURE_SIZE: uint = 0x0D33;
-export def MAX_TEXTURE_STACK_DEPTH: uint = 0x0D39;
-export def MAX_TEXTURE_UNITS: uint = 0x84E2;
 export def MAX_TEXTURE_UNITS_ARB: uint = 0x84E2;
 export def MAX_TIMELINE_SEMAPHORE_VALUE_DIFFERENCE_NV: uint = 0x95B6;
 export def MAX_TRACK_MATRICES_NV: uint = 0x862F;
 export def MAX_TRACK_MATRIX_STACK_DEPTH_NV: uint = 0x862E;
 export def MAX_TRANSFORM_FEEDBACK_BUFFERS: uint = 0x8E70;
+export def MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: uint = 0x8C8A;
 export def MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT: uint = 0x8C8A;
 export def MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_NV: uint = 0x8C8A;
+export def MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: uint = 0x8C8B;
 export def MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT: uint = 0x8C8B;
 export def MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_NV: uint = 0x8C8B;
+export def MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: uint = 0x8C80;
 export def MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT: uint = 0x8C80;
 export def MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_NV: uint = 0x8C80;
 export def MAX_UNIFORM_BLOCK_SIZE: uint = 0x8A30;
@@ -2368,6 +2197,7 @@ export def MAX_VERTEX_ATTRIB_RELATIVE_OFFSET: uint = 0x82D9;
 export def MAX_VERTEX_BINDABLE_UNIFORMS_EXT: uint = 0x8DE2;
 export def MAX_VERTEX_HINT_PGI: uint = 0x1A22D;
 export def MAX_VERTEX_IMAGE_UNIFORMS: uint = 0x90CA;
+export def MAX_VERTEX_OUTPUT_COMPONENTS: uint = 0x9122;
 export def MAX_VERTEX_SHADER_INSTRUCTIONS_EXT: uint = 0x87C5;
 export def MAX_VERTEX_SHADER_INVARIANTS_EXT: uint = 0x87C7;
 export def MAX_VERTEX_SHADER_LOCALS_EXT: uint = 0x87C9;
@@ -2409,6 +2239,7 @@ export def MIN: uint = 0x8007;
 export def MINMAX_EXT: uint = 0x802E;
 export def MINMAX_FORMAT_EXT: uint = 0x802F;
 export def MINMAX_SINK_EXT: uint = 0x8030;
+export def MINOR_VERSION: uint = 0x821C;
 export def MINUS_CLAMPED_NV: uint = 0x92B3;
 export def MINUS_NV: uint = 0x929F;
 export def MIN_EXT: uint = 0x8007;
@@ -2416,10 +2247,13 @@ export def MIN_FRAGMENT_INTERPOLATION_OFFSET: uint = 0x8E5B;
 export def MIN_FRAGMENT_INTERPOLATION_OFFSET_NV: uint = 0x8E5B;
 export def MIN_LOD_WARNING_AMD: uint = 0x919C;
 export def MIN_MAP_BUFFER_ALIGNMENT: uint = 0x90BC;
+export def MIN_PROGRAM_TEXEL_OFFSET: uint = 0x8904;
 export def MIN_PROGRAM_TEXEL_OFFSET_EXT: uint = 0x8904;
 export def MIN_PROGRAM_TEXEL_OFFSET_NV: uint = 0x8904;
+export def MIN_PROGRAM_TEXTURE_GATHER_OFFSET: uint = 0x8E5E;
 export def MIN_PROGRAM_TEXTURE_GATHER_OFFSET_ARB: uint = 0x8E5E;
 export def MIN_PROGRAM_TEXTURE_GATHER_OFFSET_NV: uint = 0x8E5E;
+export def MIN_SAMPLE_SHADING_VALUE: uint = 0x8C37;
 export def MIN_SAMPLE_SHADING_VALUE_ARB: uint = 0x8C37;
 export def MIN_SPARSE_LEVEL_AMD: uint = 0x919B;
 export def MIPMAP: uint = 0x8293;
@@ -2436,7 +2270,6 @@ export def MITER_REVERT_NV: uint = 0x90A7;
 export def MITER_TRUNCATE_NV: uint = 0x90A8;
 export def MIXED_DEPTH_SAMPLES_SUPPORTED_NV: uint = 0x932F;
 export def MIXED_STENCIL_SAMPLES_SUPPORTED_NV: uint = 0x9330;
-export def MODELVIEW: uint = 0x1700;
 export def MODELVIEW0_ARB: uint = 0x1700;
 export def MODELVIEW0_EXT: uint = 0x1700;
 export def MODELVIEW0_MATRIX_EXT: uint = 0x0BA6;
@@ -2475,10 +2308,7 @@ export def MODELVIEW6_ARB: uint = 0x8726;
 export def MODELVIEW7_ARB: uint = 0x8727;
 export def MODELVIEW8_ARB: uint = 0x8728;
 export def MODELVIEW9_ARB: uint = 0x8729;
-export def MODELVIEW_MATRIX: uint = 0x0BA6;
 export def MODELVIEW_PROJECTION_NV: uint = 0x8629;
-export def MODELVIEW_STACK_DEPTH: uint = 0x0BA3;
-export def MODULATE: uint = 0x2100;
 export def MODULATE_ADD_ATI: uint = 0x8744;
 export def MODULATE_SIGNED_ADD_ATI: uint = 0x8745;
 export def MODULATE_SUBTRACT_ATI: uint = 0x8746;
@@ -2486,7 +2316,6 @@ export def MOVE_TO_CONTINUES_NV: uint = 0x90B6;
 export def MOVE_TO_NV: uint = 0x02;
 export def MOVE_TO_RESETS_NV: uint = 0x90B5;
 export def MOV_ATI: uint = 0x8961;
-export def MULT: uint = 0x0103;
 export def MULTICAST_GPUS_NV: uint = 0x92BA;
 export def MULTICAST_PROGRAMMABLE_SAMPLE_LOCATION_NV: uint = 0x9549;
 export def MULTIPLY_KHR: uint = 0x9294;
@@ -2495,7 +2324,6 @@ export def MULTISAMPLE: uint = 0x809D;
 export def MULTISAMPLES_NV: uint = 0x9371;
 export def MULTISAMPLE_3DFX: uint = 0x86B2;
 export def MULTISAMPLE_ARB: uint = 0x809D;
-export def MULTISAMPLE_BIT: uint = 0x20000000;
 export def MULTISAMPLE_BIT_3DFX: uint = 0x20000000;
 export def MULTISAMPLE_BIT_ARB: uint = 0x20000000;
 export def MULTISAMPLE_BIT_EXT: uint = 0x20000000;
@@ -2508,11 +2336,9 @@ export def MULTISAMPLE_RASTERIZATION_ALLOWED_EXT: uint = 0x932B;
 export def MULTISAMPLE_SGIS: uint = 0x809D;
 export def MUL_ATI: uint = 0x8964;
 export def MVP_MATRIX_EXT: uint = 0x87E3;
-export def N3F_V3F: uint = 0x2A25;
 export def NAMED_STRING_LENGTH_ARB: uint = 0x8DE9;
 export def NAMED_STRING_TYPE_ARB: uint = 0x8DEA;
 export def NAME_LENGTH: uint = 0x92F9;
-export def NAME_STACK_DEPTH: uint = 0x0D70;
 export def NAND: uint = 0x150E;
 export def NATIVE_GRAPHICS_BEGIN_HINT_PGI: uint = 0x1A203;
 export def NATIVE_GRAPHICS_END_HINT_PGI: uint = 0x1A204;
@@ -2537,11 +2363,8 @@ export def NONE: uint = 0;
 export def NOOP: uint = 0x1505;
 export def NOP_COMMAND_NV: uint = 0x0001;
 export def NOR: uint = 0x1508;
-export def NORMALIZE: uint = 0x0BA1;
 export def NORMALIZED_RANGE_EXT: uint = 0x87E0;
-export def NORMAL_ARRAY: uint = 0x8075;
 export def NORMAL_ARRAY_ADDRESS_NV: uint = 0x8F22;
-export def NORMAL_ARRAY_BUFFER_BINDING: uint = 0x8897;
 export def NORMAL_ARRAY_BUFFER_BINDING_ARB: uint = 0x8897;
 export def NORMAL_ARRAY_COUNT_EXT: uint = 0x8080;
 export def NORMAL_ARRAY_EXT: uint = 0x8075;
@@ -2549,14 +2372,10 @@ export def NORMAL_ARRAY_LENGTH_NV: uint = 0x8F2C;
 export def NORMAL_ARRAY_LIST_IBM: uint = 103071;
 export def NORMAL_ARRAY_LIST_STRIDE_IBM: uint = 103081;
 export def NORMAL_ARRAY_PARALLEL_POINTERS_INTEL: uint = 0x83F6;
-export def NORMAL_ARRAY_POINTER: uint = 0x808F;
 export def NORMAL_ARRAY_POINTER_EXT: uint = 0x808F;
-export def NORMAL_ARRAY_STRIDE: uint = 0x807F;
 export def NORMAL_ARRAY_STRIDE_EXT: uint = 0x807F;
-export def NORMAL_ARRAY_TYPE: uint = 0x807E;
 export def NORMAL_ARRAY_TYPE_EXT: uint = 0x807E;
 export def NORMAL_BIT_PGI: uint = 0x08000000;
-export def NORMAL_MAP: uint = 0x8511;
 export def NORMAL_MAP_ARB: uint = 0x8511;
 export def NORMAL_MAP_EXT: uint = 0x8511;
 export def NORMAL_MAP_NV: uint = 0x8511;
@@ -2569,6 +2388,7 @@ export def NUM_COMPATIBLE_SUBROUTINES: uint = 0x8E4A;
 export def NUM_COMPRESSED_TEXTURE_FORMATS: uint = 0x86A2;
 export def NUM_COMPRESSED_TEXTURE_FORMATS_ARB: uint = 0x86A2;
 export def NUM_DEVICE_UUIDS_EXT: uint = 0x9596;
+export def NUM_EXTENSIONS: uint = 0x821D;
 export def NUM_FILL_STREAMS_NV: uint = 0x8E29;
 export def NUM_FRAGMENT_CONSTANTS_ATI: uint = 0x896F;
 export def NUM_FRAGMENT_REGISTERS_ATI: uint = 0x896E;
@@ -2581,6 +2401,7 @@ export def NUM_PASSES_ATI: uint = 0x8970;
 export def NUM_PROGRAM_BINARY_FORMATS: uint = 0x87FE;
 export def NUM_SAMPLE_COUNTS: uint = 0x9380;
 export def NUM_SHADER_BINARY_FORMATS: uint = 0x8DF9;
+export def NUM_SHADING_LANGUAGE_VERSIONS: uint = 0x82E9;
 export def NUM_SPARSE_LEVELS_ARB: uint = 0x91AA;
 export def NUM_SPIR_V_EXTENSIONS: uint = 0x9554;
 export def NUM_SUPPORTED_MULTISAMPLE_MODES_AMD: uint = 0x91B6;
@@ -2600,10 +2421,8 @@ export def OBJECT_DELETE_STATUS_ARB: uint = 0x8B80;
 export def OBJECT_DISTANCE_TO_LINE_SGIS: uint = 0x81F3;
 export def OBJECT_DISTANCE_TO_POINT_SGIS: uint = 0x81F1;
 export def OBJECT_INFO_LOG_LENGTH_ARB: uint = 0x8B84;
-export def OBJECT_LINEAR: uint = 0x2401;
 export def OBJECT_LINE_SGIS: uint = 0x81F7;
 export def OBJECT_LINK_STATUS_ARB: uint = 0x8B82;
-export def OBJECT_PLANE: uint = 0x2501;
 export def OBJECT_POINT_SGIS: uint = 0x81F5;
 export def OBJECT_SHADER_SOURCE_LENGTH_ARB: uint = 0x8B88;
 export def OBJECT_SUBTYPE_ARB: uint = 0x8B4F;
@@ -2643,22 +2462,16 @@ export def ONE_MINUS_SRC1_ALPHA: uint = 0x88FB;
 export def ONE_MINUS_SRC1_COLOR: uint = 0x88FA;
 export def ONE_MINUS_SRC_ALPHA: uint = 0x0303;
 export def ONE_MINUS_SRC_COLOR: uint = 0x0301;
-export def OPERAND0_ALPHA: uint = 0x8598;
 export def OPERAND0_ALPHA_ARB: uint = 0x8598;
 export def OPERAND0_ALPHA_EXT: uint = 0x8598;
-export def OPERAND0_RGB: uint = 0x8590;
 export def OPERAND0_RGB_ARB: uint = 0x8590;
 export def OPERAND0_RGB_EXT: uint = 0x8590;
-export def OPERAND1_ALPHA: uint = 0x8599;
 export def OPERAND1_ALPHA_ARB: uint = 0x8599;
 export def OPERAND1_ALPHA_EXT: uint = 0x8599;
-export def OPERAND1_RGB: uint = 0x8591;
 export def OPERAND1_RGB_ARB: uint = 0x8591;
 export def OPERAND1_RGB_EXT: uint = 0x8591;
-export def OPERAND2_ALPHA: uint = 0x859A;
 export def OPERAND2_ALPHA_ARB: uint = 0x859A;
 export def OPERAND2_ALPHA_EXT: uint = 0x859A;
-export def OPERAND2_RGB: uint = 0x8592;
 export def OPERAND2_RGB_ARB: uint = 0x8592;
 export def OPERAND2_RGB_EXT: uint = 0x8592;
 export def OPERAND3_ALPHA_NV: uint = 0x859B;
@@ -2689,7 +2502,6 @@ export def OP_SET_GE_EXT: uint = 0x878C;
 export def OP_SET_LT_EXT: uint = 0x878D;
 export def OP_SUB_EXT: uint = 0x8796;
 export def OR: uint = 0x1507;
-export def ORDER: uint = 0x0A01;
 export def OR_INVERTED: uint = 0x150D;
 export def OR_REVERSE: uint = 0x150B;
 export def OUTPUT_COLOR0_EXT: uint = 0x879B;
@@ -2770,7 +2582,6 @@ export def PARAMETER_BUFFER_BINDING: uint = 0x80EF;
 export def PARAMETER_BUFFER_BINDING_ARB: uint = 0x80EF;
 export def PARTIAL_SUCCESS_NV: uint = 0x902E;
 export def PASS_THROUGH_NV: uint = 0x86E6;
-export def PASS_THROUGH_TOKEN: uint = 0x0700;
 export def PATCHES: uint = 0x000E;
 export def PATCH_DEFAULT_INNER_LEVEL: uint = 0x8E73;
 export def PATCH_DEFAULT_OUTER_LEVEL: uint = 0x8E74;
@@ -2846,7 +2657,6 @@ export def PERFQUERY_GPA_EXTENDED_COUNTERS_INTEL: uint = 0x9500;
 export def PERFQUERY_QUERY_NAME_LENGTH_MAX_INTEL: uint = 0x94FD;
 export def PERFQUERY_SINGLE_CONTEXT_INTEL: uint = 0x00000000;
 export def PERFQUERY_WAIT_INTEL: uint = 0x83FB;
-export def PERSPECTIVE_CORRECTION_HINT: uint = 0x0C50;
 export def PERTURB_EXT: uint = 0x85AE;
 export def PER_GPU_STORAGE_BIT_NV: uint = 0x0800;
 export def PER_GPU_STORAGE_NV: uint = 0x9548;
@@ -2866,28 +2676,7 @@ export def PIXEL_FRAGMENT_ALPHA_SOURCE_SGIS: uint = 0x8355;
 export def PIXEL_FRAGMENT_RGB_SOURCE_SGIS: uint = 0x8354;
 export def PIXEL_GROUP_COLOR_SGIS: uint = 0x8356;
 export def PIXEL_MAG_FILTER_EXT: uint = 0x8331;
-export def PIXEL_MAP_A_TO_A: uint = 0x0C79;
-export def PIXEL_MAP_A_TO_A_SIZE: uint = 0x0CB9;
-export def PIXEL_MAP_B_TO_B: uint = 0x0C78;
-export def PIXEL_MAP_B_TO_B_SIZE: uint = 0x0CB8;
-export def PIXEL_MAP_G_TO_G: uint = 0x0C77;
-export def PIXEL_MAP_G_TO_G_SIZE: uint = 0x0CB7;
-export def PIXEL_MAP_I_TO_A: uint = 0x0C75;
-export def PIXEL_MAP_I_TO_A_SIZE: uint = 0x0CB5;
-export def PIXEL_MAP_I_TO_B: uint = 0x0C74;
-export def PIXEL_MAP_I_TO_B_SIZE: uint = 0x0CB4;
-export def PIXEL_MAP_I_TO_G: uint = 0x0C73;
-export def PIXEL_MAP_I_TO_G_SIZE: uint = 0x0CB3;
-export def PIXEL_MAP_I_TO_I: uint = 0x0C70;
-export def PIXEL_MAP_I_TO_I_SIZE: uint = 0x0CB0;
-export def PIXEL_MAP_I_TO_R: uint = 0x0C72;
-export def PIXEL_MAP_I_TO_R_SIZE: uint = 0x0CB2;
-export def PIXEL_MAP_R_TO_R: uint = 0x0C76;
-export def PIXEL_MAP_R_TO_R_SIZE: uint = 0x0CB6;
-export def PIXEL_MAP_S_TO_S: uint = 0x0C71;
-export def PIXEL_MAP_S_TO_S_SIZE: uint = 0x0CB1;
 export def PIXEL_MIN_FILTER_EXT: uint = 0x8332;
-export def PIXEL_MODE_BIT: uint = 0x00000020;
 export def PIXEL_PACK_BUFFER: uint = 0x88EB;
 export def PIXEL_PACK_BUFFER_ARB: uint = 0x88EB;
 export def PIXEL_PACK_BUFFER_BINDING: uint = 0x88ED;
@@ -2931,8 +2720,6 @@ export def PN_TRIANGLES_POINT_MODE_LINEAR_ATI: uint = 0x87F5;
 export def PN_TRIANGLES_TESSELATION_LEVEL_ATI: uint = 0x87F4;
 export def POINT: uint = 0x1B00;
 export def POINTS: uint = 0x0000;
-export def POINT_BIT: uint = 0x00000002;
-export def POINT_DISTANCE_ATTENUATION: uint = 0x8129;
 export def POINT_DISTANCE_ATTENUATION_ARB: uint = 0x8129;
 export def POINT_FADE_THRESHOLD_SIZE: uint = 0x8128;
 export def POINT_FADE_THRESHOLD_SIZE_ARB: uint = 0x8128;
@@ -2940,25 +2727,17 @@ export def POINT_FADE_THRESHOLD_SIZE_EXT: uint = 0x8128;
 export def POINT_FADE_THRESHOLD_SIZE_SGIS: uint = 0x8128;
 export def POINT_SIZE: uint = 0x0B11;
 export def POINT_SIZE_GRANULARITY: uint = 0x0B13;
-export def POINT_SIZE_MAX: uint = 0x8127;
 export def POINT_SIZE_MAX_ARB: uint = 0x8127;
 export def POINT_SIZE_MAX_EXT: uint = 0x8127;
 export def POINT_SIZE_MAX_SGIS: uint = 0x8127;
-export def POINT_SIZE_MIN: uint = 0x8126;
 export def POINT_SIZE_MIN_ARB: uint = 0x8126;
 export def POINT_SIZE_MIN_EXT: uint = 0x8126;
 export def POINT_SIZE_MIN_SGIS: uint = 0x8126;
 export def POINT_SIZE_RANGE: uint = 0x0B12;
-export def POINT_SMOOTH: uint = 0x0B10;
-export def POINT_SMOOTH_HINT: uint = 0x0C51;
-export def POINT_SPRITE: uint = 0x8861;
 export def POINT_SPRITE_ARB: uint = 0x8861;
 export def POINT_SPRITE_COORD_ORIGIN: uint = 0x8CA0;
 export def POINT_SPRITE_NV: uint = 0x8861;
 export def POINT_SPRITE_R_MODE_NV: uint = 0x8863;
-export def POINT_TOKEN: uint = 0x0701;
-export def POLYGON: uint = 0x0009;
-export def POLYGON_BIT: uint = 0x00000008;
 export def POLYGON_MODE: uint = 0x0B40;
 export def POLYGON_OFFSET_BIAS_EXT: uint = 0x8039;
 export def POLYGON_OFFSET_CLAMP: uint = 0x8E1B;
@@ -2973,10 +2752,6 @@ export def POLYGON_OFFSET_POINT: uint = 0x2A01;
 export def POLYGON_OFFSET_UNITS: uint = 0x2A00;
 export def POLYGON_SMOOTH: uint = 0x0B41;
 export def POLYGON_SMOOTH_HINT: uint = 0x0C53;
-export def POLYGON_STIPPLE: uint = 0x0B42;
-export def POLYGON_STIPPLE_BIT: uint = 0x00000010;
-export def POLYGON_TOKEN: uint = 0x0703;
-export def POSITION: uint = 0x1203;
 export def POST_COLOR_MATRIX_ALPHA_BIAS_SGI: uint = 0x80BB;
 export def POST_COLOR_MATRIX_ALPHA_SCALE_SGI: uint = 0x80B7;
 export def POST_COLOR_MATRIX_BLUE_BIAS_SGI: uint = 0x80BA;
@@ -3004,21 +2779,22 @@ export def PREFER_DOUBLEBUFFER_HINT_PGI: uint = 0x1A1F8;
 export def PRESENT_DURATION_NV: uint = 0x8E2B;
 export def PRESENT_TIME_NV: uint = 0x8E2A;
 export def PRESERVE_ATI: uint = 0x8762;
-export def PREVIOUS: uint = 0x8578;
 export def PREVIOUS_ARB: uint = 0x8578;
 export def PREVIOUS_EXT: uint = 0x8578;
 export def PREVIOUS_TEXTURE_INPUT_NV: uint = 0x86E4;
-export def PRIMARY_COLOR: uint = 0x8577;
 export def PRIMARY_COLOR_ARB: uint = 0x8577;
 export def PRIMARY_COLOR_EXT: uint = 0x8577;
 export def PRIMARY_COLOR_NV: uint = 0x852C;
+export def PRIMITIVES_GENERATED: uint = 0x8C87;
 export def PRIMITIVES_GENERATED_EXT: uint = 0x8C87;
 export def PRIMITIVES_GENERATED_NV: uint = 0x8C87;
 export def PRIMITIVES_SUBMITTED: uint = 0x82EF;
 export def PRIMITIVES_SUBMITTED_ARB: uint = 0x82EF;
 export def PRIMITIVE_BOUNDING_BOX_ARB: uint = 0x92BE;
 export def PRIMITIVE_ID_NV: uint = 0x8C7C;
+export def PRIMITIVE_RESTART: uint = 0x8F9D;
 export def PRIMITIVE_RESTART_FIXED_INDEX: uint = 0x8D69;
+export def PRIMITIVE_RESTART_INDEX: uint = 0x8F9E;
 export def PRIMITIVE_RESTART_INDEX_NV: uint = 0x8559;
 export def PRIMITIVE_RESTART_NV: uint = 0x8558;
 export def PROGRAM: uint = 0x82E2;
@@ -3063,6 +2839,7 @@ export def PROGRAM_PARAMETER_NV: uint = 0x8644;
 export def PROGRAM_PIPELINE: uint = 0x82E4;
 export def PROGRAM_PIPELINE_BINDING: uint = 0x825A;
 export def PROGRAM_PIPELINE_OBJECT_EXT: uint = 0x8A4F;
+export def PROGRAM_POINT_SIZE: uint = 0x8642;
 export def PROGRAM_POINT_SIZE_ARB: uint = 0x8642;
 export def PROGRAM_POINT_SIZE_EXT: uint = 0x8642;
 export def PROGRAM_RESIDENT_NV: uint = 0x8647;
@@ -3075,9 +2852,6 @@ export def PROGRAM_TEMPORARIES_ARB: uint = 0x88A4;
 export def PROGRAM_TEX_INDIRECTIONS_ARB: uint = 0x8807;
 export def PROGRAM_TEX_INSTRUCTIONS_ARB: uint = 0x8806;
 export def PROGRAM_UNDER_NATIVE_LIMITS_ARB: uint = 0x88B6;
-export def PROJECTION: uint = 0x1701;
-export def PROJECTION_MATRIX: uint = 0x0BA7;
-export def PROJECTION_STACK_DEPTH: uint = 0x0BA4;
 export def PROTECTED_MEMORY_OBJECT_EXT: uint = 0x959B;
 export def PROVOKING_VERTEX: uint = 0x8E4F;
 export def PROVOKING_VERTEX_EXT: uint = 0x8E4F;
@@ -3087,10 +2861,12 @@ export def PROXY_POST_COLOR_MATRIX_COLOR_TABLE_SGI: uint = 0x80D5;
 export def PROXY_POST_CONVOLUTION_COLOR_TABLE_SGI: uint = 0x80D4;
 export def PROXY_POST_IMAGE_TRANSFORM_COLOR_TABLE_HP: uint = 0x8163;
 export def PROXY_TEXTURE_1D: uint = 0x8063;
+export def PROXY_TEXTURE_1D_ARRAY: uint = 0x8C19;
 export def PROXY_TEXTURE_1D_ARRAY_EXT: uint = 0x8C19;
 export def PROXY_TEXTURE_1D_EXT: uint = 0x8063;
 export def PROXY_TEXTURE_1D_STACK_MESAX: uint = 0x875B;
 export def PROXY_TEXTURE_2D: uint = 0x8064;
+export def PROXY_TEXTURE_2D_ARRAY: uint = 0x8C1B;
 export def PROXY_TEXTURE_2D_ARRAY_EXT: uint = 0x8C1B;
 export def PROXY_TEXTURE_2D_EXT: uint = 0x8064;
 export def PROXY_TEXTURE_2D_MULTISAMPLE: uint = 0x9101;
@@ -3102,14 +2878,14 @@ export def PROXY_TEXTURE_4D_SGIS: uint = 0x8135;
 export def PROXY_TEXTURE_COLOR_TABLE_SGI: uint = 0x80BD;
 export def PROXY_TEXTURE_CUBE_MAP: uint = 0x851B;
 export def PROXY_TEXTURE_CUBE_MAP_ARB: uint = 0x851B;
+export def PROXY_TEXTURE_CUBE_MAP_ARRAY: uint = 0x900B;
 export def PROXY_TEXTURE_CUBE_MAP_ARRAY_ARB: uint = 0x900B;
 export def PROXY_TEXTURE_CUBE_MAP_EXT: uint = 0x851B;
+export def PROXY_TEXTURE_RECTANGLE: uint = 0x84F7;
 export def PROXY_TEXTURE_RECTANGLE_ARB: uint = 0x84F7;
 export def PROXY_TEXTURE_RECTANGLE_NV: uint = 0x84F7;
 export def PURGEABLE_APPLE: uint = 0x8A1D;
 export def PURGED_CONTEXT_RESET_NV: uint = 0x92BB;
-export def Q: uint = 0x2003;
-export def QUADRATIC_ATTENUATION: uint = 0x1209;
 export def QUADRATIC_CURVE_TO_NV: uint = 0x0A;
 export def QUADS: uint = 0x0007;
 export def QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION: uint = 0x8E4C;
@@ -3121,7 +2897,6 @@ export def QUAD_INTENSITY8_SGIS: uint = 0x8123;
 export def QUAD_LUMINANCE4_SGIS: uint = 0x8120;
 export def QUAD_LUMINANCE8_SGIS: uint = 0x8121;
 export def QUAD_MESH_SUN: uint = 0x8614;
-export def QUAD_STRIP: uint = 0x0008;
 export def QUAD_TEXTURE_SELECT_SGIS: uint = 0x8125;
 export def QUARTER_BIT_ATI: uint = 0x00000010;
 export def QUERY: uint = 0x82E3;
@@ -3131,8 +2906,10 @@ export def QUERY_BUFFER_AMD: uint = 0x9192;
 export def QUERY_BUFFER_BARRIER_BIT: uint = 0x00008000;
 export def QUERY_BUFFER_BINDING: uint = 0x9193;
 export def QUERY_BUFFER_BINDING_AMD: uint = 0x9193;
+export def QUERY_BY_REGION_NO_WAIT: uint = 0x8E16;
 export def QUERY_BY_REGION_NO_WAIT_INVERTED: uint = 0x8E1A;
 export def QUERY_BY_REGION_NO_WAIT_NV: uint = 0x8E16;
+export def QUERY_BY_REGION_WAIT: uint = 0x8E15;
 export def QUERY_BY_REGION_WAIT_INVERTED: uint = 0x8E19;
 export def QUERY_BY_REGION_WAIT_NV: uint = 0x8E15;
 export def QUERY_COUNTER_BITS: uint = 0x8864;
@@ -3140,6 +2917,7 @@ export def QUERY_COUNTER_BITS_ARB: uint = 0x8864;
 export def QUERY_DEPTH_BOUNDS_FAIL_EVENT_BIT_AMD: uint = 0x00000008;
 export def QUERY_DEPTH_FAIL_EVENT_BIT_AMD: uint = 0x00000002;
 export def QUERY_DEPTH_PASS_EVENT_BIT_AMD: uint = 0x00000001;
+export def QUERY_NO_WAIT: uint = 0x8E14;
 export def QUERY_NO_WAIT_INVERTED: uint = 0x8E18;
 export def QUERY_NO_WAIT_NV: uint = 0x8E14;
 export def QUERY_OBJECT_AMD: uint = 0x9153;
@@ -3158,9 +2936,10 @@ export def QUERY_RESULT_NO_WAIT: uint = 0x9194;
 export def QUERY_RESULT_NO_WAIT_AMD: uint = 0x9194;
 export def QUERY_STENCIL_FAIL_EVENT_BIT_AMD: uint = 0x00000004;
 export def QUERY_TARGET: uint = 0x82EA;
+export def QUERY_WAIT: uint = 0x8E13;
 export def QUERY_WAIT_INVERTED: uint = 0x8E17;
 export def QUERY_WAIT_NV: uint = 0x8E13;
-export def R: uint = 0x2002;
+export def R11F_G11F_B10F: uint = 0x8C3A;
 export def R11F_G11F_B10F_EXT: uint = 0x8C3A;
 export def R16: uint = 0x822A;
 export def R16F: uint = 0x822D;
@@ -3186,6 +2965,7 @@ export def R8I: uint = 0x8231;
 export def R8UI: uint = 0x8232;
 export def R8_EXT: uint = 0x8229;
 export def R8_SNORM: uint = 0x8F94;
+export def RASTERIZER_DISCARD: uint = 0x8C89;
 export def RASTERIZER_DISCARD_EXT: uint = 0x8C89;
 export def RASTERIZER_DISCARD_NV: uint = 0x8C89;
 export def RASTER_FIXED_SAMPLE_LOCATIONS_EXT: uint = 0x932A;
@@ -3211,14 +2991,12 @@ export def RECLAIM_MEMORY_HINT_PGI: uint = 0x1A1FE;
 export def RECT_NV: uint = 0xF6;
 export def RED: uint = 0x1903;
 export def REDUCE_EXT: uint = 0x8016;
-export def RED_BIAS: uint = 0x0D15;
-export def RED_BITS: uint = 0x0D52;
 export def RED_BIT_ATI: uint = 0x00000001;
+export def RED_INTEGER: uint = 0x8D94;
 export def RED_INTEGER_EXT: uint = 0x8D94;
 export def RED_MAX_CLAMP_INGR: uint = 0x8564;
 export def RED_MIN_CLAMP_INGR: uint = 0x8560;
 export def RED_NV: uint = 0x1903;
-export def RED_SCALE: uint = 0x0D14;
 export def RED_SNORM: uint = 0x8F90;
 export def REFERENCED_BY_COMPUTE_SHADER: uint = 0x930B;
 export def REFERENCED_BY_FRAGMENT_SHADER: uint = 0x930A;
@@ -3230,7 +3008,6 @@ export def REFERENCED_BY_TESS_EVALUATION_SHADER: uint = 0x9308;
 export def REFERENCED_BY_VERTEX_SHADER: uint = 0x9306;
 export def REFERENCE_PLANE_EQUATION_SGIX: uint = 0x817E;
 export def REFERENCE_PLANE_SGIX: uint = 0x817D;
-export def REFLECTION_MAP: uint = 0x8512;
 export def REFLECTION_MAP_ARB: uint = 0x8512;
 export def REFLECTION_MAP_EXT: uint = 0x8512;
 export def REFLECTION_MAP_NV: uint = 0x8512;
@@ -3287,7 +3064,6 @@ export def RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV: uint = 0x11;
 export def RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV: uint = 0x0F;
 export def RELATIVE_VERTICAL_LINE_TO_NV: uint = 0x09;
 export def RELEASED_APPLE: uint = 0x8A19;
-export def RENDER: uint = 0x1C00;
 export def RENDERBUFFER: uint = 0x8D41;
 export def RENDERBUFFER_ALPHA_SIZE: uint = 0x8D53;
 export def RENDERBUFFER_ALPHA_SIZE_EXT: uint = 0x8D53;
@@ -3318,7 +3094,6 @@ export def RENDERBUFFER_WIDTH: uint = 0x8D42;
 export def RENDERBUFFER_WIDTH_EXT: uint = 0x8D42;
 export def RENDERER: uint = 0x1F01;
 export def RENDER_GPU_MASK_NV: uint = 0x9558;
-export def RENDER_MODE: uint = 0x0C40;
 export def REPEAT: uint = 0x2901;
 export def REPLACE: uint = 0x1E01;
 export def REPLACEMENT_CODE_ARRAY_POINTER_SUN: uint = 0x85C3;
@@ -3339,14 +3114,12 @@ export def RESAMPLE_REPLICATE_OML: uint = 0x8986;
 export def RESAMPLE_REPLICATE_SGIX: uint = 0x8433;
 export def RESAMPLE_ZERO_FILL_OML: uint = 0x8987;
 export def RESAMPLE_ZERO_FILL_SGIX: uint = 0x8434;
-export def RESCALE_NORMAL: uint = 0x803A;
 export def RESCALE_NORMAL_EXT: uint = 0x803A;
 export def RESET_NOTIFICATION_STRATEGY: uint = 0x8256;
 export def RESET_NOTIFICATION_STRATEGY_ARB: uint = 0x8256;
 export def RESTART_PATH_NV: uint = 0xF0;
 export def RESTART_SUN: uint = 0x0001;
 export def RETAINED_APPLE: uint = 0x8A1B;
-export def RETURN: uint = 0x0102;
 export def RG: uint = 0x8227;
 export def RG16: uint = 0x822C;
 export def RG16F: uint = 0x822F;
@@ -3372,9 +3145,12 @@ export def RGB10_EXT: uint = 0x8052;
 export def RGB12: uint = 0x8053;
 export def RGB12_EXT: uint = 0x8053;
 export def RGB16: uint = 0x8054;
+export def RGB16F: uint = 0x881B;
 export def RGB16F_ARB: uint = 0x881B;
 export def RGB16F_EXT: uint = 0x881B;
+export def RGB16I: uint = 0x8D89;
 export def RGB16I_EXT: uint = 0x8D89;
+export def RGB16UI: uint = 0x8D77;
 export def RGB16UI_EXT: uint = 0x8D77;
 export def RGB16_EXT: uint = 0x8054;
 export def RGB16_SNORM: uint = 0x8F9A;
@@ -3395,32 +3171,42 @@ export def RGB5_A1: uint = 0x8057;
 export def RGB5_A1_EXT: uint = 0x8057;
 export def RGB5_EXT: uint = 0x8050;
 export def RGB8: uint = 0x8051;
+export def RGB8I: uint = 0x8D8F;
 export def RGB8I_EXT: uint = 0x8D8F;
+export def RGB8UI: uint = 0x8D7D;
 export def RGB8UI_EXT: uint = 0x8D7D;
 export def RGB8_EXT: uint = 0x8051;
 export def RGB8_SNORM: uint = 0x8F96;
+export def RGB9_E5: uint = 0x8C3D;
 export def RGB9_E5_EXT: uint = 0x8C3D;
 export def RGBA: uint = 0x1908;
 export def RGBA12: uint = 0x805A;
 export def RGBA12_EXT: uint = 0x805A;
 export def RGBA16: uint = 0x805B;
+export def RGBA16F: uint = 0x881A;
 export def RGBA16F_ARB: uint = 0x881A;
 export def RGBA16F_EXT: uint = 0x881A;
+export def RGBA16I: uint = 0x8D88;
 export def RGBA16I_EXT: uint = 0x8D88;
+export def RGBA16UI: uint = 0x8D76;
 export def RGBA16UI_EXT: uint = 0x8D76;
 export def RGBA16_EXT: uint = 0x805B;
 export def RGBA16_SNORM: uint = 0x8F9B;
 export def RGBA2: uint = 0x8055;
 export def RGBA2_EXT: uint = 0x8055;
+export def RGBA32F: uint = 0x8814;
 export def RGBA32F_ARB: uint = 0x8814;
 export def RGBA32F_EXT: uint = 0x8814;
+export def RGBA32I: uint = 0x8D82;
 export def RGBA32I_EXT: uint = 0x8D82;
+export def RGBA32UI: uint = 0x8D70;
 export def RGBA32UI_EXT: uint = 0x8D70;
 export def RGBA4: uint = 0x8056;
 export def RGBA4_DXT5_S3TC: uint = 0x83A5;
 export def RGBA4_EXT: uint = 0x8056;
 export def RGBA4_S3TC: uint = 0x83A3;
 export def RGBA8: uint = 0x8058;
+export def RGBA8I: uint = 0x8D8E;
 export def RGBA8I_EXT: uint = 0x8D8E;
 export def RGBA8UI: uint = 0x8D7C;
 export def RGBA8UI_EXT: uint = 0x8D7C;
@@ -3433,9 +3219,9 @@ export def RGBA_FLOAT32_APPLE: uint = 0x8814;
 export def RGBA_FLOAT32_ATI: uint = 0x8814;
 export def RGBA_FLOAT_MODE_ARB: uint = 0x8820;
 export def RGBA_FLOAT_MODE_ATI: uint = 0x8820;
+export def RGBA_INTEGER: uint = 0x8D99;
 export def RGBA_INTEGER_EXT: uint = 0x8D99;
 export def RGBA_INTEGER_MODE_EXT: uint = 0x8D9E;
-export def RGBA_MODE: uint = 0x0C31;
 export def RGBA_S3TC: uint = 0x83A2;
 export def RGBA_SIGNED_COMPONENTS_EXT: uint = 0x8C3C;
 export def RGBA_SNORM: uint = 0x8F93;
@@ -3445,10 +3231,10 @@ export def RGB_FLOAT16_APPLE: uint = 0x881B;
 export def RGB_FLOAT16_ATI: uint = 0x881B;
 export def RGB_FLOAT32_APPLE: uint = 0x8815;
 export def RGB_FLOAT32_ATI: uint = 0x8815;
+export def RGB_INTEGER: uint = 0x8D98;
 export def RGB_INTEGER_EXT: uint = 0x8D98;
 export def RGB_RAW_422_APPLE: uint = 0x8A51;
 export def RGB_S3TC: uint = 0x83A0;
-export def RGB_SCALE: uint = 0x8573;
 export def RGB_SCALE_ARB: uint = 0x8573;
 export def RGB_SCALE_EXT: uint = 0x8573;
 export def RGB_SNORM: uint = 0x8F92;
@@ -3460,33 +3246,42 @@ export def ROUNDED_RECT4_NV: uint = 0xEC;
 export def ROUNDED_RECT8_NV: uint = 0xEE;
 export def ROUNDED_RECT_NV: uint = 0xE8;
 export def ROUND_NV: uint = 0x90A4;
-export def S: uint = 0x2000;
 export def SAMPLER: uint = 0x82E6;
 export def SAMPLER_1D: uint = 0x8B5D;
 export def SAMPLER_1D_ARB: uint = 0x8B5D;
+export def SAMPLER_1D_ARRAY: uint = 0x8DC0;
 export def SAMPLER_1D_ARRAY_EXT: uint = 0x8DC0;
+export def SAMPLER_1D_ARRAY_SHADOW: uint = 0x8DC3;
 export def SAMPLER_1D_ARRAY_SHADOW_EXT: uint = 0x8DC3;
 export def SAMPLER_1D_SHADOW: uint = 0x8B61;
 export def SAMPLER_1D_SHADOW_ARB: uint = 0x8B61;
 export def SAMPLER_2D: uint = 0x8B5E;
 export def SAMPLER_2D_ARB: uint = 0x8B5E;
+export def SAMPLER_2D_ARRAY: uint = 0x8DC1;
 export def SAMPLER_2D_ARRAY_EXT: uint = 0x8DC1;
+export def SAMPLER_2D_ARRAY_SHADOW: uint = 0x8DC4;
 export def SAMPLER_2D_ARRAY_SHADOW_EXT: uint = 0x8DC4;
 export def SAMPLER_2D_MULTISAMPLE: uint = 0x9108;
 export def SAMPLER_2D_MULTISAMPLE_ARRAY: uint = 0x910B;
+export def SAMPLER_2D_RECT: uint = 0x8B63;
 export def SAMPLER_2D_RECT_ARB: uint = 0x8B63;
+export def SAMPLER_2D_RECT_SHADOW: uint = 0x8B64;
 export def SAMPLER_2D_RECT_SHADOW_ARB: uint = 0x8B64;
 export def SAMPLER_2D_SHADOW: uint = 0x8B62;
 export def SAMPLER_2D_SHADOW_ARB: uint = 0x8B62;
 export def SAMPLER_3D: uint = 0x8B5F;
 export def SAMPLER_3D_ARB: uint = 0x8B5F;
 export def SAMPLER_BINDING: uint = 0x8919;
+export def SAMPLER_BUFFER: uint = 0x8DC2;
 export def SAMPLER_BUFFER_AMD: uint = 0x9001;
 export def SAMPLER_BUFFER_EXT: uint = 0x8DC2;
 export def SAMPLER_CUBE: uint = 0x8B60;
 export def SAMPLER_CUBE_ARB: uint = 0x8B60;
+export def SAMPLER_CUBE_MAP_ARRAY: uint = 0x900C;
 export def SAMPLER_CUBE_MAP_ARRAY_ARB: uint = 0x900C;
+export def SAMPLER_CUBE_MAP_ARRAY_SHADOW: uint = 0x900D;
 export def SAMPLER_CUBE_MAP_ARRAY_SHADOW_ARB: uint = 0x900D;
+export def SAMPLER_CUBE_SHADOW: uint = 0x8DC5;
 export def SAMPLER_CUBE_SHADOW_EXT: uint = 0x8DC5;
 export def SAMPLER_OBJECT_AMD: uint = 0x9155;
 export def SAMPLER_RENDERBUFFER_NV: uint = 0x8E56;
@@ -3538,6 +3333,7 @@ export def SAMPLE_PATTERN_EXT: uint = 0x80AC;
 export def SAMPLE_PATTERN_SGIS: uint = 0x80AC;
 export def SAMPLE_POSITION: uint = 0x8E50;
 export def SAMPLE_POSITION_NV: uint = 0x8E50;
+export def SAMPLE_SHADING: uint = 0x8C36;
 export def SAMPLE_SHADING_ARB: uint = 0x8C36;
 export def SATURATE_BIT_ATI: uint = 0x00000040;
 export def SCALAR_EXT: uint = 0x87BE;
@@ -3547,7 +3343,6 @@ export def SCALED_RESOLVE_NICEST_EXT: uint = 0x90BB;
 export def SCALE_BY_FOUR_NV: uint = 0x853F;
 export def SCALE_BY_ONE_HALF_NV: uint = 0x8540;
 export def SCALE_BY_TWO_NV: uint = 0x853E;
-export def SCISSOR_BIT: uint = 0x00080000;
 export def SCISSOR_BOX: uint = 0x0C10;
 export def SCISSOR_BOX_EXCLUSIVE_NV: uint = 0x9556;
 export def SCISSOR_COMMAND_NV: uint = 0x0011;
@@ -3556,34 +3351,25 @@ export def SCISSOR_TEST_EXCLUSIVE_NV: uint = 0x9555;
 export def SCREEN_COORDINATES_REND: uint = 0x8490;
 export def SCREEN_KHR: uint = 0x9295;
 export def SCREEN_NV: uint = 0x9295;
-export def SECONDARY_COLOR_ARRAY: uint = 0x845E;
 export def SECONDARY_COLOR_ARRAY_ADDRESS_NV: uint = 0x8F27;
-export def SECONDARY_COLOR_ARRAY_BUFFER_BINDING: uint = 0x889C;
 export def SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB: uint = 0x889C;
 export def SECONDARY_COLOR_ARRAY_EXT: uint = 0x845E;
 export def SECONDARY_COLOR_ARRAY_LENGTH_NV: uint = 0x8F31;
 export def SECONDARY_COLOR_ARRAY_LIST_IBM: uint = 103077;
 export def SECONDARY_COLOR_ARRAY_LIST_STRIDE_IBM: uint = 103087;
-export def SECONDARY_COLOR_ARRAY_POINTER: uint = 0x845D;
 export def SECONDARY_COLOR_ARRAY_POINTER_EXT: uint = 0x845D;
-export def SECONDARY_COLOR_ARRAY_SIZE: uint = 0x845A;
 export def SECONDARY_COLOR_ARRAY_SIZE_EXT: uint = 0x845A;
-export def SECONDARY_COLOR_ARRAY_STRIDE: uint = 0x845C;
 export def SECONDARY_COLOR_ARRAY_STRIDE_EXT: uint = 0x845C;
-export def SECONDARY_COLOR_ARRAY_TYPE: uint = 0x845B;
 export def SECONDARY_COLOR_ARRAY_TYPE_EXT: uint = 0x845B;
 export def SECONDARY_COLOR_NV: uint = 0x852D;
 export def SECONDARY_INTERPOLATOR_ATI: uint = 0x896D;
-export def SELECT: uint = 0x1C02;
-export def SELECTION_BUFFER_POINTER: uint = 0x0DF3;
-export def SELECTION_BUFFER_SIZE: uint = 0x0DF4;
 export def SEMAPHORE_TYPE_BINARY_NV: uint = 0x95B4;
 export def SEMAPHORE_TYPE_NV: uint = 0x95B3;
 export def SEMAPHORE_TYPE_TIMELINE_NV: uint = 0x95B5;
 export def SEPARABLE_2D_EXT: uint = 0x8012;
+export def SEPARATE_ATTRIBS: uint = 0x8C8D;
 export def SEPARATE_ATTRIBS_EXT: uint = 0x8C8D;
 export def SEPARATE_ATTRIBS_NV: uint = 0x8C8D;
-export def SEPARATE_SPECULAR_COLOR: uint = 0x81FA;
 export def SEPARATE_SPECULAR_COLOR_EXT: uint = 0x81FA;
 export def SET: uint = 0x150F;
 export def SET_AMD: uint = 0x874A;
@@ -3612,7 +3398,6 @@ export def SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT: uint = 0x90DF;
 export def SHADER_STORAGE_BUFFER_SIZE: uint = 0x90D5;
 export def SHADER_STORAGE_BUFFER_START: uint = 0x90D4;
 export def SHADER_TYPE: uint = 0x8B4F;
-export def SHADE_MODEL: uint = 0x0B54;
 export def SHADING_LANGUAGE_VERSION: uint = 0x8B8C;
 export def SHADING_LANGUAGE_VERSION_ARB: uint = 0x8B8C;
 export def SHADING_RATE_16_INVOCATIONS_PER_PIXEL_NV: uint = 0x956F;
@@ -3642,7 +3427,6 @@ export def SHADOW_ATTENUATION_EXT: uint = 0x834E;
 export def SHARED_EDGE_NV: uint = 0xC0;
 export def SHARED_TEXTURE_PALETTE_EXT: uint = 0x81FB;
 export def SHARPEN_TEXTURE_FUNC_POINTS_SGIS: uint = 0x80B0;
-export def SHININESS: uint = 0x1601;
 export def SHORT: uint = 0x1402;
 export def SIGNALED: uint = 0x9119;
 export def SIGNED_ALPHA8_NV: uint = 0x8706;
@@ -3669,7 +3453,6 @@ export def SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST: uint = 0x82AC;
 export def SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE: uint = 0x82AE;
 export def SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST: uint = 0x82AD;
 export def SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE: uint = 0x82AF;
-export def SINGLE_COLOR: uint = 0x81F9;
 export def SINGLE_COLOR_EXT: uint = 0x81F9;
 export def SKIP_COMPONENTS1_NV: int = -6;
 export def SKIP_COMPONENTS2_NV: int = -5;
@@ -3678,17 +3461,12 @@ export def SKIP_COMPONENTS4_NV: int = -3;
 export def SKIP_DECODE_EXT: uint = 0x8A4A;
 export def SKIP_MISSING_GLYPH_NV: uint = 0x90A9;
 export def SLICE_ACCUM_SUN: uint = 0x85CC;
-export def SLUMINANCE: uint = 0x8C46;
-export def SLUMINANCE8: uint = 0x8C47;
-export def SLUMINANCE8_ALPHA8: uint = 0x8C45;
 export def SLUMINANCE8_ALPHA8_EXT: uint = 0x8C45;
 export def SLUMINANCE8_EXT: uint = 0x8C47;
-export def SLUMINANCE_ALPHA: uint = 0x8C44;
 export def SLUMINANCE_ALPHA_EXT: uint = 0x8C44;
 export def SLUMINANCE_EXT: uint = 0x8C46;
 export def SMALL_CCW_ARC_TO_NV: uint = 0x12;
 export def SMALL_CW_ARC_TO_NV: uint = 0x14;
-export def SMOOTH: uint = 0x1D01;
 export def SMOOTH_CUBIC_CURVE_TO_NV: uint = 0x10;
 export def SMOOTH_LINE_WIDTH_GRANULARITY: uint = 0x0B23;
 export def SMOOTH_LINE_WIDTH_RANGE: uint = 0x0B22;
@@ -3698,22 +3476,17 @@ export def SMOOTH_QUADRATIC_CURVE_TO_NV: uint = 0x0E;
 export def SM_COUNT_NV: uint = 0x933B;
 export def SOFTLIGHT_KHR: uint = 0x929C;
 export def SOFTLIGHT_NV: uint = 0x929C;
-export def SOURCE0_ALPHA: uint = 0x8588;
 export def SOURCE0_ALPHA_ARB: uint = 0x8588;
 export def SOURCE0_ALPHA_EXT: uint = 0x8588;
-export def SOURCE0_RGB: uint = 0x8580;
 export def SOURCE0_RGB_ARB: uint = 0x8580;
 export def SOURCE0_RGB_EXT: uint = 0x8580;
 export def SOURCE1_ALPHA: uint = 0x8589;
 export def SOURCE1_ALPHA_ARB: uint = 0x8589;
 export def SOURCE1_ALPHA_EXT: uint = 0x8589;
-export def SOURCE1_RGB: uint = 0x8581;
 export def SOURCE1_RGB_ARB: uint = 0x8581;
 export def SOURCE1_RGB_EXT: uint = 0x8581;
-export def SOURCE2_ALPHA: uint = 0x858A;
 export def SOURCE2_ALPHA_ARB: uint = 0x858A;
 export def SOURCE2_ALPHA_EXT: uint = 0x858A;
-export def SOURCE2_RGB: uint = 0x8582;
 export def SOURCE2_RGB_ARB: uint = 0x8582;
 export def SOURCE2_RGB_EXT: uint = 0x8582;
 export def SOURCE3_ALPHA_NV: uint = 0x858B;
@@ -3724,14 +3497,9 @@ export def SPARE1_NV: uint = 0x852F;
 export def SPARSE_BUFFER_PAGE_SIZE_ARB: uint = 0x82F8;
 export def SPARSE_STORAGE_BIT_ARB: uint = 0x0400;
 export def SPARSE_TEXTURE_FULL_ARRAY_CUBE_MIPMAPS_ARB: uint = 0x91A9;
-export def SPECULAR: uint = 0x1202;
-export def SPHERE_MAP: uint = 0x2402;
 export def SPIR_V_BINARY: uint = 0x9552;
 export def SPIR_V_BINARY_ARB: uint = 0x9552;
 export def SPIR_V_EXTENSIONS: uint = 0x9553;
-export def SPOT_CUTOFF: uint = 0x1206;
-export def SPOT_DIRECTION: uint = 0x1204;
-export def SPOT_EXPONENT: uint = 0x1205;
 export def SPRITE_AXIAL_SGIX: uint = 0x814C;
 export def SPRITE_AXIS_SGIX: uint = 0x814A;
 export def SPRITE_EYE_ALIGNED_SGIX: uint = 0x814E;
@@ -3741,13 +3509,8 @@ export def SPRITE_SGIX: uint = 0x8148;
 export def SPRITE_TRANSLATION_SGIX: uint = 0x814B;
 export def SQUARE_NV: uint = 0x90A3;
 export def SR8_EXT: uint = 0x8FBD;
-export def SRC0_ALPHA: uint = 0x8588;
-export def SRC0_RGB: uint = 0x8580;
 export def SRC1_ALPHA: uint = 0x8589;
 export def SRC1_COLOR: uint = 0x88F9;
-export def SRC1_RGB: uint = 0x8581;
-export def SRC2_ALPHA: uint = 0x858A;
-export def SRC2_RGB: uint = 0x8582;
 export def SRC_ALPHA: uint = 0x0302;
 export def SRC_ALPHA_SATURATE: uint = 0x0308;
 export def SRC_ATOP_NV: uint = 0x928E;
@@ -3795,7 +3558,6 @@ export def STENCIL_BACK_PASS_DEPTH_PASS_ATI: uint = 0x8803;
 export def STENCIL_BACK_REF: uint = 0x8CA3;
 export def STENCIL_BACK_VALUE_MASK: uint = 0x8CA4;
 export def STENCIL_BACK_WRITEMASK: uint = 0x8CA5;
-export def STENCIL_BITS: uint = 0x0D57;
 export def STENCIL_BUFFER_BIT: uint = 0x00000400;
 export def STENCIL_CLEAR_TAG_VALUE_EXT: uint = 0x88F3;
 export def STENCIL_CLEAR_VALUE: uint = 0x0B91;
@@ -3855,7 +3617,6 @@ export def SUBPIXEL_BITS: uint = 0x0D50;
 export def SUBPIXEL_PRECISION_BIAS_X_BITS_NV: uint = 0x9347;
 export def SUBPIXEL_PRECISION_BIAS_Y_BITS_NV: uint = 0x9348;
 export def SUBSAMPLE_DISTANCE_AMD: uint = 0x883F;
-export def SUBTRACT: uint = 0x84E7;
 export def SUBTRACT_ARB: uint = 0x84E7;
 export def SUB_ATI: uint = 0x8965;
 export def SUCCESS_NV: uint = 0x902F;
@@ -3881,18 +3642,10 @@ export def SYNC_GPU_COMMANDS_COMPLETE: uint = 0x9117;
 export def SYNC_STATUS: uint = 0x9114;
 export def SYNC_X11_FENCE_EXT: uint = 0x90E1;
 export def SYSTEM_FONT_NAME_NV: uint = 0x9073;
-export def T: uint = 0x2001;
-export def T2F_C3F_V3F: uint = 0x2A2A;
-export def T2F_C4F_N3F_V3F: uint = 0x2A2C;
-export def T2F_C4UB_V3F: uint = 0x2A29;
 export def T2F_IUI_N3F_V2F_EXT: uint = 0x81B3;
 export def T2F_IUI_N3F_V3F_EXT: uint = 0x81B4;
 export def T2F_IUI_V2F_EXT: uint = 0x81B1;
 export def T2F_IUI_V3F_EXT: uint = 0x81B2;
-export def T2F_N3F_V3F: uint = 0x2A2B;
-export def T2F_V3F: uint = 0x2A27;
-export def T4F_C4F_N3F_V4F: uint = 0x2A2D;
-export def T4F_V4F: uint = 0x2A28;
 export def TABLE_TOO_LARGE_EXT: uint = 0x8031;
 export def TANGENT_ARRAY_EXT: uint = 0x8439;
 export def TANGENT_ARRAY_POINTER_EXT: uint = 0x8442;
@@ -4020,6 +3773,7 @@ export def TEXTURE_4D_BINDING_SGIS: uint = 0x814F;
 export def TEXTURE_4D_SGIS: uint = 0x8134;
 export def TEXTURE_ALPHA_SIZE: uint = 0x805F;
 export def TEXTURE_ALPHA_SIZE_EXT: uint = 0x805F;
+export def TEXTURE_ALPHA_TYPE: uint = 0x8C13;
 export def TEXTURE_ALPHA_TYPE_ARB: uint = 0x8C13;
 export def TEXTURE_APPLICATION_MODE_EXT: uint = 0x834F;
 export def TEXTURE_BASE_LEVEL: uint = 0x813C;
@@ -4045,15 +3799,15 @@ export def TEXTURE_BINDING_RECTANGLE: uint = 0x84F6;
 export def TEXTURE_BINDING_RECTANGLE_ARB: uint = 0x84F6;
 export def TEXTURE_BINDING_RECTANGLE_NV: uint = 0x84F6;
 export def TEXTURE_BINDING_RENDERBUFFER_NV: uint = 0x8E53;
-export def TEXTURE_BIT: uint = 0x00040000;
 export def TEXTURE_BLUE_SIZE: uint = 0x805E;
 export def TEXTURE_BLUE_SIZE_EXT: uint = 0x805E;
+export def TEXTURE_BLUE_TYPE: uint = 0x8C12;
 export def TEXTURE_BLUE_TYPE_ARB: uint = 0x8C12;
-export def TEXTURE_BORDER: uint = 0x1005;
 export def TEXTURE_BORDER_COLOR: uint = 0x1004;
 export def TEXTURE_BORDER_VALUES_NV: uint = 0x871A;
 export def TEXTURE_BUFFER: uint = 0x8C2A;
 export def TEXTURE_BUFFER_ARB: uint = 0x8C2A;
+export def TEXTURE_BUFFER_DATA_STORE_BINDING: uint = 0x8C2D;
 export def TEXTURE_BUFFER_DATA_STORE_BINDING_ARB: uint = 0x8C2D;
 export def TEXTURE_BUFFER_DATA_STORE_BINDING_EXT: uint = 0x8C2D;
 export def TEXTURE_BUFFER_EXT: uint = 0x8C2A;
@@ -4078,7 +3832,6 @@ export def TEXTURE_COMPARE_MODE: uint = 0x884C;
 export def TEXTURE_COMPARE_MODE_ARB: uint = 0x884C;
 export def TEXTURE_COMPARE_OPERATOR_SGIX: uint = 0x819B;
 export def TEXTURE_COMPARE_SGIX: uint = 0x819A;
-export def TEXTURE_COMPONENTS: uint = 0x1003;
 export def TEXTURE_COMPRESSED: uint = 0x86A1;
 export def TEXTURE_COMPRESSED_ARB: uint = 0x86A1;
 export def TEXTURE_COMPRESSED_BLOCK_HEIGHT: uint = 0x82B2;
@@ -4089,9 +3842,7 @@ export def TEXTURE_COMPRESSED_IMAGE_SIZE_ARB: uint = 0x86A0;
 export def TEXTURE_COMPRESSION_HINT: uint = 0x84EF;
 export def TEXTURE_COMPRESSION_HINT_ARB: uint = 0x84EF;
 export def TEXTURE_CONSTANT_DATA_SUNX: uint = 0x81D6;
-export def TEXTURE_COORD_ARRAY: uint = 0x8078;
 export def TEXTURE_COORD_ARRAY_ADDRESS_NV: uint = 0x8F25;
-export def TEXTURE_COORD_ARRAY_BUFFER_BINDING: uint = 0x889A;
 export def TEXTURE_COORD_ARRAY_BUFFER_BINDING_ARB: uint = 0x889A;
 export def TEXTURE_COORD_ARRAY_COUNT_EXT: uint = 0x808B;
 export def TEXTURE_COORD_ARRAY_EXT: uint = 0x8078;
@@ -4099,13 +3850,9 @@ export def TEXTURE_COORD_ARRAY_LENGTH_NV: uint = 0x8F2F;
 export def TEXTURE_COORD_ARRAY_LIST_IBM: uint = 103074;
 export def TEXTURE_COORD_ARRAY_LIST_STRIDE_IBM: uint = 103084;
 export def TEXTURE_COORD_ARRAY_PARALLEL_POINTERS_INTEL: uint = 0x83F8;
-export def TEXTURE_COORD_ARRAY_POINTER: uint = 0x8092;
 export def TEXTURE_COORD_ARRAY_POINTER_EXT: uint = 0x8092;
-export def TEXTURE_COORD_ARRAY_SIZE: uint = 0x8088;
 export def TEXTURE_COORD_ARRAY_SIZE_EXT: uint = 0x8088;
-export def TEXTURE_COORD_ARRAY_STRIDE: uint = 0x808A;
 export def TEXTURE_COORD_ARRAY_STRIDE_EXT: uint = 0x808A;
-export def TEXTURE_COORD_ARRAY_TYPE: uint = 0x8089;
 export def TEXTURE_COORD_ARRAY_TYPE_EXT: uint = 0x8089;
 export def TEXTURE_COORD_NV: uint = 0x8C79;
 export def TEXTURE_COVERAGE_SAMPLES_NV: uint = 0x9045;
@@ -4139,31 +3886,24 @@ export def TEXTURE_DEPTH: uint = 0x8071;
 export def TEXTURE_DEPTH_EXT: uint = 0x8071;
 export def TEXTURE_DEPTH_SIZE: uint = 0x884A;
 export def TEXTURE_DEPTH_SIZE_ARB: uint = 0x884A;
+export def TEXTURE_DEPTH_TYPE: uint = 0x8C16;
 export def TEXTURE_DEPTH_TYPE_ARB: uint = 0x8C16;
 export def TEXTURE_DS_SIZE_NV: uint = 0x871D;
 export def TEXTURE_DT_SIZE_NV: uint = 0x871E;
-export def TEXTURE_ENV: uint = 0x2300;
 export def TEXTURE_ENV_BIAS_SGIX: uint = 0x80BE;
-export def TEXTURE_ENV_COLOR: uint = 0x2201;
-export def TEXTURE_ENV_MODE: uint = 0x2200;
 export def TEXTURE_FETCH_BARRIER_BIT: uint = 0x00000008;
 export def TEXTURE_FETCH_BARRIER_BIT_EXT: uint = 0x00000008;
 export def TEXTURE_FILTER4_SIZE_SGIS: uint = 0x8147;
-export def TEXTURE_FILTER_CONTROL: uint = 0x8500;
 export def TEXTURE_FILTER_CONTROL_EXT: uint = 0x8500;
 export def TEXTURE_FIXED_SAMPLE_LOCATIONS: uint = 0x9107;
 export def TEXTURE_FLOAT_COMPONENTS_NV: uint = 0x888C;
 export def TEXTURE_FREE_MEMORY_ATI: uint = 0x87FC;
 export def TEXTURE_GATHER: uint = 0x82A2;
 export def TEXTURE_GATHER_SHADOW: uint = 0x82A3;
-export def TEXTURE_GEN_MODE: uint = 0x2500;
-export def TEXTURE_GEN_Q: uint = 0x0C63;
-export def TEXTURE_GEN_R: uint = 0x0C62;
-export def TEXTURE_GEN_S: uint = 0x0C60;
-export def TEXTURE_GEN_T: uint = 0x0C61;
 export def TEXTURE_GEQUAL_R_SGIX: uint = 0x819D;
 export def TEXTURE_GREEN_SIZE: uint = 0x805D;
 export def TEXTURE_GREEN_SIZE_EXT: uint = 0x805D;
+export def TEXTURE_GREEN_TYPE: uint = 0x8C11;
 export def TEXTURE_GREEN_TYPE_ARB: uint = 0x8C11;
 export def TEXTURE_HEIGHT: uint = 0x1001;
 export def TEXTURE_HI_SIZE_NV: uint = 0x871B;
@@ -4173,7 +3913,6 @@ export def TEXTURE_IMMUTABLE_FORMAT: uint = 0x912F;
 export def TEXTURE_IMMUTABLE_FORMAT_EXT: uint = 0x912F;
 export def TEXTURE_IMMUTABLE_LEVELS: uint = 0x82DF;
 export def TEXTURE_INDEX_SIZE_EXT: uint = 0x80ED;
-export def TEXTURE_INTENSITY_SIZE: uint = 0x8061;
 export def TEXTURE_INTENSITY_SIZE_EXT: uint = 0x8061;
 export def TEXTURE_INTENSITY_TYPE_ARB: uint = 0x8C15;
 export def TEXTURE_INTERNAL_FORMAT: uint = 0x1003;
@@ -4186,14 +3925,12 @@ export def TEXTURE_LOD_BIAS_R_SGIX: uint = 0x8190;
 export def TEXTURE_LOD_BIAS_S_SGIX: uint = 0x818E;
 export def TEXTURE_LOD_BIAS_T_SGIX: uint = 0x818F;
 export def TEXTURE_LO_SIZE_NV: uint = 0x871C;
-export def TEXTURE_LUMINANCE_SIZE: uint = 0x8060;
 export def TEXTURE_LUMINANCE_SIZE_EXT: uint = 0x8060;
 export def TEXTURE_LUMINANCE_TYPE_ARB: uint = 0x8C14;
 export def TEXTURE_MAG_FILTER: uint = 0x2800;
 export def TEXTURE_MAG_SIZE_NV: uint = 0x871F;
 export def TEXTURE_MATERIAL_FACE_EXT: uint = 0x8351;
 export def TEXTURE_MATERIAL_PARAMETER_EXT: uint = 0x8352;
-export def TEXTURE_MATRIX: uint = 0x0BA8;
 export def TEXTURE_MAX_ANISOTROPY: uint = 0x84FE;
 export def TEXTURE_MAX_ANISOTROPY_EXT: uint = 0x84FE;
 export def TEXTURE_MAX_CLAMP_R_SGIX: uint = 0x836B;
@@ -4211,7 +3948,6 @@ export def TEXTURE_MULTI_BUFFER_HINT_SGIX: uint = 0x812E;
 export def TEXTURE_NORMAL_EXT: uint = 0x85AF;
 export def TEXTURE_POST_SPECULAR_HP: uint = 0x8168;
 export def TEXTURE_PRE_SPECULAR_HP: uint = 0x8169;
-export def TEXTURE_PRIORITY: uint = 0x8066;
 export def TEXTURE_PRIORITY_EXT: uint = 0x8066;
 export def TEXTURE_RANGE_LENGTH_APPLE: uint = 0x85B7;
 export def TEXTURE_RANGE_POINTER_APPLE: uint = 0x85B8;
@@ -4222,18 +3958,18 @@ export def TEXTURE_REDUCTION_MODE_ARB: uint = 0x9366;
 export def TEXTURE_REDUCTION_MODE_EXT: uint = 0x9366;
 export def TEXTURE_RED_SIZE: uint = 0x805C;
 export def TEXTURE_RED_SIZE_EXT: uint = 0x805C;
+export def TEXTURE_RED_TYPE: uint = 0x8C10;
 export def TEXTURE_RED_TYPE_ARB: uint = 0x8C10;
 export def TEXTURE_RENDERBUFFER_DATA_STORE_BINDING_NV: uint = 0x8E54;
 export def TEXTURE_RENDERBUFFER_NV: uint = 0x8E55;
-export def TEXTURE_RESIDENT: uint = 0x8067;
 export def TEXTURE_RESIDENT_EXT: uint = 0x8067;
 export def TEXTURE_SAMPLES: uint = 0x9106;
 export def TEXTURE_SHADER_NV: uint = 0x86DE;
 export def TEXTURE_SHADOW: uint = 0x82A1;
+export def TEXTURE_SHARED_SIZE: uint = 0x8C3F;
 export def TEXTURE_SHARED_SIZE_EXT: uint = 0x8C3F;
 export def TEXTURE_SPARSE_ARB: uint = 0x91A6;
 export def TEXTURE_SRGB_DECODE_EXT: uint = 0x8A48;
-export def TEXTURE_STACK_DEPTH: uint = 0x0BA5;
 export def TEXTURE_STENCIL_SIZE: uint = 0x88F1;
 export def TEXTURE_STENCIL_SIZE_EXT: uint = 0x88F1;
 export def TEXTURE_STORAGE_HINT_APPLE: uint = 0x85BC;
@@ -4280,8 +4016,8 @@ export def TOP_LEVEL_ARRAY_SIZE: uint = 0x930C;
 export def TOP_LEVEL_ARRAY_STRIDE: uint = 0x930D;
 export def TRACK_MATRIX_NV: uint = 0x8648;
 export def TRACK_MATRIX_TRANSFORM_NV: uint = 0x8649;
-export def TRANSFORM_BIT: uint = 0x00001000;
 export def TRANSFORM_FEEDBACK: uint = 0x8E22;
+export def TRANSFORM_FEEDBACK_ACTIVE: uint = 0x8E24;
 export def TRANSFORM_FEEDBACK_ATTRIBS_NV: uint = 0x8C7E;
 export def TRANSFORM_FEEDBACK_BARRIER_BIT: uint = 0x00000800;
 export def TRANSFORM_FEEDBACK_BARRIER_BIT_EXT: uint = 0x00000800;
@@ -4290,31 +4026,39 @@ export def TRANSFORM_FEEDBACK_BINDING_NV: uint = 0x8E25;
 export def TRANSFORM_FEEDBACK_BUFFER: uint = 0x8C8E;
 export def TRANSFORM_FEEDBACK_BUFFER_ACTIVE: uint = 0x8E24;
 export def TRANSFORM_FEEDBACK_BUFFER_ACTIVE_NV: uint = 0x8E24;
+export def TRANSFORM_FEEDBACK_BUFFER_BINDING: uint = 0x8C8F;
 export def TRANSFORM_FEEDBACK_BUFFER_BINDING_EXT: uint = 0x8C8F;
 export def TRANSFORM_FEEDBACK_BUFFER_BINDING_NV: uint = 0x8C8F;
 export def TRANSFORM_FEEDBACK_BUFFER_EXT: uint = 0x8C8E;
 export def TRANSFORM_FEEDBACK_BUFFER_INDEX: uint = 0x934B;
+export def TRANSFORM_FEEDBACK_BUFFER_MODE: uint = 0x8C7F;
 export def TRANSFORM_FEEDBACK_BUFFER_MODE_EXT: uint = 0x8C7F;
 export def TRANSFORM_FEEDBACK_BUFFER_MODE_NV: uint = 0x8C7F;
 export def TRANSFORM_FEEDBACK_BUFFER_NV: uint = 0x8C8E;
 export def TRANSFORM_FEEDBACK_BUFFER_PAUSED: uint = 0x8E23;
 export def TRANSFORM_FEEDBACK_BUFFER_PAUSED_NV: uint = 0x8E23;
+export def TRANSFORM_FEEDBACK_BUFFER_SIZE: uint = 0x8C85;
 export def TRANSFORM_FEEDBACK_BUFFER_SIZE_EXT: uint = 0x8C85;
 export def TRANSFORM_FEEDBACK_BUFFER_SIZE_NV: uint = 0x8C85;
+export def TRANSFORM_FEEDBACK_BUFFER_START: uint = 0x8C84;
 export def TRANSFORM_FEEDBACK_BUFFER_START_EXT: uint = 0x8C84;
 export def TRANSFORM_FEEDBACK_BUFFER_START_NV: uint = 0x8C84;
 export def TRANSFORM_FEEDBACK_BUFFER_STRIDE: uint = 0x934C;
 export def TRANSFORM_FEEDBACK_NV: uint = 0x8E22;
 export def TRANSFORM_FEEDBACK_OVERFLOW: uint = 0x82EC;
 export def TRANSFORM_FEEDBACK_OVERFLOW_ARB: uint = 0x82EC;
+export def TRANSFORM_FEEDBACK_PAUSED: uint = 0x8E23;
+export def TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: uint = 0x8C88;
 export def TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN_EXT: uint = 0x8C88;
 export def TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN_NV: uint = 0x8C88;
 export def TRANSFORM_FEEDBACK_RECORD_NV: uint = 0x8C86;
 export def TRANSFORM_FEEDBACK_STREAM_OVERFLOW: uint = 0x82ED;
 export def TRANSFORM_FEEDBACK_STREAM_OVERFLOW_ARB: uint = 0x82ED;
 export def TRANSFORM_FEEDBACK_VARYING: uint = 0x92F4;
+export def TRANSFORM_FEEDBACK_VARYINGS: uint = 0x8C83;
 export def TRANSFORM_FEEDBACK_VARYINGS_EXT: uint = 0x8C83;
 export def TRANSFORM_FEEDBACK_VARYINGS_NV: uint = 0x8C83;
+export def TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH: uint = 0x8C76;
 export def TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH_EXT: uint = 0x8C76;
 export def TRANSFORM_HINT_APPLE: uint = 0x85B1;
 export def TRANSLATE_2D_NV: uint = 0x9090;
@@ -4323,24 +4067,22 @@ export def TRANSLATE_X_NV: uint = 0x908E;
 export def TRANSLATE_Y_NV: uint = 0x908F;
 export def TRANSPOSE_AFFINE_2D_NV: uint = 0x9096;
 export def TRANSPOSE_AFFINE_3D_NV: uint = 0x9098;
-export def TRANSPOSE_COLOR_MATRIX: uint = 0x84E6;
 export def TRANSPOSE_COLOR_MATRIX_ARB: uint = 0x84E6;
 export def TRANSPOSE_CURRENT_MATRIX_ARB: uint = 0x88B7;
-export def TRANSPOSE_MODELVIEW_MATRIX: uint = 0x84E3;
 export def TRANSPOSE_MODELVIEW_MATRIX_ARB: uint = 0x84E3;
 export def TRANSPOSE_NV: uint = 0x862C;
 export def TRANSPOSE_PROGRAM_MATRIX_EXT: uint = 0x8E2E;
-export def TRANSPOSE_PROJECTION_MATRIX: uint = 0x84E4;
 export def TRANSPOSE_PROJECTION_MATRIX_ARB: uint = 0x84E4;
-export def TRANSPOSE_TEXTURE_MATRIX: uint = 0x84E5;
 export def TRANSPOSE_TEXTURE_MATRIX_ARB: uint = 0x84E5;
 export def TRIANGLES: uint = 0x0004;
+export def TRIANGLES_ADJACENCY: uint = 0x000C;
 export def TRIANGLES_ADJACENCY_ARB: uint = 0x000C;
 export def TRIANGLES_ADJACENCY_EXT: uint = 0x000C;
 export def TRIANGLE_FAN: uint = 0x0006;
 export def TRIANGLE_LIST_SUN: uint = 0x81D7;
 export def TRIANGLE_MESH_SUN: uint = 0x8615;
 export def TRIANGLE_STRIP: uint = 0x0005;
+export def TRIANGLE_STRIP_ADJACENCY: uint = 0x000D;
 export def TRIANGLE_STRIP_ADJACENCY_ARB: uint = 0x000D;
 export def TRIANGLE_STRIP_ADJACENCY_EXT: uint = 0x000D;
 export def TRIANGULAR_NV: uint = 0x90A5;
@@ -4443,6 +4185,7 @@ export def UNSIGNED_INT_24_8: uint = 0x84FA;
 export def UNSIGNED_INT_24_8_EXT: uint = 0x84FA;
 export def UNSIGNED_INT_24_8_NV: uint = 0x84FA;
 export def UNSIGNED_INT_2_10_10_10_REV: uint = 0x8368;
+export def UNSIGNED_INT_5_9_9_9_REV: uint = 0x8C3E;
 export def UNSIGNED_INT_5_9_9_9_REV_EXT: uint = 0x8C3E;
 export def UNSIGNED_INT_8_8_8_8: uint = 0x8035;
 export def UNSIGNED_INT_8_8_8_8_EXT: uint = 0x8035;
@@ -4472,21 +4215,33 @@ export def UNSIGNED_INT_IMAGE_CUBE_EXT: uint = 0x9066;
 export def UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY: uint = 0x906A;
 export def UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_EXT: uint = 0x906A;
 export def UNSIGNED_INT_S8_S8_8_8_NV: uint = 0x86DA;
+export def UNSIGNED_INT_SAMPLER_1D: uint = 0x8DD1;
+export def UNSIGNED_INT_SAMPLER_1D_ARRAY: uint = 0x8DD6;
 export def UNSIGNED_INT_SAMPLER_1D_ARRAY_EXT: uint = 0x8DD6;
 export def UNSIGNED_INT_SAMPLER_1D_EXT: uint = 0x8DD1;
+export def UNSIGNED_INT_SAMPLER_2D: uint = 0x8DD2;
+export def UNSIGNED_INT_SAMPLER_2D_ARRAY: uint = 0x8DD7;
 export def UNSIGNED_INT_SAMPLER_2D_ARRAY_EXT: uint = 0x8DD7;
 export def UNSIGNED_INT_SAMPLER_2D_EXT: uint = 0x8DD2;
 export def UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE: uint = 0x910A;
 export def UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY: uint = 0x910D;
+export def UNSIGNED_INT_SAMPLER_2D_RECT: uint = 0x8DD5;
 export def UNSIGNED_INT_SAMPLER_2D_RECT_EXT: uint = 0x8DD5;
+export def UNSIGNED_INT_SAMPLER_3D: uint = 0x8DD3;
 export def UNSIGNED_INT_SAMPLER_3D_EXT: uint = 0x8DD3;
+export def UNSIGNED_INT_SAMPLER_BUFFER: uint = 0x8DD8;
 export def UNSIGNED_INT_SAMPLER_BUFFER_AMD: uint = 0x9003;
 export def UNSIGNED_INT_SAMPLER_BUFFER_EXT: uint = 0x8DD8;
+export def UNSIGNED_INT_SAMPLER_CUBE: uint = 0x8DD4;
 export def UNSIGNED_INT_SAMPLER_CUBE_EXT: uint = 0x8DD4;
+export def UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY: uint = 0x900F;
 export def UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_ARB: uint = 0x900F;
 export def UNSIGNED_INT_SAMPLER_RENDERBUFFER_NV: uint = 0x8E58;
+export def UNSIGNED_INT_VEC2: uint = 0x8DC6;
 export def UNSIGNED_INT_VEC2_EXT: uint = 0x8DC6;
+export def UNSIGNED_INT_VEC3: uint = 0x8DC7;
 export def UNSIGNED_INT_VEC3_EXT: uint = 0x8DC7;
+export def UNSIGNED_INT_VEC4: uint = 0x8DC8;
 export def UNSIGNED_INT_VEC4_EXT: uint = 0x8DC8;
 export def UNSIGNED_INVERT_NV: uint = 0x8537;
 export def UNSIGNED_NORMALIZED: uint = 0x8C17;
@@ -4510,8 +4265,6 @@ export def USE_MISSING_GLYPH_NV: uint = 0x90AA;
 export def UTF16_NV: uint = 0x909B;
 export def UTF8_NV: uint = 0x909A;
 export def UUID_SIZE_EXT: uint = 16;
-export def V2F: uint = 0x2A20;
-export def V3F: uint = 0x2A21;
 export def VALIDATE_STATUS: uint = 0x8B83;
 export def VARIABLE_A_NV: uint = 0x8523;
 export def VARIABLE_B_NV: uint = 0x8524;
@@ -4537,7 +4290,6 @@ export def VERTEX_ARRAY: uint = 0x8074;
 export def VERTEX_ARRAY_ADDRESS_NV: uint = 0x8F21;
 export def VERTEX_ARRAY_BINDING: uint = 0x85B5;
 export def VERTEX_ARRAY_BINDING_APPLE: uint = 0x85B5;
-export def VERTEX_ARRAY_BUFFER_BINDING: uint = 0x8896;
 export def VERTEX_ARRAY_BUFFER_BINDING_ARB: uint = 0x8896;
 export def VERTEX_ARRAY_COUNT_EXT: uint = 0x807D;
 export def VERTEX_ARRAY_EXT: uint = 0x8074;
@@ -4547,7 +4299,6 @@ export def VERTEX_ARRAY_LIST_STRIDE_IBM: uint = 103080;
 export def VERTEX_ARRAY_OBJECT_AMD: uint = 0x9154;
 export def VERTEX_ARRAY_OBJECT_EXT: uint = 0x9154;
 export def VERTEX_ARRAY_PARALLEL_POINTERS_INTEL: uint = 0x83F5;
-export def VERTEX_ARRAY_POINTER: uint = 0x808E;
 export def VERTEX_ARRAY_POINTER_EXT: uint = 0x808E;
 export def VERTEX_ARRAY_RANGE_APPLE: uint = 0x851D;
 export def VERTEX_ARRAY_RANGE_LENGTH_APPLE: uint = 0x851E;
@@ -4557,12 +4308,9 @@ export def VERTEX_ARRAY_RANGE_POINTER_APPLE: uint = 0x8521;
 export def VERTEX_ARRAY_RANGE_POINTER_NV: uint = 0x8521;
 export def VERTEX_ARRAY_RANGE_VALID_NV: uint = 0x851F;
 export def VERTEX_ARRAY_RANGE_WITHOUT_FLUSH_NV: uint = 0x8533;
-export def VERTEX_ARRAY_SIZE: uint = 0x807A;
 export def VERTEX_ARRAY_SIZE_EXT: uint = 0x807A;
 export def VERTEX_ARRAY_STORAGE_HINT_APPLE: uint = 0x851F;
-export def VERTEX_ARRAY_STRIDE: uint = 0x807C;
 export def VERTEX_ARRAY_STRIDE_EXT: uint = 0x807C;
-export def VERTEX_ARRAY_TYPE: uint = 0x807B;
 export def VERTEX_ARRAY_TYPE_EXT: uint = 0x807B;
 export def VERTEX_ATTRIB_ARRAY0_NV: uint = 0x8650;
 export def VERTEX_ATTRIB_ARRAY10_NV: uint = 0x865A;
@@ -4585,12 +4333,15 @@ export def VERTEX_ATTRIB_ARRAY_BARRIER_BIT: uint = 0x00000001;
 export def VERTEX_ATTRIB_ARRAY_BARRIER_BIT_EXT: uint = 0x00000001;
 export def VERTEX_ATTRIB_ARRAY_BUFFER_BINDING: uint = 0x889F;
 export def VERTEX_ATTRIB_ARRAY_BUFFER_BINDING_ARB: uint = 0x889F;
+export def VERTEX_ATTRIB_ARRAY_DIVISOR: uint = 0x88FE;
 export def VERTEX_ATTRIB_ARRAY_DIVISOR_ARB: uint = 0x88FE;
 export def VERTEX_ATTRIB_ARRAY_ENABLED: uint = 0x8622;
 export def VERTEX_ATTRIB_ARRAY_ENABLED_ARB: uint = 0x8622;
+export def VERTEX_ATTRIB_ARRAY_INTEGER: uint = 0x88FD;
 export def VERTEX_ATTRIB_ARRAY_INTEGER_EXT: uint = 0x88FD;
 export def VERTEX_ATTRIB_ARRAY_INTEGER_NV: uint = 0x88FD;
 export def VERTEX_ATTRIB_ARRAY_LENGTH_NV: uint = 0x8F2A;
+export def VERTEX_ATTRIB_ARRAY_LONG: uint = 0x874E;
 export def VERTEX_ATTRIB_ARRAY_NORMALIZED: uint = 0x886A;
 export def VERTEX_ATTRIB_ARRAY_NORMALIZED_ARB: uint = 0x886A;
 export def VERTEX_ATTRIB_ARRAY_POINTER: uint = 0x8645;
@@ -4614,6 +4365,7 @@ export def VERTEX_ATTRIB_MAP2_DOMAIN_APPLE: uint = 0x8A09;
 export def VERTEX_ATTRIB_MAP2_ORDER_APPLE: uint = 0x8A08;
 export def VERTEX_ATTRIB_MAP2_SIZE_APPLE: uint = 0x8A06;
 export def VERTEX_ATTRIB_RELATIVE_OFFSET: uint = 0x82D5;
+export def VERTEX_BINDING_BUFFER: uint = 0x8F4F;
 export def VERTEX_BINDING_DIVISOR: uint = 0x82D6;
 export def VERTEX_BINDING_OFFSET: uint = 0x82D7;
 export def VERTEX_BINDING_STRIDE: uint = 0x82D8;
@@ -4632,7 +4384,6 @@ export def VERTEX_PROGRAM_PARAMETER_BUFFER_NV: uint = 0x8DA2;
 export def VERTEX_PROGRAM_POINT_SIZE: uint = 0x8642;
 export def VERTEX_PROGRAM_POINT_SIZE_ARB: uint = 0x8642;
 export def VERTEX_PROGRAM_POINT_SIZE_NV: uint = 0x8642;
-export def VERTEX_PROGRAM_TWO_SIDE: uint = 0x8643;
 export def VERTEX_PROGRAM_TWO_SIDE_ARB: uint = 0x8643;
 export def VERTEX_PROGRAM_TWO_SIDE_NV: uint = 0x8643;
 export def VERTEX_SHADER: uint = 0x8B31;
@@ -4687,7 +4438,6 @@ export def VIDEO_COLOR_CONVERSION_MAX_NV: uint = 0x902A;
 export def VIDEO_COLOR_CONVERSION_MIN_NV: uint = 0x902B;
 export def VIDEO_COLOR_CONVERSION_OFFSET_NV: uint = 0x902C;
 export def VIEWPORT: uint = 0x0BA2;
-export def VIEWPORT_BIT: uint = 0x00000800;
 export def VIEWPORT_BOUNDS_RANGE: uint = 0x825D;
 export def VIEWPORT_COMMAND_NV: uint = 0x0010;
 export def VIEWPORT_INDEX_PROVOKING_VERTEX: uint = 0x825F;
@@ -4758,7 +4508,6 @@ export def WARP_SIZE_NV: uint = 0x9339;
 export def WEIGHTED_AVERAGE_ARB: uint = 0x9367;
 export def WEIGHTED_AVERAGE_EXT: uint = 0x9367;
 export def WEIGHT_ARRAY_ARB: uint = 0x86AD;
-export def WEIGHT_ARRAY_BUFFER_BINDING: uint = 0x889E;
 export def WEIGHT_ARRAY_BUFFER_BINDING_ARB: uint = 0x889E;
 export def WEIGHT_ARRAY_POINTER_ARB: uint = 0x86AC;
 export def WEIGHT_ARRAY_SIZE_ARB: uint = 0x86AB;
@@ -4796,12 +4545,9 @@ export def Z6Y10Z6CB10Z6Y10Z6CR10_422_NV: uint = 0x9033;
 export def ZERO: uint = 0;
 export def ZERO_EXT: uint = 0x87DD;
 export def ZERO_TO_ONE: uint = 0x935F;
-export def ZOOM_X: uint = 0x0D16;
-export def ZOOM_Y: uint = 0x0D17;
 export def Z_EXT: uint = 0x87D7;
 
 // Function pointers
-export type fp_glAccum = fn(op: gl_enum, value: f32) void;
 export type fp_glAccumxOES = fn(op: gl_enum, value: i32) void;
 export type fp_glAcquireKeyedMutexWin32EXT = fn(memory: uint, key: u64, timeout: uint) u8;
 export type fp_glActiveProgramEXT = fn(program: uint) void;
@@ -4813,15 +4559,12 @@ export type fp_glActiveVaryingNV = fn(program: uint, name: *const i8) void;
 export type fp_glAlphaFragmentOp1ATI = fn(op: gl_enum, dst: uint, dstMod: uint, arg1: uint, arg1Rep: uint, arg1Mod: uint) void;
 export type fp_glAlphaFragmentOp2ATI = fn(op: gl_enum, dst: uint, dstMod: uint, arg1: uint, arg1Rep: uint, arg1Mod: uint, arg2: uint, arg2Rep: uint, arg2Mod: uint) void;
 export type fp_glAlphaFragmentOp3ATI = fn(op: gl_enum, dst: uint, dstMod: uint, arg1: uint, arg1Rep: uint, arg1Mod: uint, arg2: uint, arg2Rep: uint, arg2Mod: uint, arg3: uint, arg3Rep: uint, arg3Mod: uint) void;
-export type fp_glAlphaFunc = fn(func: gl_enum, ref: f32) void;
 export type fp_glAlphaFuncxOES = fn(func: gl_enum, ref: i32) void;
 export type fp_glAlphaToCoverageDitherControlNV = fn(mode: gl_enum) void;
 export type fp_glApplyFramebufferAttachmentCMAAINTEL = fn() void;
 export type fp_glApplyTextureEXT = fn(mode: gl_enum) void;
 export type fp_glAreProgramsResidentNV = fn(n: i32, programs: *const uint, residences: *u8) u8;
-export type fp_glAreTexturesResident = fn(n: i32, textures: *const uint, residences: *u8) u8;
 export type fp_glAreTexturesResidentEXT = fn(n: i32, textures: *const uint, residences: *u8) u8;
-export type fp_glArrayElement = fn(i: i32) void;
 export type fp_glArrayElementEXT = fn(i: i32) void;
 export type fp_glArrayObjectATI = fn(array: gl_enum, size_: i32, type_: gl_enum, stride: i32, buffer: uint, offset_: uint) void;
 export type fp_glAsyncCopyBufferSubDataNVX = fn(waitSemaphoreCount: i32, waitSemaphoreArray: *const uint, fenceValueArray: *const u64, readGpu: uint, writeGpuMask: gl_bitfield, readBuffer: uint, writeBuffer: uint, readOffset: size, writeOffset: size, size_: uintptr, signalSemaphoreCount: i32, signalSemaphoreArray: *const uint, signalValueArray: *const u64) uint;
@@ -4829,7 +4572,7 @@ export type fp_glAsyncCopyImageSubDataNVX = fn(waitSemaphoreCount: i32, waitSema
 export type fp_glAsyncMarkerSGIX = fn(marker: uint) void;
 export type fp_glAttachObjectARB = fn(containerObj: uint, obj: uint) void;
 export type fp_glAttachShader = fn(program: uint, shader: uint) void;
-export type fp_glBegin = fn(mode: gl_enum) void;
+export type fp_glBeginConditionalRender = fn(id: uint, mode: gl_enum) void;
 export type fp_glBeginConditionalRenderNV = fn(id: uint, mode: gl_enum) void;
 export type fp_glBeginConditionalRenderNVX = fn(id: uint) void;
 export type fp_glBeginFragmentShaderATI = fn() void;
@@ -4839,6 +4582,7 @@ export type fp_glBeginPerfQueryINTEL = fn(queryHandle: uint) void;
 export type fp_glBeginQuery = fn(target: gl_enum, id: uint) void;
 export type fp_glBeginQueryARB = fn(target: gl_enum, id: uint) void;
 export type fp_glBeginQueryIndexed = fn(target: gl_enum, index: uint, id: uint) void;
+export type fp_glBeginTransformFeedback = fn(primitiveMode: gl_enum) void;
 export type fp_glBeginTransformFeedbackEXT = fn(primitiveMode: gl_enum) void;
 export type fp_glBeginTransformFeedbackNV = fn(primitiveMode: gl_enum) void;
 export type fp_glBeginVertexShaderEXT = fn() void;
@@ -4857,6 +4601,7 @@ export type fp_glBindBufferRangeEXT = fn(target: gl_enum, index: uint, buffer: u
 export type fp_glBindBufferRangeNV = fn(target: gl_enum, index: uint, buffer: uint, offset_: size, size_: uintptr) void;
 export type fp_glBindBuffersBase = fn(target: gl_enum, first: uint, count: i32, buffers: *const uint) void;
 export type fp_glBindBuffersRange = fn(target: gl_enum, first: uint, count: i32, buffers: *const uint, offsets: *const size, sizes: *const uintptr) void;
+export type fp_glBindFragDataLocation = fn(program: uint, color: uint, name: *const i8) void;
 export type fp_glBindFragDataLocationEXT = fn(program: uint, color: uint, name: *const i8) void;
 export type fp_glBindFragDataLocationIndexed = fn(program: uint, colorNumber: uint, index: uint, name: *const i8) void;
 export type fp_glBindFragmentShaderATI = fn(id: uint) void;
@@ -4903,7 +4648,6 @@ export type fp_glBinormal3ivEXT = fn(v: *const i32) void;
 export type fp_glBinormal3sEXT = fn(bx: i16, by: i16, bz: i16) void;
 export type fp_glBinormal3svEXT = fn(v: *const i16) void;
 export type fp_glBinormalPointerEXT = fn(type_: gl_enum, stride: i32, pointer: *const void) void;
-export type fp_glBitmap = fn(width: i32, height: i32, xorig: f32, yorig: f32, xmove: f32, ymove: f32, bitmap: *const u8) void;
 export type fp_glBitmapxOES = fn(width: i32, height: i32, xorig: i32, yorig: i32, xmove: i32, ymove: i32, bitmap: *const u8) void;
 export type fp_glBlendBarrierKHR = fn() void;
 export type fp_glBlendBarrierNV = fn() void;
@@ -4916,7 +4660,9 @@ export type fp_glBlendEquationIndexedAMD = fn(buf: uint, mode: gl_enum) void;
 export type fp_glBlendEquationSeparate = fn(modeRGB: gl_enum, modeAlpha: gl_enum) void;
 export type fp_glBlendEquationSeparateEXT = fn(modeRGB: gl_enum, modeAlpha: gl_enum) void;
 export type fp_glBlendEquationSeparateIndexedAMD = fn(buf: uint, modeRGB: gl_enum, modeAlpha: gl_enum) void;
+export type fp_glBlendEquationSeparatei = fn(buf: uint, modeRGB: gl_enum, modeAlpha: gl_enum) void;
 export type fp_glBlendEquationSeparateiARB = fn(buf: uint, modeRGB: gl_enum, modeAlpha: gl_enum) void;
+export type fp_glBlendEquationi = fn(buf: uint, mode: gl_enum) void;
 export type fp_glBlendEquationiARB = fn(buf: uint, mode: gl_enum) void;
 export type fp_glBlendFunc = fn(sfactor: gl_enum, dfactor: gl_enum) void;
 export type fp_glBlendFuncIndexedAMD = fn(buf: uint, src: gl_enum, dst: gl_enum) void;
@@ -4924,7 +4670,9 @@ export type fp_glBlendFuncSeparate = fn(sfactorRGB: gl_enum, dfactorRGB: gl_enum
 export type fp_glBlendFuncSeparateEXT = fn(sfactorRGB: gl_enum, dfactorRGB: gl_enum, sfactorAlpha: gl_enum, dfactorAlpha: gl_enum) void;
 export type fp_glBlendFuncSeparateINGR = fn(sfactorRGB: gl_enum, dfactorRGB: gl_enum, sfactorAlpha: gl_enum, dfactorAlpha: gl_enum) void;
 export type fp_glBlendFuncSeparateIndexedAMD = fn(buf: uint, srcRGB: gl_enum, dstRGB: gl_enum, srcAlpha: gl_enum, dstAlpha: gl_enum) void;
+export type fp_glBlendFuncSeparatei = fn(buf: uint, srcRGB: gl_enum, dstRGB: gl_enum, srcAlpha: gl_enum, dstAlpha: gl_enum) void;
 export type fp_glBlendFuncSeparateiARB = fn(buf: uint, srcRGB: gl_enum, dstRGB: gl_enum, srcAlpha: gl_enum, dstAlpha: gl_enum) void;
+export type fp_glBlendFunci = fn(buf: uint, src: gl_enum, dst: gl_enum) void;
 export type fp_glBlendFunciARB = fn(buf: uint, src: gl_enum, dst: gl_enum) void;
 export type fp_glBlendParameteriNV = fn(pname: gl_enum, value: i32) void;
 export type fp_glBlitFramebuffer = fn(srcX0: i32, srcY0: i32, srcX1: i32, srcY1: i32, dstX0: i32, dstY0: i32, dstX1: i32, dstY1: i32, mask: gl_bitfield, filter: gl_enum) void;
@@ -4943,18 +4691,20 @@ export type fp_glBufferStorageMemEXT = fn(target: gl_enum, size_: uintptr, memor
 export type fp_glBufferSubData = fn(target: gl_enum, offset_: size, size_: uintptr, data: *const void) void;
 export type fp_glBufferSubDataARB = fn(target: gl_enum, offset_: size, size_: uintptr, data: *const void) void;
 export type fp_glCallCommandListNV = fn(list: uint) void;
-export type fp_glCallList = fn(list: uint) void;
-export type fp_glCallLists = fn(n: i32, type_: gl_enum, lists: *const void) void;
 export type fp_glCheckFramebufferStatus = fn(target: gl_enum) gl_enum;
 export type fp_glCheckFramebufferStatusEXT = fn(target: gl_enum) gl_enum;
 export type fp_glCheckNamedFramebufferStatus = fn(framebuffer: uint, target: gl_enum) gl_enum;
 export type fp_glCheckNamedFramebufferStatusEXT = fn(framebuffer: uint, target: gl_enum) gl_enum;
+export type fp_glClampColor = fn(target: gl_enum, clamp: gl_enum) void;
 export type fp_glClampColorARB = fn(target: gl_enum, clamp: gl_enum) void;
 export type fp_glClear = fn(mask: gl_bitfield) void;
-export type fp_glClearAccum = fn(red: f32, green: f32, blue: f32, alpha: f32) void;
 export type fp_glClearAccumxOES = fn(red: i32, green: i32, blue: i32, alpha: i32) void;
 export type fp_glClearBufferData = fn(target: gl_enum, internalformat: gl_enum, format: gl_enum, type_: gl_enum, data: *const void) void;
 export type fp_glClearBufferSubData = fn(target: gl_enum, internalformat: gl_enum, offset_: size, size_: uintptr, format: gl_enum, type_: gl_enum, data: *const void) void;
+export type fp_glClearBufferfi = fn(buffer: gl_enum, drawbuffer: i32, depth: f32, stencil: i32) void;
+export type fp_glClearBufferfv = fn(buffer: gl_enum, drawbuffer: i32, value: *const f32) void;
+export type fp_glClearBufferiv = fn(buffer: gl_enum, drawbuffer: i32, value: *const i32) void;
+export type fp_glClearBufferuiv = fn(buffer: gl_enum, drawbuffer: i32, value: *const uint) void;
 export type fp_glClearColor = fn(red: f32, green: f32, blue: f32, alpha: f32) void;
 export type fp_glClearColorIiEXT = fn(red: i32, green: i32, blue: i32, alpha: i32) void;
 export type fp_glClearColorIuiEXT = fn(red: uint, green: uint, blue: uint, alpha: uint) void;
@@ -4964,7 +4714,6 @@ export type fp_glClearDepthdNV = fn(depth: f64) void;
 export type fp_glClearDepthf = fn(d: f32) void;
 export type fp_glClearDepthfOES = fn(depth: f64) void;
 export type fp_glClearDepthxOES = fn(depth: i32) void;
-export type fp_glClearIndex = fn(c: f32) void;
 export type fp_glClearNamedBufferData = fn(buffer: uint, internalformat: gl_enum, format: gl_enum, type_: gl_enum, data: *const void) void;
 export type fp_glClearNamedBufferDataEXT = fn(buffer: uint, internalformat: gl_enum, format: gl_enum, type_: gl_enum, data: *const void) void;
 export type fp_glClearNamedBufferSubData = fn(buffer: uint, internalformat: gl_enum, offset_: size, size_: uintptr, format: gl_enum, type_: gl_enum, data: *const void) void;
@@ -4976,62 +4725,28 @@ export type fp_glClearNamedFramebufferuiv = fn(framebuffer: uint, buffer: gl_enu
 export type fp_glClearStencil = fn(s: i32) void;
 export type fp_glClearTexImage = fn(texture: uint, level: i32, format: gl_enum, type_: gl_enum, data: *const void) void;
 export type fp_glClearTexSubImage = fn(texture: uint, level: i32, xoffset: i32, yoffset: i32, zoffset: i32, width: i32, height: i32, depth: i32, format: gl_enum, type_: gl_enum, data: *const void) void;
-export type fp_glClientActiveTexture = fn(texture: gl_enum) void;
 export type fp_glClientActiveTextureARB = fn(texture: gl_enum) void;
 export type fp_glClientActiveVertexStreamATI = fn(stream: gl_enum) void;
 export type fp_glClientAttribDefaultEXT = fn(mask: gl_bitfield) void;
 export type fp_glClientWaitSemaphoreui64NVX = fn(fenceObjectCount: i32, semaphoreArray: *const uint, fenceValueArray: *const u64) void;
 export type fp_glClientWaitSync = fn(sync: size, flags: gl_bitfield, timeout: u64) gl_enum;
 export type fp_glClipControl = fn(origin: gl_enum, depth: gl_enum) void;
-export type fp_glClipPlane = fn(plane: gl_enum, equation: *const f64) void;
 export type fp_glClipPlanefOES = fn(plane: gl_enum, equation: *const f32) void;
 export type fp_glClipPlanexOES = fn(plane: gl_enum, equation: *const i32) void;
-export type fp_glColor3b = fn(red: i8, green: i8, blue: i8) void;
-export type fp_glColor3bv = fn(v: *const i8) void;
-export type fp_glColor3d = fn(red: f64, green: f64, blue: f64) void;
-export type fp_glColor3dv = fn(v: *const f64) void;
-export type fp_glColor3f = fn(red: f32, green: f32, blue: f32) void;
 export type fp_glColor3fVertex3fSUN = fn(r: f32, g: f32, b: f32, x: f32, y: f32, z: f32) void;
 export type fp_glColor3fVertex3fvSUN = fn(c: *const f32, v: *const f32) void;
-export type fp_glColor3fv = fn(v: *const f32) void;
 export type fp_glColor3hNV = fn(red: u16, green: u16, blue: u16) void;
 export type fp_glColor3hvNV = fn(v: *const u16) void;
-export type fp_glColor3i = fn(red: i32, green: i32, blue: i32) void;
-export type fp_glColor3iv = fn(v: *const i32) void;
-export type fp_glColor3s = fn(red: i16, green: i16, blue: i16) void;
-export type fp_glColor3sv = fn(v: *const i16) void;
-export type fp_glColor3ub = fn(red: u8, green: u8, blue: u8) void;
-export type fp_glColor3ubv = fn(v: *const u8) void;
-export type fp_glColor3ui = fn(red: uint, green: uint, blue: uint) void;
-export type fp_glColor3uiv = fn(v: *const uint) void;
-export type fp_glColor3us = fn(red: u16, green: u16, blue: u16) void;
-export type fp_glColor3usv = fn(v: *const u16) void;
 export type fp_glColor3xOES = fn(red: i32, green: i32, blue: i32) void;
 export type fp_glColor3xvOES = fn(components: *const i32) void;
-export type fp_glColor4b = fn(red: i8, green: i8, blue: i8, alpha: i8) void;
-export type fp_glColor4bv = fn(v: *const i8) void;
-export type fp_glColor4d = fn(red: f64, green: f64, blue: f64, alpha: f64) void;
-export type fp_glColor4dv = fn(v: *const f64) void;
-export type fp_glColor4f = fn(red: f32, green: f32, blue: f32, alpha: f32) void;
 export type fp_glColor4fNormal3fVertex3fSUN = fn(r: f32, g: f32, b: f32, a: f32, nx: f32, ny: f32, nz: f32, x: f32, y: f32, z: f32) void;
 export type fp_glColor4fNormal3fVertex3fvSUN = fn(c: *const f32, n: *const f32, v: *const f32) void;
-export type fp_glColor4fv = fn(v: *const f32) void;
 export type fp_glColor4hNV = fn(red: u16, green: u16, blue: u16, alpha: u16) void;
 export type fp_glColor4hvNV = fn(v: *const u16) void;
-export type fp_glColor4i = fn(red: i32, green: i32, blue: i32, alpha: i32) void;
-export type fp_glColor4iv = fn(v: *const i32) void;
-export type fp_glColor4s = fn(red: i16, green: i16, blue: i16, alpha: i16) void;
-export type fp_glColor4sv = fn(v: *const i16) void;
-export type fp_glColor4ub = fn(red: u8, green: u8, blue: u8, alpha: u8) void;
 export type fp_glColor4ubVertex2fSUN = fn(r: u8, g: u8, b: u8, a: u8, x: f32, y: f32) void;
 export type fp_glColor4ubVertex2fvSUN = fn(c: *const u8, v: *const f32) void;
 export type fp_glColor4ubVertex3fSUN = fn(r: u8, g: u8, b: u8, a: u8, x: f32, y: f32, z: f32) void;
 export type fp_glColor4ubVertex3fvSUN = fn(c: *const u8, v: *const f32) void;
-export type fp_glColor4ubv = fn(v: *const u8) void;
-export type fp_glColor4ui = fn(red: uint, green: uint, blue: uint, alpha: uint) void;
-export type fp_glColor4uiv = fn(v: *const uint) void;
-export type fp_glColor4us = fn(red: u16, green: u16, blue: u16, alpha: u16) void;
-export type fp_glColor4usv = fn(v: *const u16) void;
 export type fp_glColor4xOES = fn(red: i32, green: i32, blue: i32, alpha: i32) void;
 export type fp_glColor4xvOES = fn(components: *const i32) void;
 export type fp_glColorFormatNV = fn(size_: i32, type_: gl_enum, stride: i32) void;
@@ -5040,8 +4755,7 @@ export type fp_glColorFragmentOp2ATI = fn(op: gl_enum, dst: uint, dstMask: uint,
 export type fp_glColorFragmentOp3ATI = fn(op: gl_enum, dst: uint, dstMask: uint, dstMod: uint, arg1: uint, arg1Rep: uint, arg1Mod: uint, arg2: uint, arg2Rep: uint, arg2Mod: uint, arg3: uint, arg3Rep: uint, arg3Mod: uint) void;
 export type fp_glColorMask = fn(red: u8, green: u8, blue: u8, alpha: u8) void;
 export type fp_glColorMaskIndexedEXT = fn(index: uint, r: u8, g: u8, b: u8, a: u8) void;
-export type fp_glColorMaterial = fn(face: gl_enum, mode: gl_enum) void;
-export type fp_glColorPointer = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
+export type fp_glColorMaski = fn(index: uint, r: u8, g: u8, b: u8, a: u8) void;
 export type fp_glColorPointerEXT = fn(size_: i32, type_: gl_enum, stride: i32, count: i32, pointer: *const void) void;
 export type fp_glColorPointerListIBM = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
 export type fp_glColorPointervINTEL = fn(size_: i32, type_: gl_enum, pointer: *const *const void) void;
@@ -5113,7 +4827,6 @@ export type fp_glCopyMultiTexSubImage2DEXT = fn(texunit: gl_enum, target: gl_enu
 export type fp_glCopyMultiTexSubImage3DEXT = fn(texunit: gl_enum, target: gl_enum, level: i32, xoffset: i32, yoffset: i32, zoffset: i32, x: i32, y: i32, width: i32, height: i32) void;
 export type fp_glCopyNamedBufferSubData = fn(readBuffer: uint, writeBuffer: uint, readOffset: size, writeOffset: size, size_: uintptr) void;
 export type fp_glCopyPathNV = fn(resultPath: uint, srcPath: uint) void;
-export type fp_glCopyPixels = fn(x: i32, y: i32, width: i32, height: i32, type_: gl_enum) void;
 export type fp_glCopyTexImage1D = fn(target: gl_enum, level: i32, internalformat: gl_enum, x: i32, y: i32, width: i32, border: i32) void;
 export type fp_glCopyTexImage1DEXT = fn(target: gl_enum, level: i32, internalformat: gl_enum, x: i32, y: i32, width: i32, border: i32) void;
 export type fp_glCopyTexImage2D = fn(target: gl_enum, level: i32, internalformat: gl_enum, x: i32, y: i32, width: i32, height: i32, border: i32) void;
@@ -5185,7 +4898,6 @@ export type fp_glDeleteFencesNV = fn(n: i32, fences: *const uint) void;
 export type fp_glDeleteFragmentShaderATI = fn(id: uint) void;
 export type fp_glDeleteFramebuffers = fn(n: i32, framebuffers: *const uint) void;
 export type fp_glDeleteFramebuffersEXT = fn(n: i32, framebuffers: *const uint) void;
-export type fp_glDeleteLists = fn(list: uint, range: i32) void;
 export type fp_glDeleteMemoryObjectsEXT = fn(n: i32, memoryObjects: *const uint) void;
 export type fp_glDeleteNamedStringARB = fn(namelen: i32, name: *const i8) void;
 export type fp_glDeleteNamesAMD = fn(identifier: gl_enum, num: uint, names: *const uint) void;
@@ -5232,7 +4944,6 @@ export type fp_glDetachObjectARB = fn(containerObj: uint, attachedObj: uint) voi
 export type fp_glDetachShader = fn(program: uint, shader: uint) void;
 export type fp_glDetailTexFuncSGIS = fn(target: gl_enum, n: i32, points: *const f32) void;
 export type fp_glDisable = fn(cap: gl_enum) void;
-export type fp_glDisableClientState = fn(array: gl_enum) void;
 export type fp_glDisableClientStateIndexedEXT = fn(array: gl_enum, index: uint) void;
 export type fp_glDisableClientStateiEXT = fn(array: gl_enum, index: uint) void;
 export type fp_glDisableIndexedEXT = fn(target: gl_enum, index: uint) void;
@@ -5243,12 +4954,14 @@ export type fp_glDisableVertexArrayEXT = fn(vaobj: uint, array: gl_enum) void;
 export type fp_glDisableVertexAttribAPPLE = fn(index: uint, pname: gl_enum) void;
 export type fp_glDisableVertexAttribArray = fn(index: uint) void;
 export type fp_glDisableVertexAttribArrayARB = fn(index: uint) void;
+export type fp_glDisablei = fn(target: gl_enum, index: uint) void;
 export type fp_glDispatchCompute = fn(num_groups_x: uint, num_groups_y: uint, num_groups_z: uint) void;
 export type fp_glDispatchComputeGroupSizeARB = fn(num_groups_x: uint, num_groups_y: uint, num_groups_z: uint, group_size_x: uint, group_size_y: uint, group_size_z: uint) void;
 export type fp_glDispatchComputeIndirect = fn(indirect: size) void;
 export type fp_glDrawArrays = fn(mode: gl_enum, first: i32, count: i32) void;
 export type fp_glDrawArraysEXT = fn(mode: gl_enum, first: i32, count: i32) void;
 export type fp_glDrawArraysIndirect = fn(mode: gl_enum, indirect: *const void) void;
+export type fp_glDrawArraysInstanced = fn(mode: gl_enum, first: i32, count: i32, instancecount: i32) void;
 export type fp_glDrawArraysInstancedARB = fn(mode: gl_enum, first: i32, count: i32, primcount: i32) void;
 export type fp_glDrawArraysInstancedBaseInstance = fn(mode: gl_enum, first: i32, count: i32, instancecount: i32, baseinstance: uint) void;
 export type fp_glDrawArraysInstancedEXT = fn(mode: gl_enum, start: i32, count: i32, primcount: i32) void;
@@ -5265,6 +4978,7 @@ export type fp_glDrawElementArrayATI = fn(mode: gl_enum, count: i32) void;
 export type fp_glDrawElements = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void) void;
 export type fp_glDrawElementsBaseVertex = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void, basevertex: i32) void;
 export type fp_glDrawElementsIndirect = fn(mode: gl_enum, type_: gl_enum, indirect: *const void) void;
+export type fp_glDrawElementsInstanced = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void, instancecount: i32) void;
 export type fp_glDrawElementsInstancedARB = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void, primcount: i32) void;
 export type fp_glDrawElementsInstancedBaseInstance = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void, instancecount: i32, baseinstance: uint) void;
 export type fp_glDrawElementsInstancedBaseVertex = fn(mode: gl_enum, count: i32, type_: gl_enum, indices: *const void, instancecount: i32, basevertex: i32) void;
@@ -5273,7 +4987,6 @@ export type fp_glDrawElementsInstancedEXT = fn(mode: gl_enum, count: i32, type_:
 export type fp_glDrawMeshArraysSUN = fn(mode: gl_enum, first: i32, count: i32, width: i32) void;
 export type fp_glDrawMeshTasksIndirectNV = fn(indirect: size) void;
 export type fp_glDrawMeshTasksNV = fn(first: uint, count: uint) void;
-export type fp_glDrawPixels = fn(width: i32, height: i32, format: gl_enum, type_: gl_enum, pixels: *const void) void;
 export type fp_glDrawRangeElementArrayAPPLE = fn(mode: gl_enum, start: uint, end: uint, first: i32, count: i32) void;
 export type fp_glDrawRangeElementArrayATI = fn(mode: gl_enum, start: uint, end: uint, count: i32) void;
 export type fp_glDrawRangeElements = fn(mode: gl_enum, start: uint, end: uint, count: i32, type_: gl_enum, indices: *const void) void;
@@ -5288,16 +5001,12 @@ export type fp_glDrawTransformFeedbackStreamInstanced = fn(mode: gl_enum, id: ui
 export type fp_glDrawVkImageNV = fn(vkImage: u64, sampler: uint, x0: f32, y0: f32, x1: f32, y1: f32, z: f32, s0: f32, t0: f32, s1: f32, t1: f32) void;
 export type fp_glEGLImageTargetTexStorageEXT = fn(target: gl_enum, image: *const void, attrib_list: *const i32) void;
 export type fp_glEGLImageTargetTextureStorageEXT = fn(texture: uint, image: *const void, attrib_list: *const i32) void;
-export type fp_glEdgeFlag = fn(flag: u8) void;
 export type fp_glEdgeFlagFormatNV = fn(stride: i32) void;
-export type fp_glEdgeFlagPointer = fn(stride: i32, pointer: *const void) void;
 export type fp_glEdgeFlagPointerEXT = fn(stride: i32, count: i32, pointer: *const u8) void;
 export type fp_glEdgeFlagPointerListIBM = fn(stride: i32, pointer: *const *const u8, ptrstride: i32) void;
-export type fp_glEdgeFlagv = fn(flag: *const u8) void;
 export type fp_glElementPointerAPPLE = fn(type_: gl_enum, pointer: *const void) void;
 export type fp_glElementPointerATI = fn(type_: gl_enum, pointer: *const void) void;
 export type fp_glEnable = fn(cap: gl_enum) void;
-export type fp_glEnableClientState = fn(array: gl_enum) void;
 export type fp_glEnableClientStateIndexedEXT = fn(array: gl_enum, index: uint) void;
 export type fp_glEnableClientStateiEXT = fn(array: gl_enum, index: uint) void;
 export type fp_glEnableIndexedEXT = fn(target: gl_enum, index: uint) void;
@@ -5308,42 +5017,30 @@ export type fp_glEnableVertexArrayEXT = fn(vaobj: uint, array: gl_enum) void;
 export type fp_glEnableVertexAttribAPPLE = fn(index: uint, pname: gl_enum) void;
 export type fp_glEnableVertexAttribArray = fn(index: uint) void;
 export type fp_glEnableVertexAttribArrayARB = fn(index: uint) void;
-export type fp_glEnd = fn() void;
+export type fp_glEnablei = fn(target: gl_enum, index: uint) void;
+export type fp_glEndConditionalRender = fn() void;
 export type fp_glEndConditionalRenderNV = fn() void;
 export type fp_glEndConditionalRenderNVX = fn() void;
 export type fp_glEndFragmentShaderATI = fn() void;
-export type fp_glEndList = fn() void;
 export type fp_glEndOcclusionQueryNV = fn() void;
 export type fp_glEndPerfMonitorAMD = fn(monitor: uint) void;
 export type fp_glEndPerfQueryINTEL = fn(queryHandle: uint) void;
 export type fp_glEndQuery = fn(target: gl_enum) void;
 export type fp_glEndQueryARB = fn(target: gl_enum) void;
 export type fp_glEndQueryIndexed = fn(target: gl_enum, index: uint) void;
+export type fp_glEndTransformFeedback = fn() void;
 export type fp_glEndTransformFeedbackEXT = fn() void;
 export type fp_glEndTransformFeedbackNV = fn() void;
 export type fp_glEndVertexShaderEXT = fn() void;
 export type fp_glEndVideoCaptureNV = fn(video_capture_slot: uint) void;
-export type fp_glEvalCoord1d = fn(u: f64) void;
-export type fp_glEvalCoord1dv = fn(u: *const f64) void;
-export type fp_glEvalCoord1f = fn(u: f32) void;
-export type fp_glEvalCoord1fv = fn(u: *const f32) void;
 export type fp_glEvalCoord1xOES = fn(u: i32) void;
 export type fp_glEvalCoord1xvOES = fn(coords: *const i32) void;
-export type fp_glEvalCoord2d = fn(u: f64, v: f64) void;
-export type fp_glEvalCoord2dv = fn(u: *const f64) void;
-export type fp_glEvalCoord2f = fn(u: f32, v: f32) void;
-export type fp_glEvalCoord2fv = fn(u: *const f32) void;
 export type fp_glEvalCoord2xOES = fn(u: i32, v: i32) void;
 export type fp_glEvalCoord2xvOES = fn(coords: *const i32) void;
 export type fp_glEvalMapsNV = fn(target: gl_enum, mode: gl_enum) void;
-export type fp_glEvalMesh1 = fn(mode: gl_enum, i1: i32, i2: i32) void;
-export type fp_glEvalMesh2 = fn(mode: gl_enum, i1: i32, i2: i32, j1: i32, j2: i32) void;
-export type fp_glEvalPoint1 = fn(i: i32) void;
-export type fp_glEvalPoint2 = fn(i: i32, j: i32) void;
 export type fp_glEvaluateDepthValuesARB = fn() void;
 export type fp_glExecuteProgramNV = fn(target: gl_enum, id: uint, params: *const f32) void;
 export type fp_glExtractComponentEXT = fn(res: uint, src: uint, num: uint) void;
-export type fp_glFeedbackBuffer = fn(size_: i32, type_: gl_enum, buffer: *f32) void;
 export type fp_glFeedbackBufferxOES = fn(n: i32, type_: gl_enum, buffer: *const i32) void;
 export type fp_glFenceSync = fn(condition: gl_enum, flags: gl_bitfield) size;
 export type fp_glFinalCombinerInputNV = fn(variable: gl_enum, input: gl_enum, mapping: gl_enum, componentUsage: gl_enum) void;
@@ -5364,24 +5061,15 @@ export type fp_glFlushStaticDataIBM = fn(target: gl_enum) void;
 export type fp_glFlushVertexArrayRangeAPPLE = fn(length: i32, pointer: *void) void;
 export type fp_glFlushVertexArrayRangeNV = fn() void;
 export type fp_glFogCoordFormatNV = fn(type_: gl_enum, stride: i32) void;
-export type fp_glFogCoordPointer = fn(type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glFogCoordPointerEXT = fn(type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glFogCoordPointerListIBM = fn(type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
-export type fp_glFogCoordd = fn(coord: f64) void;
 export type fp_glFogCoorddEXT = fn(coord: f64) void;
-export type fp_glFogCoorddv = fn(coord: *const f64) void;
 export type fp_glFogCoorddvEXT = fn(coord: *const f64) void;
-export type fp_glFogCoordf = fn(coord: f32) void;
 export type fp_glFogCoordfEXT = fn(coord: f32) void;
-export type fp_glFogCoordfv = fn(coord: *const f32) void;
 export type fp_glFogCoordfvEXT = fn(coord: *const f32) void;
 export type fp_glFogCoordhNV = fn(fog: u16) void;
 export type fp_glFogCoordhvNV = fn(fog: *const u16) void;
 export type fp_glFogFuncSGIS = fn(n: i32, points: *const f32) void;
-export type fp_glFogf = fn(pname: gl_enum, param: f32) void;
-export type fp_glFogfv = fn(pname: gl_enum, params: *const f32) void;
-export type fp_glFogi = fn(pname: gl_enum, param: i32) void;
-export type fp_glFogiv = fn(pname: gl_enum, params: *const i32) void;
 export type fp_glFogxOES = fn(pname: gl_enum, param: i32) void;
 export type fp_glFogxvOES = fn(pname: gl_enum, param: *const i32) void;
 export type fp_glFragmentColorMaterialSGIX = fn(face: gl_enum, mode: gl_enum) void;
@@ -5411,6 +5099,7 @@ export type fp_glFramebufferRenderbufferEXT = fn(target: gl_enum, attachment: gl
 export type fp_glFramebufferSampleLocationsfvARB = fn(target: gl_enum, start: uint, count: i32, v: *const f32) void;
 export type fp_glFramebufferSampleLocationsfvNV = fn(target: gl_enum, start: uint, count: i32, v: *const f32) void;
 export type fp_glFramebufferSamplePositionsfvAMD = fn(target: gl_enum, numsamples: uint, pixelindex: uint, values: *const f32) void;
+export type fp_glFramebufferTexture = fn(target: gl_enum, attachment: gl_enum, texture: uint, level: i32) void;
 export type fp_glFramebufferTexture1D = fn(target: gl_enum, attachment: gl_enum, textarget: gl_enum, texture: uint, level: i32) void;
 export type fp_glFramebufferTexture1DEXT = fn(target: gl_enum, attachment: gl_enum, textarget: gl_enum, texture: uint, level: i32) void;
 export type fp_glFramebufferTexture2D = fn(target: gl_enum, attachment: gl_enum, textarget: gl_enum, texture: uint, level: i32) void;
@@ -5427,7 +5116,6 @@ export type fp_glFramebufferTextureLayerEXT = fn(target: gl_enum, attachment: gl
 export type fp_glFramebufferTextureMultiviewOVR = fn(target: gl_enum, attachment: gl_enum, texture: uint, level: i32, baseViewIndex: i32, numViews: i32) void;
 export type fp_glFreeObjectBufferATI = fn(buffer: uint) void;
 export type fp_glFrontFace = fn(mode: gl_enum) void;
-export type fp_glFrustum = fn(left: f64, right: f64, bottom: f64, top: f64, zNear: f64, zFar: f64) void;
 export type fp_glFrustumfOES = fn(l: f32, r: f32, b: f32, t: f32, n: f32, f: f32) void;
 export type fp_glFrustumxOES = fn(l: i32, r: i32, b: i32, t: i32, n: i32, f: i32) void;
 export type fp_glGenAsyncMarkersSGIX = fn(range: i32) uint;
@@ -5438,7 +5126,6 @@ export type fp_glGenFencesNV = fn(n: i32, fences: *uint) void;
 export type fp_glGenFragmentShadersATI = fn(range: uint) uint;
 export type fp_glGenFramebuffers = fn(n: i32, framebuffers: *uint) void;
 export type fp_glGenFramebuffersEXT = fn(n: i32, framebuffers: *uint) void;
-export type fp_glGenLists = fn(range: i32) uint;
 export type fp_glGenNamesAMD = fn(identifier: gl_enum, num: uint, names: *uint) void;
 export type fp_glGenOcclusionQueriesNV = fn(n: i32, ids: *uint) void;
 export type fp_glGenPathsNV = fn(range: i32) uint;
@@ -5486,7 +5173,9 @@ export type fp_glGetAttachedShaders = fn(program: uint, maxCount: i32, count: *i
 export type fp_glGetAttribLocation = fn(program: uint, name: *const i8) i32;
 export type fp_glGetAttribLocationARB = fn(programObj: uint, name: *const i8) i32;
 export type fp_glGetBooleanIndexedvEXT = fn(target: gl_enum, index: uint, data: *u8) void;
+export type fp_glGetBooleani_v = fn(target: gl_enum, index: uint, data: *u8) void;
 export type fp_glGetBooleanv = fn(pname: gl_enum, data: *u8) void;
+export type fp_glGetBufferParameteri64v = fn(target: gl_enum, pname: gl_enum, params: *i64) void;
 export type fp_glGetBufferParameteriv = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetBufferParameterivARB = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetBufferParameterui64vNV = fn(target: gl_enum, pname: gl_enum, params: *u64) void;
@@ -5494,7 +5183,6 @@ export type fp_glGetBufferPointerv = fn(target: gl_enum, pname: gl_enum, params:
 export type fp_glGetBufferPointervARB = fn(target: gl_enum, pname: gl_enum, params: **void) void;
 export type fp_glGetBufferSubData = fn(target: gl_enum, offset_: size, size_: uintptr, data: *void) void;
 export type fp_glGetBufferSubDataARB = fn(target: gl_enum, offset_: size, size_: uintptr, data: *void) void;
-export type fp_glGetClipPlane = fn(plane: gl_enum, equation: *f64) void;
 export type fp_glGetClipPlanefOES = fn(plane: gl_enum, equation: *f32) void;
 export type fp_glGetClipPlanexOES = fn(plane: gl_enum, equation: *i32) void;
 export type fp_glGetColorTableEXT = fn(target: gl_enum, format: gl_enum, type_: gl_enum, data: *void) void;
@@ -5540,6 +5228,7 @@ export type fp_glGetFloati_vEXT = fn(pname: gl_enum, index: uint, params: *f32) 
 export type fp_glGetFloatv = fn(pname: gl_enum, data: *f32) void;
 export type fp_glGetFogFuncSGIS = fn(points: *f32) void;
 export type fp_glGetFragDataIndex = fn(program: uint, name: *const i8) i32;
+export type fp_glGetFragDataLocation = fn(program: uint, name: *const i8) i32;
 export type fp_glGetFragDataLocationEXT = fn(program: uint, name: *const i8) i32;
 export type fp_glGetFragmentLightfvSGIX = fn(light: gl_enum, pname: gl_enum, params: *f32) void;
 export type fp_glGetFragmentLightivSGIX = fn(light: gl_enum, pname: gl_enum, params: *i32) void;
@@ -5564,6 +5253,7 @@ export type fp_glGetImageTransformParameterfvHP = fn(target: gl_enum, pname: gl_
 export type fp_glGetImageTransformParameterivHP = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetInfoLogARB = fn(obj: uint, maxLength: i32, length: *i32, infoLog: *i8) void;
 export type fp_glGetInstrumentsSGIX = fn() i32;
+export type fp_glGetInteger64i_v = fn(target: gl_enum, index: uint, data: *i64) void;
 export type fp_glGetInteger64v = fn(pname: gl_enum, data: *i64) void;
 export type fp_glGetIntegerIndexedvEXT = fn(target: gl_enum, index: uint, data: *i32) void;
 export type fp_glGetIntegeri_v = fn(target: gl_enum, index: uint, data: *i32) void;
@@ -5576,8 +5266,6 @@ export type fp_glGetInternalformativ = fn(target: gl_enum, internalformat: gl_en
 export type fp_glGetInvariantBooleanvEXT = fn(id: uint, value: gl_enum, data: *u8) void;
 export type fp_glGetInvariantFloatvEXT = fn(id: uint, value: gl_enum, data: *f32) void;
 export type fp_glGetInvariantIntegervEXT = fn(id: uint, value: gl_enum, data: *i32) void;
-export type fp_glGetLightfv = fn(light: gl_enum, pname: gl_enum, params: *f32) void;
-export type fp_glGetLightiv = fn(light: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetLightxOES = fn(light: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetListParameterfvSGIX = fn(list: uint, pname: gl_enum, params: *f32) void;
 export type fp_glGetListParameterivSGIX = fn(list: uint, pname: gl_enum, params: *i32) void;
@@ -5589,12 +5277,7 @@ export type fp_glGetMapAttribParameterivNV = fn(target: gl_enum, index: uint, pn
 export type fp_glGetMapControlPointsNV = fn(target: gl_enum, index: uint, type_: gl_enum, ustride: i32, vstride: i32, packed: u8, points: *void) void;
 export type fp_glGetMapParameterfvNV = fn(target: gl_enum, pname: gl_enum, params: *f32) void;
 export type fp_glGetMapParameterivNV = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
-export type fp_glGetMapdv = fn(target: gl_enum, query: gl_enum, v: *f64) void;
-export type fp_glGetMapfv = fn(target: gl_enum, query: gl_enum, v: *f32) void;
-export type fp_glGetMapiv = fn(target: gl_enum, query: gl_enum, v: *i32) void;
 export type fp_glGetMapxvOES = fn(target: gl_enum, query: gl_enum, v: *i32) void;
-export type fp_glGetMaterialfv = fn(face: gl_enum, pname: gl_enum, params: *f32) void;
-export type fp_glGetMaterialiv = fn(face: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetMaterialxOES = fn(face: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glGetMemoryObjectDetachedResourcesuivNV = fn(memory: uint, pname: gl_enum, first: i32, count: i32, params: *uint) void;
 export type fp_glGetMemoryObjectParameterivEXT = fn(memoryObject: uint, pname: gl_enum, params: *i32) void;
@@ -5668,9 +5351,6 @@ export type fp_glGetPerfMonitorGroupsAMD = fn(numGroups: *i32, groupsSize: i32, 
 export type fp_glGetPerfQueryDataINTEL = fn(queryHandle: uint, flags: uint, dataSize: i32, data: *void, bytesWritten: *uint) void;
 export type fp_glGetPerfQueryIdByNameINTEL = fn(queryName: *i8, queryId: *uint) void;
 export type fp_glGetPerfQueryInfoINTEL = fn(queryId: uint, queryNameLength: uint, queryName: *i8, dataSize: *uint, noCounters: *uint, noInstances: *uint, capsMask: *uint) void;
-export type fp_glGetPixelMapfv = fn(map: gl_enum, values: *f32) void;
-export type fp_glGetPixelMapuiv = fn(map: gl_enum, values: *uint) void;
-export type fp_glGetPixelMapusv = fn(map: gl_enum, values: *u16) void;
 export type fp_glGetPixelMapxv = fn(map: gl_enum, size_: i32, values: *i32) void;
 export type fp_glGetPixelTexGenParameterfvSGIS = fn(pname: gl_enum, params: *f32) void;
 export type fp_glGetPixelTexGenParameterivSGIS = fn(pname: gl_enum, params: *i32) void;
@@ -5680,7 +5360,6 @@ export type fp_glGetPointerIndexedvEXT = fn(target: gl_enum, index: uint, data: 
 export type fp_glGetPointeri_vEXT = fn(pname: gl_enum, index: uint, params: **void) void;
 export type fp_glGetPointerv = fn(pname: gl_enum, params: **void) void;
 export type fp_glGetPointervEXT = fn(pname: gl_enum, params: **void) void;
-export type fp_glGetPolygonStipple = fn(mask: *u8) void;
 export type fp_glGetProgramBinary = fn(program: uint, bufSize: i32, length: *i32, binaryFormat: *gl_enum, binary: *void) void;
 export type fp_glGetProgramEnvParameterIivNV = fn(target: gl_enum, index: uint, params: *i32) void;
 export type fp_glGetProgramEnvParameterIuivNV = fn(target: gl_enum, index: uint, params: *uint) void;
@@ -5745,24 +5424,22 @@ export type fp_glGetShadingRateSampleLocationivNV = fn(rate: gl_enum, samples: u
 export type fp_glGetSharpenTexFuncSGIS = fn(target: gl_enum, points: *f32) void;
 export type fp_glGetStageIndexNV = fn(shadertype: gl_enum) u16;
 export type fp_glGetString = fn(name: gl_enum) *const u8;
+export type fp_glGetStringi = fn(name: gl_enum, index: uint) *const u8;
 export type fp_glGetSubroutineIndex = fn(program: uint, shadertype: gl_enum, name: *const i8) uint;
 export type fp_glGetSubroutineUniformLocation = fn(program: uint, shadertype: gl_enum, name: *const i8) i32;
 export type fp_glGetSynciv = fn(sync: size, pname: gl_enum, count: i32, length: *i32, values: *i32) void;
 export type fp_glGetTexBumpParameterfvATI = fn(pname: gl_enum, param: *f32) void;
 export type fp_glGetTexBumpParameterivATI = fn(pname: gl_enum, param: *i32) void;
-export type fp_glGetTexEnvfv = fn(target: gl_enum, pname: gl_enum, params: *f32) void;
-export type fp_glGetTexEnviv = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexEnvxvOES = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexFilterFuncSGIS = fn(target: gl_enum, filter: gl_enum, weights: *f32) void;
-export type fp_glGetTexGendv = fn(coord: gl_enum, pname: gl_enum, params: *f64) void;
-export type fp_glGetTexGenfv = fn(coord: gl_enum, pname: gl_enum, params: *f32) void;
-export type fp_glGetTexGeniv = fn(coord: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexGenxvOES = fn(coord: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexImage = fn(target: gl_enum, level: i32, format: gl_enum, type_: gl_enum, pixels: *void) void;
 export type fp_glGetTexLevelParameterfv = fn(target: gl_enum, level: i32, pname: gl_enum, params: *f32) void;
 export type fp_glGetTexLevelParameteriv = fn(target: gl_enum, level: i32, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexLevelParameterxvOES = fn(target: gl_enum, level: i32, pname: gl_enum, params: *i32) void;
+export type fp_glGetTexParameterIiv = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
 export type fp_glGetTexParameterIivEXT = fn(target: gl_enum, pname: gl_enum, params: *i32) void;
+export type fp_glGetTexParameterIuiv = fn(target: gl_enum, pname: gl_enum, params: *uint) void;
 export type fp_glGetTexParameterIuivEXT = fn(target: gl_enum, pname: gl_enum, params: *uint) void;
 export type fp_glGetTexParameterPointervAPPLE = fn(target: gl_enum, pname: gl_enum, params: **void) void;
 export type fp_glGetTexParameterfv = fn(target: gl_enum, pname: gl_enum, params: *f32) void;
@@ -5788,6 +5465,7 @@ export type fp_glGetTextureSamplerHandleARB = fn(texture: uint, sampler: uint) u
 export type fp_glGetTextureSamplerHandleNV = fn(texture: uint, sampler: uint) u64;
 export type fp_glGetTextureSubImage = fn(texture: uint, level: i32, xoffset: i32, yoffset: i32, zoffset: i32, width: i32, height: i32, depth: i32, format: gl_enum, type_: gl_enum, bufSize: i32, pixels: *void) void;
 export type fp_glGetTrackMatrixivNV = fn(target: gl_enum, address: uint, pname: gl_enum, params: *i32) void;
+export type fp_glGetTransformFeedbackVarying = fn(program: uint, index: uint, bufSize: i32, length: *i32, size_: *i32, type_: *gl_enum, name: *i8) void;
 export type fp_glGetTransformFeedbackVaryingEXT = fn(program: uint, index: uint, bufSize: i32, length: *i32, size_: *i32, type_: *gl_enum, name: *i8) void;
 export type fp_glGetTransformFeedbackVaryingNV = fn(program: uint, index: uint, location: *i32) void;
 export type fp_glGetTransformFeedbacki64_v = fn(xfb: uint, pname: gl_enum, index: uint, param: *i64) void;
@@ -5809,6 +5487,7 @@ export type fp_glGetUniformiv = fn(program: uint, location: i32, params: *i32) v
 export type fp_glGetUniformivARB = fn(programObj: uint, location: i32, params: *i32) void;
 export type fp_glGetUniformui64vARB = fn(program: uint, location: i32, params: *u64) void;
 export type fp_glGetUniformui64vNV = fn(program: uint, location: i32, params: *u64) void;
+export type fp_glGetUniformuiv = fn(program: uint, location: i32, params: *uint) void;
 export type fp_glGetUniformuivEXT = fn(program: uint, location: i32, params: *uint) void;
 export type fp_glGetUnsignedBytei_vEXT = fn(target: gl_enum, index: uint, data: *u8) void;
 export type fp_glGetUnsignedBytevEXT = fn(pname: gl_enum, data: *u8) void;
@@ -5828,7 +5507,9 @@ export type fp_glGetVertexArrayPointervEXT = fn(vaobj: uint, pname: gl_enum, par
 export type fp_glGetVertexArrayiv = fn(vaobj: uint, pname: gl_enum, param: *i32) void;
 export type fp_glGetVertexAttribArrayObjectfvATI = fn(index: uint, pname: gl_enum, params: *f32) void;
 export type fp_glGetVertexAttribArrayObjectivATI = fn(index: uint, pname: gl_enum, params: *i32) void;
+export type fp_glGetVertexAttribIiv = fn(index: uint, pname: gl_enum, params: *i32) void;
 export type fp_glGetVertexAttribIivEXT = fn(index: uint, pname: gl_enum, params: *i32) void;
+export type fp_glGetVertexAttribIuiv = fn(index: uint, pname: gl_enum, params: *uint) void;
 export type fp_glGetVertexAttribIuivEXT = fn(index: uint, pname: gl_enum, params: *uint) void;
 export type fp_glGetVertexAttribLdv = fn(index: uint, pname: gl_enum, params: *f64) void;
 export type fp_glGetVertexAttribLdvEXT = fn(index: uint, pname: gl_enum, params: *f64) void;
@@ -5892,28 +5573,14 @@ export type fp_glImportSemaphoreWin32NameEXT = fn(semaphore: uint, handleType: g
 export type fp_glImportSyncEXT = fn(external_sync_type: gl_enum, external_sync: size, flags: gl_bitfield) size;
 export type fp_glIndexFormatNV = fn(type_: gl_enum, stride: i32) void;
 export type fp_glIndexFuncEXT = fn(func: gl_enum, ref: f64) void;
-export type fp_glIndexMask = fn(mask: uint) void;
 export type fp_glIndexMaterialEXT = fn(face: gl_enum, mode: gl_enum) void;
-export type fp_glIndexPointer = fn(type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glIndexPointerEXT = fn(type_: gl_enum, stride: i32, count: i32, pointer: *const void) void;
 export type fp_glIndexPointerListIBM = fn(type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
-export type fp_glIndexd = fn(c: f64) void;
-export type fp_glIndexdv = fn(c: *const f64) void;
-export type fp_glIndexf = fn(c: f32) void;
-export type fp_glIndexfv = fn(c: *const f32) void;
-export type fp_glIndexi = fn(c: i32) void;
-export type fp_glIndexiv = fn(c: *const i32) void;
-export type fp_glIndexs = fn(c: i16) void;
-export type fp_glIndexsv = fn(c: *const i16) void;
-export type fp_glIndexub = fn(c: u8) void;
-export type fp_glIndexubv = fn(c: *const u8) void;
 export type fp_glIndexxOES = fn(component: i32) void;
 export type fp_glIndexxvOES = fn(component: *const i32) void;
-export type fp_glInitNames = fn() void;
 export type fp_glInsertComponentEXT = fn(res: uint, src: uint, num: uint) void;
 export type fp_glInsertEventMarkerEXT = fn(length: i32, marker: *const i8) void;
 export type fp_glInstrumentsBufferSGIX = fn(size_: i32, buffer: *i32) void;
-export type fp_glInterleavedArrays = fn(format: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glInterpolatePathsNV = fn(resultPath: uint, pathA: uint, pathB: uint, weight: f32) void;
 export type fp_glInvalidateBufferData = fn(buffer: uint) void;
 export type fp_glInvalidateBufferSubData = fn(buffer: uint, offset_: size, length: uintptr) void;
@@ -5930,13 +5597,13 @@ export type fp_glIsBufferResidentNV = fn(target: gl_enum) u8;
 export type fp_glIsCommandListNV = fn(list: uint) u8;
 export type fp_glIsEnabled = fn(cap: gl_enum) u8;
 export type fp_glIsEnabledIndexedEXT = fn(target: gl_enum, index: uint) u8;
+export type fp_glIsEnabledi = fn(target: gl_enum, index: uint) u8;
 export type fp_glIsFenceAPPLE = fn(fence: uint) u8;
 export type fp_glIsFenceNV = fn(fence: uint) u8;
 export type fp_glIsFramebuffer = fn(framebuffer: uint) u8;
 export type fp_glIsFramebufferEXT = fn(framebuffer: uint) u8;
 export type fp_glIsImageHandleResidentARB = fn(handle: u64) u8;
 export type fp_glIsImageHandleResidentNV = fn(handle: u64) u8;
-export type fp_glIsList = fn(list: uint) u8;
 export type fp_glIsMemoryObjectEXT = fn(memoryObject: uint) u8;
 export type fp_glIsNameAMD = fn(identifier: gl_enum, name: uint) u8;
 export type fp_glIsNamedBufferResidentNV = fn(buffer: uint) u8;
@@ -5974,39 +5641,23 @@ export type fp_glLGPUInterlockNVX = fn() void;
 export type fp_glLGPUNamedBufferSubDataNVX = fn(gpuMask: gl_bitfield, buffer: uint, offset_: size, size_: uintptr, data: *const void) void;
 export type fp_glLabelObjectEXT = fn(type_: gl_enum, object: uint, length: i32, label: *const i8) void;
 export type fp_glLightEnviSGIX = fn(pname: gl_enum, param: i32) void;
-export type fp_glLightModelf = fn(pname: gl_enum, param: f32) void;
-export type fp_glLightModelfv = fn(pname: gl_enum, params: *const f32) void;
-export type fp_glLightModeli = fn(pname: gl_enum, param: i32) void;
-export type fp_glLightModeliv = fn(pname: gl_enum, params: *const i32) void;
 export type fp_glLightModelxOES = fn(pname: gl_enum, param: i32) void;
 export type fp_glLightModelxvOES = fn(pname: gl_enum, param: *const i32) void;
-export type fp_glLightf = fn(light: gl_enum, pname: gl_enum, param: f32) void;
-export type fp_glLightfv = fn(light: gl_enum, pname: gl_enum, params: *const f32) void;
-export type fp_glLighti = fn(light: gl_enum, pname: gl_enum, param: i32) void;
-export type fp_glLightiv = fn(light: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glLightxOES = fn(light: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glLightxvOES = fn(light: gl_enum, pname: gl_enum, params: *const i32) void;
-export type fp_glLineStipple = fn(factor: i32, pattern: u16) void;
 export type fp_glLineWidth = fn(width: f32) void;
 export type fp_glLineWidthxOES = fn(width: i32) void;
 export type fp_glLinkProgram = fn(program: uint) void;
 export type fp_glLinkProgramARB = fn(programObj: uint) void;
-export type fp_glListBase = fn(base: uint) void;
 export type fp_glListDrawCommandsStatesClientNV = fn(list: uint, segment: uint, indirects: *const *const void, sizes: *const i32, states: *const uint, fbos: *const uint, count: uint) void;
 export type fp_glListParameterfSGIX = fn(list: uint, pname: gl_enum, param: f32) void;
 export type fp_glListParameterfvSGIX = fn(list: uint, pname: gl_enum, params: *const f32) void;
 export type fp_glListParameteriSGIX = fn(list: uint, pname: gl_enum, param: i32) void;
 export type fp_glListParameterivSGIX = fn(list: uint, pname: gl_enum, params: *const i32) void;
-export type fp_glLoadIdentity = fn() void;
 export type fp_glLoadIdentityDeformationMapSGIX = fn(mask: gl_bitfield) void;
-export type fp_glLoadMatrixd = fn(m: *const f64) void;
-export type fp_glLoadMatrixf = fn(m: *const f32) void;
 export type fp_glLoadMatrixxOES = fn(m: *const i32) void;
-export type fp_glLoadName = fn(name: uint) void;
 export type fp_glLoadProgramNV = fn(target: gl_enum, id: uint, len_: i32, program: *const u8) void;
-export type fp_glLoadTransposeMatrixd = fn(m: *const f64) void;
 export type fp_glLoadTransposeMatrixdARB = fn(m: *const f64) void;
-export type fp_glLoadTransposeMatrixf = fn(m: *const f32) void;
 export type fp_glLoadTransposeMatrixfARB = fn(m: *const f32) void;
 export type fp_glLoadTransposeMatrixxOES = fn(m: *const i32) void;
 export type fp_glLockArraysEXT = fn(first: i32, count: i32) void;
@@ -6023,21 +5674,13 @@ export type fp_glMakeTextureHandleNonResidentARB = fn(handle: u64) void;
 export type fp_glMakeTextureHandleNonResidentNV = fn(handle: u64) void;
 export type fp_glMakeTextureHandleResidentARB = fn(handle: u64) void;
 export type fp_glMakeTextureHandleResidentNV = fn(handle: u64) void;
-export type fp_glMap1d = fn(target: gl_enum, u1: f64, u2: f64, stride: i32, order: i32, points: *const f64) void;
-export type fp_glMap1f = fn(target: gl_enum, u1: f32, u2: f32, stride: i32, order: i32, points: *const f32) void;
 export type fp_glMap1xOES = fn(target: gl_enum, u1: i32, u2: i32, stride: i32, order: i32, points: i32) void;
-export type fp_glMap2d = fn(target: gl_enum, u1: f64, u2: f64, ustride: i32, uorder: i32, v1: f64, v2: f64, vstride: i32, vorder: i32, points: *const f64) void;
-export type fp_glMap2f = fn(target: gl_enum, u1: f32, u2: f32, ustride: i32, uorder: i32, v1: f32, v2: f32, vstride: i32, vorder: i32, points: *const f32) void;
 export type fp_glMap2xOES = fn(target: gl_enum, u1: i32, u2: i32, ustride: i32, uorder: i32, v1: i32, v2: i32, vstride: i32, vorder: i32, points: i32) void;
 export type fp_glMapBuffer = fn(target: gl_enum, access: gl_enum) *void;
 export type fp_glMapBufferARB = fn(target: gl_enum, access: gl_enum) *void;
 export type fp_glMapBufferRange = fn(target: gl_enum, offset_: size, length: uintptr, access: gl_bitfield) *void;
 export type fp_glMapControlPointsNV = fn(target: gl_enum, index: uint, type_: gl_enum, ustride: i32, vstride: i32, uorder: i32, vorder: i32, packed: u8, points: *const void) void;
-export type fp_glMapGrid1d = fn(un: i32, u1: f64, u2: f64) void;
-export type fp_glMapGrid1f = fn(un: i32, u1: f32, u2: f32) void;
 export type fp_glMapGrid1xOES = fn(n: i32, u1: i32, u2: i32) void;
-export type fp_glMapGrid2d = fn(un: i32, u1: f64, u2: f64, vn: i32, v1: f64, v2: f64) void;
-export type fp_glMapGrid2f = fn(un: i32, u1: f32, u2: f32, vn: i32, v1: f32, v2: f32) void;
 export type fp_glMapGrid2xOES = fn(n: i32, u1: i32, u2: i32, v1: i32, v2: i32) void;
 export type fp_glMapNamedBuffer = fn(buffer: uint, access: gl_enum) *void;
 export type fp_glMapNamedBufferEXT = fn(buffer: uint, access: gl_enum) *void;
@@ -6051,10 +5694,6 @@ export type fp_glMapVertexAttrib1dAPPLE = fn(index: uint, size_: uint, u1: f64, 
 export type fp_glMapVertexAttrib1fAPPLE = fn(index: uint, size_: uint, u1: f32, u2: f32, stride: i32, order: i32, points: *const f32) void;
 export type fp_glMapVertexAttrib2dAPPLE = fn(index: uint, size_: uint, u1: f64, u2: f64, ustride: i32, uorder: i32, v1: f64, v2: f64, vstride: i32, vorder: i32, points: *const f64) void;
 export type fp_glMapVertexAttrib2fAPPLE = fn(index: uint, size_: uint, u1: f32, u2: f32, ustride: i32, uorder: i32, v1: f32, v2: f32, vstride: i32, vorder: i32, points: *const f32) void;
-export type fp_glMaterialf = fn(face: gl_enum, pname: gl_enum, param: f32) void;
-export type fp_glMaterialfv = fn(face: gl_enum, pname: gl_enum, params: *const f32) void;
-export type fp_glMateriali = fn(face: gl_enum, pname: gl_enum, param: i32) void;
-export type fp_glMaterialiv = fn(face: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glMaterialxOES = fn(face: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glMaterialxvOES = fn(face: gl_enum, pname: gl_enum, param: *const i32) void;
 export type fp_glMatrixFrustumEXT = fn(mode: gl_enum, left: f64, right: f64, bottom: f64, top: f64, zNear: f64, zFar: f64) void;
@@ -6070,7 +5709,6 @@ export type fp_glMatrixLoadTransposedEXT = fn(mode: gl_enum, m: *const f64) void
 export type fp_glMatrixLoadTransposefEXT = fn(mode: gl_enum, m: *const f32) void;
 export type fp_glMatrixLoaddEXT = fn(mode: gl_enum, m: *const f64) void;
 export type fp_glMatrixLoadfEXT = fn(mode: gl_enum, m: *const f32) void;
-export type fp_glMatrixMode = fn(mode: gl_enum) void;
 export type fp_glMatrixMult3x2fNV = fn(matrixMode: gl_enum, m: *const f32) void;
 export type fp_glMatrixMult3x3fNV = fn(matrixMode: gl_enum, m: *const f32) void;
 export type fp_glMatrixMultTranspose3x3fNV = fn(matrixMode: gl_enum, m: *const f32) void;
@@ -6093,14 +5731,11 @@ export type fp_glMemoryBarrier = fn(barriers: gl_bitfield) void;
 export type fp_glMemoryBarrierByRegion = fn(barriers: gl_bitfield) void;
 export type fp_glMemoryBarrierEXT = fn(barriers: gl_bitfield) void;
 export type fp_glMemoryObjectParameterivEXT = fn(memoryObject: uint, pname: gl_enum, params: *const i32) void;
+export type fp_glMinSampleShading = fn(value: f32) void;
 export type fp_glMinSampleShadingARB = fn(value: f32) void;
 export type fp_glMinmaxEXT = fn(target: gl_enum, internalformat: gl_enum, sink: u8) void;
-export type fp_glMultMatrixd = fn(m: *const f64) void;
-export type fp_glMultMatrixf = fn(m: *const f32) void;
 export type fp_glMultMatrixxOES = fn(m: *const i32) void;
-export type fp_glMultTransposeMatrixd = fn(m: *const f64) void;
 export type fp_glMultTransposeMatrixdARB = fn(m: *const f64) void;
-export type fp_glMultTransposeMatrixf = fn(m: *const f32) void;
 export type fp_glMultTransposeMatrixfARB = fn(m: *const f32) void;
 export type fp_glMultTransposeMatrixxOES = fn(m: *const i32) void;
 export type fp_glMultiDrawArrays = fn(mode: gl_enum, first: *const i32, count: *const i32, drawcount: i32) void;
@@ -6127,89 +5762,57 @@ export type fp_glMultiModeDrawElementsIBM = fn(mode: *const gl_enum, count: *con
 export type fp_glMultiTexBufferEXT = fn(texunit: gl_enum, target: gl_enum, internalformat: gl_enum, buffer: uint) void;
 export type fp_glMultiTexCoord1bOES = fn(texture: gl_enum, s: i8) void;
 export type fp_glMultiTexCoord1bvOES = fn(texture: gl_enum, coords: *const i8) void;
-export type fp_glMultiTexCoord1d = fn(target: gl_enum, s: f64) void;
 export type fp_glMultiTexCoord1dARB = fn(target: gl_enum, s: f64) void;
-export type fp_glMultiTexCoord1dv = fn(target: gl_enum, v: *const f64) void;
 export type fp_glMultiTexCoord1dvARB = fn(target: gl_enum, v: *const f64) void;
-export type fp_glMultiTexCoord1f = fn(target: gl_enum, s: f32) void;
 export type fp_glMultiTexCoord1fARB = fn(target: gl_enum, s: f32) void;
-export type fp_glMultiTexCoord1fv = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord1fvARB = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord1hNV = fn(target: gl_enum, s: u16) void;
 export type fp_glMultiTexCoord1hvNV = fn(target: gl_enum, v: *const u16) void;
-export type fp_glMultiTexCoord1i = fn(target: gl_enum, s: i32) void;
 export type fp_glMultiTexCoord1iARB = fn(target: gl_enum, s: i32) void;
-export type fp_glMultiTexCoord1iv = fn(target: gl_enum, v: *const i32) void;
 export type fp_glMultiTexCoord1ivARB = fn(target: gl_enum, v: *const i32) void;
-export type fp_glMultiTexCoord1s = fn(target: gl_enum, s: i16) void;
 export type fp_glMultiTexCoord1sARB = fn(target: gl_enum, s: i16) void;
-export type fp_glMultiTexCoord1sv = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord1svARB = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord1xOES = fn(texture: gl_enum, s: i32) void;
 export type fp_glMultiTexCoord1xvOES = fn(texture: gl_enum, coords: *const i32) void;
 export type fp_glMultiTexCoord2bOES = fn(texture: gl_enum, s: i8, t: i8) void;
 export type fp_glMultiTexCoord2bvOES = fn(texture: gl_enum, coords: *const i8) void;
-export type fp_glMultiTexCoord2d = fn(target: gl_enum, s: f64, t: f64) void;
 export type fp_glMultiTexCoord2dARB = fn(target: gl_enum, s: f64, t: f64) void;
-export type fp_glMultiTexCoord2dv = fn(target: gl_enum, v: *const f64) void;
 export type fp_glMultiTexCoord2dvARB = fn(target: gl_enum, v: *const f64) void;
-export type fp_glMultiTexCoord2f = fn(target: gl_enum, s: f32, t: f32) void;
 export type fp_glMultiTexCoord2fARB = fn(target: gl_enum, s: f32, t: f32) void;
-export type fp_glMultiTexCoord2fv = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord2fvARB = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord2hNV = fn(target: gl_enum, s: u16, t: u16) void;
 export type fp_glMultiTexCoord2hvNV = fn(target: gl_enum, v: *const u16) void;
-export type fp_glMultiTexCoord2i = fn(target: gl_enum, s: i32, t: i32) void;
 export type fp_glMultiTexCoord2iARB = fn(target: gl_enum, s: i32, t: i32) void;
-export type fp_glMultiTexCoord2iv = fn(target: gl_enum, v: *const i32) void;
 export type fp_glMultiTexCoord2ivARB = fn(target: gl_enum, v: *const i32) void;
-export type fp_glMultiTexCoord2s = fn(target: gl_enum, s: i16, t: i16) void;
 export type fp_glMultiTexCoord2sARB = fn(target: gl_enum, s: i16, t: i16) void;
-export type fp_glMultiTexCoord2sv = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord2svARB = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord2xOES = fn(texture: gl_enum, s: i32, t: i32) void;
 export type fp_glMultiTexCoord2xvOES = fn(texture: gl_enum, coords: *const i32) void;
 export type fp_glMultiTexCoord3bOES = fn(texture: gl_enum, s: i8, t: i8, r: i8) void;
 export type fp_glMultiTexCoord3bvOES = fn(texture: gl_enum, coords: *const i8) void;
-export type fp_glMultiTexCoord3d = fn(target: gl_enum, s: f64, t: f64, r: f64) void;
 export type fp_glMultiTexCoord3dARB = fn(target: gl_enum, s: f64, t: f64, r: f64) void;
-export type fp_glMultiTexCoord3dv = fn(target: gl_enum, v: *const f64) void;
 export type fp_glMultiTexCoord3dvARB = fn(target: gl_enum, v: *const f64) void;
-export type fp_glMultiTexCoord3f = fn(target: gl_enum, s: f32, t: f32, r: f32) void;
 export type fp_glMultiTexCoord3fARB = fn(target: gl_enum, s: f32, t: f32, r: f32) void;
-export type fp_glMultiTexCoord3fv = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord3fvARB = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord3hNV = fn(target: gl_enum, s: u16, t: u16, r: u16) void;
 export type fp_glMultiTexCoord3hvNV = fn(target: gl_enum, v: *const u16) void;
-export type fp_glMultiTexCoord3i = fn(target: gl_enum, s: i32, t: i32, r: i32) void;
 export type fp_glMultiTexCoord3iARB = fn(target: gl_enum, s: i32, t: i32, r: i32) void;
-export type fp_glMultiTexCoord3iv = fn(target: gl_enum, v: *const i32) void;
 export type fp_glMultiTexCoord3ivARB = fn(target: gl_enum, v: *const i32) void;
-export type fp_glMultiTexCoord3s = fn(target: gl_enum, s: i16, t: i16, r: i16) void;
 export type fp_glMultiTexCoord3sARB = fn(target: gl_enum, s: i16, t: i16, r: i16) void;
-export type fp_glMultiTexCoord3sv = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord3svARB = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord3xOES = fn(texture: gl_enum, s: i32, t: i32, r: i32) void;
 export type fp_glMultiTexCoord3xvOES = fn(texture: gl_enum, coords: *const i32) void;
 export type fp_glMultiTexCoord4bOES = fn(texture: gl_enum, s: i8, t: i8, r: i8, q: i8) void;
 export type fp_glMultiTexCoord4bvOES = fn(texture: gl_enum, coords: *const i8) void;
-export type fp_glMultiTexCoord4d = fn(target: gl_enum, s: f64, t: f64, r: f64, q: f64) void;
 export type fp_glMultiTexCoord4dARB = fn(target: gl_enum, s: f64, t: f64, r: f64, q: f64) void;
-export type fp_glMultiTexCoord4dv = fn(target: gl_enum, v: *const f64) void;
 export type fp_glMultiTexCoord4dvARB = fn(target: gl_enum, v: *const f64) void;
-export type fp_glMultiTexCoord4f = fn(target: gl_enum, s: f32, t: f32, r: f32, q: f32) void;
 export type fp_glMultiTexCoord4fARB = fn(target: gl_enum, s: f32, t: f32, r: f32, q: f32) void;
-export type fp_glMultiTexCoord4fv = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord4fvARB = fn(target: gl_enum, v: *const f32) void;
 export type fp_glMultiTexCoord4hNV = fn(target: gl_enum, s: u16, t: u16, r: u16, q: u16) void;
 export type fp_glMultiTexCoord4hvNV = fn(target: gl_enum, v: *const u16) void;
-export type fp_glMultiTexCoord4i = fn(target: gl_enum, s: i32, t: i32, r: i32, q: i32) void;
 export type fp_glMultiTexCoord4iARB = fn(target: gl_enum, s: i32, t: i32, r: i32, q: i32) void;
-export type fp_glMultiTexCoord4iv = fn(target: gl_enum, v: *const i32) void;
 export type fp_glMultiTexCoord4ivARB = fn(target: gl_enum, v: *const i32) void;
-export type fp_glMultiTexCoord4s = fn(target: gl_enum, s: i16, t: i16, r: i16, q: i16) void;
 export type fp_glMultiTexCoord4sARB = fn(target: gl_enum, s: i16, t: i16, r: i16, q: i16) void;
-export type fp_glMultiTexCoord4sv = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord4svARB = fn(target: gl_enum, v: *const i16) void;
 export type fp_glMultiTexCoord4xOES = fn(texture: gl_enum, s: i32, t: i32, r: i32, q: i32) void;
 export type fp_glMultiTexCoord4xvOES = fn(texture: gl_enum, coords: *const i32) void;
@@ -6301,26 +5904,14 @@ export type fp_glNamedRenderbufferStorageMultisampleAdvancedAMD = fn(renderbuffe
 export type fp_glNamedRenderbufferStorageMultisampleCoverageEXT = fn(renderbuffer: uint, coverageSamples: i32, colorSamples: i32, internalformat: gl_enum, width: i32, height: i32) void;
 export type fp_glNamedRenderbufferStorageMultisampleEXT = fn(renderbuffer: uint, samples: i32, internalformat: gl_enum, width: i32, height: i32) void;
 export type fp_glNamedStringARB = fn(type_: gl_enum, namelen: i32, name: *const i8, stringlen: i32, string: *const i8) void;
-export type fp_glNewList = fn(list: uint, mode: gl_enum) void;
 export type fp_glNewObjectBufferATI = fn(size_: i32, pointer: *const void, usage: gl_enum) uint;
-export type fp_glNormal3b = fn(nx: i8, ny: i8, nz: i8) void;
-export type fp_glNormal3bv = fn(v: *const i8) void;
-export type fp_glNormal3d = fn(nx: f64, ny: f64, nz: f64) void;
-export type fp_glNormal3dv = fn(v: *const f64) void;
-export type fp_glNormal3f = fn(nx: f32, ny: f32, nz: f32) void;
 export type fp_glNormal3fVertex3fSUN = fn(nx: f32, ny: f32, nz: f32, x: f32, y: f32, z: f32) void;
 export type fp_glNormal3fVertex3fvSUN = fn(n: *const f32, v: *const f32) void;
-export type fp_glNormal3fv = fn(v: *const f32) void;
 export type fp_glNormal3hNV = fn(nx: u16, ny: u16, nz: u16) void;
 export type fp_glNormal3hvNV = fn(v: *const u16) void;
-export type fp_glNormal3i = fn(nx: i32, ny: i32, nz: i32) void;
-export type fp_glNormal3iv = fn(v: *const i32) void;
-export type fp_glNormal3s = fn(nx: i16, ny: i16, nz: i16) void;
-export type fp_glNormal3sv = fn(v: *const i16) void;
 export type fp_glNormal3xOES = fn(nx: i32, ny: i32, nz: i32) void;
 export type fp_glNormal3xvOES = fn(coords: *const i32) void;
 export type fp_glNormalFormatNV = fn(type_: gl_enum, stride: i32) void;
-export type fp_glNormalPointer = fn(type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glNormalPointerEXT = fn(type_: gl_enum, stride: i32, count: i32, pointer: *const void) void;
 export type fp_glNormalPointerListIBM = fn(type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
 export type fp_glNormalPointervINTEL = fn(type_: gl_enum, pointer: *const *const void) void;
@@ -6338,13 +5929,11 @@ export type fp_glObjectLabel = fn(identifier: gl_enum, name: uint, length: i32, 
 export type fp_glObjectPtrLabel = fn(ptr: *const void, length: i32, label: *const i8) void;
 export type fp_glObjectPurgeableAPPLE = fn(objectType: gl_enum, name: uint, option: gl_enum) gl_enum;
 export type fp_glObjectUnpurgeableAPPLE = fn(objectType: gl_enum, name: uint, option: gl_enum) gl_enum;
-export type fp_glOrtho = fn(left: f64, right: f64, bottom: f64, top: f64, zNear: f64, zFar: f64) void;
 export type fp_glOrthofOES = fn(l: f32, r: f32, b: f32, t: f32, n: f32, f: f32) void;
 export type fp_glOrthoxOES = fn(l: i32, r: i32, b: i32, t: i32, n: i32, f: i32) void;
 export type fp_glPNTrianglesfATI = fn(pname: gl_enum, param: f32) void;
 export type fp_glPNTrianglesiATI = fn(pname: gl_enum, param: i32) void;
 export type fp_glPassTexCoordATI = fn(dst: uint, coord: uint, swizzle: gl_enum) void;
-export type fp_glPassThrough = fn(token: f32) void;
 export type fp_glPassThroughxOES = fn(token: i32) void;
 export type fp_glPatchParameterfv = fn(pname: gl_enum, values: *const f32) void;
 export type fp_glPatchParameteri = fn(pname: gl_enum, value: i32) void;
@@ -6369,9 +5958,6 @@ export type fp_glPathSubCoordsNV = fn(path: uint, coordStart: i32, numCoords: i3
 export type fp_glPauseTransformFeedback = fn() void;
 export type fp_glPauseTransformFeedbackNV = fn() void;
 export type fp_glPixelDataRangeNV = fn(target: gl_enum, length: i32, pointer: *const void) void;
-export type fp_glPixelMapfv = fn(map: gl_enum, mapsize: i32, values: *const f32) void;
-export type fp_glPixelMapuiv = fn(map: gl_enum, mapsize: i32, values: *const uint) void;
-export type fp_glPixelMapusv = fn(map: gl_enum, mapsize: i32, values: *const u16) void;
 export type fp_glPixelMapx = fn(map: gl_enum, size_: i32, values: *const i32) void;
 export type fp_glPixelStoref = fn(pname: gl_enum, param: f32) void;
 export type fp_glPixelStorei = fn(pname: gl_enum, param: i32) void;
@@ -6381,14 +5967,11 @@ export type fp_glPixelTexGenParameterfvSGIS = fn(pname: gl_enum, params: *const 
 export type fp_glPixelTexGenParameteriSGIS = fn(pname: gl_enum, param: i32) void;
 export type fp_glPixelTexGenParameterivSGIS = fn(pname: gl_enum, params: *const i32) void;
 export type fp_glPixelTexGenSGIX = fn(mode: gl_enum) void;
-export type fp_glPixelTransferf = fn(pname: gl_enum, param: f32) void;
-export type fp_glPixelTransferi = fn(pname: gl_enum, param: i32) void;
 export type fp_glPixelTransferxOES = fn(pname: gl_enum, param: i32) void;
 export type fp_glPixelTransformParameterfEXT = fn(target: gl_enum, pname: gl_enum, param: f32) void;
 export type fp_glPixelTransformParameterfvEXT = fn(target: gl_enum, pname: gl_enum, params: *const f32) void;
 export type fp_glPixelTransformParameteriEXT = fn(target: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glPixelTransformParameterivEXT = fn(target: gl_enum, pname: gl_enum, params: *const i32) void;
-export type fp_glPixelZoom = fn(xfactor: f32, yfactor: f32) void;
 export type fp_glPixelZoomxOES = fn(xfactor: i32, yfactor: i32) void;
 export type fp_glPointAlongPathNV = fn(path: uint, startSegment: i32, numSegments: i32, distance: f32, x: *f32, y: *f32, tangentX: *f32, tangentY: *f32) u8;
 export type fp_glPointParameterf = fn(pname: gl_enum, param: f32) void;
@@ -6414,19 +5997,14 @@ export type fp_glPolygonOffsetClamp = fn(factor: f32, units: f32, clamp: f32) vo
 export type fp_glPolygonOffsetClampEXT = fn(factor: f32, units: f32, clamp: f32) void;
 export type fp_glPolygonOffsetEXT = fn(factor: f32, bias: f32) void;
 export type fp_glPolygonOffsetxOES = fn(factor: i32, units: i32) void;
-export type fp_glPolygonStipple = fn(mask: *const u8) void;
-export type fp_glPopAttrib = fn() void;
-export type fp_glPopClientAttrib = fn() void;
 export type fp_glPopDebugGroup = fn() void;
 export type fp_glPopGroupMarkerEXT = fn() void;
-export type fp_glPopMatrix = fn() void;
-export type fp_glPopName = fn() void;
 export type fp_glPresentFrameDualFillNV = fn(video_slot: uint, minPresentTime: u64, beginPresentTimeId: uint, presentDurationId: uint, type_: gl_enum, target0: gl_enum, fill0: uint, target1: gl_enum, fill1: uint, target2: gl_enum, fill2: uint, target3: gl_enum, fill3: uint) void;
 export type fp_glPresentFrameKeyedNV = fn(video_slot: uint, minPresentTime: u64, beginPresentTimeId: uint, presentDurationId: uint, type_: gl_enum, target0: gl_enum, fill0: uint, key0: uint, target1: gl_enum, fill1: uint, key1: uint) void;
 export type fp_glPrimitiveBoundingBoxARB = fn(minX: f32, minY: f32, minZ: f32, minW: f32, maxX: f32, maxY: f32, maxZ: f32, maxW: f32) void;
+export type fp_glPrimitiveRestartIndex = fn(index: uint) void;
 export type fp_glPrimitiveRestartIndexNV = fn(index: uint) void;
 export type fp_glPrimitiveRestartNV = fn() void;
-export type fp_glPrioritizeTextures = fn(n: i32, textures: *const uint, priorities: *const f32) void;
 export type fp_glPrioritizeTexturesEXT = fn(n: i32, textures: *const uint, priorities: *const f64) void;
 export type fp_glPrioritizeTexturesxOES = fn(n: i32, textures: *const uint, priorities: *const i32) void;
 export type fp_glProgramBinary = fn(program: uint, binaryFormat: gl_enum, binary: *const void, length: i32) void;
@@ -6612,46 +6190,18 @@ export type fp_glProgramUniformui64vNV = fn(program: uint, location: i32, count:
 export type fp_glProgramVertexLimitNV = fn(target: gl_enum, limit: i32) void;
 export type fp_glProvokingVertex = fn(mode: gl_enum) void;
 export type fp_glProvokingVertexEXT = fn(mode: gl_enum) void;
-export type fp_glPushAttrib = fn(mask: gl_bitfield) void;
-export type fp_glPushClientAttrib = fn(mask: gl_bitfield) void;
 export type fp_glPushClientAttribDefaultEXT = fn(mask: gl_bitfield) void;
 export type fp_glPushDebugGroup = fn(source: gl_enum, id: uint, length: i32, message: *const i8) void;
 export type fp_glPushGroupMarkerEXT = fn(length: i32, marker: *const i8) void;
-export type fp_glPushMatrix = fn() void;
-export type fp_glPushName = fn(name: uint) void;
 export type fp_glQueryCounter = fn(id: uint, target: gl_enum) void;
 export type fp_glQueryMatrixxOES = fn(mantissa: *i32, exponent: *i32) gl_bitfield;
 export type fp_glQueryObjectParameteruiAMD = fn(target: gl_enum, id: uint, pname: gl_enum, param: uint) void;
 export type fp_glQueryResourceNV = fn(queryType: gl_enum, tagId: i32, count: uint, buffer: *i32) i32;
 export type fp_glQueryResourceTagNV = fn(tagId: i32, tagString: *const i8) void;
-export type fp_glRasterPos2d = fn(x: f64, y: f64) void;
-export type fp_glRasterPos2dv = fn(v: *const f64) void;
-export type fp_glRasterPos2f = fn(x: f32, y: f32) void;
-export type fp_glRasterPos2fv = fn(v: *const f32) void;
-export type fp_glRasterPos2i = fn(x: i32, y: i32) void;
-export type fp_glRasterPos2iv = fn(v: *const i32) void;
-export type fp_glRasterPos2s = fn(x: i16, y: i16) void;
-export type fp_glRasterPos2sv = fn(v: *const i16) void;
 export type fp_glRasterPos2xOES = fn(x: i32, y: i32) void;
 export type fp_glRasterPos2xvOES = fn(coords: *const i32) void;
-export type fp_glRasterPos3d = fn(x: f64, y: f64, z: f64) void;
-export type fp_glRasterPos3dv = fn(v: *const f64) void;
-export type fp_glRasterPos3f = fn(x: f32, y: f32, z: f32) void;
-export type fp_glRasterPos3fv = fn(v: *const f32) void;
-export type fp_glRasterPos3i = fn(x: i32, y: i32, z: i32) void;
-export type fp_glRasterPos3iv = fn(v: *const i32) void;
-export type fp_glRasterPos3s = fn(x: i16, y: i16, z: i16) void;
-export type fp_glRasterPos3sv = fn(v: *const i16) void;
 export type fp_glRasterPos3xOES = fn(x: i32, y: i32, z: i32) void;
 export type fp_glRasterPos3xvOES = fn(coords: *const i32) void;
-export type fp_glRasterPos4d = fn(x: f64, y: f64, z: f64, w: f64) void;
-export type fp_glRasterPos4dv = fn(v: *const f64) void;
-export type fp_glRasterPos4f = fn(x: f32, y: f32, z: f32, w: f32) void;
-export type fp_glRasterPos4fv = fn(v: *const f32) void;
-export type fp_glRasterPos4i = fn(x: i32, y: i32, z: i32, w: i32) void;
-export type fp_glRasterPos4iv = fn(v: *const i32) void;
-export type fp_glRasterPos4s = fn(x: i16, y: i16, z: i16, w: i16) void;
-export type fp_glRasterPos4sv = fn(v: *const i16) void;
 export type fp_glRasterPos4xOES = fn(x: i32, y: i32, z: i32, w: i32) void;
 export type fp_glRasterPos4xvOES = fn(coords: *const i32) void;
 export type fp_glRasterSamplesEXT = fn(samples: uint, fixedsamplelocations: u8) void;
@@ -6660,21 +6210,12 @@ export type fp_glReadInstrumentsSGIX = fn(marker: i32) void;
 export type fp_glReadPixels = fn(x: i32, y: i32, width: i32, height: i32, format: gl_enum, type_: gl_enum, pixels: *void) void;
 export type fp_glReadnPixels = fn(x: i32, y: i32, width: i32, height: i32, format: gl_enum, type_: gl_enum, bufSize: i32, data: *void) void;
 export type fp_glReadnPixelsARB = fn(x: i32, y: i32, width: i32, height: i32, format: gl_enum, type_: gl_enum, bufSize: i32, data: *void) void;
-export type fp_glRectd = fn(x1: f64, y1: f64, x2: f64, y2: f64) void;
-export type fp_glRectdv = fn(v1: *const f64, v2: *const f64) void;
-export type fp_glRectf = fn(x1: f32, y1: f32, x2: f32, y2: f32) void;
-export type fp_glRectfv = fn(v1: *const f32, v2: *const f32) void;
-export type fp_glRecti = fn(x1: i32, y1: i32, x2: i32, y2: i32) void;
-export type fp_glRectiv = fn(v1: *const i32, v2: *const i32) void;
-export type fp_glRects = fn(x1: i16, y1: i16, x2: i16, y2: i16) void;
-export type fp_glRectsv = fn(v1: *const i16, v2: *const i16) void;
 export type fp_glRectxOES = fn(x1: i32, y1: i32, x2: i32, y2: i32) void;
 export type fp_glRectxvOES = fn(v1: *const i32, v2: *const i32) void;
 export type fp_glReferencePlaneSGIX = fn(equation: *const f64) void;
 export type fp_glReleaseKeyedMutexWin32EXT = fn(memory: uint, key: u64) u8;
 export type fp_glReleaseShaderCompiler = fn() void;
 export type fp_glRenderGpuMaskNV = fn(mask: gl_bitfield) void;
-export type fp_glRenderMode = fn(mode: gl_enum) i32;
 export type fp_glRenderbufferStorage = fn(target: gl_enum, internalformat: gl_enum, width: i32, height: i32) void;
 export type fp_glRenderbufferStorageEXT = fn(target: gl_enum, internalformat: gl_enum, width: i32, height: i32) void;
 export type fp_glRenderbufferStorageMultisample = fn(target: gl_enum, samples: i32, internalformat: gl_enum, width: i32, height: i32) void;
@@ -6712,8 +6253,6 @@ export type fp_glResizeBuffersMESA = fn() void;
 export type fp_glResolveDepthValuesNV = fn() void;
 export type fp_glResumeTransformFeedback = fn() void;
 export type fp_glResumeTransformFeedbackNV = fn() void;
-export type fp_glRotated = fn(angle: f64, x: f64, y: f64, z: f64) void;
-export type fp_glRotatef = fn(angle: f32, x: f32, y: f32, z: f32) void;
 export type fp_glRotatexOES = fn(angle: i32, x: i32, y: i32, z: i32) void;
 export type fp_glSampleCoverage = fn(value: f32, invert: u8) void;
 export type fp_glSampleCoverageARB = fn(value: f32, invert: u8) void;
@@ -6730,8 +6269,6 @@ export type fp_glSamplerParameterf = fn(sampler: uint, pname: gl_enum, param: f3
 export type fp_glSamplerParameterfv = fn(sampler: uint, pname: gl_enum, param: *const f32) void;
 export type fp_glSamplerParameteri = fn(sampler: uint, pname: gl_enum, param: i32) void;
 export type fp_glSamplerParameteriv = fn(sampler: uint, pname: gl_enum, param: *const i32) void;
-export type fp_glScaled = fn(x: f64, y: f64, z: f64) void;
-export type fp_glScalef = fn(x: f32, y: f32, z: f32) void;
 export type fp_glScalexOES = fn(x: i32, y: i32, z: i32) void;
 export type fp_glScissor = fn(x: i32, y: i32, width: i32, height: i32) void;
 export type fp_glScissorArrayv = fn(first: uint, count: i32, v: *const i32) void;
@@ -6739,45 +6276,27 @@ export type fp_glScissorExclusiveArrayvNV = fn(first: uint, count: i32, v: *cons
 export type fp_glScissorExclusiveNV = fn(x: i32, y: i32, width: i32, height: i32) void;
 export type fp_glScissorIndexed = fn(index: uint, left: i32, bottom: i32, width: i32, height: i32) void;
 export type fp_glScissorIndexedv = fn(index: uint, v: *const i32) void;
-export type fp_glSecondaryColor3b = fn(red: i8, green: i8, blue: i8) void;
 export type fp_glSecondaryColor3bEXT = fn(red: i8, green: i8, blue: i8) void;
-export type fp_glSecondaryColor3bv = fn(v: *const i8) void;
 export type fp_glSecondaryColor3bvEXT = fn(v: *const i8) void;
-export type fp_glSecondaryColor3d = fn(red: f64, green: f64, blue: f64) void;
 export type fp_glSecondaryColor3dEXT = fn(red: f64, green: f64, blue: f64) void;
-export type fp_glSecondaryColor3dv = fn(v: *const f64) void;
 export type fp_glSecondaryColor3dvEXT = fn(v: *const f64) void;
-export type fp_glSecondaryColor3f = fn(red: f32, green: f32, blue: f32) void;
 export type fp_glSecondaryColor3fEXT = fn(red: f32, green: f32, blue: f32) void;
-export type fp_glSecondaryColor3fv = fn(v: *const f32) void;
 export type fp_glSecondaryColor3fvEXT = fn(v: *const f32) void;
 export type fp_glSecondaryColor3hNV = fn(red: u16, green: u16, blue: u16) void;
 export type fp_glSecondaryColor3hvNV = fn(v: *const u16) void;
-export type fp_glSecondaryColor3i = fn(red: i32, green: i32, blue: i32) void;
 export type fp_glSecondaryColor3iEXT = fn(red: i32, green: i32, blue: i32) void;
-export type fp_glSecondaryColor3iv = fn(v: *const i32) void;
 export type fp_glSecondaryColor3ivEXT = fn(v: *const i32) void;
-export type fp_glSecondaryColor3s = fn(red: i16, green: i16, blue: i16) void;
 export type fp_glSecondaryColor3sEXT = fn(red: i16, green: i16, blue: i16) void;
-export type fp_glSecondaryColor3sv = fn(v: *const i16) void;
 export type fp_glSecondaryColor3svEXT = fn(v: *const i16) void;
-export type fp_glSecondaryColor3ub = fn(red: u8, green: u8, blue: u8) void;
 export type fp_glSecondaryColor3ubEXT = fn(red: u8, green: u8, blue: u8) void;
-export type fp_glSecondaryColor3ubv = fn(v: *const u8) void;
 export type fp_glSecondaryColor3ubvEXT = fn(v: *const u8) void;
-export type fp_glSecondaryColor3ui = fn(red: uint, green: uint, blue: uint) void;
 export type fp_glSecondaryColor3uiEXT = fn(red: uint, green: uint, blue: uint) void;
-export type fp_glSecondaryColor3uiv = fn(v: *const uint) void;
 export type fp_glSecondaryColor3uivEXT = fn(v: *const uint) void;
-export type fp_glSecondaryColor3us = fn(red: u16, green: u16, blue: u16) void;
 export type fp_glSecondaryColor3usEXT = fn(red: u16, green: u16, blue: u16) void;
-export type fp_glSecondaryColor3usv = fn(v: *const u16) void;
 export type fp_glSecondaryColor3usvEXT = fn(v: *const u16) void;
 export type fp_glSecondaryColorFormatNV = fn(size_: i32, type_: gl_enum, stride: i32) void;
-export type fp_glSecondaryColorPointer = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glSecondaryColorPointerEXT = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glSecondaryColorPointerListIBM = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
-export type fp_glSelectBuffer = fn(size_: i32, buffer: *uint) void;
 export type fp_glSelectPerfMonitorCountersAMD = fn(monitor: uint, enable: u8, group: uint, numCounters: i32, counterList: *uint) void;
 export type fp_glSemaphoreParameterivNV = fn(semaphore: uint, pname: gl_enum, params: *const i32) void;
 export type fp_glSemaphoreParameterui64vEXT = fn(semaphore: uint, pname: gl_enum, params: *const u64) void;
@@ -6788,7 +6307,6 @@ export type fp_glSetFragmentShaderConstantATI = fn(dst: uint, value: *const f32)
 export type fp_glSetInvariantEXT = fn(id: uint, type_: gl_enum, addr: *const void) void;
 export type fp_glSetLocalConstantEXT = fn(id: uint, type_: gl_enum, addr: *const void) void;
 export type fp_glSetMultisamplefvAMD = fn(pname: gl_enum, index: uint, val: *const f32) void;
-export type fp_glShadeModel = fn(mode: gl_enum) void;
 export type fp_glShaderBinary = fn(count: i32, shaders: *const uint, binaryFormat: gl_enum, binary: *const void, length: i32) void;
 export type fp_glShaderOp1EXT = fn(op: gl_enum, res: uint, arg1: uint) void;
 export type fp_glShaderOp2EXT = fn(op: gl_enum, res: uint, arg1: uint, arg2: uint) void;
@@ -6854,6 +6372,7 @@ export type fp_glTestFenceAPPLE = fn(fence: uint) u8;
 export type fp_glTestFenceNV = fn(fence: uint) u8;
 export type fp_glTestObjectAPPLE = fn(object: gl_enum, name: uint) u8;
 export type fp_glTexAttachMemoryNV = fn(target: gl_enum, memory: uint, offset_: u64) void;
+export type fp_glTexBuffer = fn(target: gl_enum, internalformat: gl_enum, buffer: uint) void;
 export type fp_glTexBufferARB = fn(target: gl_enum, internalformat: gl_enum, buffer: uint) void;
 export type fp_glTexBufferEXT = fn(target: gl_enum, internalformat: gl_enum, buffer: uint) void;
 export type fp_glTexBufferRange = fn(target: gl_enum, internalformat: gl_enum, buffer: uint, offset_: size, size_: uintptr) void;
@@ -6861,23 +6380,12 @@ export type fp_glTexBumpParameterfvATI = fn(pname: gl_enum, param: *const f32) v
 export type fp_glTexBumpParameterivATI = fn(pname: gl_enum, param: *const i32) void;
 export type fp_glTexCoord1bOES = fn(s: i8) void;
 export type fp_glTexCoord1bvOES = fn(coords: *const i8) void;
-export type fp_glTexCoord1d = fn(s: f64) void;
-export type fp_glTexCoord1dv = fn(v: *const f64) void;
-export type fp_glTexCoord1f = fn(s: f32) void;
-export type fp_glTexCoord1fv = fn(v: *const f32) void;
 export type fp_glTexCoord1hNV = fn(s: u16) void;
 export type fp_glTexCoord1hvNV = fn(v: *const u16) void;
-export type fp_glTexCoord1i = fn(s: i32) void;
-export type fp_glTexCoord1iv = fn(v: *const i32) void;
-export type fp_glTexCoord1s = fn(s: i16) void;
-export type fp_glTexCoord1sv = fn(v: *const i16) void;
 export type fp_glTexCoord1xOES = fn(s: i32) void;
 export type fp_glTexCoord1xvOES = fn(coords: *const i32) void;
 export type fp_glTexCoord2bOES = fn(s: i8, t: i8) void;
 export type fp_glTexCoord2bvOES = fn(coords: *const i8) void;
-export type fp_glTexCoord2d = fn(s: f64, t: f64) void;
-export type fp_glTexCoord2dv = fn(v: *const f64) void;
-export type fp_glTexCoord2f = fn(s: f32, t: f32) void;
 export type fp_glTexCoord2fColor3fVertex3fSUN = fn(s: f32, t: f32, r: f32, g: f32, b: f32, x: f32, y: f32, z: f32) void;
 export type fp_glTexCoord2fColor3fVertex3fvSUN = fn(tc: *const f32, c: *const f32, v: *const f32) void;
 export type fp_glTexCoord2fColor4fNormal3fVertex3fSUN = fn(s: f32, t: f32, r: f32, g: f32, b: f32, a: f32, nx: f32, ny: f32, nz: f32, x: f32, y: f32, z: f32) void;
@@ -6888,65 +6396,33 @@ export type fp_glTexCoord2fNormal3fVertex3fSUN = fn(s: f32, t: f32, nx: f32, ny:
 export type fp_glTexCoord2fNormal3fVertex3fvSUN = fn(tc: *const f32, n: *const f32, v: *const f32) void;
 export type fp_glTexCoord2fVertex3fSUN = fn(s: f32, t: f32, x: f32, y: f32, z: f32) void;
 export type fp_glTexCoord2fVertex3fvSUN = fn(tc: *const f32, v: *const f32) void;
-export type fp_glTexCoord2fv = fn(v: *const f32) void;
 export type fp_glTexCoord2hNV = fn(s: u16, t: u16) void;
 export type fp_glTexCoord2hvNV = fn(v: *const u16) void;
-export type fp_glTexCoord2i = fn(s: i32, t: i32) void;
-export type fp_glTexCoord2iv = fn(v: *const i32) void;
-export type fp_glTexCoord2s = fn(s: i16, t: i16) void;
-export type fp_glTexCoord2sv = fn(v: *const i16) void;
 export type fp_glTexCoord2xOES = fn(s: i32, t: i32) void;
 export type fp_glTexCoord2xvOES = fn(coords: *const i32) void;
 export type fp_glTexCoord3bOES = fn(s: i8, t: i8, r: i8) void;
 export type fp_glTexCoord3bvOES = fn(coords: *const i8) void;
-export type fp_glTexCoord3d = fn(s: f64, t: f64, r: f64) void;
-export type fp_glTexCoord3dv = fn(v: *const f64) void;
-export type fp_glTexCoord3f = fn(s: f32, t: f32, r: f32) void;
-export type fp_glTexCoord3fv = fn(v: *const f32) void;
 export type fp_glTexCoord3hNV = fn(s: u16, t: u16, r: u16) void;
 export type fp_glTexCoord3hvNV = fn(v: *const u16) void;
-export type fp_glTexCoord3i = fn(s: i32, t: i32, r: i32) void;
-export type fp_glTexCoord3iv = fn(v: *const i32) void;
-export type fp_glTexCoord3s = fn(s: i16, t: i16, r: i16) void;
-export type fp_glTexCoord3sv = fn(v: *const i16) void;
 export type fp_glTexCoord3xOES = fn(s: i32, t: i32, r: i32) void;
 export type fp_glTexCoord3xvOES = fn(coords: *const i32) void;
 export type fp_glTexCoord4bOES = fn(s: i8, t: i8, r: i8, q: i8) void;
 export type fp_glTexCoord4bvOES = fn(coords: *const i8) void;
-export type fp_glTexCoord4d = fn(s: f64, t: f64, r: f64, q: f64) void;
-export type fp_glTexCoord4dv = fn(v: *const f64) void;
-export type fp_glTexCoord4f = fn(s: f32, t: f32, r: f32, q: f32) void;
 export type fp_glTexCoord4fColor4fNormal3fVertex4fSUN = fn(s: f32, t: f32, p: f32, q: f32, r: f32, g: f32, b: f32, a: f32, nx: f32, ny: f32, nz: f32, x: f32, y: f32, z: f32, w: f32) void;
 export type fp_glTexCoord4fColor4fNormal3fVertex4fvSUN = fn(tc: *const f32, c: *const f32, n: *const f32, v: *const f32) void;
 export type fp_glTexCoord4fVertex4fSUN = fn(s: f32, t: f32, p: f32, q: f32, x: f32, y: f32, z: f32, w: f32) void;
 export type fp_glTexCoord4fVertex4fvSUN = fn(tc: *const f32, v: *const f32) void;
-export type fp_glTexCoord4fv = fn(v: *const f32) void;
 export type fp_glTexCoord4hNV = fn(s: u16, t: u16, r: u16, q: u16) void;
 export type fp_glTexCoord4hvNV = fn(v: *const u16) void;
-export type fp_glTexCoord4i = fn(s: i32, t: i32, r: i32, q: i32) void;
-export type fp_glTexCoord4iv = fn(v: *const i32) void;
-export type fp_glTexCoord4s = fn(s: i16, t: i16, r: i16, q: i16) void;
-export type fp_glTexCoord4sv = fn(v: *const i16) void;
 export type fp_glTexCoord4xOES = fn(s: i32, t: i32, r: i32, q: i32) void;
 export type fp_glTexCoord4xvOES = fn(coords: *const i32) void;
 export type fp_glTexCoordFormatNV = fn(size_: i32, type_: gl_enum, stride: i32) void;
-export type fp_glTexCoordPointer = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glTexCoordPointerEXT = fn(size_: i32, type_: gl_enum, stride: i32, count: i32, pointer: *const void) void;
 export type fp_glTexCoordPointerListIBM = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
 export type fp_glTexCoordPointervINTEL = fn(size_: i32, type_: gl_enum, pointer: *const *const void) void;
-export type fp_glTexEnvf = fn(target: gl_enum, pname: gl_enum, param: f32) void;
-export type fp_glTexEnvfv = fn(target: gl_enum, pname: gl_enum, params: *const f32) void;
-export type fp_glTexEnvi = fn(target: gl_enum, pname: gl_enum, param: i32) void;
-export type fp_glTexEnviv = fn(target: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glTexEnvxOES = fn(target: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glTexEnvxvOES = fn(target: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glTexFilterFuncSGIS = fn(target: gl_enum, filter: gl_enum, n: i32, weights: *const f32) void;
-export type fp_glTexGend = fn(coord: gl_enum, pname: gl_enum, param: f64) void;
-export type fp_glTexGendv = fn(coord: gl_enum, pname: gl_enum, params: *const f64) void;
-export type fp_glTexGenf = fn(coord: gl_enum, pname: gl_enum, param: f32) void;
-export type fp_glTexGenfv = fn(coord: gl_enum, pname: gl_enum, params: *const f32) void;
-export type fp_glTexGeni = fn(coord: gl_enum, pname: gl_enum, param: i32) void;
-export type fp_glTexGeniv = fn(coord: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glTexGenxOES = fn(coord: gl_enum, pname: gl_enum, param: i32) void;
 export type fp_glTexGenxvOES = fn(coord: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glTexImage1D = fn(target: gl_enum, level: i32, internalformat: i32, width: i32, border: i32, format: gl_enum, type_: gl_enum, pixels: *const void) void;
@@ -6960,7 +6436,9 @@ export type fp_glTexImage3DMultisampleCoverageNV = fn(target: gl_enum, coverageS
 export type fp_glTexImage4DSGIS = fn(target: gl_enum, level: i32, internalformat: gl_enum, width: i32, height: i32, depth: i32, size4d: i32, border: i32, format: gl_enum, type_: gl_enum, pixels: *const void) void;
 export type fp_glTexPageCommitmentARB = fn(target: gl_enum, level: i32, xoffset: i32, yoffset: i32, zoffset: i32, width: i32, height: i32, depth: i32, commit: u8) void;
 export type fp_glTexPageCommitmentMemNV = fn(target: gl_enum, layer: i32, level: i32, xoffset: i32, yoffset: i32, zoffset: i32, width: i32, height: i32, depth: i32, memory: uint, offset_: u64, commit: u8) void;
+export type fp_glTexParameterIiv = fn(target: gl_enum, pname: gl_enum, params: *const i32) void;
 export type fp_glTexParameterIivEXT = fn(target: gl_enum, pname: gl_enum, params: *const i32) void;
+export type fp_glTexParameterIuiv = fn(target: gl_enum, pname: gl_enum, params: *const uint) void;
 export type fp_glTexParameterIuivEXT = fn(target: gl_enum, pname: gl_enum, params: *const uint) void;
 export type fp_glTexParameterf = fn(target: gl_enum, pname: gl_enum, param: f32) void;
 export type fp_glTexParameterfv = fn(target: gl_enum, pname: gl_enum, params: *const f32) void;
@@ -7052,11 +6530,10 @@ export type fp_glTransformFeedbackAttribsNV = fn(count: i32, attribs: *const i32
 export type fp_glTransformFeedbackBufferBase = fn(xfb: uint, index: uint, buffer: uint) void;
 export type fp_glTransformFeedbackBufferRange = fn(xfb: uint, index: uint, buffer: uint, offset_: size, size_: uintptr) void;
 export type fp_glTransformFeedbackStreamAttribsNV = fn(count: i32, attribs: *const i32, nbuffers: i32, bufstreams: *const i32, bufferMode: gl_enum) void;
+export type fp_glTransformFeedbackVaryings = fn(program: uint, count: i32, varyings: *const *const i8, bufferMode: gl_enum) void;
 export type fp_glTransformFeedbackVaryingsEXT = fn(program: uint, count: i32, varyings: *const *const i8, bufferMode: gl_enum) void;
 export type fp_glTransformFeedbackVaryingsNV = fn(program: uint, count: i32, locations: *const i32, bufferMode: gl_enum) void;
 export type fp_glTransformPathNV = fn(resultPath: uint, srcPath: uint, transformType: gl_enum, transformValues: *const f32) void;
-export type fp_glTranslated = fn(x: f64, y: f64, z: f64) void;
-export type fp_glTranslatef = fn(x: f32, y: f32, z: f32) void;
 export type fp_glTranslatexOES = fn(x: i32, y: i32, z: i32) void;
 export type fp_glUniform1d = fn(location: i32, x: f64) void;
 export type fp_glUniform1dv = fn(location: i32, count: i32, value: *const f64) void;
@@ -7072,11 +6549,13 @@ export type fp_glUniform1i64vNV = fn(location: i32, count: i32, value: *const i6
 export type fp_glUniform1iARB = fn(location: i32, v0: i32) void;
 export type fp_glUniform1iv = fn(location: i32, count: i32, value: *const i32) void;
 export type fp_glUniform1ivARB = fn(location: i32, count: i32, value: *const i32) void;
+export type fp_glUniform1ui = fn(location: i32, v0: uint) void;
 export type fp_glUniform1ui64ARB = fn(location: i32, x: u64) void;
 export type fp_glUniform1ui64NV = fn(location: i32, x: u64) void;
 export type fp_glUniform1ui64vARB = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform1ui64vNV = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform1uiEXT = fn(location: i32, v0: uint) void;
+export type fp_glUniform1uiv = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform1uivEXT = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform2d = fn(location: i32, x: f64, y: f64) void;
 export type fp_glUniform2dv = fn(location: i32, count: i32, value: *const f64) void;
@@ -7092,11 +6571,13 @@ export type fp_glUniform2i64vNV = fn(location: i32, count: i32, value: *const i6
 export type fp_glUniform2iARB = fn(location: i32, v0: i32, v1: i32) void;
 export type fp_glUniform2iv = fn(location: i32, count: i32, value: *const i32) void;
 export type fp_glUniform2ivARB = fn(location: i32, count: i32, value: *const i32) void;
+export type fp_glUniform2ui = fn(location: i32, v0: uint, v1: uint) void;
 export type fp_glUniform2ui64ARB = fn(location: i32, x: u64, y: u64) void;
 export type fp_glUniform2ui64NV = fn(location: i32, x: u64, y: u64) void;
 export type fp_glUniform2ui64vARB = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform2ui64vNV = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform2uiEXT = fn(location: i32, v0: uint, v1: uint) void;
+export type fp_glUniform2uiv = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform2uivEXT = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform3d = fn(location: i32, x: f64, y: f64, z: f64) void;
 export type fp_glUniform3dv = fn(location: i32, count: i32, value: *const f64) void;
@@ -7112,11 +6593,13 @@ export type fp_glUniform3i64vNV = fn(location: i32, count: i32, value: *const i6
 export type fp_glUniform3iARB = fn(location: i32, v0: i32, v1: i32, v2: i32) void;
 export type fp_glUniform3iv = fn(location: i32, count: i32, value: *const i32) void;
 export type fp_glUniform3ivARB = fn(location: i32, count: i32, value: *const i32) void;
+export type fp_glUniform3ui = fn(location: i32, v0: uint, v1: uint, v2: uint) void;
 export type fp_glUniform3ui64ARB = fn(location: i32, x: u64, y: u64, z: u64) void;
 export type fp_glUniform3ui64NV = fn(location: i32, x: u64, y: u64, z: u64) void;
 export type fp_glUniform3ui64vARB = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform3ui64vNV = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform3uiEXT = fn(location: i32, v0: uint, v1: uint, v2: uint) void;
+export type fp_glUniform3uiv = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform3uivEXT = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform4d = fn(location: i32, x: f64, y: f64, z: f64, w: f64) void;
 export type fp_glUniform4dv = fn(location: i32, count: i32, value: *const f64) void;
@@ -7132,11 +6615,13 @@ export type fp_glUniform4i64vNV = fn(location: i32, count: i32, value: *const i6
 export type fp_glUniform4iARB = fn(location: i32, v0: i32, v1: i32, v2: i32, v3: i32) void;
 export type fp_glUniform4iv = fn(location: i32, count: i32, value: *const i32) void;
 export type fp_glUniform4ivARB = fn(location: i32, count: i32, value: *const i32) void;
+export type fp_glUniform4ui = fn(location: i32, v0: uint, v1: uint, v2: uint, v3: uint) void;
 export type fp_glUniform4ui64ARB = fn(location: i32, x: u64, y: u64, z: u64, w: u64) void;
 export type fp_glUniform4ui64NV = fn(location: i32, x: u64, y: u64, z: u64, w: u64) void;
 export type fp_glUniform4ui64vARB = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform4ui64vNV = fn(location: i32, count: i32, value: *const u64) void;
 export type fp_glUniform4uiEXT = fn(location: i32, v0: uint, v1: uint, v2: uint, v3: uint) void;
+export type fp_glUniform4uiv = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniform4uivEXT = fn(location: i32, count: i32, value: *const uint) void;
 export type fp_glUniformBlockBinding = fn(program: uint, uniformBlockIndex: uint, uniformBlockBinding: uint) void;
 export type fp_glUniformBufferEXT = fn(program: uint, location: i32, buffer: uint) void;
@@ -7207,44 +6692,20 @@ export type fp_glVariantuivEXT = fn(id: uint, addr: *const uint) void;
 export type fp_glVariantusvEXT = fn(id: uint, addr: *const u16) void;
 export type fp_glVertex2bOES = fn(x: i8, y: i8) void;
 export type fp_glVertex2bvOES = fn(coords: *const i8) void;
-export type fp_glVertex2d = fn(x: f64, y: f64) void;
-export type fp_glVertex2dv = fn(v: *const f64) void;
-export type fp_glVertex2f = fn(x: f32, y: f32) void;
-export type fp_glVertex2fv = fn(v: *const f32) void;
 export type fp_glVertex2hNV = fn(x: u16, y: u16) void;
 export type fp_glVertex2hvNV = fn(v: *const u16) void;
-export type fp_glVertex2i = fn(x: i32, y: i32) void;
-export type fp_glVertex2iv = fn(v: *const i32) void;
-export type fp_glVertex2s = fn(x: i16, y: i16) void;
-export type fp_glVertex2sv = fn(v: *const i16) void;
 export type fp_glVertex2xOES = fn(x: i32) void;
 export type fp_glVertex2xvOES = fn(coords: *const i32) void;
 export type fp_glVertex3bOES = fn(x: i8, y: i8, z: i8) void;
 export type fp_glVertex3bvOES = fn(coords: *const i8) void;
-export type fp_glVertex3d = fn(x: f64, y: f64, z: f64) void;
-export type fp_glVertex3dv = fn(v: *const f64) void;
-export type fp_glVertex3f = fn(x: f32, y: f32, z: f32) void;
-export type fp_glVertex3fv = fn(v: *const f32) void;
 export type fp_glVertex3hNV = fn(x: u16, y: u16, z: u16) void;
 export type fp_glVertex3hvNV = fn(v: *const u16) void;
-export type fp_glVertex3i = fn(x: i32, y: i32, z: i32) void;
-export type fp_glVertex3iv = fn(v: *const i32) void;
-export type fp_glVertex3s = fn(x: i16, y: i16, z: i16) void;
-export type fp_glVertex3sv = fn(v: *const i16) void;
 export type fp_glVertex3xOES = fn(x: i32, y: i32) void;
 export type fp_glVertex3xvOES = fn(coords: *const i32) void;
 export type fp_glVertex4bOES = fn(x: i8, y: i8, z: i8, w: i8) void;
 export type fp_glVertex4bvOES = fn(coords: *const i8) void;
-export type fp_glVertex4d = fn(x: f64, y: f64, z: f64, w: f64) void;
-export type fp_glVertex4dv = fn(v: *const f64) void;
-export type fp_glVertex4f = fn(x: f32, y: f32, z: f32, w: f32) void;
-export type fp_glVertex4fv = fn(v: *const f32) void;
 export type fp_glVertex4hNV = fn(x: u16, y: u16, z: u16, w: u16) void;
 export type fp_glVertex4hvNV = fn(v: *const u16) void;
-export type fp_glVertex4i = fn(x: i32, y: i32, z: i32, w: i32) void;
-export type fp_glVertex4iv = fn(v: *const i32) void;
-export type fp_glVertex4s = fn(x: i16, y: i16, z: i16, w: i16) void;
-export type fp_glVertex4sv = fn(v: *const i16) void;
 export type fp_glVertex4xOES = fn(x: i32, y: i32, z: i32) void;
 export type fp_glVertex4xvOES = fn(coords: *const i32) void;
 export type fp_glVertexArrayAttribBinding = fn(vaobj: uint, attribindex: uint, bindingindex: uint) void;
@@ -7385,31 +6846,53 @@ export type fp_glVertexAttrib4usv = fn(index: uint, v: *const u16) void;
 export type fp_glVertexAttrib4usvARB = fn(index: uint, v: *const u16) void;
 export type fp_glVertexAttribArrayObjectATI = fn(index: uint, size_: i32, type_: gl_enum, normalized: u8, stride: i32, buffer: uint, offset_: uint) void;
 export type fp_glVertexAttribBinding = fn(attribindex: uint, bindingindex: uint) void;
+export type fp_glVertexAttribDivisor = fn(index: uint, divisor: uint) void;
 export type fp_glVertexAttribDivisorARB = fn(index: uint, divisor: uint) void;
 export type fp_glVertexAttribFormat = fn(attribindex: uint, size_: i32, type_: gl_enum, normalized: u8, relativeoffset: uint) void;
 export type fp_glVertexAttribFormatNV = fn(index: uint, size_: i32, type_: gl_enum, normalized: u8, stride: i32) void;
+export type fp_glVertexAttribI1i = fn(index: uint, x: i32) void;
 export type fp_glVertexAttribI1iEXT = fn(index: uint, x: i32) void;
+export type fp_glVertexAttribI1iv = fn(index: uint, v: *const i32) void;
 export type fp_glVertexAttribI1ivEXT = fn(index: uint, v: *const i32) void;
+export type fp_glVertexAttribI1ui = fn(index: uint, x: uint) void;
 export type fp_glVertexAttribI1uiEXT = fn(index: uint, x: uint) void;
+export type fp_glVertexAttribI1uiv = fn(index: uint, v: *const uint) void;
 export type fp_glVertexAttribI1uivEXT = fn(index: uint, v: *const uint) void;
+export type fp_glVertexAttribI2i = fn(index: uint, x: i32, y: i32) void;
 export type fp_glVertexAttribI2iEXT = fn(index: uint, x: i32, y: i32) void;
+export type fp_glVertexAttribI2iv = fn(index: uint, v: *const i32) void;
 export type fp_glVertexAttribI2ivEXT = fn(index: uint, v: *const i32) void;
+export type fp_glVertexAttribI2ui = fn(index: uint, x: uint, y: uint) void;
 export type fp_glVertexAttribI2uiEXT = fn(index: uint, x: uint, y: uint) void;
+export type fp_glVertexAttribI2uiv = fn(index: uint, v: *const uint) void;
 export type fp_glVertexAttribI2uivEXT = fn(index: uint, v: *const uint) void;
+export type fp_glVertexAttribI3i = fn(index: uint, x: i32, y: i32, z: i32) void;
 export type fp_glVertexAttribI3iEXT = fn(index: uint, x: i32, y: i32, z: i32) void;
+export type fp_glVertexAttribI3iv = fn(index: uint, v: *const i32) void;
 export type fp_glVertexAttribI3ivEXT = fn(index: uint, v: *const i32) void;
+export type fp_glVertexAttribI3ui = fn(index: uint, x: uint, y: uint, z: uint) void;
 export type fp_glVertexAttribI3uiEXT = fn(index: uint, x: uint, y: uint, z: uint) void;
+export type fp_glVertexAttribI3uiv = fn(index: uint, v: *const uint) void;
 export type fp_glVertexAttribI3uivEXT = fn(index: uint, v: *const uint) void;
+export type fp_glVertexAttribI4bv = fn(index: uint, v: *const i8) void;
 export type fp_glVertexAttribI4bvEXT = fn(index: uint, v: *const i8) void;
+export type fp_glVertexAttribI4i = fn(index: uint, x: i32, y: i32, z: i32, w: i32) void;
 export type fp_glVertexAttribI4iEXT = fn(index: uint, x: i32, y: i32, z: i32, w: i32) void;
+export type fp_glVertexAttribI4iv = fn(index: uint, v: *const i32) void;
 export type fp_glVertexAttribI4ivEXT = fn(index: uint, v: *const i32) void;
+export type fp_glVertexAttribI4sv = fn(index: uint, v: *const i16) void;
 export type fp_glVertexAttribI4svEXT = fn(index: uint, v: *const i16) void;
+export type fp_glVertexAttribI4ubv = fn(index: uint, v: *const u8) void;
 export type fp_glVertexAttribI4ubvEXT = fn(index: uint, v: *const u8) void;
+export type fp_glVertexAttribI4ui = fn(index: uint, x: uint, y: uint, z: uint, w: uint) void;
 export type fp_glVertexAttribI4uiEXT = fn(index: uint, x: uint, y: uint, z: uint, w: uint) void;
+export type fp_glVertexAttribI4uiv = fn(index: uint, v: *const uint) void;
 export type fp_glVertexAttribI4uivEXT = fn(index: uint, v: *const uint) void;
+export type fp_glVertexAttribI4usv = fn(index: uint, v: *const u16) void;
 export type fp_glVertexAttribI4usvEXT = fn(index: uint, v: *const u16) void;
 export type fp_glVertexAttribIFormat = fn(attribindex: uint, size_: i32, type_: gl_enum, relativeoffset: uint) void;
 export type fp_glVertexAttribIFormatNV = fn(index: uint, size_: i32, type_: gl_enum, stride: i32) void;
+export type fp_glVertexAttribIPointer = fn(index: uint, size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glVertexAttribIPointerEXT = fn(index: uint, size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glVertexAttribL1d = fn(index: uint, x: f64) void;
 export type fp_glVertexAttribL1dEXT = fn(index: uint, x: f64) void;
@@ -7483,7 +6966,6 @@ export type fp_glVertexBlendARB = fn(count: i32) void;
 export type fp_glVertexBlendEnvfATI = fn(pname: gl_enum, param: f32) void;
 export type fp_glVertexBlendEnviATI = fn(pname: gl_enum, param: i32) void;
 export type fp_glVertexFormatNV = fn(size_: i32, type_: gl_enum, stride: i32) void;
-export type fp_glVertexPointer = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const void) void;
 export type fp_glVertexPointerEXT = fn(size_: i32, type_: gl_enum, stride: i32, count: i32, pointer: *const void) void;
 export type fp_glVertexPointerListIBM = fn(size_: i32, type_: gl_enum, stride: i32, pointer: *const *const void, ptrstride: i32) void;
 export type fp_glVertexPointervINTEL = fn(size_: i32, type_: gl_enum, pointer: *const *const void) void;
@@ -7548,52 +7030,36 @@ export type fp_glWeightsvARB = fn(size_: i32, weights: *const i16) void;
 export type fp_glWeightubvARB = fn(size_: i32, weights: *const u8) void;
 export type fp_glWeightuivARB = fn(size_: i32, weights: *const uint) void;
 export type fp_glWeightusvARB = fn(size_: i32, weights: *const u16) void;
-export type fp_glWindowPos2d = fn(x: f64, y: f64) void;
 export type fp_glWindowPos2dARB = fn(x: f64, y: f64) void;
 export type fp_glWindowPos2dMESA = fn(x: f64, y: f64) void;
-export type fp_glWindowPos2dv = fn(v: *const f64) void;
 export type fp_glWindowPos2dvARB = fn(v: *const f64) void;
 export type fp_glWindowPos2dvMESA = fn(v: *const f64) void;
-export type fp_glWindowPos2f = fn(x: f32, y: f32) void;
 export type fp_glWindowPos2fARB = fn(x: f32, y: f32) void;
 export type fp_glWindowPos2fMESA = fn(x: f32, y: f32) void;
-export type fp_glWindowPos2fv = fn(v: *const f32) void;
 export type fp_glWindowPos2fvARB = fn(v: *const f32) void;
 export type fp_glWindowPos2fvMESA = fn(v: *const f32) void;
-export type fp_glWindowPos2i = fn(x: i32, y: i32) void;
 export type fp_glWindowPos2iARB = fn(x: i32, y: i32) void;
 export type fp_glWindowPos2iMESA = fn(x: i32, y: i32) void;
-export type fp_glWindowPos2iv = fn(v: *const i32) void;
 export type fp_glWindowPos2ivARB = fn(v: *const i32) void;
 export type fp_glWindowPos2ivMESA = fn(v: *const i32) void;
-export type fp_glWindowPos2s = fn(x: i16, y: i16) void;
 export type fp_glWindowPos2sARB = fn(x: i16, y: i16) void;
 export type fp_glWindowPos2sMESA = fn(x: i16, y: i16) void;
-export type fp_glWindowPos2sv = fn(v: *const i16) void;
 export type fp_glWindowPos2svARB = fn(v: *const i16) void;
 export type fp_glWindowPos2svMESA = fn(v: *const i16) void;
-export type fp_glWindowPos3d = fn(x: f64, y: f64, z: f64) void;
 export type fp_glWindowPos3dARB = fn(x: f64, y: f64, z: f64) void;
 export type fp_glWindowPos3dMESA = fn(x: f64, y: f64, z: f64) void;
-export type fp_glWindowPos3dv = fn(v: *const f64) void;
 export type fp_glWindowPos3dvARB = fn(v: *const f64) void;
 export type fp_glWindowPos3dvMESA = fn(v: *const f64) void;
-export type fp_glWindowPos3f = fn(x: f32, y: f32, z: f32) void;
 export type fp_glWindowPos3fARB = fn(x: f32, y: f32, z: f32) void;
 export type fp_glWindowPos3fMESA = fn(x: f32, y: f32, z: f32) void;
-export type fp_glWindowPos3fv = fn(v: *const f32) void;
 export type fp_glWindowPos3fvARB = fn(v: *const f32) void;
 export type fp_glWindowPos3fvMESA = fn(v: *const f32) void;
-export type fp_glWindowPos3i = fn(x: i32, y: i32, z: i32) void;
 export type fp_glWindowPos3iARB = fn(x: i32, y: i32, z: i32) void;
 export type fp_glWindowPos3iMESA = fn(x: i32, y: i32, z: i32) void;
-export type fp_glWindowPos3iv = fn(v: *const i32) void;
 export type fp_glWindowPos3ivARB = fn(v: *const i32) void;
 export type fp_glWindowPos3ivMESA = fn(v: *const i32) void;
-export type fp_glWindowPos3s = fn(x: i16, y: i16, z: i16) void;
 export type fp_glWindowPos3sARB = fn(x: i16, y: i16, z: i16) void;
 export type fp_glWindowPos3sMESA = fn(x: i16, y: i16, z: i16) void;
-export type fp_glWindowPos3sv = fn(v: *const i16) void;
 export type fp_glWindowPos3svARB = fn(v: *const i16) void;
 export type fp_glWindowPos3svMESA = fn(v: *const i16) void;
 export type fp_glWindowPos4dMESA = fn(x: f64, y: f64, z: f64, w: f64) void;
@@ -7608,8 +7074,6 @@ export type fp_glWindowRectanglesEXT = fn(mode: gl_enum, count: i32, box: *const
 export type fp_glWriteMaskEXT = fn(res: uint, in: uint, outX: gl_enum, outY: gl_enum, outZ: gl_enum, outW: gl_enum) void;
 
 // Functions
-export let glAccum: *fp_glAccum =
-	null: *fp_glAccum;
 export let glAccumxOES: *fp_glAccumxOES =
 	null: *fp_glAccumxOES;
 export let glAcquireKeyedMutexWin32EXT: *fp_glAcquireKeyedMutexWin32EXT =
@@ -7632,8 +7096,6 @@ export let glAlphaFragmentOp2ATI: *fp_glAlphaFragmentOp2ATI =
 	null: *fp_glAlphaFragmentOp2ATI;
 export let glAlphaFragmentOp3ATI: *fp_glAlphaFragmentOp3ATI =
 	null: *fp_glAlphaFragmentOp3ATI;
-export let glAlphaFunc: *fp_glAlphaFunc =
-	null: *fp_glAlphaFunc;
 export let glAlphaFuncxOES: *fp_glAlphaFuncxOES =
 	null: *fp_glAlphaFuncxOES;
 export let glAlphaToCoverageDitherControlNV: *fp_glAlphaToCoverageDitherControlNV =
@@ -7644,12 +7106,8 @@ export let glApplyTextureEXT: *fp_glApplyTextureEXT =
 	null: *fp_glApplyTextureEXT;
 export let glAreProgramsResidentNV: *fp_glAreProgramsResidentNV =
 	null: *fp_glAreProgramsResidentNV;
-export let glAreTexturesResident: *fp_glAreTexturesResident =
-	null: *fp_glAreTexturesResident;
 export let glAreTexturesResidentEXT: *fp_glAreTexturesResidentEXT =
 	null: *fp_glAreTexturesResidentEXT;
-export let glArrayElement: *fp_glArrayElement =
-	null: *fp_glArrayElement;
 export let glArrayElementEXT: *fp_glArrayElementEXT =
 	null: *fp_glArrayElementEXT;
 export let glArrayObjectATI: *fp_glArrayObjectATI =
@@ -7664,8 +7122,8 @@ export let glAttachObjectARB: *fp_glAttachObjectARB =
 	null: *fp_glAttachObjectARB;
 export let glAttachShader: *fp_glAttachShader =
 	null: *fp_glAttachShader;
-export let glBegin: *fp_glBegin =
-	null: *fp_glBegin;
+export let glBeginConditionalRender: *fp_glBeginConditionalRender =
+	null: *fp_glBeginConditionalRender;
 export let glBeginConditionalRenderNV: *fp_glBeginConditionalRenderNV =
 	null: *fp_glBeginConditionalRenderNV;
 export let glBeginConditionalRenderNVX: *fp_glBeginConditionalRenderNVX =
@@ -7684,6 +7142,8 @@ export let glBeginQueryARB: *fp_glBeginQueryARB =
 	null: *fp_glBeginQueryARB;
 export let glBeginQueryIndexed: *fp_glBeginQueryIndexed =
 	null: *fp_glBeginQueryIndexed;
+export let glBeginTransformFeedback: *fp_glBeginTransformFeedback =
+	null: *fp_glBeginTransformFeedback;
 export let glBeginTransformFeedbackEXT: *fp_glBeginTransformFeedbackEXT =
 	null: *fp_glBeginTransformFeedbackEXT;
 export let glBeginTransformFeedbackNV: *fp_glBeginTransformFeedbackNV =
@@ -7720,6 +7180,8 @@ export let glBindBuffersBase: *fp_glBindBuffersBase =
 	null: *fp_glBindBuffersBase;
 export let glBindBuffersRange: *fp_glBindBuffersRange =
 	null: *fp_glBindBuffersRange;
+export let glBindFragDataLocation: *fp_glBindFragDataLocation =
+	null: *fp_glBindFragDataLocation;
 export let glBindFragDataLocationEXT: *fp_glBindFragDataLocationEXT =
 	null: *fp_glBindFragDataLocationEXT;
 export let glBindFragDataLocationIndexed: *fp_glBindFragDataLocationIndexed =
@@ -7812,8 +7274,6 @@ export let glBinormal3svEXT: *fp_glBinormal3svEXT =
 	null: *fp_glBinormal3svEXT;
 export let glBinormalPointerEXT: *fp_glBinormalPointerEXT =
 	null: *fp_glBinormalPointerEXT;
-export let glBitmap: *fp_glBitmap =
-	null: *fp_glBitmap;
 export let glBitmapxOES: *fp_glBitmapxOES =
 	null: *fp_glBitmapxOES;
 export let glBlendBarrierKHR: *fp_glBlendBarrierKHR =
@@ -7838,8 +7298,12 @@ export let glBlendEquationSeparateEXT: *fp_glBlendEquationSeparateEXT =
 	null: *fp_glBlendEquationSeparateEXT;
 export let glBlendEquationSeparateIndexedAMD: *fp_glBlendEquationSeparateIndexedAMD =
 	null: *fp_glBlendEquationSeparateIndexedAMD;
+export let glBlendEquationSeparatei: *fp_glBlendEquationSeparatei =
+	null: *fp_glBlendEquationSeparatei;
 export let glBlendEquationSeparateiARB: *fp_glBlendEquationSeparateiARB =
 	null: *fp_glBlendEquationSeparateiARB;
+export let glBlendEquationi: *fp_glBlendEquationi =
+	null: *fp_glBlendEquationi;
 export let glBlendEquationiARB: *fp_glBlendEquationiARB =
 	null: *fp_glBlendEquationiARB;
 export let glBlendFunc: *fp_glBlendFunc =
@@ -7854,8 +7318,12 @@ export let glBlendFuncSeparateINGR: *fp_glBlendFuncSeparateINGR =
 	null: *fp_glBlendFuncSeparateINGR;
 export let glBlendFuncSeparateIndexedAMD: *fp_glBlendFuncSeparateIndexedAMD =
 	null: *fp_glBlendFuncSeparateIndexedAMD;
+export let glBlendFuncSeparatei: *fp_glBlendFuncSeparatei =
+	null: *fp_glBlendFuncSeparatei;
 export let glBlendFuncSeparateiARB: *fp_glBlendFuncSeparateiARB =
 	null: *fp_glBlendFuncSeparateiARB;
+export let glBlendFunci: *fp_glBlendFunci =
+	null: *fp_glBlendFunci;
 export let glBlendFunciARB: *fp_glBlendFunciARB =
 	null: *fp_glBlendFunciARB;
 export let glBlendParameteriNV: *fp_glBlendParameteriNV =
@@ -7892,10 +7360,6 @@ export let glBufferSubDataARB: *fp_glBufferSubDataARB =
 	null: *fp_glBufferSubDataARB;
 export let glCallCommandListNV: *fp_glCallCommandListNV =
 	null: *fp_glCallCommandListNV;
-export let glCallList: *fp_glCallList =
-	null: *fp_glCallList;
-export let glCallLists: *fp_glCallLists =
-	null: *fp_glCallLists;
 export let glCheckFramebufferStatus: *fp_glCheckFramebufferStatus =
 	null: *fp_glCheckFramebufferStatus;
 export let glCheckFramebufferStatusEXT: *fp_glCheckFramebufferStatusEXT =
@@ -7904,18 +7368,26 @@ export let glCheckNamedFramebufferStatus: *fp_glCheckNamedFramebufferStatus =
 	null: *fp_glCheckNamedFramebufferStatus;
 export let glCheckNamedFramebufferStatusEXT: *fp_glCheckNamedFramebufferStatusEXT =
 	null: *fp_glCheckNamedFramebufferStatusEXT;
+export let glClampColor: *fp_glClampColor =
+	null: *fp_glClampColor;
 export let glClampColorARB: *fp_glClampColorARB =
 	null: *fp_glClampColorARB;
 export let glClear: *fp_glClear =
 	null: *fp_glClear;
-export let glClearAccum: *fp_glClearAccum =
-	null: *fp_glClearAccum;
 export let glClearAccumxOES: *fp_glClearAccumxOES =
 	null: *fp_glClearAccumxOES;
 export let glClearBufferData: *fp_glClearBufferData =
 	null: *fp_glClearBufferData;
 export let glClearBufferSubData: *fp_glClearBufferSubData =
 	null: *fp_glClearBufferSubData;
+export let glClearBufferfi: *fp_glClearBufferfi =
+	null: *fp_glClearBufferfi;
+export let glClearBufferfv: *fp_glClearBufferfv =
+	null: *fp_glClearBufferfv;
+export let glClearBufferiv: *fp_glClearBufferiv =
+	null: *fp_glClearBufferiv;
+export let glClearBufferuiv: *fp_glClearBufferuiv =
+	null: *fp_glClearBufferuiv;
 export let glClearColor: *fp_glClearColor =
 	null: *fp_glClearColor;
 export let glClearColorIiEXT: *fp_glClearColorIiEXT =
@@ -7934,8 +7406,6 @@ export let glClearDepthfOES: *fp_glClearDepthfOES =
 	null: *fp_glClearDepthfOES;
 export let glClearDepthxOES: *fp_glClearDepthxOES =
 	null: *fp_glClearDepthxOES;
-export let glClearIndex: *fp_glClearIndex =
-	null: *fp_glClearIndex;
 export let glClearNamedBufferData: *fp_glClearNamedBufferData =
 	null: *fp_glClearNamedBufferData;
 export let glClearNamedBufferDataEXT: *fp_glClearNamedBufferDataEXT =
@@ -7958,8 +7428,6 @@ export let glClearTexImage: *fp_glClearTexImage =
 	null: *fp_glClearTexImage;
 export let glClearTexSubImage: *fp_glClearTexSubImage =
 	null: *fp_glClearTexSubImage;
-export let glClientActiveTexture: *fp_glClientActiveTexture =
-	null: *fp_glClientActiveTexture;
 export let glClientActiveTextureARB: *fp_glClientActiveTextureARB =
 	null: *fp_glClientActiveTextureARB;
 export let glClientActiveVertexStreamATI: *fp_glClientActiveVertexStreamATI =
@@ -7972,86 +7440,30 @@ export let glClientWaitSync: *fp_glClientWaitSync =
 	null: *fp_glClientWaitSync;
 export let glClipControl: *fp_glClipControl =
 	null: *fp_glClipControl;
-export let glClipPlane: *fp_glClipPlane =
-	null: *fp_glClipPlane;
 export let glClipPlanefOES: *fp_glClipPlanefOES =
 	null: *fp_glClipPlanefOES;
 export let glClipPlanexOES: *fp_glClipPlanexOES =
 	null: *fp_glClipPlanexOES;
-export let glColor3b: *fp_glColor3b =
-	null: *fp_glColor3b;
-export let glColor3bv: *fp_glColor3bv =
-	null: *fp_glColor3bv;
-export let glColor3d: *fp_glColor3d =
-	null: *fp_glColor3d;
-export let glColor3dv: *fp_glColor3dv =
-	null: *fp_glColor3dv;
-export let glColor3f: *fp_glColor3f =
-	null: *fp_glColor3f;
 export let glColor3fVertex3fSUN: *fp_glColor3fVertex3fSUN =
 	null: *fp_glColor3fVertex3fSUN;
 export let glColor3fVertex3fvSUN: *fp_glColor3fVertex3fvSUN =
 	null: *fp_glColor3fVertex3fvSUN;
-export let glColor3fv: *fp_glColor3fv =
-	null: *fp_glColor3fv;
 export let glColor3hNV: *fp_glColor3hNV =
 	null: *fp_glColor3hNV;
 export let glColor3hvNV: *fp_glColor3hvNV =
 	null: *fp_glColor3hvNV;
-export let glColor3i: *fp_glColor3i =
-	null: *fp_glColor3i;
-export let glColor3iv: *fp_glColor3iv =
-	null: *fp_glColor3iv;
-export let glColor3s: *fp_glColor3s =
-	null: *fp_glColor3s;
-export let glColor3sv: *fp_glColor3sv =
-	null: *fp_glColor3sv;
-export let glColor3ub: *fp_glColor3ub =
-	null: *fp_glColor3ub;
-export let glColor3ubv: *fp_glColor3ubv =
-	null: *fp_glColor3ubv;
-export let glColor3ui: *fp_glColor3ui =
-	null: *fp_glColor3ui;
-export let glColor3uiv: *fp_glColor3uiv =
-	null: *fp_glColor3uiv;
-export let glColor3us: *fp_glColor3us =
-	null: *fp_glColor3us;
-export let glColor3usv: *fp_glColor3usv =
-	null: *fp_glColor3usv;
 export let glColor3xOES: *fp_glColor3xOES =
 	null: *fp_glColor3xOES;
 export let glColor3xvOES: *fp_glColor3xvOES =
 	null: *fp_glColor3xvOES;
-export let glColor4b: *fp_glColor4b =
-	null: *fp_glColor4b;
-export let glColor4bv: *fp_glColor4bv =
-	null: *fp_glColor4bv;
-export let glColor4d: *fp_glColor4d =
-	null: *fp_glColor4d;
-export let glColor4dv: *fp_glColor4dv =
-	null: *fp_glColor4dv;
-export let glColor4f: *fp_glColor4f =
-	null: *fp_glColor4f;
 export let glColor4fNormal3fVertex3fSUN: *fp_glColor4fNormal3fVertex3fSUN =
 	null: *fp_glColor4fNormal3fVertex3fSUN;
 export let glColor4fNormal3fVertex3fvSUN: *fp_glColor4fNormal3fVertex3fvSUN =
 	null: *fp_glColor4fNormal3fVertex3fvSUN;
-export let glColor4fv: *fp_glColor4fv =
-	null: *fp_glColor4fv;
 export let glColor4hNV: *fp_glColor4hNV =
 	null: *fp_glColor4hNV;
 export let glColor4hvNV: *fp_glColor4hvNV =
 	null: *fp_glColor4hvNV;
-export let glColor4i: *fp_glColor4i =
-	null: *fp_glColor4i;
-export let glColor4iv: *fp_glColor4iv =
-	null: *fp_glColor4iv;
-export let glColor4s: *fp_glColor4s =
-	null: *fp_glColor4s;
-export let glColor4sv: *fp_glColor4sv =
-	null: *fp_glColor4sv;
-export let glColor4ub: *fp_glColor4ub =
-	null: *fp_glColor4ub;
 export let glColor4ubVertex2fSUN: *fp_glColor4ubVertex2fSUN =
 	null: *fp_glColor4ubVertex2fSUN;
 export let glColor4ubVertex2fvSUN: *fp_glColor4ubVertex2fvSUN =
@@ -8060,16 +7472,6 @@ export let glColor4ubVertex3fSUN: *fp_glColor4ubVertex3fSUN =
 	null: *fp_glColor4ubVertex3fSUN;
 export let glColor4ubVertex3fvSUN: *fp_glColor4ubVertex3fvSUN =
 	null: *fp_glColor4ubVertex3fvSUN;
-export let glColor4ubv: *fp_glColor4ubv =
-	null: *fp_glColor4ubv;
-export let glColor4ui: *fp_glColor4ui =
-	null: *fp_glColor4ui;
-export let glColor4uiv: *fp_glColor4uiv =
-	null: *fp_glColor4uiv;
-export let glColor4us: *fp_glColor4us =
-	null: *fp_glColor4us;
-export let glColor4usv: *fp_glColor4usv =
-	null: *fp_glColor4usv;
 export let glColor4xOES: *fp_glColor4xOES =
 	null: *fp_glColor4xOES;
 export let glColor4xvOES: *fp_glColor4xvOES =
@@ -8086,10 +7488,8 @@ export let glColorMask: *fp_glColorMask =
 	null: *fp_glColorMask;
 export let glColorMaskIndexedEXT: *fp_glColorMaskIndexedEXT =
 	null: *fp_glColorMaskIndexedEXT;
-export let glColorMaterial: *fp_glColorMaterial =
-	null: *fp_glColorMaterial;
-export let glColorPointer: *fp_glColorPointer =
-	null: *fp_glColorPointer;
+export let glColorMaski: *fp_glColorMaski =
+	null: *fp_glColorMaski;
 export let glColorPointerEXT: *fp_glColorPointerEXT =
 	null: *fp_glColorPointerEXT;
 export let glColorPointerListIBM: *fp_glColorPointerListIBM =
@@ -8232,8 +7632,6 @@ export let glCopyNamedBufferSubData: *fp_glCopyNamedBufferSubData =
 	null: *fp_glCopyNamedBufferSubData;
 export let glCopyPathNV: *fp_glCopyPathNV =
 	null: *fp_glCopyPathNV;
-export let glCopyPixels: *fp_glCopyPixels =
-	null: *fp_glCopyPixels;
 export let glCopyTexImage1D: *fp_glCopyTexImage1D =
 	null: *fp_glCopyTexImage1D;
 export let glCopyTexImage1DEXT: *fp_glCopyTexImage1DEXT =
@@ -8376,8 +7774,6 @@ export let glDeleteFramebuffers: *fp_glDeleteFramebuffers =
 	null: *fp_glDeleteFramebuffers;
 export let glDeleteFramebuffersEXT: *fp_glDeleteFramebuffersEXT =
 	null: *fp_glDeleteFramebuffersEXT;
-export let glDeleteLists: *fp_glDeleteLists =
-	null: *fp_glDeleteLists;
 export let glDeleteMemoryObjectsEXT: *fp_glDeleteMemoryObjectsEXT =
 	null: *fp_glDeleteMemoryObjectsEXT;
 export let glDeleteNamedStringARB: *fp_glDeleteNamedStringARB =
@@ -8470,8 +7866,6 @@ export let glDetailTexFuncSGIS: *fp_glDetailTexFuncSGIS =
 	null: *fp_glDetailTexFuncSGIS;
 export let glDisable: *fp_glDisable =
 	null: *fp_glDisable;
-export let glDisableClientState: *fp_glDisableClientState =
-	null: *fp_glDisableClientState;
 export let glDisableClientStateIndexedEXT: *fp_glDisableClientStateIndexedEXT =
 	null: *fp_glDisableClientStateIndexedEXT;
 export let glDisableClientStateiEXT: *fp_glDisableClientStateiEXT =
@@ -8492,6 +7886,8 @@ export let glDisableVertexAttribArray: *fp_glDisableVertexAttribArray =
 	null: *fp_glDisableVertexAttribArray;
 export let glDisableVertexAttribArrayARB: *fp_glDisableVertexAttribArrayARB =
 	null: *fp_glDisableVertexAttribArrayARB;
+export let glDisablei: *fp_glDisablei =
+	null: *fp_glDisablei;
 export let glDispatchCompute: *fp_glDispatchCompute =
 	null: *fp_glDispatchCompute;
 export let glDispatchComputeGroupSizeARB: *fp_glDispatchComputeGroupSizeARB =
@@ -8504,6 +7900,8 @@ export let glDrawArraysEXT: *fp_glDrawArraysEXT =
 	null: *fp_glDrawArraysEXT;
 export let glDrawArraysIndirect: *fp_glDrawArraysIndirect =
 	null: *fp_glDrawArraysIndirect;
+export let glDrawArraysInstanced: *fp_glDrawArraysInstanced =
+	null: *fp_glDrawArraysInstanced;
 export let glDrawArraysInstancedARB: *fp_glDrawArraysInstancedARB =
 	null: *fp_glDrawArraysInstancedARB;
 export let glDrawArraysInstancedBaseInstance: *fp_glDrawArraysInstancedBaseInstance =
@@ -8536,6 +7934,8 @@ export let glDrawElementsBaseVertex: *fp_glDrawElementsBaseVertex =
 	null: *fp_glDrawElementsBaseVertex;
 export let glDrawElementsIndirect: *fp_glDrawElementsIndirect =
 	null: *fp_glDrawElementsIndirect;
+export let glDrawElementsInstanced: *fp_glDrawElementsInstanced =
+	null: *fp_glDrawElementsInstanced;
 export let glDrawElementsInstancedARB: *fp_glDrawElementsInstancedARB =
 	null: *fp_glDrawElementsInstancedARB;
 export let glDrawElementsInstancedBaseInstance: *fp_glDrawElementsInstancedBaseInstance =
@@ -8552,8 +7952,6 @@ export let glDrawMeshTasksIndirectNV: *fp_glDrawMeshTasksIndirectNV =
 	null: *fp_glDrawMeshTasksIndirectNV;
 export let glDrawMeshTasksNV: *fp_glDrawMeshTasksNV =
 	null: *fp_glDrawMeshTasksNV;
-export let glDrawPixels: *fp_glDrawPixels =
-	null: *fp_glDrawPixels;
 export let glDrawRangeElementArrayAPPLE: *fp_glDrawRangeElementArrayAPPLE =
 	null: *fp_glDrawRangeElementArrayAPPLE;
 export let glDrawRangeElementArrayATI: *fp_glDrawRangeElementArrayATI =
@@ -8582,26 +7980,18 @@ export let glEGLImageTargetTexStorageEXT: *fp_glEGLImageTargetTexStorageEXT =
 	null: *fp_glEGLImageTargetTexStorageEXT;
 export let glEGLImageTargetTextureStorageEXT: *fp_glEGLImageTargetTextureStorageEXT =
 	null: *fp_glEGLImageTargetTextureStorageEXT;
-export let glEdgeFlag: *fp_glEdgeFlag =
-	null: *fp_glEdgeFlag;
 export let glEdgeFlagFormatNV: *fp_glEdgeFlagFormatNV =
 	null: *fp_glEdgeFlagFormatNV;
-export let glEdgeFlagPointer: *fp_glEdgeFlagPointer =
-	null: *fp_glEdgeFlagPointer;
 export let glEdgeFlagPointerEXT: *fp_glEdgeFlagPointerEXT =
 	null: *fp_glEdgeFlagPointerEXT;
 export let glEdgeFlagPointerListIBM: *fp_glEdgeFlagPointerListIBM =
 	null: *fp_glEdgeFlagPointerListIBM;
-export let glEdgeFlagv: *fp_glEdgeFlagv =
-	null: *fp_glEdgeFlagv;
 export let glElementPointerAPPLE: *fp_glElementPointerAPPLE =
 	null: *fp_glElementPointerAPPLE;
 export let glElementPointerATI: *fp_glElementPointerATI =
 	null: *fp_glElementPointerATI;
 export let glEnable: *fp_glEnable =
 	null: *fp_glEnable;
-export let glEnableClientState: *fp_glEnableClientState =
-	null: *fp_glEnableClientState;
 export let glEnableClientStateIndexedEXT: *fp_glEnableClientStateIndexedEXT =
 	null: *fp_glEnableClientStateIndexedEXT;
 export let glEnableClientStateiEXT: *fp_glEnableClientStateiEXT =
@@ -8622,16 +8012,16 @@ export let glEnableVertexAttribArray: *fp_glEnableVertexAttribArray =
 	null: *fp_glEnableVertexAttribArray;
 export let glEnableVertexAttribArrayARB: *fp_glEnableVertexAttribArrayARB =
 	null: *fp_glEnableVertexAttribArrayARB;
-export let glEnd: *fp_glEnd =
-	null: *fp_glEnd;
+export let glEnablei: *fp_glEnablei =
+	null: *fp_glEnablei;
+export let glEndConditionalRender: *fp_glEndConditionalRender =
+	null: *fp_glEndConditionalRender;
 export let glEndConditionalRenderNV: *fp_glEndConditionalRenderNV =
 	null: *fp_glEndConditionalRenderNV;
 export let glEndConditionalRenderNVX: *fp_glEndConditionalRenderNVX =
 	null: *fp_glEndConditionalRenderNVX;
 export let glEndFragmentShaderATI: *fp_glEndFragmentShaderATI =
 	null: *fp_glEndFragmentShaderATI;
-export let glEndList: *fp_glEndList =
-	null: *fp_glEndList;
 export let glEndOcclusionQueryNV: *fp_glEndOcclusionQueryNV =
 	null: *fp_glEndOcclusionQueryNV;
 export let glEndPerfMonitorAMD: *fp_glEndPerfMonitorAMD =
@@ -8644,6 +8034,8 @@ export let glEndQueryARB: *fp_glEndQueryARB =
 	null: *fp_glEndQueryARB;
 export let glEndQueryIndexed: *fp_glEndQueryIndexed =
 	null: *fp_glEndQueryIndexed;
+export let glEndTransformFeedback: *fp_glEndTransformFeedback =
+	null: *fp_glEndTransformFeedback;
 export let glEndTransformFeedbackEXT: *fp_glEndTransformFeedbackEXT =
 	null: *fp_glEndTransformFeedbackEXT;
 export let glEndTransformFeedbackNV: *fp_glEndTransformFeedbackNV =
@@ -8652,48 +8044,22 @@ export let glEndVertexShaderEXT: *fp_glEndVertexShaderEXT =
 	null: *fp_glEndVertexShaderEXT;
 export let glEndVideoCaptureNV: *fp_glEndVideoCaptureNV =
 	null: *fp_glEndVideoCaptureNV;
-export let glEvalCoord1d: *fp_glEvalCoord1d =
-	null: *fp_glEvalCoord1d;
-export let glEvalCoord1dv: *fp_glEvalCoord1dv =
-	null: *fp_glEvalCoord1dv;
-export let glEvalCoord1f: *fp_glEvalCoord1f =
-	null: *fp_glEvalCoord1f;
-export let glEvalCoord1fv: *fp_glEvalCoord1fv =
-	null: *fp_glEvalCoord1fv;
 export let glEvalCoord1xOES: *fp_glEvalCoord1xOES =
 	null: *fp_glEvalCoord1xOES;
 export let glEvalCoord1xvOES: *fp_glEvalCoord1xvOES =
 	null: *fp_glEvalCoord1xvOES;
-export let glEvalCoord2d: *fp_glEvalCoord2d =
-	null: *fp_glEvalCoord2d;
-export let glEvalCoord2dv: *fp_glEvalCoord2dv =
-	null: *fp_glEvalCoord2dv;
-export let glEvalCoord2f: *fp_glEvalCoord2f =
-	null: *fp_glEvalCoord2f;
-export let glEvalCoord2fv: *fp_glEvalCoord2fv =
-	null: *fp_glEvalCoord2fv;
 export let glEvalCoord2xOES: *fp_glEvalCoord2xOES =
 	null: *fp_glEvalCoord2xOES;
 export let glEvalCoord2xvOES: *fp_glEvalCoord2xvOES =
 	null: *fp_glEvalCoord2xvOES;
 export let glEvalMapsNV: *fp_glEvalMapsNV =
 	null: *fp_glEvalMapsNV;
-export let glEvalMesh1: *fp_glEvalMesh1 =
-	null: *fp_glEvalMesh1;
-export let glEvalMesh2: *fp_glEvalMesh2 =
-	null: *fp_glEvalMesh2;
-export let glEvalPoint1: *fp_glEvalPoint1 =
-	null: *fp_glEvalPoint1;
-export let glEvalPoint2: *fp_glEvalPoint2 =
-	null: *fp_glEvalPoint2;
 export let glEvaluateDepthValuesARB: *fp_glEvaluateDepthValuesARB =
 	null: *fp_glEvaluateDepthValuesARB;
 export let glExecuteProgramNV: *fp_glExecuteProgramNV =
 	null: *fp_glExecuteProgramNV;
 export let glExtractComponentEXT: *fp_glExtractComponentEXT =
 	null: *fp_glExtractComponentEXT;
-export let glFeedbackBuffer: *fp_glFeedbackBuffer =
-	null: *fp_glFeedbackBuffer;
 export let glFeedbackBufferxOES: *fp_glFeedbackBufferxOES =
 	null: *fp_glFeedbackBufferxOES;
 export let glFenceSync: *fp_glFenceSync =
@@ -8734,26 +8100,16 @@ export let glFlushVertexArrayRangeNV: *fp_glFlushVertexArrayRangeNV =
 	null: *fp_glFlushVertexArrayRangeNV;
 export let glFogCoordFormatNV: *fp_glFogCoordFormatNV =
 	null: *fp_glFogCoordFormatNV;
-export let glFogCoordPointer: *fp_glFogCoordPointer =
-	null: *fp_glFogCoordPointer;
 export let glFogCoordPointerEXT: *fp_glFogCoordPointerEXT =
 	null: *fp_glFogCoordPointerEXT;
 export let glFogCoordPointerListIBM: *fp_glFogCoordPointerListIBM =
 	null: *fp_glFogCoordPointerListIBM;
-export let glFogCoordd: *fp_glFogCoordd =
-	null: *fp_glFogCoordd;
 export let glFogCoorddEXT: *fp_glFogCoorddEXT =
 	null: *fp_glFogCoorddEXT;
-export let glFogCoorddv: *fp_glFogCoorddv =
-	null: *fp_glFogCoorddv;
 export let glFogCoorddvEXT: *fp_glFogCoorddvEXT =
 	null: *fp_glFogCoorddvEXT;
-export let glFogCoordf: *fp_glFogCoordf =
-	null: *fp_glFogCoordf;
 export let glFogCoordfEXT: *fp_glFogCoordfEXT =
 	null: *fp_glFogCoordfEXT;
-export let glFogCoordfv: *fp_glFogCoordfv =
-	null: *fp_glFogCoordfv;
 export let glFogCoordfvEXT: *fp_glFogCoordfvEXT =
 	null: *fp_glFogCoordfvEXT;
 export let glFogCoordhNV: *fp_glFogCoordhNV =
@@ -8762,14 +8118,6 @@ export let glFogCoordhvNV: *fp_glFogCoordhvNV =
 	null: *fp_glFogCoordhvNV;
 export let glFogFuncSGIS: *fp_glFogFuncSGIS =
 	null: *fp_glFogFuncSGIS;
-export let glFogf: *fp_glFogf =
-	null: *fp_glFogf;
-export let glFogfv: *fp_glFogfv =
-	null: *fp_glFogfv;
-export let glFogi: *fp_glFogi =
-	null: *fp_glFogi;
-export let glFogiv: *fp_glFogiv =
-	null: *fp_glFogiv;
 export let glFogxOES: *fp_glFogxOES =
 	null: *fp_glFogxOES;
 export let glFogxvOES: *fp_glFogxvOES =
@@ -8828,6 +8176,8 @@ export let glFramebufferSampleLocationsfvNV: *fp_glFramebufferSampleLocationsfvN
 	null: *fp_glFramebufferSampleLocationsfvNV;
 export let glFramebufferSamplePositionsfvAMD: *fp_glFramebufferSamplePositionsfvAMD =
 	null: *fp_glFramebufferSamplePositionsfvAMD;
+export let glFramebufferTexture: *fp_glFramebufferTexture =
+	null: *fp_glFramebufferTexture;
 export let glFramebufferTexture1D: *fp_glFramebufferTexture1D =
 	null: *fp_glFramebufferTexture1D;
 export let glFramebufferTexture1DEXT: *fp_glFramebufferTexture1DEXT =
@@ -8860,8 +8210,6 @@ export let glFreeObjectBufferATI: *fp_glFreeObjectBufferATI =
 	null: *fp_glFreeObjectBufferATI;
 export let glFrontFace: *fp_glFrontFace =
 	null: *fp_glFrontFace;
-export let glFrustum: *fp_glFrustum =
-	null: *fp_glFrustum;
 export let glFrustumfOES: *fp_glFrustumfOES =
 	null: *fp_glFrustumfOES;
 export let glFrustumxOES: *fp_glFrustumxOES =
@@ -8882,8 +8230,6 @@ export let glGenFramebuffers: *fp_glGenFramebuffers =
 	null: *fp_glGenFramebuffers;
 export let glGenFramebuffersEXT: *fp_glGenFramebuffersEXT =
 	null: *fp_glGenFramebuffersEXT;
-export let glGenLists: *fp_glGenLists =
-	null: *fp_glGenLists;
 export let glGenNamesAMD: *fp_glGenNamesAMD =
 	null: *fp_glGenNamesAMD;
 export let glGenOcclusionQueriesNV: *fp_glGenOcclusionQueriesNV =
@@ -8978,8 +8324,12 @@ export let glGetAttribLocationARB: *fp_glGetAttribLocationARB =
 	null: *fp_glGetAttribLocationARB;
 export let glGetBooleanIndexedvEXT: *fp_glGetBooleanIndexedvEXT =
 	null: *fp_glGetBooleanIndexedvEXT;
+export let glGetBooleani_v: *fp_glGetBooleani_v =
+	null: *fp_glGetBooleani_v;
 export let glGetBooleanv: *fp_glGetBooleanv =
 	null: *fp_glGetBooleanv;
+export let glGetBufferParameteri64v: *fp_glGetBufferParameteri64v =
+	null: *fp_glGetBufferParameteri64v;
 export let glGetBufferParameteriv: *fp_glGetBufferParameteriv =
 	null: *fp_glGetBufferParameteriv;
 export let glGetBufferParameterivARB: *fp_glGetBufferParameterivARB =
@@ -8994,8 +8344,6 @@ export let glGetBufferSubData: *fp_glGetBufferSubData =
 	null: *fp_glGetBufferSubData;
 export let glGetBufferSubDataARB: *fp_glGetBufferSubDataARB =
 	null: *fp_glGetBufferSubDataARB;
-export let glGetClipPlane: *fp_glGetClipPlane =
-	null: *fp_glGetClipPlane;
 export let glGetClipPlanefOES: *fp_glGetClipPlanefOES =
 	null: *fp_glGetClipPlanefOES;
 export let glGetClipPlanexOES: *fp_glGetClipPlanexOES =
@@ -9086,6 +8434,8 @@ export let glGetFogFuncSGIS: *fp_glGetFogFuncSGIS =
 	null: *fp_glGetFogFuncSGIS;
 export let glGetFragDataIndex: *fp_glGetFragDataIndex =
 	null: *fp_glGetFragDataIndex;
+export let glGetFragDataLocation: *fp_glGetFragDataLocation =
+	null: *fp_glGetFragDataLocation;
 export let glGetFragDataLocationEXT: *fp_glGetFragDataLocationEXT =
 	null: *fp_glGetFragDataLocationEXT;
 export let glGetFragmentLightfvSGIX: *fp_glGetFragmentLightfvSGIX =
@@ -9134,6 +8484,8 @@ export let glGetInfoLogARB: *fp_glGetInfoLogARB =
 	null: *fp_glGetInfoLogARB;
 export let glGetInstrumentsSGIX: *fp_glGetInstrumentsSGIX =
 	null: *fp_glGetInstrumentsSGIX;
+export let glGetInteger64i_v: *fp_glGetInteger64i_v =
+	null: *fp_glGetInteger64i_v;
 export let glGetInteger64v: *fp_glGetInteger64v =
 	null: *fp_glGetInteger64v;
 export let glGetIntegerIndexedvEXT: *fp_glGetIntegerIndexedvEXT =
@@ -9158,10 +8510,6 @@ export let glGetInvariantFloatvEXT: *fp_glGetInvariantFloatvEXT =
 	null: *fp_glGetInvariantFloatvEXT;
 export let glGetInvariantIntegervEXT: *fp_glGetInvariantIntegervEXT =
 	null: *fp_glGetInvariantIntegervEXT;
-export let glGetLightfv: *fp_glGetLightfv =
-	null: *fp_glGetLightfv;
-export let glGetLightiv: *fp_glGetLightiv =
-	null: *fp_glGetLightiv;
 export let glGetLightxOES: *fp_glGetLightxOES =
 	null: *fp_glGetLightxOES;
 export let glGetListParameterfvSGIX: *fp_glGetListParameterfvSGIX =
@@ -9184,18 +8532,8 @@ export let glGetMapParameterfvNV: *fp_glGetMapParameterfvNV =
 	null: *fp_glGetMapParameterfvNV;
 export let glGetMapParameterivNV: *fp_glGetMapParameterivNV =
 	null: *fp_glGetMapParameterivNV;
-export let glGetMapdv: *fp_glGetMapdv =
-	null: *fp_glGetMapdv;
-export let glGetMapfv: *fp_glGetMapfv =
-	null: *fp_glGetMapfv;
-export let glGetMapiv: *fp_glGetMapiv =
-	null: *fp_glGetMapiv;
 export let glGetMapxvOES: *fp_glGetMapxvOES =
 	null: *fp_glGetMapxvOES;
-export let glGetMaterialfv: *fp_glGetMaterialfv =
-	null: *fp_glGetMaterialfv;
-export let glGetMaterialiv: *fp_glGetMaterialiv =
-	null: *fp_glGetMaterialiv;
 export let glGetMaterialxOES: *fp_glGetMaterialxOES =
 	null: *fp_glGetMaterialxOES;
 export let glGetMemoryObjectDetachedResourcesuivNV: *fp_glGetMemoryObjectDetachedResourcesuivNV =
@@ -9342,12 +8680,6 @@ export let glGetPerfQueryIdByNameINTEL: *fp_glGetPerfQueryIdByNameINTEL =
 	null: *fp_glGetPerfQueryIdByNameINTEL;
 export let glGetPerfQueryInfoINTEL: *fp_glGetPerfQueryInfoINTEL =
 	null: *fp_glGetPerfQueryInfoINTEL;
-export let glGetPixelMapfv: *fp_glGetPixelMapfv =
-	null: *fp_glGetPixelMapfv;
-export let glGetPixelMapuiv: *fp_glGetPixelMapuiv =
-	null: *fp_glGetPixelMapuiv;
-export let glGetPixelMapusv: *fp_glGetPixelMapusv =
-	null: *fp_glGetPixelMapusv;
 export let glGetPixelMapxv: *fp_glGetPixelMapxv =
 	null: *fp_glGetPixelMapxv;
 export let glGetPixelTexGenParameterfvSGIS: *fp_glGetPixelTexGenParameterfvSGIS =
@@ -9366,8 +8698,6 @@ export let glGetPointerv: *fp_glGetPointerv =
 	null: *fp_glGetPointerv;
 export let glGetPointervEXT: *fp_glGetPointervEXT =
 	null: *fp_glGetPointervEXT;
-export let glGetPolygonStipple: *fp_glGetPolygonStipple =
-	null: *fp_glGetPolygonStipple;
 export let glGetProgramBinary: *fp_glGetProgramBinary =
 	null: *fp_glGetProgramBinary;
 export let glGetProgramEnvParameterIivNV: *fp_glGetProgramEnvParameterIivNV =
@@ -9496,6 +8826,8 @@ export let glGetStageIndexNV: *fp_glGetStageIndexNV =
 	null: *fp_glGetStageIndexNV;
 export let glGetString: *fp_glGetString =
 	null: *fp_glGetString;
+export let glGetStringi: *fp_glGetStringi =
+	null: *fp_glGetStringi;
 export let glGetSubroutineIndex: *fp_glGetSubroutineIndex =
 	null: *fp_glGetSubroutineIndex;
 export let glGetSubroutineUniformLocation: *fp_glGetSubroutineUniformLocation =
@@ -9506,20 +8838,10 @@ export let glGetTexBumpParameterfvATI: *fp_glGetTexBumpParameterfvATI =
 	null: *fp_glGetTexBumpParameterfvATI;
 export let glGetTexBumpParameterivATI: *fp_glGetTexBumpParameterivATI =
 	null: *fp_glGetTexBumpParameterivATI;
-export let glGetTexEnvfv: *fp_glGetTexEnvfv =
-	null: *fp_glGetTexEnvfv;
-export let glGetTexEnviv: *fp_glGetTexEnviv =
-	null: *fp_glGetTexEnviv;
 export let glGetTexEnvxvOES: *fp_glGetTexEnvxvOES =
 	null: *fp_glGetTexEnvxvOES;
 export let glGetTexFilterFuncSGIS: *fp_glGetTexFilterFuncSGIS =
 	null: *fp_glGetTexFilterFuncSGIS;
-export let glGetTexGendv: *fp_glGetTexGendv =
-	null: *fp_glGetTexGendv;
-export let glGetTexGenfv: *fp_glGetTexGenfv =
-	null: *fp_glGetTexGenfv;
-export let glGetTexGeniv: *fp_glGetTexGeniv =
-	null: *fp_glGetTexGeniv;
 export let glGetTexGenxvOES: *fp_glGetTexGenxvOES =
 	null: *fp_glGetTexGenxvOES;
 export let glGetTexImage: *fp_glGetTexImage =
@@ -9530,8 +8852,12 @@ export let glGetTexLevelParameteriv: *fp_glGetTexLevelParameteriv =
 	null: *fp_glGetTexLevelParameteriv;
 export let glGetTexLevelParameterxvOES: *fp_glGetTexLevelParameterxvOES =
 	null: *fp_glGetTexLevelParameterxvOES;
+export let glGetTexParameterIiv: *fp_glGetTexParameterIiv =
+	null: *fp_glGetTexParameterIiv;
 export let glGetTexParameterIivEXT: *fp_glGetTexParameterIivEXT =
 	null: *fp_glGetTexParameterIivEXT;
+export let glGetTexParameterIuiv: *fp_glGetTexParameterIuiv =
+	null: *fp_glGetTexParameterIuiv;
 export let glGetTexParameterIuivEXT: *fp_glGetTexParameterIuivEXT =
 	null: *fp_glGetTexParameterIuivEXT;
 export let glGetTexParameterPointervAPPLE: *fp_glGetTexParameterPointervAPPLE =
@@ -9582,6 +8908,8 @@ export let glGetTextureSubImage: *fp_glGetTextureSubImage =
 	null: *fp_glGetTextureSubImage;
 export let glGetTrackMatrixivNV: *fp_glGetTrackMatrixivNV =
 	null: *fp_glGetTrackMatrixivNV;
+export let glGetTransformFeedbackVarying: *fp_glGetTransformFeedbackVarying =
+	null: *fp_glGetTransformFeedbackVarying;
 export let glGetTransformFeedbackVaryingEXT: *fp_glGetTransformFeedbackVaryingEXT =
 	null: *fp_glGetTransformFeedbackVaryingEXT;
 export let glGetTransformFeedbackVaryingNV: *fp_glGetTransformFeedbackVaryingNV =
@@ -9624,6 +8952,8 @@ export let glGetUniformui64vARB: *fp_glGetUniformui64vARB =
 	null: *fp_glGetUniformui64vARB;
 export let glGetUniformui64vNV: *fp_glGetUniformui64vNV =
 	null: *fp_glGetUniformui64vNV;
+export let glGetUniformuiv: *fp_glGetUniformuiv =
+	null: *fp_glGetUniformuiv;
 export let glGetUniformuivEXT: *fp_glGetUniformuivEXT =
 	null: *fp_glGetUniformuivEXT;
 export let glGetUnsignedBytei_vEXT: *fp_glGetUnsignedBytei_vEXT =
@@ -9662,8 +8992,12 @@ export let glGetVertexAttribArrayObjectfvATI: *fp_glGetVertexAttribArrayObjectfv
 	null: *fp_glGetVertexAttribArrayObjectfvATI;
 export let glGetVertexAttribArrayObjectivATI: *fp_glGetVertexAttribArrayObjectivATI =
 	null: *fp_glGetVertexAttribArrayObjectivATI;
+export let glGetVertexAttribIiv: *fp_glGetVertexAttribIiv =
+	null: *fp_glGetVertexAttribIiv;
 export let glGetVertexAttribIivEXT: *fp_glGetVertexAttribIivEXT =
 	null: *fp_glGetVertexAttribIivEXT;
+export let glGetVertexAttribIuiv: *fp_glGetVertexAttribIuiv =
+	null: *fp_glGetVertexAttribIuiv;
 export let glGetVertexAttribIuivEXT: *fp_glGetVertexAttribIuivEXT =
 	null: *fp_glGetVertexAttribIuivEXT;
 export let glGetVertexAttribLdv: *fp_glGetVertexAttribLdv =
@@ -9790,50 +9124,22 @@ export let glIndexFormatNV: *fp_glIndexFormatNV =
 	null: *fp_glIndexFormatNV;
 export let glIndexFuncEXT: *fp_glIndexFuncEXT =
 	null: *fp_glIndexFuncEXT;
-export let glIndexMask: *fp_glIndexMask =
-	null: *fp_glIndexMask;
 export let glIndexMaterialEXT: *fp_glIndexMaterialEXT =
 	null: *fp_glIndexMaterialEXT;
-export let glIndexPointer: *fp_glIndexPointer =
-	null: *fp_glIndexPointer;
 export let glIndexPointerEXT: *fp_glIndexPointerEXT =
 	null: *fp_glIndexPointerEXT;
 export let glIndexPointerListIBM: *fp_glIndexPointerListIBM =
 	null: *fp_glIndexPointerListIBM;
-export let glIndexd: *fp_glIndexd =
-	null: *fp_glIndexd;
-export let glIndexdv: *fp_glIndexdv =
-	null: *fp_glIndexdv;
-export let glIndexf: *fp_glIndexf =
-	null: *fp_glIndexf;
-export let glIndexfv: *fp_glIndexfv =
-	null: *fp_glIndexfv;
-export let glIndexi: *fp_glIndexi =
-	null: *fp_glIndexi;
-export let glIndexiv: *fp_glIndexiv =
-	null: *fp_glIndexiv;
-export let glIndexs: *fp_glIndexs =
-	null: *fp_glIndexs;
-export let glIndexsv: *fp_glIndexsv =
-	null: *fp_glIndexsv;
-export let glIndexub: *fp_glIndexub =
-	null: *fp_glIndexub;
-export let glIndexubv: *fp_glIndexubv =
-	null: *fp_glIndexubv;
 export let glIndexxOES: *fp_glIndexxOES =
 	null: *fp_glIndexxOES;
 export let glIndexxvOES: *fp_glIndexxvOES =
 	null: *fp_glIndexxvOES;
-export let glInitNames: *fp_glInitNames =
-	null: *fp_glInitNames;
 export let glInsertComponentEXT: *fp_glInsertComponentEXT =
 	null: *fp_glInsertComponentEXT;
 export let glInsertEventMarkerEXT: *fp_glInsertEventMarkerEXT =
 	null: *fp_glInsertEventMarkerEXT;
 export let glInstrumentsBufferSGIX: *fp_glInstrumentsBufferSGIX =
 	null: *fp_glInstrumentsBufferSGIX;
-export let glInterleavedArrays: *fp_glInterleavedArrays =
-	null: *fp_glInterleavedArrays;
 export let glInterpolatePathsNV: *fp_glInterpolatePathsNV =
 	null: *fp_glInterpolatePathsNV;
 export let glInvalidateBufferData: *fp_glInvalidateBufferData =
@@ -9866,6 +9172,8 @@ export let glIsEnabled: *fp_glIsEnabled =
 	null: *fp_glIsEnabled;
 export let glIsEnabledIndexedEXT: *fp_glIsEnabledIndexedEXT =
 	null: *fp_glIsEnabledIndexedEXT;
+export let glIsEnabledi: *fp_glIsEnabledi =
+	null: *fp_glIsEnabledi;
 export let glIsFenceAPPLE: *fp_glIsFenceAPPLE =
 	null: *fp_glIsFenceAPPLE;
 export let glIsFenceNV: *fp_glIsFenceNV =
@@ -9878,8 +9186,6 @@ export let glIsImageHandleResidentARB: *fp_glIsImageHandleResidentARB =
 	null: *fp_glIsImageHandleResidentARB;
 export let glIsImageHandleResidentNV: *fp_glIsImageHandleResidentNV =
 	null: *fp_glIsImageHandleResidentNV;
-export let glIsList: *fp_glIsList =
-	null: *fp_glIsList;
 export let glIsMemoryObjectEXT: *fp_glIsMemoryObjectEXT =
 	null: *fp_glIsMemoryObjectEXT;
 export let glIsNameAMD: *fp_glIsNameAMD =
@@ -9954,32 +9260,14 @@ export let glLabelObjectEXT: *fp_glLabelObjectEXT =
 	null: *fp_glLabelObjectEXT;
 export let glLightEnviSGIX: *fp_glLightEnviSGIX =
 	null: *fp_glLightEnviSGIX;
-export let glLightModelf: *fp_glLightModelf =
-	null: *fp_glLightModelf;
-export let glLightModelfv: *fp_glLightModelfv =
-	null: *fp_glLightModelfv;
-export let glLightModeli: *fp_glLightModeli =
-	null: *fp_glLightModeli;
-export let glLightModeliv: *fp_glLightModeliv =
-	null: *fp_glLightModeliv;
 export let glLightModelxOES: *fp_glLightModelxOES =
 	null: *fp_glLightModelxOES;
 export let glLightModelxvOES: *fp_glLightModelxvOES =
 	null: *fp_glLightModelxvOES;
-export let glLightf: *fp_glLightf =
-	null: *fp_glLightf;
-export let glLightfv: *fp_glLightfv =
-	null: *fp_glLightfv;
-export let glLighti: *fp_glLighti =
-	null: *fp_glLighti;
-export let glLightiv: *fp_glLightiv =
-	null: *fp_glLightiv;
 export let glLightxOES: *fp_glLightxOES =
 	null: *fp_glLightxOES;
 export let glLightxvOES: *fp_glLightxvOES =
 	null: *fp_glLightxvOES;
-export let glLineStipple: *fp_glLineStipple =
-	null: *fp_glLineStipple;
 export let glLineWidth: *fp_glLineWidth =
 	null: *fp_glLineWidth;
 export let glLineWidthxOES: *fp_glLineWidthxOES =
@@ -9988,8 +9276,6 @@ export let glLinkProgram: *fp_glLinkProgram =
 	null: *fp_glLinkProgram;
 export let glLinkProgramARB: *fp_glLinkProgramARB =
 	null: *fp_glLinkProgramARB;
-export let glListBase: *fp_glListBase =
-	null: *fp_glListBase;
 export let glListDrawCommandsStatesClientNV: *fp_glListDrawCommandsStatesClientNV =
 	null: *fp_glListDrawCommandsStatesClientNV;
 export let glListParameterfSGIX: *fp_glListParameterfSGIX =
@@ -10000,26 +9286,14 @@ export let glListParameteriSGIX: *fp_glListParameteriSGIX =
 	null: *fp_glListParameteriSGIX;
 export let glListParameterivSGIX: *fp_glListParameterivSGIX =
 	null: *fp_glListParameterivSGIX;
-export let glLoadIdentity: *fp_glLoadIdentity =
-	null: *fp_glLoadIdentity;
 export let glLoadIdentityDeformationMapSGIX: *fp_glLoadIdentityDeformationMapSGIX =
 	null: *fp_glLoadIdentityDeformationMapSGIX;
-export let glLoadMatrixd: *fp_glLoadMatrixd =
-	null: *fp_glLoadMatrixd;
-export let glLoadMatrixf: *fp_glLoadMatrixf =
-	null: *fp_glLoadMatrixf;
 export let glLoadMatrixxOES: *fp_glLoadMatrixxOES =
 	null: *fp_glLoadMatrixxOES;
-export let glLoadName: *fp_glLoadName =
-	null: *fp_glLoadName;
 export let glLoadProgramNV: *fp_glLoadProgramNV =
 	null: *fp_glLoadProgramNV;
-export let glLoadTransposeMatrixd: *fp_glLoadTransposeMatrixd =
-	null: *fp_glLoadTransposeMatrixd;
 export let glLoadTransposeMatrixdARB: *fp_glLoadTransposeMatrixdARB =
 	null: *fp_glLoadTransposeMatrixdARB;
-export let glLoadTransposeMatrixf: *fp_glLoadTransposeMatrixf =
-	null: *fp_glLoadTransposeMatrixf;
 export let glLoadTransposeMatrixfARB: *fp_glLoadTransposeMatrixfARB =
 	null: *fp_glLoadTransposeMatrixfARB;
 export let glLoadTransposeMatrixxOES: *fp_glLoadTransposeMatrixxOES =
@@ -10052,16 +9326,8 @@ export let glMakeTextureHandleResidentARB: *fp_glMakeTextureHandleResidentARB =
 	null: *fp_glMakeTextureHandleResidentARB;
 export let glMakeTextureHandleResidentNV: *fp_glMakeTextureHandleResidentNV =
 	null: *fp_glMakeTextureHandleResidentNV;
-export let glMap1d: *fp_glMap1d =
-	null: *fp_glMap1d;
-export let glMap1f: *fp_glMap1f =
-	null: *fp_glMap1f;
 export let glMap1xOES: *fp_glMap1xOES =
 	null: *fp_glMap1xOES;
-export let glMap2d: *fp_glMap2d =
-	null: *fp_glMap2d;
-export let glMap2f: *fp_glMap2f =
-	null: *fp_glMap2f;
 export let glMap2xOES: *fp_glMap2xOES =
 	null: *fp_glMap2xOES;
 export let glMapBuffer: *fp_glMapBuffer =
@@ -10072,16 +9338,8 @@ export let glMapBufferRange: *fp_glMapBufferRange =
 	null: *fp_glMapBufferRange;
 export let glMapControlPointsNV: *fp_glMapControlPointsNV =
 	null: *fp_glMapControlPointsNV;
-export let glMapGrid1d: *fp_glMapGrid1d =
-	null: *fp_glMapGrid1d;
-export let glMapGrid1f: *fp_glMapGrid1f =
-	null: *fp_glMapGrid1f;
 export let glMapGrid1xOES: *fp_glMapGrid1xOES =
 	null: *fp_glMapGrid1xOES;
-export let glMapGrid2d: *fp_glMapGrid2d =
-	null: *fp_glMapGrid2d;
-export let glMapGrid2f: *fp_glMapGrid2f =
-	null: *fp_glMapGrid2f;
 export let glMapGrid2xOES: *fp_glMapGrid2xOES =
 	null: *fp_glMapGrid2xOES;
 export let glMapNamedBuffer: *fp_glMapNamedBuffer =
@@ -10108,14 +9366,6 @@ export let glMapVertexAttrib2dAPPLE: *fp_glMapVertexAttrib2dAPPLE =
 	null: *fp_glMapVertexAttrib2dAPPLE;
 export let glMapVertexAttrib2fAPPLE: *fp_glMapVertexAttrib2fAPPLE =
 	null: *fp_glMapVertexAttrib2fAPPLE;
-export let glMaterialf: *fp_glMaterialf =
-	null: *fp_glMaterialf;
-export let glMaterialfv: *fp_glMaterialfv =
-	null: *fp_glMaterialfv;
-export let glMateriali: *fp_glMateriali =
-	null: *fp_glMateriali;
-export let glMaterialiv: *fp_glMaterialiv =
-	null: *fp_glMaterialiv;
 export let glMaterialxOES: *fp_glMaterialxOES =
 	null: *fp_glMaterialxOES;
 export let glMaterialxvOES: *fp_glMaterialxvOES =
@@ -10146,8 +9396,6 @@ export let glMatrixLoaddEXT: *fp_glMatrixLoaddEXT =
 	null: *fp_glMatrixLoaddEXT;
 export let glMatrixLoadfEXT: *fp_glMatrixLoadfEXT =
 	null: *fp_glMatrixLoadfEXT;
-export let glMatrixMode: *fp_glMatrixMode =
-	null: *fp_glMatrixMode;
 export let glMatrixMult3x2fNV: *fp_glMatrixMult3x2fNV =
 	null: *fp_glMatrixMult3x2fNV;
 export let glMatrixMult3x3fNV: *fp_glMatrixMult3x3fNV =
@@ -10192,22 +9440,16 @@ export let glMemoryBarrierEXT: *fp_glMemoryBarrierEXT =
 	null: *fp_glMemoryBarrierEXT;
 export let glMemoryObjectParameterivEXT: *fp_glMemoryObjectParameterivEXT =
 	null: *fp_glMemoryObjectParameterivEXT;
+export let glMinSampleShading: *fp_glMinSampleShading =
+	null: *fp_glMinSampleShading;
 export let glMinSampleShadingARB: *fp_glMinSampleShadingARB =
 	null: *fp_glMinSampleShadingARB;
 export let glMinmaxEXT: *fp_glMinmaxEXT =
 	null: *fp_glMinmaxEXT;
-export let glMultMatrixd: *fp_glMultMatrixd =
-	null: *fp_glMultMatrixd;
-export let glMultMatrixf: *fp_glMultMatrixf =
-	null: *fp_glMultMatrixf;
 export let glMultMatrixxOES: *fp_glMultMatrixxOES =
 	null: *fp_glMultMatrixxOES;
-export let glMultTransposeMatrixd: *fp_glMultTransposeMatrixd =
-	null: *fp_glMultTransposeMatrixd;
 export let glMultTransposeMatrixdARB: *fp_glMultTransposeMatrixdARB =
 	null: *fp_glMultTransposeMatrixdARB;
-export let glMultTransposeMatrixf: *fp_glMultTransposeMatrixf =
-	null: *fp_glMultTransposeMatrixf;
 export let glMultTransposeMatrixfARB: *fp_glMultTransposeMatrixfARB =
 	null: *fp_glMultTransposeMatrixfARB;
 export let glMultTransposeMatrixxOES: *fp_glMultTransposeMatrixxOES =
@@ -10260,40 +9502,24 @@ export let glMultiTexCoord1bOES: *fp_glMultiTexCoord1bOES =
 	null: *fp_glMultiTexCoord1bOES;
 export let glMultiTexCoord1bvOES: *fp_glMultiTexCoord1bvOES =
 	null: *fp_glMultiTexCoord1bvOES;
-export let glMultiTexCoord1d: *fp_glMultiTexCoord1d =
-	null: *fp_glMultiTexCoord1d;
 export let glMultiTexCoord1dARB: *fp_glMultiTexCoord1dARB =
 	null: *fp_glMultiTexCoord1dARB;
-export let glMultiTexCoord1dv: *fp_glMultiTexCoord1dv =
-	null: *fp_glMultiTexCoord1dv;
 export let glMultiTexCoord1dvARB: *fp_glMultiTexCoord1dvARB =
 	null: *fp_glMultiTexCoord1dvARB;
-export let glMultiTexCoord1f: *fp_glMultiTexCoord1f =
-	null: *fp_glMultiTexCoord1f;
 export let glMultiTexCoord1fARB: *fp_glMultiTexCoord1fARB =
 	null: *fp_glMultiTexCoord1fARB;
-export let glMultiTexCoord1fv: *fp_glMultiTexCoord1fv =
-	null: *fp_glMultiTexCoord1fv;
 export let glMultiTexCoord1fvARB: *fp_glMultiTexCoord1fvARB =
 	null: *fp_glMultiTexCoord1fvARB;
 export let glMultiTexCoord1hNV: *fp_glMultiTexCoord1hNV =
 	null: *fp_glMultiTexCoord1hNV;
 export let glMultiTexCoord1hvNV: *fp_glMultiTexCoord1hvNV =
 	null: *fp_glMultiTexCoord1hvNV;
-export let glMultiTexCoord1i: *fp_glMultiTexCoord1i =
-	null: *fp_glMultiTexCoord1i;
 export let glMultiTexCoord1iARB: *fp_glMultiTexCoord1iARB =
 	null: *fp_glMultiTexCoord1iARB;
-export let glMultiTexCoord1iv: *fp_glMultiTexCoord1iv =
-	null: *fp_glMultiTexCoord1iv;
 export let glMultiTexCoord1ivARB: *fp_glMultiTexCoord1ivARB =
 	null: *fp_glMultiTexCoord1ivARB;
-export let glMultiTexCoord1s: *fp_glMultiTexCoord1s =
-	null: *fp_glMultiTexCoord1s;
 export let glMultiTexCoord1sARB: *fp_glMultiTexCoord1sARB =
 	null: *fp_glMultiTexCoord1sARB;
-export let glMultiTexCoord1sv: *fp_glMultiTexCoord1sv =
-	null: *fp_glMultiTexCoord1sv;
 export let glMultiTexCoord1svARB: *fp_glMultiTexCoord1svARB =
 	null: *fp_glMultiTexCoord1svARB;
 export let glMultiTexCoord1xOES: *fp_glMultiTexCoord1xOES =
@@ -10304,40 +9530,24 @@ export let glMultiTexCoord2bOES: *fp_glMultiTexCoord2bOES =
 	null: *fp_glMultiTexCoord2bOES;
 export let glMultiTexCoord2bvOES: *fp_glMultiTexCoord2bvOES =
 	null: *fp_glMultiTexCoord2bvOES;
-export let glMultiTexCoord2d: *fp_glMultiTexCoord2d =
-	null: *fp_glMultiTexCoord2d;
 export let glMultiTexCoord2dARB: *fp_glMultiTexCoord2dARB =
 	null: *fp_glMultiTexCoord2dARB;
-export let glMultiTexCoord2dv: *fp_glMultiTexCoord2dv =
-	null: *fp_glMultiTexCoord2dv;
 export let glMultiTexCoord2dvARB: *fp_glMultiTexCoord2dvARB =
 	null: *fp_glMultiTexCoord2dvARB;
-export let glMultiTexCoord2f: *fp_glMultiTexCoord2f =
-	null: *fp_glMultiTexCoord2f;
 export let glMultiTexCoord2fARB: *fp_glMultiTexCoord2fARB =
 	null: *fp_glMultiTexCoord2fARB;
-export let glMultiTexCoord2fv: *fp_glMultiTexCoord2fv =
-	null: *fp_glMultiTexCoord2fv;
 export let glMultiTexCoord2fvARB: *fp_glMultiTexCoord2fvARB =
 	null: *fp_glMultiTexCoord2fvARB;
 export let glMultiTexCoord2hNV: *fp_glMultiTexCoord2hNV =
 	null: *fp_glMultiTexCoord2hNV;
 export let glMultiTexCoord2hvNV: *fp_glMultiTexCoord2hvNV =
 	null: *fp_glMultiTexCoord2hvNV;
-export let glMultiTexCoord2i: *fp_glMultiTexCoord2i =
-	null: *fp_glMultiTexCoord2i;
 export let glMultiTexCoord2iARB: *fp_glMultiTexCoord2iARB =
 	null: *fp_glMultiTexCoord2iARB;
-export let glMultiTexCoord2iv: *fp_glMultiTexCoord2iv =
-	null: *fp_glMultiTexCoord2iv;
 export let glMultiTexCoord2ivARB: *fp_glMultiTexCoord2ivARB =
 	null: *fp_glMultiTexCoord2ivARB;
-export let glMultiTexCoord2s: *fp_glMultiTexCoord2s =
-	null: *fp_glMultiTexCoord2s;
 export let glMultiTexCoord2sARB: *fp_glMultiTexCoord2sARB =
 	null: *fp_glMultiTexCoord2sARB;
-export let glMultiTexCoord2sv: *fp_glMultiTexCoord2sv =
-	null: *fp_glMultiTexCoord2sv;
 export let glMultiTexCoord2svARB: *fp_glMultiTexCoord2svARB =
 	null: *fp_glMultiTexCoord2svARB;
 export let glMultiTexCoord2xOES: *fp_glMultiTexCoord2xOES =
@@ -10348,40 +9558,24 @@ export let glMultiTexCoord3bOES: *fp_glMultiTexCoord3bOES =
 	null: *fp_glMultiTexCoord3bOES;
 export let glMultiTexCoord3bvOES: *fp_glMultiTexCoord3bvOES =
 	null: *fp_glMultiTexCoord3bvOES;
-export let glMultiTexCoord3d: *fp_glMultiTexCoord3d =
-	null: *fp_glMultiTexCoord3d;
 export let glMultiTexCoord3dARB: *fp_glMultiTexCoord3dARB =
 	null: *fp_glMultiTexCoord3dARB;
-export let glMultiTexCoord3dv: *fp_glMultiTexCoord3dv =
-	null: *fp_glMultiTexCoord3dv;
 export let glMultiTexCoord3dvARB: *fp_glMultiTexCoord3dvARB =
 	null: *fp_glMultiTexCoord3dvARB;
-export let glMultiTexCoord3f: *fp_glMultiTexCoord3f =
-	null: *fp_glMultiTexCoord3f;
 export let glMultiTexCoord3fARB: *fp_glMultiTexCoord3fARB =
 	null: *fp_glMultiTexCoord3fARB;
-export let glMultiTexCoord3fv: *fp_glMultiTexCoord3fv =
-	null: *fp_glMultiTexCoord3fv;
 export let glMultiTexCoord3fvARB: *fp_glMultiTexCoord3fvARB =
 	null: *fp_glMultiTexCoord3fvARB;
 export let glMultiTexCoord3hNV: *fp_glMultiTexCoord3hNV =
 	null: *fp_glMultiTexCoord3hNV;
 export let glMultiTexCoord3hvNV: *fp_glMultiTexCoord3hvNV =
 	null: *fp_glMultiTexCoord3hvNV;
-export let glMultiTexCoord3i: *fp_glMultiTexCoord3i =
-	null: *fp_glMultiTexCoord3i;
 export let glMultiTexCoord3iARB: *fp_glMultiTexCoord3iARB =
 	null: *fp_glMultiTexCoord3iARB;
-export let glMultiTexCoord3iv: *fp_glMultiTexCoord3iv =
-	null: *fp_glMultiTexCoord3iv;
 export let glMultiTexCoord3ivARB: *fp_glMultiTexCoord3ivARB =
 	null: *fp_glMultiTexCoord3ivARB;
-export let glMultiTexCoord3s: *fp_glMultiTexCoord3s =
-	null: *fp_glMultiTexCoord3s;
 export let glMultiTexCoord3sARB: *fp_glMultiTexCoord3sARB =
 	null: *fp_glMultiTexCoord3sARB;
-export let glMultiTexCoord3sv: *fp_glMultiTexCoord3sv =
-	null: *fp_glMultiTexCoord3sv;
 export let glMultiTexCoord3svARB: *fp_glMultiTexCoord3svARB =
 	null: *fp_glMultiTexCoord3svARB;
 export let glMultiTexCoord3xOES: *fp_glMultiTexCoord3xOES =
@@ -10392,40 +9586,24 @@ export let glMultiTexCoord4bOES: *fp_glMultiTexCoord4bOES =
 	null: *fp_glMultiTexCoord4bOES;
 export let glMultiTexCoord4bvOES: *fp_glMultiTexCoord4bvOES =
 	null: *fp_glMultiTexCoord4bvOES;
-export let glMultiTexCoord4d: *fp_glMultiTexCoord4d =
-	null: *fp_glMultiTexCoord4d;
 export let glMultiTexCoord4dARB: *fp_glMultiTexCoord4dARB =
 	null: *fp_glMultiTexCoord4dARB;
-export let glMultiTexCoord4dv: *fp_glMultiTexCoord4dv =
-	null: *fp_glMultiTexCoord4dv;
 export let glMultiTexCoord4dvARB: *fp_glMultiTexCoord4dvARB =
 	null: *fp_glMultiTexCoord4dvARB;
-export let glMultiTexCoord4f: *fp_glMultiTexCoord4f =
-	null: *fp_glMultiTexCoord4f;
 export let glMultiTexCoord4fARB: *fp_glMultiTexCoord4fARB =
 	null: *fp_glMultiTexCoord4fARB;
-export let glMultiTexCoord4fv: *fp_glMultiTexCoord4fv =
-	null: *fp_glMultiTexCoord4fv;
 export let glMultiTexCoord4fvARB: *fp_glMultiTexCoord4fvARB =
 	null: *fp_glMultiTexCoord4fvARB;
 export let glMultiTexCoord4hNV: *fp_glMultiTexCoord4hNV =
 	null: *fp_glMultiTexCoord4hNV;
 export let glMultiTexCoord4hvNV: *fp_glMultiTexCoord4hvNV =
 	null: *fp_glMultiTexCoord4hvNV;
-export let glMultiTexCoord4i: *fp_glMultiTexCoord4i =
-	null: *fp_glMultiTexCoord4i;
 export let glMultiTexCoord4iARB: *fp_glMultiTexCoord4iARB =
 	null: *fp_glMultiTexCoord4iARB;
-export let glMultiTexCoord4iv: *fp_glMultiTexCoord4iv =
-	null: *fp_glMultiTexCoord4iv;
 export let glMultiTexCoord4ivARB: *fp_glMultiTexCoord4ivARB =
 	null: *fp_glMultiTexCoord4ivARB;
-export let glMultiTexCoord4s: *fp_glMultiTexCoord4s =
-	null: *fp_glMultiTexCoord4s;
 export let glMultiTexCoord4sARB: *fp_glMultiTexCoord4sARB =
 	null: *fp_glMultiTexCoord4sARB;
-export let glMultiTexCoord4sv: *fp_glMultiTexCoord4sv =
-	null: *fp_glMultiTexCoord4sv;
 export let glMultiTexCoord4svARB: *fp_glMultiTexCoord4svARB =
 	null: *fp_glMultiTexCoord4svARB;
 export let glMultiTexCoord4xOES: *fp_glMultiTexCoord4xOES =
@@ -10608,46 +9786,22 @@ export let glNamedRenderbufferStorageMultisampleEXT: *fp_glNamedRenderbufferStor
 	null: *fp_glNamedRenderbufferStorageMultisampleEXT;
 export let glNamedStringARB: *fp_glNamedStringARB =
 	null: *fp_glNamedStringARB;
-export let glNewList: *fp_glNewList =
-	null: *fp_glNewList;
 export let glNewObjectBufferATI: *fp_glNewObjectBufferATI =
 	null: *fp_glNewObjectBufferATI;
-export let glNormal3b: *fp_glNormal3b =
-	null: *fp_glNormal3b;
-export let glNormal3bv: *fp_glNormal3bv =
-	null: *fp_glNormal3bv;
-export let glNormal3d: *fp_glNormal3d =
-	null: *fp_glNormal3d;
-export let glNormal3dv: *fp_glNormal3dv =
-	null: *fp_glNormal3dv;
-export let glNormal3f: *fp_glNormal3f =
-	null: *fp_glNormal3f;
 export let glNormal3fVertex3fSUN: *fp_glNormal3fVertex3fSUN =
 	null: *fp_glNormal3fVertex3fSUN;
 export let glNormal3fVertex3fvSUN: *fp_glNormal3fVertex3fvSUN =
 	null: *fp_glNormal3fVertex3fvSUN;
-export let glNormal3fv: *fp_glNormal3fv =
-	null: *fp_glNormal3fv;
 export let glNormal3hNV: *fp_glNormal3hNV =
 	null: *fp_glNormal3hNV;
 export let glNormal3hvNV: *fp_glNormal3hvNV =
 	null: *fp_glNormal3hvNV;
-export let glNormal3i: *fp_glNormal3i =
-	null: *fp_glNormal3i;
-export let glNormal3iv: *fp_glNormal3iv =
-	null: *fp_glNormal3iv;
-export let glNormal3s: *fp_glNormal3s =
-	null: *fp_glNormal3s;
-export let glNormal3sv: *fp_glNormal3sv =
-	null: *fp_glNormal3sv;
 export let glNormal3xOES: *fp_glNormal3xOES =
 	null: *fp_glNormal3xOES;
 export let glNormal3xvOES: *fp_glNormal3xvOES =
 	null: *fp_glNormal3xvOES;
 export let glNormalFormatNV: *fp_glNormalFormatNV =
 	null: *fp_glNormalFormatNV;
-export let glNormalPointer: *fp_glNormalPointer =
-	null: *fp_glNormalPointer;
 export let glNormalPointerEXT: *fp_glNormalPointerEXT =
 	null: *fp_glNormalPointerEXT;
 export let glNormalPointerListIBM: *fp_glNormalPointerListIBM =
@@ -10682,8 +9836,6 @@ export let glObjectPurgeableAPPLE: *fp_glObjectPurgeableAPPLE =
 	null: *fp_glObjectPurgeableAPPLE;
 export let glObjectUnpurgeableAPPLE: *fp_glObjectUnpurgeableAPPLE =
 	null: *fp_glObjectUnpurgeableAPPLE;
-export let glOrtho: *fp_glOrtho =
-	null: *fp_glOrtho;
 export let glOrthofOES: *fp_glOrthofOES =
 	null: *fp_glOrthofOES;
 export let glOrthoxOES: *fp_glOrthoxOES =
@@ -10694,8 +9846,6 @@ export let glPNTrianglesiATI: *fp_glPNTrianglesiATI =
 	null: *fp_glPNTrianglesiATI;
 export let glPassTexCoordATI: *fp_glPassTexCoordATI =
 	null: *fp_glPassTexCoordATI;
-export let glPassThrough: *fp_glPassThrough =
-	null: *fp_glPassThrough;
 export let glPassThroughxOES: *fp_glPassThroughxOES =
 	null: *fp_glPassThroughxOES;
 export let glPatchParameterfv: *fp_glPatchParameterfv =
@@ -10744,12 +9894,6 @@ export let glPauseTransformFeedbackNV: *fp_glPauseTransformFeedbackNV =
 	null: *fp_glPauseTransformFeedbackNV;
 export let glPixelDataRangeNV: *fp_glPixelDataRangeNV =
 	null: *fp_glPixelDataRangeNV;
-export let glPixelMapfv: *fp_glPixelMapfv =
-	null: *fp_glPixelMapfv;
-export let glPixelMapuiv: *fp_glPixelMapuiv =
-	null: *fp_glPixelMapuiv;
-export let glPixelMapusv: *fp_glPixelMapusv =
-	null: *fp_glPixelMapusv;
 export let glPixelMapx: *fp_glPixelMapx =
 	null: *fp_glPixelMapx;
 export let glPixelStoref: *fp_glPixelStoref =
@@ -10768,10 +9912,6 @@ export let glPixelTexGenParameterivSGIS: *fp_glPixelTexGenParameterivSGIS =
 	null: *fp_glPixelTexGenParameterivSGIS;
 export let glPixelTexGenSGIX: *fp_glPixelTexGenSGIX =
 	null: *fp_glPixelTexGenSGIX;
-export let glPixelTransferf: *fp_glPixelTransferf =
-	null: *fp_glPixelTransferf;
-export let glPixelTransferi: *fp_glPixelTransferi =
-	null: *fp_glPixelTransferi;
 export let glPixelTransferxOES: *fp_glPixelTransferxOES =
 	null: *fp_glPixelTransferxOES;
 export let glPixelTransformParameterfEXT: *fp_glPixelTransformParameterfEXT =
@@ -10782,8 +9922,6 @@ export let glPixelTransformParameteriEXT: *fp_glPixelTransformParameteriEXT =
 	null: *fp_glPixelTransformParameteriEXT;
 export let glPixelTransformParameterivEXT: *fp_glPixelTransformParameterivEXT =
 	null: *fp_glPixelTransformParameterivEXT;
-export let glPixelZoom: *fp_glPixelZoom =
-	null: *fp_glPixelZoom;
 export let glPixelZoomxOES: *fp_glPixelZoomxOES =
 	null: *fp_glPixelZoomxOES;
 export let glPointAlongPathNV: *fp_glPointAlongPathNV =
@@ -10834,32 +9972,22 @@ export let glPolygonOffsetEXT: *fp_glPolygonOffsetEXT =
 	null: *fp_glPolygonOffsetEXT;
 export let glPolygonOffsetxOES: *fp_glPolygonOffsetxOES =
 	null: *fp_glPolygonOffsetxOES;
-export let glPolygonStipple: *fp_glPolygonStipple =
-	null: *fp_glPolygonStipple;
-export let glPopAttrib: *fp_glPopAttrib =
-	null: *fp_glPopAttrib;
-export let glPopClientAttrib: *fp_glPopClientAttrib =
-	null: *fp_glPopClientAttrib;
 export let glPopDebugGroup: *fp_glPopDebugGroup =
 	null: *fp_glPopDebugGroup;
 export let glPopGroupMarkerEXT: *fp_glPopGroupMarkerEXT =
 	null: *fp_glPopGroupMarkerEXT;
-export let glPopMatrix: *fp_glPopMatrix =
-	null: *fp_glPopMatrix;
-export let glPopName: *fp_glPopName =
-	null: *fp_glPopName;
 export let glPresentFrameDualFillNV: *fp_glPresentFrameDualFillNV =
 	null: *fp_glPresentFrameDualFillNV;
 export let glPresentFrameKeyedNV: *fp_glPresentFrameKeyedNV =
 	null: *fp_glPresentFrameKeyedNV;
 export let glPrimitiveBoundingBoxARB: *fp_glPrimitiveBoundingBoxARB =
 	null: *fp_glPrimitiveBoundingBoxARB;
+export let glPrimitiveRestartIndex: *fp_glPrimitiveRestartIndex =
+	null: *fp_glPrimitiveRestartIndex;
 export let glPrimitiveRestartIndexNV: *fp_glPrimitiveRestartIndexNV =
 	null: *fp_glPrimitiveRestartIndexNV;
 export let glPrimitiveRestartNV: *fp_glPrimitiveRestartNV =
 	null: *fp_glPrimitiveRestartNV;
-export let glPrioritizeTextures: *fp_glPrioritizeTextures =
-	null: *fp_glPrioritizeTextures;
 export let glPrioritizeTexturesEXT: *fp_glPrioritizeTexturesEXT =
 	null: *fp_glPrioritizeTexturesEXT;
 export let glPrioritizeTexturesxOES: *fp_glPrioritizeTexturesxOES =
@@ -11230,20 +10358,12 @@ export let glProvokingVertex: *fp_glProvokingVertex =
 	null: *fp_glProvokingVertex;
 export let glProvokingVertexEXT: *fp_glProvokingVertexEXT =
 	null: *fp_glProvokingVertexEXT;
-export let glPushAttrib: *fp_glPushAttrib =
-	null: *fp_glPushAttrib;
-export let glPushClientAttrib: *fp_glPushClientAttrib =
-	null: *fp_glPushClientAttrib;
 export let glPushClientAttribDefaultEXT: *fp_glPushClientAttribDefaultEXT =
 	null: *fp_glPushClientAttribDefaultEXT;
 export let glPushDebugGroup: *fp_glPushDebugGroup =
 	null: *fp_glPushDebugGroup;
 export let glPushGroupMarkerEXT: *fp_glPushGroupMarkerEXT =
 	null: *fp_glPushGroupMarkerEXT;
-export let glPushMatrix: *fp_glPushMatrix =
-	null: *fp_glPushMatrix;
-export let glPushName: *fp_glPushName =
-	null: *fp_glPushName;
 export let glQueryCounter: *fp_glQueryCounter =
 	null: *fp_glQueryCounter;
 export let glQueryMatrixxOES: *fp_glQueryMatrixxOES =
@@ -11254,62 +10374,14 @@ export let glQueryResourceNV: *fp_glQueryResourceNV =
 	null: *fp_glQueryResourceNV;
 export let glQueryResourceTagNV: *fp_glQueryResourceTagNV =
 	null: *fp_glQueryResourceTagNV;
-export let glRasterPos2d: *fp_glRasterPos2d =
-	null: *fp_glRasterPos2d;
-export let glRasterPos2dv: *fp_glRasterPos2dv =
-	null: *fp_glRasterPos2dv;
-export let glRasterPos2f: *fp_glRasterPos2f =
-	null: *fp_glRasterPos2f;
-export let glRasterPos2fv: *fp_glRasterPos2fv =
-	null: *fp_glRasterPos2fv;
-export let glRasterPos2i: *fp_glRasterPos2i =
-	null: *fp_glRasterPos2i;
-export let glRasterPos2iv: *fp_glRasterPos2iv =
-	null: *fp_glRasterPos2iv;
-export let glRasterPos2s: *fp_glRasterPos2s =
-	null: *fp_glRasterPos2s;
-export let glRasterPos2sv: *fp_glRasterPos2sv =
-	null: *fp_glRasterPos2sv;
 export let glRasterPos2xOES: *fp_glRasterPos2xOES =
 	null: *fp_glRasterPos2xOES;
 export let glRasterPos2xvOES: *fp_glRasterPos2xvOES =
 	null: *fp_glRasterPos2xvOES;
-export let glRasterPos3d: *fp_glRasterPos3d =
-	null: *fp_glRasterPos3d;
-export let glRasterPos3dv: *fp_glRasterPos3dv =
-	null: *fp_glRasterPos3dv;
-export let glRasterPos3f: *fp_glRasterPos3f =
-	null: *fp_glRasterPos3f;
-export let glRasterPos3fv: *fp_glRasterPos3fv =
-	null: *fp_glRasterPos3fv;
-export let glRasterPos3i: *fp_glRasterPos3i =
-	null: *fp_glRasterPos3i;
-export let glRasterPos3iv: *fp_glRasterPos3iv =
-	null: *fp_glRasterPos3iv;
-export let glRasterPos3s: *fp_glRasterPos3s =
-	null: *fp_glRasterPos3s;
-export let glRasterPos3sv: *fp_glRasterPos3sv =
-	null: *fp_glRasterPos3sv;
 export let glRasterPos3xOES: *fp_glRasterPos3xOES =
 	null: *fp_glRasterPos3xOES;
 export let glRasterPos3xvOES: *fp_glRasterPos3xvOES =
 	null: *fp_glRasterPos3xvOES;
-export let glRasterPos4d: *fp_glRasterPos4d =
-	null: *fp_glRasterPos4d;
-export let glRasterPos4dv: *fp_glRasterPos4dv =
-	null: *fp_glRasterPos4dv;
-export let glRasterPos4f: *fp_glRasterPos4f =
-	null: *fp_glRasterPos4f;
-export let glRasterPos4fv: *fp_glRasterPos4fv =
-	null: *fp_glRasterPos4fv;
-export let glRasterPos4i: *fp_glRasterPos4i =
-	null: *fp_glRasterPos4i;
-export let glRasterPos4iv: *fp_glRasterPos4iv =
-	null: *fp_glRasterPos4iv;
-export let glRasterPos4s: *fp_glRasterPos4s =
-	null: *fp_glRasterPos4s;
-export let glRasterPos4sv: *fp_glRasterPos4sv =
-	null: *fp_glRasterPos4sv;
 export let glRasterPos4xOES: *fp_glRasterPos4xOES =
 	null: *fp_glRasterPos4xOES;
 export let glRasterPos4xvOES: *fp_glRasterPos4xvOES =
@@ -11326,22 +10398,6 @@ export let glReadnPixels: *fp_glReadnPixels =
 	null: *fp_glReadnPixels;
 export let glReadnPixelsARB: *fp_glReadnPixelsARB =
 	null: *fp_glReadnPixelsARB;
-export let glRectd: *fp_glRectd =
-	null: *fp_glRectd;
-export let glRectdv: *fp_glRectdv =
-	null: *fp_glRectdv;
-export let glRectf: *fp_glRectf =
-	null: *fp_glRectf;
-export let glRectfv: *fp_glRectfv =
-	null: *fp_glRectfv;
-export let glRecti: *fp_glRecti =
-	null: *fp_glRecti;
-export let glRectiv: *fp_glRectiv =
-	null: *fp_glRectiv;
-export let glRects: *fp_glRects =
-	null: *fp_glRects;
-export let glRectsv: *fp_glRectsv =
-	null: *fp_glRectsv;
 export let glRectxOES: *fp_glRectxOES =
 	null: *fp_glRectxOES;
 export let glRectxvOES: *fp_glRectxvOES =
@@ -11354,8 +10410,6 @@ export let glReleaseShaderCompiler: *fp_glReleaseShaderCompiler =
 	null: *fp_glReleaseShaderCompiler;
 export let glRenderGpuMaskNV: *fp_glRenderGpuMaskNV =
 	null: *fp_glRenderGpuMaskNV;
-export let glRenderMode: *fp_glRenderMode =
-	null: *fp_glRenderMode;
 export let glRenderbufferStorage: *fp_glRenderbufferStorage =
 	null: *fp_glRenderbufferStorage;
 export let glRenderbufferStorageEXT: *fp_glRenderbufferStorageEXT =
@@ -11430,10 +10484,6 @@ export let glResumeTransformFeedback: *fp_glResumeTransformFeedback =
 	null: *fp_glResumeTransformFeedback;
 export let glResumeTransformFeedbackNV: *fp_glResumeTransformFeedbackNV =
 	null: *fp_glResumeTransformFeedbackNV;
-export let glRotated: *fp_glRotated =
-	null: *fp_glRotated;
-export let glRotatef: *fp_glRotatef =
-	null: *fp_glRotatef;
 export let glRotatexOES: *fp_glRotatexOES =
 	null: *fp_glRotatexOES;
 export let glSampleCoverage: *fp_glSampleCoverage =
@@ -11466,10 +10516,6 @@ export let glSamplerParameteri: *fp_glSamplerParameteri =
 	null: *fp_glSamplerParameteri;
 export let glSamplerParameteriv: *fp_glSamplerParameteriv =
 	null: *fp_glSamplerParameteriv;
-export let glScaled: *fp_glScaled =
-	null: *fp_glScaled;
-export let glScalef: *fp_glScalef =
-	null: *fp_glScalef;
 export let glScalexOES: *fp_glScalexOES =
 	null: *fp_glScalexOES;
 export let glScissor: *fp_glScissor =
@@ -11484,84 +10530,48 @@ export let glScissorIndexed: *fp_glScissorIndexed =
 	null: *fp_glScissorIndexed;
 export let glScissorIndexedv: *fp_glScissorIndexedv =
 	null: *fp_glScissorIndexedv;
-export let glSecondaryColor3b: *fp_glSecondaryColor3b =
-	null: *fp_glSecondaryColor3b;
 export let glSecondaryColor3bEXT: *fp_glSecondaryColor3bEXT =
 	null: *fp_glSecondaryColor3bEXT;
-export let glSecondaryColor3bv: *fp_glSecondaryColor3bv =
-	null: *fp_glSecondaryColor3bv;
 export let glSecondaryColor3bvEXT: *fp_glSecondaryColor3bvEXT =
 	null: *fp_glSecondaryColor3bvEXT;
-export let glSecondaryColor3d: *fp_glSecondaryColor3d =
-	null: *fp_glSecondaryColor3d;
 export let glSecondaryColor3dEXT: *fp_glSecondaryColor3dEXT =
 	null: *fp_glSecondaryColor3dEXT;
-export let glSecondaryColor3dv: *fp_glSecondaryColor3dv =
-	null: *fp_glSecondaryColor3dv;
 export let glSecondaryColor3dvEXT: *fp_glSecondaryColor3dvEXT =
 	null: *fp_glSecondaryColor3dvEXT;
-export let glSecondaryColor3f: *fp_glSecondaryColor3f =
-	null: *fp_glSecondaryColor3f;
 export let glSecondaryColor3fEXT: *fp_glSecondaryColor3fEXT =
 	null: *fp_glSecondaryColor3fEXT;
-export let glSecondaryColor3fv: *fp_glSecondaryColor3fv =
-	null: *fp_glSecondaryColor3fv;
 export let glSecondaryColor3fvEXT: *fp_glSecondaryColor3fvEXT =
 	null: *fp_glSecondaryColor3fvEXT;
 export let glSecondaryColor3hNV: *fp_glSecondaryColor3hNV =
 	null: *fp_glSecondaryColor3hNV;
 export let glSecondaryColor3hvNV: *fp_glSecondaryColor3hvNV =
 	null: *fp_glSecondaryColor3hvNV;
-export let glSecondaryColor3i: *fp_glSecondaryColor3i =
-	null: *fp_glSecondaryColor3i;
 export let glSecondaryColor3iEXT: *fp_glSecondaryColor3iEXT =
 	null: *fp_glSecondaryColor3iEXT;
-export let glSecondaryColor3iv: *fp_glSecondaryColor3iv =
-	null: *fp_glSecondaryColor3iv;
 export let glSecondaryColor3ivEXT: *fp_glSecondaryColor3ivEXT =
 	null: *fp_glSecondaryColor3ivEXT;
-export let glSecondaryColor3s: *fp_glSecondaryColor3s =
-	null: *fp_glSecondaryColor3s;
 export let glSecondaryColor3sEXT: *fp_glSecondaryColor3sEXT =
 	null: *fp_glSecondaryColor3sEXT;
-export let glSecondaryColor3sv: *fp_glSecondaryColor3sv =
-	null: *fp_glSecondaryColor3sv;
 export let glSecondaryColor3svEXT: *fp_glSecondaryColor3svEXT =
 	null: *fp_glSecondaryColor3svEXT;
-export let glSecondaryColor3ub: *fp_glSecondaryColor3ub =
-	null: *fp_glSecondaryColor3ub;
 export let glSecondaryColor3ubEXT: *fp_glSecondaryColor3ubEXT =
 	null: *fp_glSecondaryColor3ubEXT;
-export let glSecondaryColor3ubv: *fp_glSecondaryColor3ubv =
-	null: *fp_glSecondaryColor3ubv;
 export let glSecondaryColor3ubvEXT: *fp_glSecondaryColor3ubvEXT =
 	null: *fp_glSecondaryColor3ubvEXT;
-export let glSecondaryColor3ui: *fp_glSecondaryColor3ui =
-	null: *fp_glSecondaryColor3ui;
 export let glSecondaryColor3uiEXT: *fp_glSecondaryColor3uiEXT =
 	null: *fp_glSecondaryColor3uiEXT;
-export let glSecondaryColor3uiv: *fp_glSecondaryColor3uiv =
-	null: *fp_glSecondaryColor3uiv;
 export let glSecondaryColor3uivEXT: *fp_glSecondaryColor3uivEXT =
 	null: *fp_glSecondaryColor3uivEXT;
-export let glSecondaryColor3us: *fp_glSecondaryColor3us =
-	null: *fp_glSecondaryColor3us;
 export let glSecondaryColor3usEXT: *fp_glSecondaryColor3usEXT =
 	null: *fp_glSecondaryColor3usEXT;
-export let glSecondaryColor3usv: *fp_glSecondaryColor3usv =
-	null: *fp_glSecondaryColor3usv;
 export let glSecondaryColor3usvEXT: *fp_glSecondaryColor3usvEXT =
 	null: *fp_glSecondaryColor3usvEXT;
 export let glSecondaryColorFormatNV: *fp_glSecondaryColorFormatNV =
 	null: *fp_glSecondaryColorFormatNV;
-export let glSecondaryColorPointer: *fp_glSecondaryColorPointer =
-	null: *fp_glSecondaryColorPointer;
 export let glSecondaryColorPointerEXT: *fp_glSecondaryColorPointerEXT =
 	null: *fp_glSecondaryColorPointerEXT;
 export let glSecondaryColorPointerListIBM: *fp_glSecondaryColorPointerListIBM =
 	null: *fp_glSecondaryColorPointerListIBM;
-export let glSelectBuffer: *fp_glSelectBuffer =
-	null: *fp_glSelectBuffer;
 export let glSelectPerfMonitorCountersAMD: *fp_glSelectPerfMonitorCountersAMD =
 	null: *fp_glSelectPerfMonitorCountersAMD;
 export let glSemaphoreParameterivNV: *fp_glSemaphoreParameterivNV =
@@ -11582,8 +10592,6 @@ export let glSetLocalConstantEXT: *fp_glSetLocalConstantEXT =
 	null: *fp_glSetLocalConstantEXT;
 export let glSetMultisamplefvAMD: *fp_glSetMultisamplefvAMD =
 	null: *fp_glSetMultisamplefvAMD;
-export let glShadeModel: *fp_glShadeModel =
-	null: *fp_glShadeModel;
 export let glShaderBinary: *fp_glShaderBinary =
 	null: *fp_glShaderBinary;
 export let glShaderOp1EXT: *fp_glShaderOp1EXT =
@@ -11714,6 +10722,8 @@ export let glTestObjectAPPLE: *fp_glTestObjectAPPLE =
 	null: *fp_glTestObjectAPPLE;
 export let glTexAttachMemoryNV: *fp_glTexAttachMemoryNV =
 	null: *fp_glTexAttachMemoryNV;
+export let glTexBuffer: *fp_glTexBuffer =
+	null: *fp_glTexBuffer;
 export let glTexBufferARB: *fp_glTexBufferARB =
 	null: *fp_glTexBufferARB;
 export let glTexBufferEXT: *fp_glTexBufferEXT =
@@ -11728,26 +10738,10 @@ export let glTexCoord1bOES: *fp_glTexCoord1bOES =
 	null: *fp_glTexCoord1bOES;
 export let glTexCoord1bvOES: *fp_glTexCoord1bvOES =
 	null: *fp_glTexCoord1bvOES;
-export let glTexCoord1d: *fp_glTexCoord1d =
-	null: *fp_glTexCoord1d;
-export let glTexCoord1dv: *fp_glTexCoord1dv =
-	null: *fp_glTexCoord1dv;
-export let glTexCoord1f: *fp_glTexCoord1f =
-	null: *fp_glTexCoord1f;
-export let glTexCoord1fv: *fp_glTexCoord1fv =
-	null: *fp_glTexCoord1fv;
 export let glTexCoord1hNV: *fp_glTexCoord1hNV =
 	null: *fp_glTexCoord1hNV;
 export let glTexCoord1hvNV: *fp_glTexCoord1hvNV =
 	null: *fp_glTexCoord1hvNV;
-export let glTexCoord1i: *fp_glTexCoord1i =
-	null: *fp_glTexCoord1i;
-export let glTexCoord1iv: *fp_glTexCoord1iv =
-	null: *fp_glTexCoord1iv;
-export let glTexCoord1s: *fp_glTexCoord1s =
-	null: *fp_glTexCoord1s;
-export let glTexCoord1sv: *fp_glTexCoord1sv =
-	null: *fp_glTexCoord1sv;
 export let glTexCoord1xOES: *fp_glTexCoord1xOES =
 	null: *fp_glTexCoord1xOES;
 export let glTexCoord1xvOES: *fp_glTexCoord1xvOES =
@@ -11756,12 +10750,6 @@ export let glTexCoord2bOES: *fp_glTexCoord2bOES =
 	null: *fp_glTexCoord2bOES;
 export let glTexCoord2bvOES: *fp_glTexCoord2bvOES =
 	null: *fp_glTexCoord2bvOES;
-export let glTexCoord2d: *fp_glTexCoord2d =
-	null: *fp_glTexCoord2d;
-export let glTexCoord2dv: *fp_glTexCoord2dv =
-	null: *fp_glTexCoord2dv;
-export let glTexCoord2f: *fp_glTexCoord2f =
-	null: *fp_glTexCoord2f;
 export let glTexCoord2fColor3fVertex3fSUN: *fp_glTexCoord2fColor3fVertex3fSUN =
 	null: *fp_glTexCoord2fColor3fVertex3fSUN;
 export let glTexCoord2fColor3fVertex3fvSUN: *fp_glTexCoord2fColor3fVertex3fvSUN =
@@ -11782,20 +10770,10 @@ export let glTexCoord2fVertex3fSUN: *fp_glTexCoord2fVertex3fSUN =
 	null: *fp_glTexCoord2fVertex3fSUN;
 export let glTexCoord2fVertex3fvSUN: *fp_glTexCoord2fVertex3fvSUN =
 	null: *fp_glTexCoord2fVertex3fvSUN;
-export let glTexCoord2fv: *fp_glTexCoord2fv =
-	null: *fp_glTexCoord2fv;
 export let glTexCoord2hNV: *fp_glTexCoord2hNV =
 	null: *fp_glTexCoord2hNV;
 export let glTexCoord2hvNV: *fp_glTexCoord2hvNV =
 	null: *fp_glTexCoord2hvNV;
-export let glTexCoord2i: *fp_glTexCoord2i =
-	null: *fp_glTexCoord2i;
-export let glTexCoord2iv: *fp_glTexCoord2iv =
-	null: *fp_glTexCoord2iv;
-export let glTexCoord2s: *fp_glTexCoord2s =
-	null: *fp_glTexCoord2s;
-export let glTexCoord2sv: *fp_glTexCoord2sv =
-	null: *fp_glTexCoord2sv;
 export let glTexCoord2xOES: *fp_glTexCoord2xOES =
 	null: *fp_glTexCoord2xOES;
 export let glTexCoord2xvOES: *fp_glTexCoord2xvOES =
@@ -11804,26 +10782,10 @@ export let glTexCoord3bOES: *fp_glTexCoord3bOES =
 	null: *fp_glTexCoord3bOES;
 export let glTexCoord3bvOES: *fp_glTexCoord3bvOES =
 	null: *fp_glTexCoord3bvOES;
-export let glTexCoord3d: *fp_glTexCoord3d =
-	null: *fp_glTexCoord3d;
-export let glTexCoord3dv: *fp_glTexCoord3dv =
-	null: *fp_glTexCoord3dv;
-export let glTexCoord3f: *fp_glTexCoord3f =
-	null: *fp_glTexCoord3f;
-export let glTexCoord3fv: *fp_glTexCoord3fv =
-	null: *fp_glTexCoord3fv;
 export let glTexCoord3hNV: *fp_glTexCoord3hNV =
 	null: *fp_glTexCoord3hNV;
 export let glTexCoord3hvNV: *fp_glTexCoord3hvNV =
 	null: *fp_glTexCoord3hvNV;
-export let glTexCoord3i: *fp_glTexCoord3i =
-	null: *fp_glTexCoord3i;
-export let glTexCoord3iv: *fp_glTexCoord3iv =
-	null: *fp_glTexCoord3iv;
-export let glTexCoord3s: *fp_glTexCoord3s =
-	null: *fp_glTexCoord3s;
-export let glTexCoord3sv: *fp_glTexCoord3sv =
-	null: *fp_glTexCoord3sv;
 export let glTexCoord3xOES: *fp_glTexCoord3xOES =
 	null: *fp_glTexCoord3xOES;
 export let glTexCoord3xvOES: *fp_glTexCoord3xvOES =
@@ -11832,12 +10794,6 @@ export let glTexCoord4bOES: *fp_glTexCoord4bOES =
 	null: *fp_glTexCoord4bOES;
 export let glTexCoord4bvOES: *fp_glTexCoord4bvOES =
 	null: *fp_glTexCoord4bvOES;
-export let glTexCoord4d: *fp_glTexCoord4d =
-	null: *fp_glTexCoord4d;
-export let glTexCoord4dv: *fp_glTexCoord4dv =
-	null: *fp_glTexCoord4dv;
-export let glTexCoord4f: *fp_glTexCoord4f =
-	null: *fp_glTexCoord4f;
 export let glTexCoord4fColor4fNormal3fVertex4fSUN: *fp_glTexCoord4fColor4fNormal3fVertex4fSUN =
 	null: *fp_glTexCoord4fColor4fNormal3fVertex4fSUN;
 export let glTexCoord4fColor4fNormal3fVertex4fvSUN: *fp_glTexCoord4fColor4fNormal3fVertex4fvSUN =
@@ -11846,60 +10802,28 @@ export let glTexCoord4fVertex4fSUN: *fp_glTexCoord4fVertex4fSUN =
 	null: *fp_glTexCoord4fVertex4fSUN;
 export let glTexCoord4fVertex4fvSUN: *fp_glTexCoord4fVertex4fvSUN =
 	null: *fp_glTexCoord4fVertex4fvSUN;
-export let glTexCoord4fv: *fp_glTexCoord4fv =
-	null: *fp_glTexCoord4fv;
 export let glTexCoord4hNV: *fp_glTexCoord4hNV =
 	null: *fp_glTexCoord4hNV;
 export let glTexCoord4hvNV: *fp_glTexCoord4hvNV =
 	null: *fp_glTexCoord4hvNV;
-export let glTexCoord4i: *fp_glTexCoord4i =
-	null: *fp_glTexCoord4i;
-export let glTexCoord4iv: *fp_glTexCoord4iv =
-	null: *fp_glTexCoord4iv;
-export let glTexCoord4s: *fp_glTexCoord4s =
-	null: *fp_glTexCoord4s;
-export let glTexCoord4sv: *fp_glTexCoord4sv =
-	null: *fp_glTexCoord4sv;
 export let glTexCoord4xOES: *fp_glTexCoord4xOES =
 	null: *fp_glTexCoord4xOES;
 export let glTexCoord4xvOES: *fp_glTexCoord4xvOES =
 	null: *fp_glTexCoord4xvOES;
 export let glTexCoordFormatNV: *fp_glTexCoordFormatNV =
 	null: *fp_glTexCoordFormatNV;
-export let glTexCoordPointer: *fp_glTexCoordPointer =
-	null: *fp_glTexCoordPointer;
 export let glTexCoordPointerEXT: *fp_glTexCoordPointerEXT =
 	null: *fp_glTexCoordPointerEXT;
 export let glTexCoordPointerListIBM: *fp_glTexCoordPointerListIBM =
 	null: *fp_glTexCoordPointerListIBM;
 export let glTexCoordPointervINTEL: *fp_glTexCoordPointervINTEL =
 	null: *fp_glTexCoordPointervINTEL;
-export let glTexEnvf: *fp_glTexEnvf =
-	null: *fp_glTexEnvf;
-export let glTexEnvfv: *fp_glTexEnvfv =
-	null: *fp_glTexEnvfv;
-export let glTexEnvi: *fp_glTexEnvi =
-	null: *fp_glTexEnvi;
-export let glTexEnviv: *fp_glTexEnviv =
-	null: *fp_glTexEnviv;
 export let glTexEnvxOES: *fp_glTexEnvxOES =
 	null: *fp_glTexEnvxOES;
 export let glTexEnvxvOES: *fp_glTexEnvxvOES =
 	null: *fp_glTexEnvxvOES;
 export let glTexFilterFuncSGIS: *fp_glTexFilterFuncSGIS =
 	null: *fp_glTexFilterFuncSGIS;
-export let glTexGend: *fp_glTexGend =
-	null: *fp_glTexGend;
-export let glTexGendv: *fp_glTexGendv =
-	null: *fp_glTexGendv;
-export let glTexGenf: *fp_glTexGenf =
-	null: *fp_glTexGenf;
-export let glTexGenfv: *fp_glTexGenfv =
-	null: *fp_glTexGenfv;
-export let glTexGeni: *fp_glTexGeni =
-	null: *fp_glTexGeni;
-export let glTexGeniv: *fp_glTexGeniv =
-	null: *fp_glTexGeniv;
 export let glTexGenxOES: *fp_glTexGenxOES =
 	null: *fp_glTexGenxOES;
 export let glTexGenxvOES: *fp_glTexGenxvOES =
@@ -11926,8 +10850,12 @@ export let glTexPageCommitmentARB: *fp_glTexPageCommitmentARB =
 	null: *fp_glTexPageCommitmentARB;
 export let glTexPageCommitmentMemNV: *fp_glTexPageCommitmentMemNV =
 	null: *fp_glTexPageCommitmentMemNV;
+export let glTexParameterIiv: *fp_glTexParameterIiv =
+	null: *fp_glTexParameterIiv;
 export let glTexParameterIivEXT: *fp_glTexParameterIivEXT =
 	null: *fp_glTexParameterIivEXT;
+export let glTexParameterIuiv: *fp_glTexParameterIuiv =
+	null: *fp_glTexParameterIuiv;
 export let glTexParameterIuivEXT: *fp_glTexParameterIuivEXT =
 	null: *fp_glTexParameterIuivEXT;
 export let glTexParameterf: *fp_glTexParameterf =
@@ -12110,16 +11038,14 @@ export let glTransformFeedbackBufferRange: *fp_glTransformFeedbackBufferRange =
 	null: *fp_glTransformFeedbackBufferRange;
 export let glTransformFeedbackStreamAttribsNV: *fp_glTransformFeedbackStreamAttribsNV =
 	null: *fp_glTransformFeedbackStreamAttribsNV;
+export let glTransformFeedbackVaryings: *fp_glTransformFeedbackVaryings =
+	null: *fp_glTransformFeedbackVaryings;
 export let glTransformFeedbackVaryingsEXT: *fp_glTransformFeedbackVaryingsEXT =
 	null: *fp_glTransformFeedbackVaryingsEXT;
 export let glTransformFeedbackVaryingsNV: *fp_glTransformFeedbackVaryingsNV =
 	null: *fp_glTransformFeedbackVaryingsNV;
 export let glTransformPathNV: *fp_glTransformPathNV =
 	null: *fp_glTransformPathNV;
-export let glTranslated: *fp_glTranslated =
-	null: *fp_glTranslated;
-export let glTranslatef: *fp_glTranslatef =
-	null: *fp_glTranslatef;
 export let glTranslatexOES: *fp_glTranslatexOES =
 	null: *fp_glTranslatexOES;
 export let glUniform1d: *fp_glUniform1d =
@@ -12150,6 +11076,8 @@ export let glUniform1iv: *fp_glUniform1iv =
 	null: *fp_glUniform1iv;
 export let glUniform1ivARB: *fp_glUniform1ivARB =
 	null: *fp_glUniform1ivARB;
+export let glUniform1ui: *fp_glUniform1ui =
+	null: *fp_glUniform1ui;
 export let glUniform1ui64ARB: *fp_glUniform1ui64ARB =
 	null: *fp_glUniform1ui64ARB;
 export let glUniform1ui64NV: *fp_glUniform1ui64NV =
@@ -12160,6 +11088,8 @@ export let glUniform1ui64vNV: *fp_glUniform1ui64vNV =
 	null: *fp_glUniform1ui64vNV;
 export let glUniform1uiEXT: *fp_glUniform1uiEXT =
 	null: *fp_glUniform1uiEXT;
+export let glUniform1uiv: *fp_glUniform1uiv =
+	null: *fp_glUniform1uiv;
 export let glUniform1uivEXT: *fp_glUniform1uivEXT =
 	null: *fp_glUniform1uivEXT;
 export let glUniform2d: *fp_glUniform2d =
@@ -12190,6 +11120,8 @@ export let glUniform2iv: *fp_glUniform2iv =
 	null: *fp_glUniform2iv;
 export let glUniform2ivARB: *fp_glUniform2ivARB =
 	null: *fp_glUniform2ivARB;
+export let glUniform2ui: *fp_glUniform2ui =
+	null: *fp_glUniform2ui;
 export let glUniform2ui64ARB: *fp_glUniform2ui64ARB =
 	null: *fp_glUniform2ui64ARB;
 export let glUniform2ui64NV: *fp_glUniform2ui64NV =
@@ -12200,6 +11132,8 @@ export let glUniform2ui64vNV: *fp_glUniform2ui64vNV =
 	null: *fp_glUniform2ui64vNV;
 export let glUniform2uiEXT: *fp_glUniform2uiEXT =
 	null: *fp_glUniform2uiEXT;
+export let glUniform2uiv: *fp_glUniform2uiv =
+	null: *fp_glUniform2uiv;
 export let glUniform2uivEXT: *fp_glUniform2uivEXT =
 	null: *fp_glUniform2uivEXT;
 export let glUniform3d: *fp_glUniform3d =
@@ -12230,6 +11164,8 @@ export let glUniform3iv: *fp_glUniform3iv =
 	null: *fp_glUniform3iv;
 export let glUniform3ivARB: *fp_glUniform3ivARB =
 	null: *fp_glUniform3ivARB;
+export let glUniform3ui: *fp_glUniform3ui =
+	null: *fp_glUniform3ui;
 export let glUniform3ui64ARB: *fp_glUniform3ui64ARB =
 	null: *fp_glUniform3ui64ARB;
 export let glUniform3ui64NV: *fp_glUniform3ui64NV =
@@ -12240,6 +11176,8 @@ export let glUniform3ui64vNV: *fp_glUniform3ui64vNV =
 	null: *fp_glUniform3ui64vNV;
 export let glUniform3uiEXT: *fp_glUniform3uiEXT =
 	null: *fp_glUniform3uiEXT;
+export let glUniform3uiv: *fp_glUniform3uiv =
+	null: *fp_glUniform3uiv;
 export let glUniform3uivEXT: *fp_glUniform3uivEXT =
 	null: *fp_glUniform3uivEXT;
 export let glUniform4d: *fp_glUniform4d =
@@ -12270,6 +11208,8 @@ export let glUniform4iv: *fp_glUniform4iv =
 	null: *fp_glUniform4iv;
 export let glUniform4ivARB: *fp_glUniform4ivARB =
 	null: *fp_glUniform4ivARB;
+export let glUniform4ui: *fp_glUniform4ui =
+	null: *fp_glUniform4ui;
 export let glUniform4ui64ARB: *fp_glUniform4ui64ARB =
 	null: *fp_glUniform4ui64ARB;
 export let glUniform4ui64NV: *fp_glUniform4ui64NV =
@@ -12280,6 +11220,8 @@ export let glUniform4ui64vNV: *fp_glUniform4ui64vNV =
 	null: *fp_glUniform4ui64vNV;
 export let glUniform4uiEXT: *fp_glUniform4uiEXT =
 	null: *fp_glUniform4uiEXT;
+export let glUniform4uiv: *fp_glUniform4uiv =
+	null: *fp_glUniform4uiv;
 export let glUniform4uivEXT: *fp_glUniform4uivEXT =
 	null: *fp_glUniform4uivEXT;
 export let glUniformBlockBinding: *fp_glUniformBlockBinding =
@@ -12420,26 +11362,10 @@ export let glVertex2bOES: *fp_glVertex2bOES =
 	null: *fp_glVertex2bOES;
 export let glVertex2bvOES: *fp_glVertex2bvOES =
 	null: *fp_glVertex2bvOES;
-export let glVertex2d: *fp_glVertex2d =
-	null: *fp_glVertex2d;
-export let glVertex2dv: *fp_glVertex2dv =
-	null: *fp_glVertex2dv;
-export let glVertex2f: *fp_glVertex2f =
-	null: *fp_glVertex2f;
-export let glVertex2fv: *fp_glVertex2fv =
-	null: *fp_glVertex2fv;
 export let glVertex2hNV: *fp_glVertex2hNV =
 	null: *fp_glVertex2hNV;
 export let glVertex2hvNV: *fp_glVertex2hvNV =
 	null: *fp_glVertex2hvNV;
-export let glVertex2i: *fp_glVertex2i =
-	null: *fp_glVertex2i;
-export let glVertex2iv: *fp_glVertex2iv =
-	null: *fp_glVertex2iv;
-export let glVertex2s: *fp_glVertex2s =
-	null: *fp_glVertex2s;
-export let glVertex2sv: *fp_glVertex2sv =
-	null: *fp_glVertex2sv;
 export let glVertex2xOES: *fp_glVertex2xOES =
 	null: *fp_glVertex2xOES;
 export let glVertex2xvOES: *fp_glVertex2xvOES =
@@ -12448,26 +11374,10 @@ export let glVertex3bOES: *fp_glVertex3bOES =
 	null: *fp_glVertex3bOES;
 export let glVertex3bvOES: *fp_glVertex3bvOES =
 	null: *fp_glVertex3bvOES;
-export let glVertex3d: *fp_glVertex3d =
-	null: *fp_glVertex3d;
-export let glVertex3dv: *fp_glVertex3dv =
-	null: *fp_glVertex3dv;
-export let glVertex3f: *fp_glVertex3f =
-	null: *fp_glVertex3f;
-export let glVertex3fv: *fp_glVertex3fv =
-	null: *fp_glVertex3fv;
 export let glVertex3hNV: *fp_glVertex3hNV =
 	null: *fp_glVertex3hNV;
 export let glVertex3hvNV: *fp_glVertex3hvNV =
 	null: *fp_glVertex3hvNV;
-export let glVertex3i: *fp_glVertex3i =
-	null: *fp_glVertex3i;
-export let glVertex3iv: *fp_glVertex3iv =
-	null: *fp_glVertex3iv;
-export let glVertex3s: *fp_glVertex3s =
-	null: *fp_glVertex3s;
-export let glVertex3sv: *fp_glVertex3sv =
-	null: *fp_glVertex3sv;
 export let glVertex3xOES: *fp_glVertex3xOES =
 	null: *fp_glVertex3xOES;
 export let glVertex3xvOES: *fp_glVertex3xvOES =
@@ -12476,26 +11386,10 @@ export let glVertex4bOES: *fp_glVertex4bOES =
 	null: *fp_glVertex4bOES;
 export let glVertex4bvOES: *fp_glVertex4bvOES =
 	null: *fp_glVertex4bvOES;
-export let glVertex4d: *fp_glVertex4d =
-	null: *fp_glVertex4d;
-export let glVertex4dv: *fp_glVertex4dv =
-	null: *fp_glVertex4dv;
-export let glVertex4f: *fp_glVertex4f =
-	null: *fp_glVertex4f;
-export let glVertex4fv: *fp_glVertex4fv =
-	null: *fp_glVertex4fv;
 export let glVertex4hNV: *fp_glVertex4hNV =
 	null: *fp_glVertex4hNV;
 export let glVertex4hvNV: *fp_glVertex4hvNV =
 	null: *fp_glVertex4hvNV;
-export let glVertex4i: *fp_glVertex4i =
-	null: *fp_glVertex4i;
-export let glVertex4iv: *fp_glVertex4iv =
-	null: *fp_glVertex4iv;
-export let glVertex4s: *fp_glVertex4s =
-	null: *fp_glVertex4s;
-export let glVertex4sv: *fp_glVertex4sv =
-	null: *fp_glVertex4sv;
 export let glVertex4xOES: *fp_glVertex4xOES =
 	null: *fp_glVertex4xOES;
 export let glVertex4xvOES: *fp_glVertex4xvOES =
@@ -12776,56 +11670,100 @@ export let glVertexAttribArrayObjectATI: *fp_glVertexAttribArrayObjectATI =
 	null: *fp_glVertexAttribArrayObjectATI;
 export let glVertexAttribBinding: *fp_glVertexAttribBinding =
 	null: *fp_glVertexAttribBinding;
+export let glVertexAttribDivisor: *fp_glVertexAttribDivisor =
+	null: *fp_glVertexAttribDivisor;
 export let glVertexAttribDivisorARB: *fp_glVertexAttribDivisorARB =
 	null: *fp_glVertexAttribDivisorARB;
 export let glVertexAttribFormat: *fp_glVertexAttribFormat =
 	null: *fp_glVertexAttribFormat;
 export let glVertexAttribFormatNV: *fp_glVertexAttribFormatNV =
 	null: *fp_glVertexAttribFormatNV;
+export let glVertexAttribI1i: *fp_glVertexAttribI1i =
+	null: *fp_glVertexAttribI1i;
 export let glVertexAttribI1iEXT: *fp_glVertexAttribI1iEXT =
 	null: *fp_glVertexAttribI1iEXT;
+export let glVertexAttribI1iv: *fp_glVertexAttribI1iv =
+	null: *fp_glVertexAttribI1iv;
 export let glVertexAttribI1ivEXT: *fp_glVertexAttribI1ivEXT =
 	null: *fp_glVertexAttribI1ivEXT;
+export let glVertexAttribI1ui: *fp_glVertexAttribI1ui =
+	null: *fp_glVertexAttribI1ui;
 export let glVertexAttribI1uiEXT: *fp_glVertexAttribI1uiEXT =
 	null: *fp_glVertexAttribI1uiEXT;
+export let glVertexAttribI1uiv: *fp_glVertexAttribI1uiv =
+	null: *fp_glVertexAttribI1uiv;
 export let glVertexAttribI1uivEXT: *fp_glVertexAttribI1uivEXT =
 	null: *fp_glVertexAttribI1uivEXT;
+export let glVertexAttribI2i: *fp_glVertexAttribI2i =
+	null: *fp_glVertexAttribI2i;
 export let glVertexAttribI2iEXT: *fp_glVertexAttribI2iEXT =
 	null: *fp_glVertexAttribI2iEXT;
+export let glVertexAttribI2iv: *fp_glVertexAttribI2iv =
+	null: *fp_glVertexAttribI2iv;
 export let glVertexAttribI2ivEXT: *fp_glVertexAttribI2ivEXT =
 	null: *fp_glVertexAttribI2ivEXT;
+export let glVertexAttribI2ui: *fp_glVertexAttribI2ui =
+	null: *fp_glVertexAttribI2ui;
 export let glVertexAttribI2uiEXT: *fp_glVertexAttribI2uiEXT =
 	null: *fp_glVertexAttribI2uiEXT;
+export let glVertexAttribI2uiv: *fp_glVertexAttribI2uiv =
+	null: *fp_glVertexAttribI2uiv;
 export let glVertexAttribI2uivEXT: *fp_glVertexAttribI2uivEXT =
 	null: *fp_glVertexAttribI2uivEXT;
+export let glVertexAttribI3i: *fp_glVertexAttribI3i =
+	null: *fp_glVertexAttribI3i;
 export let glVertexAttribI3iEXT: *fp_glVertexAttribI3iEXT =
 	null: *fp_glVertexAttribI3iEXT;
+export let glVertexAttribI3iv: *fp_glVertexAttribI3iv =
+	null: *fp_glVertexAttribI3iv;
 export let glVertexAttribI3ivEXT: *fp_glVertexAttribI3ivEXT =
 	null: *fp_glVertexAttribI3ivEXT;
+export let glVertexAttribI3ui: *fp_glVertexAttribI3ui =
+	null: *fp_glVertexAttribI3ui;
 export let glVertexAttribI3uiEXT: *fp_glVertexAttribI3uiEXT =
 	null: *fp_glVertexAttribI3uiEXT;
+export let glVertexAttribI3uiv: *fp_glVertexAttribI3uiv =
+	null: *fp_glVertexAttribI3uiv;
 export let glVertexAttribI3uivEXT: *fp_glVertexAttribI3uivEXT =
 	null: *fp_glVertexAttribI3uivEXT;
+export let glVertexAttribI4bv: *fp_glVertexAttribI4bv =
+	null: *fp_glVertexAttribI4bv;
 export let glVertexAttribI4bvEXT: *fp_glVertexAttribI4bvEXT =
 	null: *fp_glVertexAttribI4bvEXT;
+export let glVertexAttribI4i: *fp_glVertexAttribI4i =
+	null: *fp_glVertexAttribI4i;
 export let glVertexAttribI4iEXT: *fp_glVertexAttribI4iEXT =
 	null: *fp_glVertexAttribI4iEXT;
+export let glVertexAttribI4iv: *fp_glVertexAttribI4iv =
+	null: *fp_glVertexAttribI4iv;
 export let glVertexAttribI4ivEXT: *fp_glVertexAttribI4ivEXT =
 	null: *fp_glVertexAttribI4ivEXT;
+export let glVertexAttribI4sv: *fp_glVertexAttribI4sv =
+	null: *fp_glVertexAttribI4sv;
 export let glVertexAttribI4svEXT: *fp_glVertexAttribI4svEXT =
 	null: *fp_glVertexAttribI4svEXT;
+export let glVertexAttribI4ubv: *fp_glVertexAttribI4ubv =
+	null: *fp_glVertexAttribI4ubv;
 export let glVertexAttribI4ubvEXT: *fp_glVertexAttribI4ubvEXT =
 	null: *fp_glVertexAttribI4ubvEXT;
+export let glVertexAttribI4ui: *fp_glVertexAttribI4ui =
+	null: *fp_glVertexAttribI4ui;
 export let glVertexAttribI4uiEXT: *fp_glVertexAttribI4uiEXT =
 	null: *fp_glVertexAttribI4uiEXT;
+export let glVertexAttribI4uiv: *fp_glVertexAttribI4uiv =
+	null: *fp_glVertexAttribI4uiv;
 export let glVertexAttribI4uivEXT: *fp_glVertexAttribI4uivEXT =
 	null: *fp_glVertexAttribI4uivEXT;
+export let glVertexAttribI4usv: *fp_glVertexAttribI4usv =
+	null: *fp_glVertexAttribI4usv;
 export let glVertexAttribI4usvEXT: *fp_glVertexAttribI4usvEXT =
 	null: *fp_glVertexAttribI4usvEXT;
 export let glVertexAttribIFormat: *fp_glVertexAttribIFormat =
 	null: *fp_glVertexAttribIFormat;
 export let glVertexAttribIFormatNV: *fp_glVertexAttribIFormatNV =
 	null: *fp_glVertexAttribIFormatNV;
+export let glVertexAttribIPointer: *fp_glVertexAttribIPointer =
+	null: *fp_glVertexAttribIPointer;
 export let glVertexAttribIPointerEXT: *fp_glVertexAttribIPointerEXT =
 	null: *fp_glVertexAttribIPointerEXT;
 export let glVertexAttribL1d: *fp_glVertexAttribL1d =
@@ -12972,8 +11910,6 @@ export let glVertexBlendEnviATI: *fp_glVertexBlendEnviATI =
 	null: *fp_glVertexBlendEnviATI;
 export let glVertexFormatNV: *fp_glVertexFormatNV =
 	null: *fp_glVertexFormatNV;
-export let glVertexPointer: *fp_glVertexPointer =
-	null: *fp_glVertexPointer;
 export let glVertexPointerEXT: *fp_glVertexPointerEXT =
 	null: *fp_glVertexPointerEXT;
 export let glVertexPointerListIBM: *fp_glVertexPointerListIBM =
@@ -13102,98 +12038,66 @@ export let glWeightuivARB: *fp_glWeightuivARB =
 	null: *fp_glWeightuivARB;
 export let glWeightusvARB: *fp_glWeightusvARB =
 	null: *fp_glWeightusvARB;
-export let glWindowPos2d: *fp_glWindowPos2d =
-	null: *fp_glWindowPos2d;
 export let glWindowPos2dARB: *fp_glWindowPos2dARB =
 	null: *fp_glWindowPos2dARB;
 export let glWindowPos2dMESA: *fp_glWindowPos2dMESA =
 	null: *fp_glWindowPos2dMESA;
-export let glWindowPos2dv: *fp_glWindowPos2dv =
-	null: *fp_glWindowPos2dv;
 export let glWindowPos2dvARB: *fp_glWindowPos2dvARB =
 	null: *fp_glWindowPos2dvARB;
 export let glWindowPos2dvMESA: *fp_glWindowPos2dvMESA =
 	null: *fp_glWindowPos2dvMESA;
-export let glWindowPos2f: *fp_glWindowPos2f =
-	null: *fp_glWindowPos2f;
 export let glWindowPos2fARB: *fp_glWindowPos2fARB =
 	null: *fp_glWindowPos2fARB;
 export let glWindowPos2fMESA: *fp_glWindowPos2fMESA =
 	null: *fp_glWindowPos2fMESA;
-export let glWindowPos2fv: *fp_glWindowPos2fv =
-	null: *fp_glWindowPos2fv;
 export let glWindowPos2fvARB: *fp_glWindowPos2fvARB =
 	null: *fp_glWindowPos2fvARB;
 export let glWindowPos2fvMESA: *fp_glWindowPos2fvMESA =
 	null: *fp_glWindowPos2fvMESA;
-export let glWindowPos2i: *fp_glWindowPos2i =
-	null: *fp_glWindowPos2i;
 export let glWindowPos2iARB: *fp_glWindowPos2iARB =
 	null: *fp_glWindowPos2iARB;
 export let glWindowPos2iMESA: *fp_glWindowPos2iMESA =
 	null: *fp_glWindowPos2iMESA;
-export let glWindowPos2iv: *fp_glWindowPos2iv =
-	null: *fp_glWindowPos2iv;
 export let glWindowPos2ivARB: *fp_glWindowPos2ivARB =
 	null: *fp_glWindowPos2ivARB;
 export let glWindowPos2ivMESA: *fp_glWindowPos2ivMESA =
 	null: *fp_glWindowPos2ivMESA;
-export let glWindowPos2s: *fp_glWindowPos2s =
-	null: *fp_glWindowPos2s;
 export let glWindowPos2sARB: *fp_glWindowPos2sARB =
 	null: *fp_glWindowPos2sARB;
 export let glWindowPos2sMESA: *fp_glWindowPos2sMESA =
 	null: *fp_glWindowPos2sMESA;
-export let glWindowPos2sv: *fp_glWindowPos2sv =
-	null: *fp_glWindowPos2sv;
 export let glWindowPos2svARB: *fp_glWindowPos2svARB =
 	null: *fp_glWindowPos2svARB;
 export let glWindowPos2svMESA: *fp_glWindowPos2svMESA =
 	null: *fp_glWindowPos2svMESA;
-export let glWindowPos3d: *fp_glWindowPos3d =
-	null: *fp_glWindowPos3d;
 export let glWindowPos3dARB: *fp_glWindowPos3dARB =
 	null: *fp_glWindowPos3dARB;
 export let glWindowPos3dMESA: *fp_glWindowPos3dMESA =
 	null: *fp_glWindowPos3dMESA;
-export let glWindowPos3dv: *fp_glWindowPos3dv =
-	null: *fp_glWindowPos3dv;
 export let glWindowPos3dvARB: *fp_glWindowPos3dvARB =
 	null: *fp_glWindowPos3dvARB;
 export let glWindowPos3dvMESA: *fp_glWindowPos3dvMESA =
 	null: *fp_glWindowPos3dvMESA;
-export let glWindowPos3f: *fp_glWindowPos3f =
-	null: *fp_glWindowPos3f;
 export let glWindowPos3fARB: *fp_glWindowPos3fARB =
 	null: *fp_glWindowPos3fARB;
 export let glWindowPos3fMESA: *fp_glWindowPos3fMESA =
 	null: *fp_glWindowPos3fMESA;
-export let glWindowPos3fv: *fp_glWindowPos3fv =
-	null: *fp_glWindowPos3fv;
 export let glWindowPos3fvARB: *fp_glWindowPos3fvARB =
 	null: *fp_glWindowPos3fvARB;
 export let glWindowPos3fvMESA: *fp_glWindowPos3fvMESA =
 	null: *fp_glWindowPos3fvMESA;
-export let glWindowPos3i: *fp_glWindowPos3i =
-	null: *fp_glWindowPos3i;
 export let glWindowPos3iARB: *fp_glWindowPos3iARB =
 	null: *fp_glWindowPos3iARB;
 export let glWindowPos3iMESA: *fp_glWindowPos3iMESA =
 	null: *fp_glWindowPos3iMESA;
-export let glWindowPos3iv: *fp_glWindowPos3iv =
-	null: *fp_glWindowPos3iv;
 export let glWindowPos3ivARB: *fp_glWindowPos3ivARB =
 	null: *fp_glWindowPos3ivARB;
 export let glWindowPos3ivMESA: *fp_glWindowPos3ivMESA =
 	null: *fp_glWindowPos3ivMESA;
-export let glWindowPos3s: *fp_glWindowPos3s =
-	null: *fp_glWindowPos3s;
 export let glWindowPos3sARB: *fp_glWindowPos3sARB =
 	null: *fp_glWindowPos3sARB;
 export let glWindowPos3sMESA: *fp_glWindowPos3sMESA =
 	null: *fp_glWindowPos3sMESA;
-export let glWindowPos3sv: *fp_glWindowPos3sv =
-	null: *fp_glWindowPos3sv;
 export let glWindowPos3svARB: *fp_glWindowPos3svARB =
 	null: *fp_glWindowPos3svARB;
 export let glWindowPos3svMESA: *fp_glWindowPos3svMESA =
@@ -13221,7 +12125,6 @@ export let glWriteMaskEXT: *fp_glWriteMaskEXT =
 
 // Function loading with built-in loader
 export fn load() void = {
-	glAccum = get_proc_address("glAccum\0"): *fp_glAccum;
 	glAccumxOES = get_proc_address("glAccumxOES\0"): *fp_glAccumxOES;
 	glAcquireKeyedMutexWin32EXT = get_proc_address("glAcquireKeyedMutexWin32EXT\0"): *fp_glAcquireKeyedMutexWin32EXT;
 	glActiveProgramEXT = get_proc_address("glActiveProgramEXT\0"): *fp_glActiveProgramEXT;
@@ -13233,15 +12136,12 @@ export fn load() void = {
 	glAlphaFragmentOp1ATI = get_proc_address("glAlphaFragmentOp1ATI\0"): *fp_glAlphaFragmentOp1ATI;
 	glAlphaFragmentOp2ATI = get_proc_address("glAlphaFragmentOp2ATI\0"): *fp_glAlphaFragmentOp2ATI;
 	glAlphaFragmentOp3ATI = get_proc_address("glAlphaFragmentOp3ATI\0"): *fp_glAlphaFragmentOp3ATI;
-	glAlphaFunc = get_proc_address("glAlphaFunc\0"): *fp_glAlphaFunc;
 	glAlphaFuncxOES = get_proc_address("glAlphaFuncxOES\0"): *fp_glAlphaFuncxOES;
 	glAlphaToCoverageDitherControlNV = get_proc_address("glAlphaToCoverageDitherControlNV\0"): *fp_glAlphaToCoverageDitherControlNV;
 	glApplyFramebufferAttachmentCMAAINTEL = get_proc_address("glApplyFramebufferAttachmentCMAAINTEL\0"): *fp_glApplyFramebufferAttachmentCMAAINTEL;
 	glApplyTextureEXT = get_proc_address("glApplyTextureEXT\0"): *fp_glApplyTextureEXT;
 	glAreProgramsResidentNV = get_proc_address("glAreProgramsResidentNV\0"): *fp_glAreProgramsResidentNV;
-	glAreTexturesResident = get_proc_address("glAreTexturesResident\0"): *fp_glAreTexturesResident;
 	glAreTexturesResidentEXT = get_proc_address("glAreTexturesResidentEXT\0"): *fp_glAreTexturesResidentEXT;
-	glArrayElement = get_proc_address("glArrayElement\0"): *fp_glArrayElement;
 	glArrayElementEXT = get_proc_address("glArrayElementEXT\0"): *fp_glArrayElementEXT;
 	glArrayObjectATI = get_proc_address("glArrayObjectATI\0"): *fp_glArrayObjectATI;
 	glAsyncCopyBufferSubDataNVX = get_proc_address("glAsyncCopyBufferSubDataNVX\0"): *fp_glAsyncCopyBufferSubDataNVX;
@@ -13249,7 +12149,7 @@ export fn load() void = {
 	glAsyncMarkerSGIX = get_proc_address("glAsyncMarkerSGIX\0"): *fp_glAsyncMarkerSGIX;
 	glAttachObjectARB = get_proc_address("glAttachObjectARB\0"): *fp_glAttachObjectARB;
 	glAttachShader = get_proc_address("glAttachShader\0"): *fp_glAttachShader;
-	glBegin = get_proc_address("glBegin\0"): *fp_glBegin;
+	glBeginConditionalRender = get_proc_address("glBeginConditionalRender\0"): *fp_glBeginConditionalRender;
 	glBeginConditionalRenderNV = get_proc_address("glBeginConditionalRenderNV\0"): *fp_glBeginConditionalRenderNV;
 	glBeginConditionalRenderNVX = get_proc_address("glBeginConditionalRenderNVX\0"): *fp_glBeginConditionalRenderNVX;
 	glBeginFragmentShaderATI = get_proc_address("glBeginFragmentShaderATI\0"): *fp_glBeginFragmentShaderATI;
@@ -13259,6 +12159,7 @@ export fn load() void = {
 	glBeginQuery = get_proc_address("glBeginQuery\0"): *fp_glBeginQuery;
 	glBeginQueryARB = get_proc_address("glBeginQueryARB\0"): *fp_glBeginQueryARB;
 	glBeginQueryIndexed = get_proc_address("glBeginQueryIndexed\0"): *fp_glBeginQueryIndexed;
+	glBeginTransformFeedback = get_proc_address("glBeginTransformFeedback\0"): *fp_glBeginTransformFeedback;
 	glBeginTransformFeedbackEXT = get_proc_address("glBeginTransformFeedbackEXT\0"): *fp_glBeginTransformFeedbackEXT;
 	glBeginTransformFeedbackNV = get_proc_address("glBeginTransformFeedbackNV\0"): *fp_glBeginTransformFeedbackNV;
 	glBeginVertexShaderEXT = get_proc_address("glBeginVertexShaderEXT\0"): *fp_glBeginVertexShaderEXT;
@@ -13277,6 +12178,7 @@ export fn load() void = {
 	glBindBufferRangeNV = get_proc_address("glBindBufferRangeNV\0"): *fp_glBindBufferRangeNV;
 	glBindBuffersBase = get_proc_address("glBindBuffersBase\0"): *fp_glBindBuffersBase;
 	glBindBuffersRange = get_proc_address("glBindBuffersRange\0"): *fp_glBindBuffersRange;
+	glBindFragDataLocation = get_proc_address("glBindFragDataLocation\0"): *fp_glBindFragDataLocation;
 	glBindFragDataLocationEXT = get_proc_address("glBindFragDataLocationEXT\0"): *fp_glBindFragDataLocationEXT;
 	glBindFragDataLocationIndexed = get_proc_address("glBindFragDataLocationIndexed\0"): *fp_glBindFragDataLocationIndexed;
 	glBindFragmentShaderATI = get_proc_address("glBindFragmentShaderATI\0"): *fp_glBindFragmentShaderATI;
@@ -13323,7 +12225,6 @@ export fn load() void = {
 	glBinormal3sEXT = get_proc_address("glBinormal3sEXT\0"): *fp_glBinormal3sEXT;
 	glBinormal3svEXT = get_proc_address("glBinormal3svEXT\0"): *fp_glBinormal3svEXT;
 	glBinormalPointerEXT = get_proc_address("glBinormalPointerEXT\0"): *fp_glBinormalPointerEXT;
-	glBitmap = get_proc_address("glBitmap\0"): *fp_glBitmap;
 	glBitmapxOES = get_proc_address("glBitmapxOES\0"): *fp_glBitmapxOES;
 	glBlendBarrierKHR = get_proc_address("glBlendBarrierKHR\0"): *fp_glBlendBarrierKHR;
 	glBlendBarrierNV = get_proc_address("glBlendBarrierNV\0"): *fp_glBlendBarrierNV;
@@ -13336,7 +12237,9 @@ export fn load() void = {
 	glBlendEquationSeparate = get_proc_address("glBlendEquationSeparate\0"): *fp_glBlendEquationSeparate;
 	glBlendEquationSeparateEXT = get_proc_address("glBlendEquationSeparateEXT\0"): *fp_glBlendEquationSeparateEXT;
 	glBlendEquationSeparateIndexedAMD = get_proc_address("glBlendEquationSeparateIndexedAMD\0"): *fp_glBlendEquationSeparateIndexedAMD;
+	glBlendEquationSeparatei = get_proc_address("glBlendEquationSeparatei\0"): *fp_glBlendEquationSeparatei;
 	glBlendEquationSeparateiARB = get_proc_address("glBlendEquationSeparateiARB\0"): *fp_glBlendEquationSeparateiARB;
+	glBlendEquationi = get_proc_address("glBlendEquationi\0"): *fp_glBlendEquationi;
 	glBlendEquationiARB = get_proc_address("glBlendEquationiARB\0"): *fp_glBlendEquationiARB;
 	glBlendFunc = get_proc_address("glBlendFunc\0"): *fp_glBlendFunc;
 	glBlendFuncIndexedAMD = get_proc_address("glBlendFuncIndexedAMD\0"): *fp_glBlendFuncIndexedAMD;
@@ -13344,7 +12247,9 @@ export fn load() void = {
 	glBlendFuncSeparateEXT = get_proc_address("glBlendFuncSeparateEXT\0"): *fp_glBlendFuncSeparateEXT;
 	glBlendFuncSeparateINGR = get_proc_address("glBlendFuncSeparateINGR\0"): *fp_glBlendFuncSeparateINGR;
 	glBlendFuncSeparateIndexedAMD = get_proc_address("glBlendFuncSeparateIndexedAMD\0"): *fp_glBlendFuncSeparateIndexedAMD;
+	glBlendFuncSeparatei = get_proc_address("glBlendFuncSeparatei\0"): *fp_glBlendFuncSeparatei;
 	glBlendFuncSeparateiARB = get_proc_address("glBlendFuncSeparateiARB\0"): *fp_glBlendFuncSeparateiARB;
+	glBlendFunci = get_proc_address("glBlendFunci\0"): *fp_glBlendFunci;
 	glBlendFunciARB = get_proc_address("glBlendFunciARB\0"): *fp_glBlendFunciARB;
 	glBlendParameteriNV = get_proc_address("glBlendParameteriNV\0"): *fp_glBlendParameteriNV;
 	glBlitFramebuffer = get_proc_address("glBlitFramebuffer\0"): *fp_glBlitFramebuffer;
@@ -13363,18 +12268,20 @@ export fn load() void = {
 	glBufferSubData = get_proc_address("glBufferSubData\0"): *fp_glBufferSubData;
 	glBufferSubDataARB = get_proc_address("glBufferSubDataARB\0"): *fp_glBufferSubDataARB;
 	glCallCommandListNV = get_proc_address("glCallCommandListNV\0"): *fp_glCallCommandListNV;
-	glCallList = get_proc_address("glCallList\0"): *fp_glCallList;
-	glCallLists = get_proc_address("glCallLists\0"): *fp_glCallLists;
 	glCheckFramebufferStatus = get_proc_address("glCheckFramebufferStatus\0"): *fp_glCheckFramebufferStatus;
 	glCheckFramebufferStatusEXT = get_proc_address("glCheckFramebufferStatusEXT\0"): *fp_glCheckFramebufferStatusEXT;
 	glCheckNamedFramebufferStatus = get_proc_address("glCheckNamedFramebufferStatus\0"): *fp_glCheckNamedFramebufferStatus;
 	glCheckNamedFramebufferStatusEXT = get_proc_address("glCheckNamedFramebufferStatusEXT\0"): *fp_glCheckNamedFramebufferStatusEXT;
+	glClampColor = get_proc_address("glClampColor\0"): *fp_glClampColor;
 	glClampColorARB = get_proc_address("glClampColorARB\0"): *fp_glClampColorARB;
 	glClear = get_proc_address("glClear\0"): *fp_glClear;
-	glClearAccum = get_proc_address("glClearAccum\0"): *fp_glClearAccum;
 	glClearAccumxOES = get_proc_address("glClearAccumxOES\0"): *fp_glClearAccumxOES;
 	glClearBufferData = get_proc_address("glClearBufferData\0"): *fp_glClearBufferData;
 	glClearBufferSubData = get_proc_address("glClearBufferSubData\0"): *fp_glClearBufferSubData;
+	glClearBufferfi = get_proc_address("glClearBufferfi\0"): *fp_glClearBufferfi;
+	glClearBufferfv = get_proc_address("glClearBufferfv\0"): *fp_glClearBufferfv;
+	glClearBufferiv = get_proc_address("glClearBufferiv\0"): *fp_glClearBufferiv;
+	glClearBufferuiv = get_proc_address("glClearBufferuiv\0"): *fp_glClearBufferuiv;
 	glClearColor = get_proc_address("glClearColor\0"): *fp_glClearColor;
 	glClearColorIiEXT = get_proc_address("glClearColorIiEXT\0"): *fp_glClearColorIiEXT;
 	glClearColorIuiEXT = get_proc_address("glClearColorIuiEXT\0"): *fp_glClearColorIuiEXT;
@@ -13384,7 +12291,6 @@ export fn load() void = {
 	glClearDepthf = get_proc_address("glClearDepthf\0"): *fp_glClearDepthf;
 	glClearDepthfOES = get_proc_address("glClearDepthfOES\0"): *fp_glClearDepthfOES;
 	glClearDepthxOES = get_proc_address("glClearDepthxOES\0"): *fp_glClearDepthxOES;
-	glClearIndex = get_proc_address("glClearIndex\0"): *fp_glClearIndex;
 	glClearNamedBufferData = get_proc_address("glClearNamedBufferData\0"): *fp_glClearNamedBufferData;
 	glClearNamedBufferDataEXT = get_proc_address("glClearNamedBufferDataEXT\0"): *fp_glClearNamedBufferDataEXT;
 	glClearNamedBufferSubData = get_proc_address("glClearNamedBufferSubData\0"): *fp_glClearNamedBufferSubData;
@@ -13396,62 +12302,28 @@ export fn load() void = {
 	glClearStencil = get_proc_address("glClearStencil\0"): *fp_glClearStencil;
 	glClearTexImage = get_proc_address("glClearTexImage\0"): *fp_glClearTexImage;
 	glClearTexSubImage = get_proc_address("glClearTexSubImage\0"): *fp_glClearTexSubImage;
-	glClientActiveTexture = get_proc_address("glClientActiveTexture\0"): *fp_glClientActiveTexture;
 	glClientActiveTextureARB = get_proc_address("glClientActiveTextureARB\0"): *fp_glClientActiveTextureARB;
 	glClientActiveVertexStreamATI = get_proc_address("glClientActiveVertexStreamATI\0"): *fp_glClientActiveVertexStreamATI;
 	glClientAttribDefaultEXT = get_proc_address("glClientAttribDefaultEXT\0"): *fp_glClientAttribDefaultEXT;
 	glClientWaitSemaphoreui64NVX = get_proc_address("glClientWaitSemaphoreui64NVX\0"): *fp_glClientWaitSemaphoreui64NVX;
 	glClientWaitSync = get_proc_address("glClientWaitSync\0"): *fp_glClientWaitSync;
 	glClipControl = get_proc_address("glClipControl\0"): *fp_glClipControl;
-	glClipPlane = get_proc_address("glClipPlane\0"): *fp_glClipPlane;
 	glClipPlanefOES = get_proc_address("glClipPlanefOES\0"): *fp_glClipPlanefOES;
 	glClipPlanexOES = get_proc_address("glClipPlanexOES\0"): *fp_glClipPlanexOES;
-	glColor3b = get_proc_address("glColor3b\0"): *fp_glColor3b;
-	glColor3bv = get_proc_address("glColor3bv\0"): *fp_glColor3bv;
-	glColor3d = get_proc_address("glColor3d\0"): *fp_glColor3d;
-	glColor3dv = get_proc_address("glColor3dv\0"): *fp_glColor3dv;
-	glColor3f = get_proc_address("glColor3f\0"): *fp_glColor3f;
 	glColor3fVertex3fSUN = get_proc_address("glColor3fVertex3fSUN\0"): *fp_glColor3fVertex3fSUN;
 	glColor3fVertex3fvSUN = get_proc_address("glColor3fVertex3fvSUN\0"): *fp_glColor3fVertex3fvSUN;
-	glColor3fv = get_proc_address("glColor3fv\0"): *fp_glColor3fv;
 	glColor3hNV = get_proc_address("glColor3hNV\0"): *fp_glColor3hNV;
 	glColor3hvNV = get_proc_address("glColor3hvNV\0"): *fp_glColor3hvNV;
-	glColor3i = get_proc_address("glColor3i\0"): *fp_glColor3i;
-	glColor3iv = get_proc_address("glColor3iv\0"): *fp_glColor3iv;
-	glColor3s = get_proc_address("glColor3s\0"): *fp_glColor3s;
-	glColor3sv = get_proc_address("glColor3sv\0"): *fp_glColor3sv;
-	glColor3ub = get_proc_address("glColor3ub\0"): *fp_glColor3ub;
-	glColor3ubv = get_proc_address("glColor3ubv\0"): *fp_glColor3ubv;
-	glColor3ui = get_proc_address("glColor3ui\0"): *fp_glColor3ui;
-	glColor3uiv = get_proc_address("glColor3uiv\0"): *fp_glColor3uiv;
-	glColor3us = get_proc_address("glColor3us\0"): *fp_glColor3us;
-	glColor3usv = get_proc_address("glColor3usv\0"): *fp_glColor3usv;
 	glColor3xOES = get_proc_address("glColor3xOES\0"): *fp_glColor3xOES;
 	glColor3xvOES = get_proc_address("glColor3xvOES\0"): *fp_glColor3xvOES;
-	glColor4b = get_proc_address("glColor4b\0"): *fp_glColor4b;
-	glColor4bv = get_proc_address("glColor4bv\0"): *fp_glColor4bv;
-	glColor4d = get_proc_address("glColor4d\0"): *fp_glColor4d;
-	glColor4dv = get_proc_address("glColor4dv\0"): *fp_glColor4dv;
-	glColor4f = get_proc_address("glColor4f\0"): *fp_glColor4f;
 	glColor4fNormal3fVertex3fSUN = get_proc_address("glColor4fNormal3fVertex3fSUN\0"): *fp_glColor4fNormal3fVertex3fSUN;
 	glColor4fNormal3fVertex3fvSUN = get_proc_address("glColor4fNormal3fVertex3fvSUN\0"): *fp_glColor4fNormal3fVertex3fvSUN;
-	glColor4fv = get_proc_address("glColor4fv\0"): *fp_glColor4fv;
 	glColor4hNV = get_proc_address("glColor4hNV\0"): *fp_glColor4hNV;
 	glColor4hvNV = get_proc_address("glColor4hvNV\0"): *fp_glColor4hvNV;
-	glColor4i = get_proc_address("glColor4i\0"): *fp_glColor4i;
-	glColor4iv = get_proc_address("glColor4iv\0"): *fp_glColor4iv;
-	glColor4s = get_proc_address("glColor4s\0"): *fp_glColor4s;
-	glColor4sv = get_proc_address("glColor4sv\0"): *fp_glColor4sv;
-	glColor4ub = get_proc_address("glColor4ub\0"): *fp_glColor4ub;
 	glColor4ubVertex2fSUN = get_proc_address("glColor4ubVertex2fSUN\0"): *fp_glColor4ubVertex2fSUN;
 	glColor4ubVertex2fvSUN = get_proc_address("glColor4ubVertex2fvSUN\0"): *fp_glColor4ubVertex2fvSUN;
 	glColor4ubVertex3fSUN = get_proc_address("glColor4ubVertex3fSUN\0"): *fp_glColor4ubVertex3fSUN;
 	glColor4ubVertex3fvSUN = get_proc_address("glColor4ubVertex3fvSUN\0"): *fp_glColor4ubVertex3fvSUN;
-	glColor4ubv = get_proc_address("glColor4ubv\0"): *fp_glColor4ubv;
-	glColor4ui = get_proc_address("glColor4ui\0"): *fp_glColor4ui;
-	glColor4uiv = get_proc_address("glColor4uiv\0"): *fp_glColor4uiv;
-	glColor4us = get_proc_address("glColor4us\0"): *fp_glColor4us;
-	glColor4usv = get_proc_address("glColor4usv\0"): *fp_glColor4usv;
 	glColor4xOES = get_proc_address("glColor4xOES\0"): *fp_glColor4xOES;
 	glColor4xvOES = get_proc_address("glColor4xvOES\0"): *fp_glColor4xvOES;
 	glColorFormatNV = get_proc_address("glColorFormatNV\0"): *fp_glColorFormatNV;
@@ -13460,8 +12332,7 @@ export fn load() void = {
 	glColorFragmentOp3ATI = get_proc_address("glColorFragmentOp3ATI\0"): *fp_glColorFragmentOp3ATI;
 	glColorMask = get_proc_address("glColorMask\0"): *fp_glColorMask;
 	glColorMaskIndexedEXT = get_proc_address("glColorMaskIndexedEXT\0"): *fp_glColorMaskIndexedEXT;
-	glColorMaterial = get_proc_address("glColorMaterial\0"): *fp_glColorMaterial;
-	glColorPointer = get_proc_address("glColorPointer\0"): *fp_glColorPointer;
+	glColorMaski = get_proc_address("glColorMaski\0"): *fp_glColorMaski;
 	glColorPointerEXT = get_proc_address("glColorPointerEXT\0"): *fp_glColorPointerEXT;
 	glColorPointerListIBM = get_proc_address("glColorPointerListIBM\0"): *fp_glColorPointerListIBM;
 	glColorPointervINTEL = get_proc_address("glColorPointervINTEL\0"): *fp_glColorPointervINTEL;
@@ -13533,7 +12404,6 @@ export fn load() void = {
 	glCopyMultiTexSubImage3DEXT = get_proc_address("glCopyMultiTexSubImage3DEXT\0"): *fp_glCopyMultiTexSubImage3DEXT;
 	glCopyNamedBufferSubData = get_proc_address("glCopyNamedBufferSubData\0"): *fp_glCopyNamedBufferSubData;
 	glCopyPathNV = get_proc_address("glCopyPathNV\0"): *fp_glCopyPathNV;
-	glCopyPixels = get_proc_address("glCopyPixels\0"): *fp_glCopyPixels;
 	glCopyTexImage1D = get_proc_address("glCopyTexImage1D\0"): *fp_glCopyTexImage1D;
 	glCopyTexImage1DEXT = get_proc_address("glCopyTexImage1DEXT\0"): *fp_glCopyTexImage1DEXT;
 	glCopyTexImage2D = get_proc_address("glCopyTexImage2D\0"): *fp_glCopyTexImage2D;
@@ -13605,7 +12475,6 @@ export fn load() void = {
 	glDeleteFragmentShaderATI = get_proc_address("glDeleteFragmentShaderATI\0"): *fp_glDeleteFragmentShaderATI;
 	glDeleteFramebuffers = get_proc_address("glDeleteFramebuffers\0"): *fp_glDeleteFramebuffers;
 	glDeleteFramebuffersEXT = get_proc_address("glDeleteFramebuffersEXT\0"): *fp_glDeleteFramebuffersEXT;
-	glDeleteLists = get_proc_address("glDeleteLists\0"): *fp_glDeleteLists;
 	glDeleteMemoryObjectsEXT = get_proc_address("glDeleteMemoryObjectsEXT\0"): *fp_glDeleteMemoryObjectsEXT;
 	glDeleteNamedStringARB = get_proc_address("glDeleteNamedStringARB\0"): *fp_glDeleteNamedStringARB;
 	glDeleteNamesAMD = get_proc_address("glDeleteNamesAMD\0"): *fp_glDeleteNamesAMD;
@@ -13652,7 +12521,6 @@ export fn load() void = {
 	glDetachShader = get_proc_address("glDetachShader\0"): *fp_glDetachShader;
 	glDetailTexFuncSGIS = get_proc_address("glDetailTexFuncSGIS\0"): *fp_glDetailTexFuncSGIS;
 	glDisable = get_proc_address("glDisable\0"): *fp_glDisable;
-	glDisableClientState = get_proc_address("glDisableClientState\0"): *fp_glDisableClientState;
 	glDisableClientStateIndexedEXT = get_proc_address("glDisableClientStateIndexedEXT\0"): *fp_glDisableClientStateIndexedEXT;
 	glDisableClientStateiEXT = get_proc_address("glDisableClientStateiEXT\0"): *fp_glDisableClientStateiEXT;
 	glDisableIndexedEXT = get_proc_address("glDisableIndexedEXT\0"): *fp_glDisableIndexedEXT;
@@ -13663,12 +12531,14 @@ export fn load() void = {
 	glDisableVertexAttribAPPLE = get_proc_address("glDisableVertexAttribAPPLE\0"): *fp_glDisableVertexAttribAPPLE;
 	glDisableVertexAttribArray = get_proc_address("glDisableVertexAttribArray\0"): *fp_glDisableVertexAttribArray;
 	glDisableVertexAttribArrayARB = get_proc_address("glDisableVertexAttribArrayARB\0"): *fp_glDisableVertexAttribArrayARB;
+	glDisablei = get_proc_address("glDisablei\0"): *fp_glDisablei;
 	glDispatchCompute = get_proc_address("glDispatchCompute\0"): *fp_glDispatchCompute;
 	glDispatchComputeGroupSizeARB = get_proc_address("glDispatchComputeGroupSizeARB\0"): *fp_glDispatchComputeGroupSizeARB;
 	glDispatchComputeIndirect = get_proc_address("glDispatchComputeIndirect\0"): *fp_glDispatchComputeIndirect;
 	glDrawArrays = get_proc_address("glDrawArrays\0"): *fp_glDrawArrays;
 	glDrawArraysEXT = get_proc_address("glDrawArraysEXT\0"): *fp_glDrawArraysEXT;
 	glDrawArraysIndirect = get_proc_address("glDrawArraysIndirect\0"): *fp_glDrawArraysIndirect;
+	glDrawArraysInstanced = get_proc_address("glDrawArraysInstanced\0"): *fp_glDrawArraysInstanced;
 	glDrawArraysInstancedARB = get_proc_address("glDrawArraysInstancedARB\0"): *fp_glDrawArraysInstancedARB;
 	glDrawArraysInstancedBaseInstance = get_proc_address("glDrawArraysInstancedBaseInstance\0"): *fp_glDrawArraysInstancedBaseInstance;
 	glDrawArraysInstancedEXT = get_proc_address("glDrawArraysInstancedEXT\0"): *fp_glDrawArraysInstancedEXT;
@@ -13685,6 +12555,7 @@ export fn load() void = {
 	glDrawElements = get_proc_address("glDrawElements\0"): *fp_glDrawElements;
 	glDrawElementsBaseVertex = get_proc_address("glDrawElementsBaseVertex\0"): *fp_glDrawElementsBaseVertex;
 	glDrawElementsIndirect = get_proc_address("glDrawElementsIndirect\0"): *fp_glDrawElementsIndirect;
+	glDrawElementsInstanced = get_proc_address("glDrawElementsInstanced\0"): *fp_glDrawElementsInstanced;
 	glDrawElementsInstancedARB = get_proc_address("glDrawElementsInstancedARB\0"): *fp_glDrawElementsInstancedARB;
 	glDrawElementsInstancedBaseInstance = get_proc_address("glDrawElementsInstancedBaseInstance\0"): *fp_glDrawElementsInstancedBaseInstance;
 	glDrawElementsInstancedBaseVertex = get_proc_address("glDrawElementsInstancedBaseVertex\0"): *fp_glDrawElementsInstancedBaseVertex;
@@ -13693,7 +12564,6 @@ export fn load() void = {
 	glDrawMeshArraysSUN = get_proc_address("glDrawMeshArraysSUN\0"): *fp_glDrawMeshArraysSUN;
 	glDrawMeshTasksIndirectNV = get_proc_address("glDrawMeshTasksIndirectNV\0"): *fp_glDrawMeshTasksIndirectNV;
 	glDrawMeshTasksNV = get_proc_address("glDrawMeshTasksNV\0"): *fp_glDrawMeshTasksNV;
-	glDrawPixels = get_proc_address("glDrawPixels\0"): *fp_glDrawPixels;
 	glDrawRangeElementArrayAPPLE = get_proc_address("glDrawRangeElementArrayAPPLE\0"): *fp_glDrawRangeElementArrayAPPLE;
 	glDrawRangeElementArrayATI = get_proc_address("glDrawRangeElementArrayATI\0"): *fp_glDrawRangeElementArrayATI;
 	glDrawRangeElements = get_proc_address("glDrawRangeElements\0"): *fp_glDrawRangeElements;
@@ -13708,16 +12578,12 @@ export fn load() void = {
 	glDrawVkImageNV = get_proc_address("glDrawVkImageNV\0"): *fp_glDrawVkImageNV;
 	glEGLImageTargetTexStorageEXT = get_proc_address("glEGLImageTargetTexStorageEXT\0"): *fp_glEGLImageTargetTexStorageEXT;
 	glEGLImageTargetTextureStorageEXT = get_proc_address("glEGLImageTargetTextureStorageEXT\0"): *fp_glEGLImageTargetTextureStorageEXT;
-	glEdgeFlag = get_proc_address("glEdgeFlag\0"): *fp_glEdgeFlag;
 	glEdgeFlagFormatNV = get_proc_address("glEdgeFlagFormatNV\0"): *fp_glEdgeFlagFormatNV;
-	glEdgeFlagPointer = get_proc_address("glEdgeFlagPointer\0"): *fp_glEdgeFlagPointer;
 	glEdgeFlagPointerEXT = get_proc_address("glEdgeFlagPointerEXT\0"): *fp_glEdgeFlagPointerEXT;
 	glEdgeFlagPointerListIBM = get_proc_address("glEdgeFlagPointerListIBM\0"): *fp_glEdgeFlagPointerListIBM;
-	glEdgeFlagv = get_proc_address("glEdgeFlagv\0"): *fp_glEdgeFlagv;
 	glElementPointerAPPLE = get_proc_address("glElementPointerAPPLE\0"): *fp_glElementPointerAPPLE;
 	glElementPointerATI = get_proc_address("glElementPointerATI\0"): *fp_glElementPointerATI;
 	glEnable = get_proc_address("glEnable\0"): *fp_glEnable;
-	glEnableClientState = get_proc_address("glEnableClientState\0"): *fp_glEnableClientState;
 	glEnableClientStateIndexedEXT = get_proc_address("glEnableClientStateIndexedEXT\0"): *fp_glEnableClientStateIndexedEXT;
 	glEnableClientStateiEXT = get_proc_address("glEnableClientStateiEXT\0"): *fp_glEnableClientStateiEXT;
 	glEnableIndexedEXT = get_proc_address("glEnableIndexedEXT\0"): *fp_glEnableIndexedEXT;
@@ -13728,42 +12594,30 @@ export fn load() void = {
 	glEnableVertexAttribAPPLE = get_proc_address("glEnableVertexAttribAPPLE\0"): *fp_glEnableVertexAttribAPPLE;
 	glEnableVertexAttribArray = get_proc_address("glEnableVertexAttribArray\0"): *fp_glEnableVertexAttribArray;
 	glEnableVertexAttribArrayARB = get_proc_address("glEnableVertexAttribArrayARB\0"): *fp_glEnableVertexAttribArrayARB;
-	glEnd = get_proc_address("glEnd\0"): *fp_glEnd;
+	glEnablei = get_proc_address("glEnablei\0"): *fp_glEnablei;
+	glEndConditionalRender = get_proc_address("glEndConditionalRender\0"): *fp_glEndConditionalRender;
 	glEndConditionalRenderNV = get_proc_address("glEndConditionalRenderNV\0"): *fp_glEndConditionalRenderNV;
 	glEndConditionalRenderNVX = get_proc_address("glEndConditionalRenderNVX\0"): *fp_glEndConditionalRenderNVX;
 	glEndFragmentShaderATI = get_proc_address("glEndFragmentShaderATI\0"): *fp_glEndFragmentShaderATI;
-	glEndList = get_proc_address("glEndList\0"): *fp_glEndList;
 	glEndOcclusionQueryNV = get_proc_address("glEndOcclusionQueryNV\0"): *fp_glEndOcclusionQueryNV;
 	glEndPerfMonitorAMD = get_proc_address("glEndPerfMonitorAMD\0"): *fp_glEndPerfMonitorAMD;
 	glEndPerfQueryINTEL = get_proc_address("glEndPerfQueryINTEL\0"): *fp_glEndPerfQueryINTEL;
 	glEndQuery = get_proc_address("glEndQuery\0"): *fp_glEndQuery;
 	glEndQueryARB = get_proc_address("glEndQueryARB\0"): *fp_glEndQueryARB;
 	glEndQueryIndexed = get_proc_address("glEndQueryIndexed\0"): *fp_glEndQueryIndexed;
+	glEndTransformFeedback = get_proc_address("glEndTransformFeedback\0"): *fp_glEndTransformFeedback;
 	glEndTransformFeedbackEXT = get_proc_address("glEndTransformFeedbackEXT\0"): *fp_glEndTransformFeedbackEXT;
 	glEndTransformFeedbackNV = get_proc_address("glEndTransformFeedbackNV\0"): *fp_glEndTransformFeedbackNV;
 	glEndVertexShaderEXT = get_proc_address("glEndVertexShaderEXT\0"): *fp_glEndVertexShaderEXT;
 	glEndVideoCaptureNV = get_proc_address("glEndVideoCaptureNV\0"): *fp_glEndVideoCaptureNV;
-	glEvalCoord1d = get_proc_address("glEvalCoord1d\0"): *fp_glEvalCoord1d;
-	glEvalCoord1dv = get_proc_address("glEvalCoord1dv\0"): *fp_glEvalCoord1dv;
-	glEvalCoord1f = get_proc_address("glEvalCoord1f\0"): *fp_glEvalCoord1f;
-	glEvalCoord1fv = get_proc_address("glEvalCoord1fv\0"): *fp_glEvalCoord1fv;
 	glEvalCoord1xOES = get_proc_address("glEvalCoord1xOES\0"): *fp_glEvalCoord1xOES;
 	glEvalCoord1xvOES = get_proc_address("glEvalCoord1xvOES\0"): *fp_glEvalCoord1xvOES;
-	glEvalCoord2d = get_proc_address("glEvalCoord2d\0"): *fp_glEvalCoord2d;
-	glEvalCoord2dv = get_proc_address("glEvalCoord2dv\0"): *fp_glEvalCoord2dv;
-	glEvalCoord2f = get_proc_address("glEvalCoord2f\0"): *fp_glEvalCoord2f;
-	glEvalCoord2fv = get_proc_address("glEvalCoord2fv\0"): *fp_glEvalCoord2fv;
 	glEvalCoord2xOES = get_proc_address("glEvalCoord2xOES\0"): *fp_glEvalCoord2xOES;
 	glEvalCoord2xvOES = get_proc_address("glEvalCoord2xvOES\0"): *fp_glEvalCoord2xvOES;
 	glEvalMapsNV = get_proc_address("glEvalMapsNV\0"): *fp_glEvalMapsNV;
-	glEvalMesh1 = get_proc_address("glEvalMesh1\0"): *fp_glEvalMesh1;
-	glEvalMesh2 = get_proc_address("glEvalMesh2\0"): *fp_glEvalMesh2;
-	glEvalPoint1 = get_proc_address("glEvalPoint1\0"): *fp_glEvalPoint1;
-	glEvalPoint2 = get_proc_address("glEvalPoint2\0"): *fp_glEvalPoint2;
 	glEvaluateDepthValuesARB = get_proc_address("glEvaluateDepthValuesARB\0"): *fp_glEvaluateDepthValuesARB;
 	glExecuteProgramNV = get_proc_address("glExecuteProgramNV\0"): *fp_glExecuteProgramNV;
 	glExtractComponentEXT = get_proc_address("glExtractComponentEXT\0"): *fp_glExtractComponentEXT;
-	glFeedbackBuffer = get_proc_address("glFeedbackBuffer\0"): *fp_glFeedbackBuffer;
 	glFeedbackBufferxOES = get_proc_address("glFeedbackBufferxOES\0"): *fp_glFeedbackBufferxOES;
 	glFenceSync = get_proc_address("glFenceSync\0"): *fp_glFenceSync;
 	glFinalCombinerInputNV = get_proc_address("glFinalCombinerInputNV\0"): *fp_glFinalCombinerInputNV;
@@ -13784,24 +12638,15 @@ export fn load() void = {
 	glFlushVertexArrayRangeAPPLE = get_proc_address("glFlushVertexArrayRangeAPPLE\0"): *fp_glFlushVertexArrayRangeAPPLE;
 	glFlushVertexArrayRangeNV = get_proc_address("glFlushVertexArrayRangeNV\0"): *fp_glFlushVertexArrayRangeNV;
 	glFogCoordFormatNV = get_proc_address("glFogCoordFormatNV\0"): *fp_glFogCoordFormatNV;
-	glFogCoordPointer = get_proc_address("glFogCoordPointer\0"): *fp_glFogCoordPointer;
 	glFogCoordPointerEXT = get_proc_address("glFogCoordPointerEXT\0"): *fp_glFogCoordPointerEXT;
 	glFogCoordPointerListIBM = get_proc_address("glFogCoordPointerListIBM\0"): *fp_glFogCoordPointerListIBM;
-	glFogCoordd = get_proc_address("glFogCoordd\0"): *fp_glFogCoordd;
 	glFogCoorddEXT = get_proc_address("glFogCoorddEXT\0"): *fp_glFogCoorddEXT;
-	glFogCoorddv = get_proc_address("glFogCoorddv\0"): *fp_glFogCoorddv;
 	glFogCoorddvEXT = get_proc_address("glFogCoorddvEXT\0"): *fp_glFogCoorddvEXT;
-	glFogCoordf = get_proc_address("glFogCoordf\0"): *fp_glFogCoordf;
 	glFogCoordfEXT = get_proc_address("glFogCoordfEXT\0"): *fp_glFogCoordfEXT;
-	glFogCoordfv = get_proc_address("glFogCoordfv\0"): *fp_glFogCoordfv;
 	glFogCoordfvEXT = get_proc_address("glFogCoordfvEXT\0"): *fp_glFogCoordfvEXT;
 	glFogCoordhNV = get_proc_address("glFogCoordhNV\0"): *fp_glFogCoordhNV;
 	glFogCoordhvNV = get_proc_address("glFogCoordhvNV\0"): *fp_glFogCoordhvNV;
 	glFogFuncSGIS = get_proc_address("glFogFuncSGIS\0"): *fp_glFogFuncSGIS;
-	glFogf = get_proc_address("glFogf\0"): *fp_glFogf;
-	glFogfv = get_proc_address("glFogfv\0"): *fp_glFogfv;
-	glFogi = get_proc_address("glFogi\0"): *fp_glFogi;
-	glFogiv = get_proc_address("glFogiv\0"): *fp_glFogiv;
 	glFogxOES = get_proc_address("glFogxOES\0"): *fp_glFogxOES;
 	glFogxvOES = get_proc_address("glFogxvOES\0"): *fp_glFogxvOES;
 	glFragmentColorMaterialSGIX = get_proc_address("glFragmentColorMaterialSGIX\0"): *fp_glFragmentColorMaterialSGIX;
@@ -13831,6 +12676,7 @@ export fn load() void = {
 	glFramebufferSampleLocationsfvARB = get_proc_address("glFramebufferSampleLocationsfvARB\0"): *fp_glFramebufferSampleLocationsfvARB;
 	glFramebufferSampleLocationsfvNV = get_proc_address("glFramebufferSampleLocationsfvNV\0"): *fp_glFramebufferSampleLocationsfvNV;
 	glFramebufferSamplePositionsfvAMD = get_proc_address("glFramebufferSamplePositionsfvAMD\0"): *fp_glFramebufferSamplePositionsfvAMD;
+	glFramebufferTexture = get_proc_address("glFramebufferTexture\0"): *fp_glFramebufferTexture;
 	glFramebufferTexture1D = get_proc_address("glFramebufferTexture1D\0"): *fp_glFramebufferTexture1D;
 	glFramebufferTexture1DEXT = get_proc_address("glFramebufferTexture1DEXT\0"): *fp_glFramebufferTexture1DEXT;
 	glFramebufferTexture2D = get_proc_address("glFramebufferTexture2D\0"): *fp_glFramebufferTexture2D;
@@ -13847,7 +12693,6 @@ export fn load() void = {
 	glFramebufferTextureMultiviewOVR = get_proc_address("glFramebufferTextureMultiviewOVR\0"): *fp_glFramebufferTextureMultiviewOVR;
 	glFreeObjectBufferATI = get_proc_address("glFreeObjectBufferATI\0"): *fp_glFreeObjectBufferATI;
 	glFrontFace = get_proc_address("glFrontFace\0"): *fp_glFrontFace;
-	glFrustum = get_proc_address("glFrustum\0"): *fp_glFrustum;
 	glFrustumfOES = get_proc_address("glFrustumfOES\0"): *fp_glFrustumfOES;
 	glFrustumxOES = get_proc_address("glFrustumxOES\0"): *fp_glFrustumxOES;
 	glGenAsyncMarkersSGIX = get_proc_address("glGenAsyncMarkersSGIX\0"): *fp_glGenAsyncMarkersSGIX;
@@ -13858,7 +12703,6 @@ export fn load() void = {
 	glGenFragmentShadersATI = get_proc_address("glGenFragmentShadersATI\0"): *fp_glGenFragmentShadersATI;
 	glGenFramebuffers = get_proc_address("glGenFramebuffers\0"): *fp_glGenFramebuffers;
 	glGenFramebuffersEXT = get_proc_address("glGenFramebuffersEXT\0"): *fp_glGenFramebuffersEXT;
-	glGenLists = get_proc_address("glGenLists\0"): *fp_glGenLists;
 	glGenNamesAMD = get_proc_address("glGenNamesAMD\0"): *fp_glGenNamesAMD;
 	glGenOcclusionQueriesNV = get_proc_address("glGenOcclusionQueriesNV\0"): *fp_glGenOcclusionQueriesNV;
 	glGenPathsNV = get_proc_address("glGenPathsNV\0"): *fp_glGenPathsNV;
@@ -13906,7 +12750,9 @@ export fn load() void = {
 	glGetAttribLocation = get_proc_address("glGetAttribLocation\0"): *fp_glGetAttribLocation;
 	glGetAttribLocationARB = get_proc_address("glGetAttribLocationARB\0"): *fp_glGetAttribLocationARB;
 	glGetBooleanIndexedvEXT = get_proc_address("glGetBooleanIndexedvEXT\0"): *fp_glGetBooleanIndexedvEXT;
+	glGetBooleani_v = get_proc_address("glGetBooleani_v\0"): *fp_glGetBooleani_v;
 	glGetBooleanv = get_proc_address("glGetBooleanv\0"): *fp_glGetBooleanv;
+	glGetBufferParameteri64v = get_proc_address("glGetBufferParameteri64v\0"): *fp_glGetBufferParameteri64v;
 	glGetBufferParameteriv = get_proc_address("glGetBufferParameteriv\0"): *fp_glGetBufferParameteriv;
 	glGetBufferParameterivARB = get_proc_address("glGetBufferParameterivARB\0"): *fp_glGetBufferParameterivARB;
 	glGetBufferParameterui64vNV = get_proc_address("glGetBufferParameterui64vNV\0"): *fp_glGetBufferParameterui64vNV;
@@ -13914,7 +12760,6 @@ export fn load() void = {
 	glGetBufferPointervARB = get_proc_address("glGetBufferPointervARB\0"): *fp_glGetBufferPointervARB;
 	glGetBufferSubData = get_proc_address("glGetBufferSubData\0"): *fp_glGetBufferSubData;
 	glGetBufferSubDataARB = get_proc_address("glGetBufferSubDataARB\0"): *fp_glGetBufferSubDataARB;
-	glGetClipPlane = get_proc_address("glGetClipPlane\0"): *fp_glGetClipPlane;
 	glGetClipPlanefOES = get_proc_address("glGetClipPlanefOES\0"): *fp_glGetClipPlanefOES;
 	glGetClipPlanexOES = get_proc_address("glGetClipPlanexOES\0"): *fp_glGetClipPlanexOES;
 	glGetColorTableEXT = get_proc_address("glGetColorTableEXT\0"): *fp_glGetColorTableEXT;
@@ -13960,6 +12805,7 @@ export fn load() void = {
 	glGetFloatv = get_proc_address("glGetFloatv\0"): *fp_glGetFloatv;
 	glGetFogFuncSGIS = get_proc_address("glGetFogFuncSGIS\0"): *fp_glGetFogFuncSGIS;
 	glGetFragDataIndex = get_proc_address("glGetFragDataIndex\0"): *fp_glGetFragDataIndex;
+	glGetFragDataLocation = get_proc_address("glGetFragDataLocation\0"): *fp_glGetFragDataLocation;
 	glGetFragDataLocationEXT = get_proc_address("glGetFragDataLocationEXT\0"): *fp_glGetFragDataLocationEXT;
 	glGetFragmentLightfvSGIX = get_proc_address("glGetFragmentLightfvSGIX\0"): *fp_glGetFragmentLightfvSGIX;
 	glGetFragmentLightivSGIX = get_proc_address("glGetFragmentLightivSGIX\0"): *fp_glGetFragmentLightivSGIX;
@@ -13984,6 +12830,7 @@ export fn load() void = {
 	glGetImageTransformParameterivHP = get_proc_address("glGetImageTransformParameterivHP\0"): *fp_glGetImageTransformParameterivHP;
 	glGetInfoLogARB = get_proc_address("glGetInfoLogARB\0"): *fp_glGetInfoLogARB;
 	glGetInstrumentsSGIX = get_proc_address("glGetInstrumentsSGIX\0"): *fp_glGetInstrumentsSGIX;
+	glGetInteger64i_v = get_proc_address("glGetInteger64i_v\0"): *fp_glGetInteger64i_v;
 	glGetInteger64v = get_proc_address("glGetInteger64v\0"): *fp_glGetInteger64v;
 	glGetIntegerIndexedvEXT = get_proc_address("glGetIntegerIndexedvEXT\0"): *fp_glGetIntegerIndexedvEXT;
 	glGetIntegeri_v = get_proc_address("glGetIntegeri_v\0"): *fp_glGetIntegeri_v;
@@ -13996,8 +12843,6 @@ export fn load() void = {
 	glGetInvariantBooleanvEXT = get_proc_address("glGetInvariantBooleanvEXT\0"): *fp_glGetInvariantBooleanvEXT;
 	glGetInvariantFloatvEXT = get_proc_address("glGetInvariantFloatvEXT\0"): *fp_glGetInvariantFloatvEXT;
 	glGetInvariantIntegervEXT = get_proc_address("glGetInvariantIntegervEXT\0"): *fp_glGetInvariantIntegervEXT;
-	glGetLightfv = get_proc_address("glGetLightfv\0"): *fp_glGetLightfv;
-	glGetLightiv = get_proc_address("glGetLightiv\0"): *fp_glGetLightiv;
 	glGetLightxOES = get_proc_address("glGetLightxOES\0"): *fp_glGetLightxOES;
 	glGetListParameterfvSGIX = get_proc_address("glGetListParameterfvSGIX\0"): *fp_glGetListParameterfvSGIX;
 	glGetListParameterivSGIX = get_proc_address("glGetListParameterivSGIX\0"): *fp_glGetListParameterivSGIX;
@@ -14009,12 +12854,7 @@ export fn load() void = {
 	glGetMapControlPointsNV = get_proc_address("glGetMapControlPointsNV\0"): *fp_glGetMapControlPointsNV;
 	glGetMapParameterfvNV = get_proc_address("glGetMapParameterfvNV\0"): *fp_glGetMapParameterfvNV;
 	glGetMapParameterivNV = get_proc_address("glGetMapParameterivNV\0"): *fp_glGetMapParameterivNV;
-	glGetMapdv = get_proc_address("glGetMapdv\0"): *fp_glGetMapdv;
-	glGetMapfv = get_proc_address("glGetMapfv\0"): *fp_glGetMapfv;
-	glGetMapiv = get_proc_address("glGetMapiv\0"): *fp_glGetMapiv;
 	glGetMapxvOES = get_proc_address("glGetMapxvOES\0"): *fp_glGetMapxvOES;
-	glGetMaterialfv = get_proc_address("glGetMaterialfv\0"): *fp_glGetMaterialfv;
-	glGetMaterialiv = get_proc_address("glGetMaterialiv\0"): *fp_glGetMaterialiv;
 	glGetMaterialxOES = get_proc_address("glGetMaterialxOES\0"): *fp_glGetMaterialxOES;
 	glGetMemoryObjectDetachedResourcesuivNV = get_proc_address("glGetMemoryObjectDetachedResourcesuivNV\0"): *fp_glGetMemoryObjectDetachedResourcesuivNV;
 	glGetMemoryObjectParameterivEXT = get_proc_address("glGetMemoryObjectParameterivEXT\0"): *fp_glGetMemoryObjectParameterivEXT;
@@ -14088,9 +12928,6 @@ export fn load() void = {
 	glGetPerfQueryDataINTEL = get_proc_address("glGetPerfQueryDataINTEL\0"): *fp_glGetPerfQueryDataINTEL;
 	glGetPerfQueryIdByNameINTEL = get_proc_address("glGetPerfQueryIdByNameINTEL\0"): *fp_glGetPerfQueryIdByNameINTEL;
 	glGetPerfQueryInfoINTEL = get_proc_address("glGetPerfQueryInfoINTEL\0"): *fp_glGetPerfQueryInfoINTEL;
-	glGetPixelMapfv = get_proc_address("glGetPixelMapfv\0"): *fp_glGetPixelMapfv;
-	glGetPixelMapuiv = get_proc_address("glGetPixelMapuiv\0"): *fp_glGetPixelMapuiv;
-	glGetPixelMapusv = get_proc_address("glGetPixelMapusv\0"): *fp_glGetPixelMapusv;
 	glGetPixelMapxv = get_proc_address("glGetPixelMapxv\0"): *fp_glGetPixelMapxv;
 	glGetPixelTexGenParameterfvSGIS = get_proc_address("glGetPixelTexGenParameterfvSGIS\0"): *fp_glGetPixelTexGenParameterfvSGIS;
 	glGetPixelTexGenParameterivSGIS = get_proc_address("glGetPixelTexGenParameterivSGIS\0"): *fp_glGetPixelTexGenParameterivSGIS;
@@ -14100,7 +12937,6 @@ export fn load() void = {
 	glGetPointeri_vEXT = get_proc_address("glGetPointeri_vEXT\0"): *fp_glGetPointeri_vEXT;
 	glGetPointerv = get_proc_address("glGetPointerv\0"): *fp_glGetPointerv;
 	glGetPointervEXT = get_proc_address("glGetPointervEXT\0"): *fp_glGetPointervEXT;
-	glGetPolygonStipple = get_proc_address("glGetPolygonStipple\0"): *fp_glGetPolygonStipple;
 	glGetProgramBinary = get_proc_address("glGetProgramBinary\0"): *fp_glGetProgramBinary;
 	glGetProgramEnvParameterIivNV = get_proc_address("glGetProgramEnvParameterIivNV\0"): *fp_glGetProgramEnvParameterIivNV;
 	glGetProgramEnvParameterIuivNV = get_proc_address("glGetProgramEnvParameterIuivNV\0"): *fp_glGetProgramEnvParameterIuivNV;
@@ -14165,24 +13001,22 @@ export fn load() void = {
 	glGetSharpenTexFuncSGIS = get_proc_address("glGetSharpenTexFuncSGIS\0"): *fp_glGetSharpenTexFuncSGIS;
 	glGetStageIndexNV = get_proc_address("glGetStageIndexNV\0"): *fp_glGetStageIndexNV;
 	glGetString = get_proc_address("glGetString\0"): *fp_glGetString;
+	glGetStringi = get_proc_address("glGetStringi\0"): *fp_glGetStringi;
 	glGetSubroutineIndex = get_proc_address("glGetSubroutineIndex\0"): *fp_glGetSubroutineIndex;
 	glGetSubroutineUniformLocation = get_proc_address("glGetSubroutineUniformLocation\0"): *fp_glGetSubroutineUniformLocation;
 	glGetSynciv = get_proc_address("glGetSynciv\0"): *fp_glGetSynciv;
 	glGetTexBumpParameterfvATI = get_proc_address("glGetTexBumpParameterfvATI\0"): *fp_glGetTexBumpParameterfvATI;
 	glGetTexBumpParameterivATI = get_proc_address("glGetTexBumpParameterivATI\0"): *fp_glGetTexBumpParameterivATI;
-	glGetTexEnvfv = get_proc_address("glGetTexEnvfv\0"): *fp_glGetTexEnvfv;
-	glGetTexEnviv = get_proc_address("glGetTexEnviv\0"): *fp_glGetTexEnviv;
 	glGetTexEnvxvOES = get_proc_address("glGetTexEnvxvOES\0"): *fp_glGetTexEnvxvOES;
 	glGetTexFilterFuncSGIS = get_proc_address("glGetTexFilterFuncSGIS\0"): *fp_glGetTexFilterFuncSGIS;
-	glGetTexGendv = get_proc_address("glGetTexGendv\0"): *fp_glGetTexGendv;
-	glGetTexGenfv = get_proc_address("glGetTexGenfv\0"): *fp_glGetTexGenfv;
-	glGetTexGeniv = get_proc_address("glGetTexGeniv\0"): *fp_glGetTexGeniv;
 	glGetTexGenxvOES = get_proc_address("glGetTexGenxvOES\0"): *fp_glGetTexGenxvOES;
 	glGetTexImage = get_proc_address("glGetTexImage\0"): *fp_glGetTexImage;
 	glGetTexLevelParameterfv = get_proc_address("glGetTexLevelParameterfv\0"): *fp_glGetTexLevelParameterfv;
 	glGetTexLevelParameteriv = get_proc_address("glGetTexLevelParameteriv\0"): *fp_glGetTexLevelParameteriv;
 	glGetTexLevelParameterxvOES = get_proc_address("glGetTexLevelParameterxvOES\0"): *fp_glGetTexLevelParameterxvOES;
+	glGetTexParameterIiv = get_proc_address("glGetTexParameterIiv\0"): *fp_glGetTexParameterIiv;
 	glGetTexParameterIivEXT = get_proc_address("glGetTexParameterIivEXT\0"): *fp_glGetTexParameterIivEXT;
+	glGetTexParameterIuiv = get_proc_address("glGetTexParameterIuiv\0"): *fp_glGetTexParameterIuiv;
 	glGetTexParameterIuivEXT = get_proc_address("glGetTexParameterIuivEXT\0"): *fp_glGetTexParameterIuivEXT;
 	glGetTexParameterPointervAPPLE = get_proc_address("glGetTexParameterPointervAPPLE\0"): *fp_glGetTexParameterPointervAPPLE;
 	glGetTexParameterfv = get_proc_address("glGetTexParameterfv\0"): *fp_glGetTexParameterfv;
@@ -14208,6 +13042,7 @@ export fn load() void = {
 	glGetTextureSamplerHandleNV = get_proc_address("glGetTextureSamplerHandleNV\0"): *fp_glGetTextureSamplerHandleNV;
 	glGetTextureSubImage = get_proc_address("glGetTextureSubImage\0"): *fp_glGetTextureSubImage;
 	glGetTrackMatrixivNV = get_proc_address("glGetTrackMatrixivNV\0"): *fp_glGetTrackMatrixivNV;
+	glGetTransformFeedbackVarying = get_proc_address("glGetTransformFeedbackVarying\0"): *fp_glGetTransformFeedbackVarying;
 	glGetTransformFeedbackVaryingEXT = get_proc_address("glGetTransformFeedbackVaryingEXT\0"): *fp_glGetTransformFeedbackVaryingEXT;
 	glGetTransformFeedbackVaryingNV = get_proc_address("glGetTransformFeedbackVaryingNV\0"): *fp_glGetTransformFeedbackVaryingNV;
 	glGetTransformFeedbacki64_v = get_proc_address("glGetTransformFeedbacki64_v\0"): *fp_glGetTransformFeedbacki64_v;
@@ -14229,6 +13064,7 @@ export fn load() void = {
 	glGetUniformivARB = get_proc_address("glGetUniformivARB\0"): *fp_glGetUniformivARB;
 	glGetUniformui64vARB = get_proc_address("glGetUniformui64vARB\0"): *fp_glGetUniformui64vARB;
 	glGetUniformui64vNV = get_proc_address("glGetUniformui64vNV\0"): *fp_glGetUniformui64vNV;
+	glGetUniformuiv = get_proc_address("glGetUniformuiv\0"): *fp_glGetUniformuiv;
 	glGetUniformuivEXT = get_proc_address("glGetUniformuivEXT\0"): *fp_glGetUniformuivEXT;
 	glGetUnsignedBytei_vEXT = get_proc_address("glGetUnsignedBytei_vEXT\0"): *fp_glGetUnsignedBytei_vEXT;
 	glGetUnsignedBytevEXT = get_proc_address("glGetUnsignedBytevEXT\0"): *fp_glGetUnsignedBytevEXT;
@@ -14248,7 +13084,9 @@ export fn load() void = {
 	glGetVertexArrayiv = get_proc_address("glGetVertexArrayiv\0"): *fp_glGetVertexArrayiv;
 	glGetVertexAttribArrayObjectfvATI = get_proc_address("glGetVertexAttribArrayObjectfvATI\0"): *fp_glGetVertexAttribArrayObjectfvATI;
 	glGetVertexAttribArrayObjectivATI = get_proc_address("glGetVertexAttribArrayObjectivATI\0"): *fp_glGetVertexAttribArrayObjectivATI;
+	glGetVertexAttribIiv = get_proc_address("glGetVertexAttribIiv\0"): *fp_glGetVertexAttribIiv;
 	glGetVertexAttribIivEXT = get_proc_address("glGetVertexAttribIivEXT\0"): *fp_glGetVertexAttribIivEXT;
+	glGetVertexAttribIuiv = get_proc_address("glGetVertexAttribIuiv\0"): *fp_glGetVertexAttribIuiv;
 	glGetVertexAttribIuivEXT = get_proc_address("glGetVertexAttribIuivEXT\0"): *fp_glGetVertexAttribIuivEXT;
 	glGetVertexAttribLdv = get_proc_address("glGetVertexAttribLdv\0"): *fp_glGetVertexAttribLdv;
 	glGetVertexAttribLdvEXT = get_proc_address("glGetVertexAttribLdvEXT\0"): *fp_glGetVertexAttribLdvEXT;
@@ -14312,28 +13150,14 @@ export fn load() void = {
 	glImportSyncEXT = get_proc_address("glImportSyncEXT\0"): *fp_glImportSyncEXT;
 	glIndexFormatNV = get_proc_address("glIndexFormatNV\0"): *fp_glIndexFormatNV;
 	glIndexFuncEXT = get_proc_address("glIndexFuncEXT\0"): *fp_glIndexFuncEXT;
-	glIndexMask = get_proc_address("glIndexMask\0"): *fp_glIndexMask;
 	glIndexMaterialEXT = get_proc_address("glIndexMaterialEXT\0"): *fp_glIndexMaterialEXT;
-	glIndexPointer = get_proc_address("glIndexPointer\0"): *fp_glIndexPointer;
 	glIndexPointerEXT = get_proc_address("glIndexPointerEXT\0"): *fp_glIndexPointerEXT;
 	glIndexPointerListIBM = get_proc_address("glIndexPointerListIBM\0"): *fp_glIndexPointerListIBM;
-	glIndexd = get_proc_address("glIndexd\0"): *fp_glIndexd;
-	glIndexdv = get_proc_address("glIndexdv\0"): *fp_glIndexdv;
-	glIndexf = get_proc_address("glIndexf\0"): *fp_glIndexf;
-	glIndexfv = get_proc_address("glIndexfv\0"): *fp_glIndexfv;
-	glIndexi = get_proc_address("glIndexi\0"): *fp_glIndexi;
-	glIndexiv = get_proc_address("glIndexiv\0"): *fp_glIndexiv;
-	glIndexs = get_proc_address("glIndexs\0"): *fp_glIndexs;
-	glIndexsv = get_proc_address("glIndexsv\0"): *fp_glIndexsv;
-	glIndexub = get_proc_address("glIndexub\0"): *fp_glIndexub;
-	glIndexubv = get_proc_address("glIndexubv\0"): *fp_glIndexubv;
 	glIndexxOES = get_proc_address("glIndexxOES\0"): *fp_glIndexxOES;
 	glIndexxvOES = get_proc_address("glIndexxvOES\0"): *fp_glIndexxvOES;
-	glInitNames = get_proc_address("glInitNames\0"): *fp_glInitNames;
 	glInsertComponentEXT = get_proc_address("glInsertComponentEXT\0"): *fp_glInsertComponentEXT;
 	glInsertEventMarkerEXT = get_proc_address("glInsertEventMarkerEXT\0"): *fp_glInsertEventMarkerEXT;
 	glInstrumentsBufferSGIX = get_proc_address("glInstrumentsBufferSGIX\0"): *fp_glInstrumentsBufferSGIX;
-	glInterleavedArrays = get_proc_address("glInterleavedArrays\0"): *fp_glInterleavedArrays;
 	glInterpolatePathsNV = get_proc_address("glInterpolatePathsNV\0"): *fp_glInterpolatePathsNV;
 	glInvalidateBufferData = get_proc_address("glInvalidateBufferData\0"): *fp_glInvalidateBufferData;
 	glInvalidateBufferSubData = get_proc_address("glInvalidateBufferSubData\0"): *fp_glInvalidateBufferSubData;
@@ -14350,13 +13174,13 @@ export fn load() void = {
 	glIsCommandListNV = get_proc_address("glIsCommandListNV\0"): *fp_glIsCommandListNV;
 	glIsEnabled = get_proc_address("glIsEnabled\0"): *fp_glIsEnabled;
 	glIsEnabledIndexedEXT = get_proc_address("glIsEnabledIndexedEXT\0"): *fp_glIsEnabledIndexedEXT;
+	glIsEnabledi = get_proc_address("glIsEnabledi\0"): *fp_glIsEnabledi;
 	glIsFenceAPPLE = get_proc_address("glIsFenceAPPLE\0"): *fp_glIsFenceAPPLE;
 	glIsFenceNV = get_proc_address("glIsFenceNV\0"): *fp_glIsFenceNV;
 	glIsFramebuffer = get_proc_address("glIsFramebuffer\0"): *fp_glIsFramebuffer;
 	glIsFramebufferEXT = get_proc_address("glIsFramebufferEXT\0"): *fp_glIsFramebufferEXT;
 	glIsImageHandleResidentARB = get_proc_address("glIsImageHandleResidentARB\0"): *fp_glIsImageHandleResidentARB;
 	glIsImageHandleResidentNV = get_proc_address("glIsImageHandleResidentNV\0"): *fp_glIsImageHandleResidentNV;
-	glIsList = get_proc_address("glIsList\0"): *fp_glIsList;
 	glIsMemoryObjectEXT = get_proc_address("glIsMemoryObjectEXT\0"): *fp_glIsMemoryObjectEXT;
 	glIsNameAMD = get_proc_address("glIsNameAMD\0"): *fp_glIsNameAMD;
 	glIsNamedBufferResidentNV = get_proc_address("glIsNamedBufferResidentNV\0"): *fp_glIsNamedBufferResidentNV;
@@ -14394,39 +13218,23 @@ export fn load() void = {
 	glLGPUNamedBufferSubDataNVX = get_proc_address("glLGPUNamedBufferSubDataNVX\0"): *fp_glLGPUNamedBufferSubDataNVX;
 	glLabelObjectEXT = get_proc_address("glLabelObjectEXT\0"): *fp_glLabelObjectEXT;
 	glLightEnviSGIX = get_proc_address("glLightEnviSGIX\0"): *fp_glLightEnviSGIX;
-	glLightModelf = get_proc_address("glLightModelf\0"): *fp_glLightModelf;
-	glLightModelfv = get_proc_address("glLightModelfv\0"): *fp_glLightModelfv;
-	glLightModeli = get_proc_address("glLightModeli\0"): *fp_glLightModeli;
-	glLightModeliv = get_proc_address("glLightModeliv\0"): *fp_glLightModeliv;
 	glLightModelxOES = get_proc_address("glLightModelxOES\0"): *fp_glLightModelxOES;
 	glLightModelxvOES = get_proc_address("glLightModelxvOES\0"): *fp_glLightModelxvOES;
-	glLightf = get_proc_address("glLightf\0"): *fp_glLightf;
-	glLightfv = get_proc_address("glLightfv\0"): *fp_glLightfv;
-	glLighti = get_proc_address("glLighti\0"): *fp_glLighti;
-	glLightiv = get_proc_address("glLightiv\0"): *fp_glLightiv;
 	glLightxOES = get_proc_address("glLightxOES\0"): *fp_glLightxOES;
 	glLightxvOES = get_proc_address("glLightxvOES\0"): *fp_glLightxvOES;
-	glLineStipple = get_proc_address("glLineStipple\0"): *fp_glLineStipple;
 	glLineWidth = get_proc_address("glLineWidth\0"): *fp_glLineWidth;
 	glLineWidthxOES = get_proc_address("glLineWidthxOES\0"): *fp_glLineWidthxOES;
 	glLinkProgram = get_proc_address("glLinkProgram\0"): *fp_glLinkProgram;
 	glLinkProgramARB = get_proc_address("glLinkProgramARB\0"): *fp_glLinkProgramARB;
-	glListBase = get_proc_address("glListBase\0"): *fp_glListBase;
 	glListDrawCommandsStatesClientNV = get_proc_address("glListDrawCommandsStatesClientNV\0"): *fp_glListDrawCommandsStatesClientNV;
 	glListParameterfSGIX = get_proc_address("glListParameterfSGIX\0"): *fp_glListParameterfSGIX;
 	glListParameterfvSGIX = get_proc_address("glListParameterfvSGIX\0"): *fp_glListParameterfvSGIX;
 	glListParameteriSGIX = get_proc_address("glListParameteriSGIX\0"): *fp_glListParameteriSGIX;
 	glListParameterivSGIX = get_proc_address("glListParameterivSGIX\0"): *fp_glListParameterivSGIX;
-	glLoadIdentity = get_proc_address("glLoadIdentity\0"): *fp_glLoadIdentity;
 	glLoadIdentityDeformationMapSGIX = get_proc_address("glLoadIdentityDeformationMapSGIX\0"): *fp_glLoadIdentityDeformationMapSGIX;
-	glLoadMatrixd = get_proc_address("glLoadMatrixd\0"): *fp_glLoadMatrixd;
-	glLoadMatrixf = get_proc_address("glLoadMatrixf\0"): *fp_glLoadMatrixf;
 	glLoadMatrixxOES = get_proc_address("glLoadMatrixxOES\0"): *fp_glLoadMatrixxOES;
-	glLoadName = get_proc_address("glLoadName\0"): *fp_glLoadName;
 	glLoadProgramNV = get_proc_address("glLoadProgramNV\0"): *fp_glLoadProgramNV;
-	glLoadTransposeMatrixd = get_proc_address("glLoadTransposeMatrixd\0"): *fp_glLoadTransposeMatrixd;
 	glLoadTransposeMatrixdARB = get_proc_address("glLoadTransposeMatrixdARB\0"): *fp_glLoadTransposeMatrixdARB;
-	glLoadTransposeMatrixf = get_proc_address("glLoadTransposeMatrixf\0"): *fp_glLoadTransposeMatrixf;
 	glLoadTransposeMatrixfARB = get_proc_address("glLoadTransposeMatrixfARB\0"): *fp_glLoadTransposeMatrixfARB;
 	glLoadTransposeMatrixxOES = get_proc_address("glLoadTransposeMatrixxOES\0"): *fp_glLoadTransposeMatrixxOES;
 	glLockArraysEXT = get_proc_address("glLockArraysEXT\0"): *fp_glLockArraysEXT;
@@ -14443,21 +13251,13 @@ export fn load() void = {
 	glMakeTextureHandleNonResidentNV = get_proc_address("glMakeTextureHandleNonResidentNV\0"): *fp_glMakeTextureHandleNonResidentNV;
 	glMakeTextureHandleResidentARB = get_proc_address("glMakeTextureHandleResidentARB\0"): *fp_glMakeTextureHandleResidentARB;
 	glMakeTextureHandleResidentNV = get_proc_address("glMakeTextureHandleResidentNV\0"): *fp_glMakeTextureHandleResidentNV;
-	glMap1d = get_proc_address("glMap1d\0"): *fp_glMap1d;
-	glMap1f = get_proc_address("glMap1f\0"): *fp_glMap1f;
 	glMap1xOES = get_proc_address("glMap1xOES\0"): *fp_glMap1xOES;
-	glMap2d = get_proc_address("glMap2d\0"): *fp_glMap2d;
-	glMap2f = get_proc_address("glMap2f\0"): *fp_glMap2f;
 	glMap2xOES = get_proc_address("glMap2xOES\0"): *fp_glMap2xOES;
 	glMapBuffer = get_proc_address("glMapBuffer\0"): *fp_glMapBuffer;
 	glMapBufferARB = get_proc_address("glMapBufferARB\0"): *fp_glMapBufferARB;
 	glMapBufferRange = get_proc_address("glMapBufferRange\0"): *fp_glMapBufferRange;
 	glMapControlPointsNV = get_proc_address("glMapControlPointsNV\0"): *fp_glMapControlPointsNV;
-	glMapGrid1d = get_proc_address("glMapGrid1d\0"): *fp_glMapGrid1d;
-	glMapGrid1f = get_proc_address("glMapGrid1f\0"): *fp_glMapGrid1f;
 	glMapGrid1xOES = get_proc_address("glMapGrid1xOES\0"): *fp_glMapGrid1xOES;
-	glMapGrid2d = get_proc_address("glMapGrid2d\0"): *fp_glMapGrid2d;
-	glMapGrid2f = get_proc_address("glMapGrid2f\0"): *fp_glMapGrid2f;
 	glMapGrid2xOES = get_proc_address("glMapGrid2xOES\0"): *fp_glMapGrid2xOES;
 	glMapNamedBuffer = get_proc_address("glMapNamedBuffer\0"): *fp_glMapNamedBuffer;
 	glMapNamedBufferEXT = get_proc_address("glMapNamedBufferEXT\0"): *fp_glMapNamedBufferEXT;
@@ -14471,10 +13271,6 @@ export fn load() void = {
 	glMapVertexAttrib1fAPPLE = get_proc_address("glMapVertexAttrib1fAPPLE\0"): *fp_glMapVertexAttrib1fAPPLE;
 	glMapVertexAttrib2dAPPLE = get_proc_address("glMapVertexAttrib2dAPPLE\0"): *fp_glMapVertexAttrib2dAPPLE;
 	glMapVertexAttrib2fAPPLE = get_proc_address("glMapVertexAttrib2fAPPLE\0"): *fp_glMapVertexAttrib2fAPPLE;
-	glMaterialf = get_proc_address("glMaterialf\0"): *fp_glMaterialf;
-	glMaterialfv = get_proc_address("glMaterialfv\0"): *fp_glMaterialfv;
-	glMateriali = get_proc_address("glMateriali\0"): *fp_glMateriali;
-	glMaterialiv = get_proc_address("glMaterialiv\0"): *fp_glMaterialiv;
 	glMaterialxOES = get_proc_address("glMaterialxOES\0"): *fp_glMaterialxOES;
 	glMaterialxvOES = get_proc_address("glMaterialxvOES\0"): *fp_glMaterialxvOES;
 	glMatrixFrustumEXT = get_proc_address("glMatrixFrustumEXT\0"): *fp_glMatrixFrustumEXT;
@@ -14490,7 +13286,6 @@ export fn load() void = {
 	glMatrixLoadTransposefEXT = get_proc_address("glMatrixLoadTransposefEXT\0"): *fp_glMatrixLoadTransposefEXT;
 	glMatrixLoaddEXT = get_proc_address("glMatrixLoaddEXT\0"): *fp_glMatrixLoaddEXT;
 	glMatrixLoadfEXT = get_proc_address("glMatrixLoadfEXT\0"): *fp_glMatrixLoadfEXT;
-	glMatrixMode = get_proc_address("glMatrixMode\0"): *fp_glMatrixMode;
 	glMatrixMult3x2fNV = get_proc_address("glMatrixMult3x2fNV\0"): *fp_glMatrixMult3x2fNV;
 	glMatrixMult3x3fNV = get_proc_address("glMatrixMult3x3fNV\0"): *fp_glMatrixMult3x3fNV;
 	glMatrixMultTranspose3x3fNV = get_proc_address("glMatrixMultTranspose3x3fNV\0"): *fp_glMatrixMultTranspose3x3fNV;
@@ -14513,14 +13308,11 @@ export fn load() void = {
 	glMemoryBarrierByRegion = get_proc_address("glMemoryBarrierByRegion\0"): *fp_glMemoryBarrierByRegion;
 	glMemoryBarrierEXT = get_proc_address("glMemoryBarrierEXT\0"): *fp_glMemoryBarrierEXT;
 	glMemoryObjectParameterivEXT = get_proc_address("glMemoryObjectParameterivEXT\0"): *fp_glMemoryObjectParameterivEXT;
+	glMinSampleShading = get_proc_address("glMinSampleShading\0"): *fp_glMinSampleShading;
 	glMinSampleShadingARB = get_proc_address("glMinSampleShadingARB\0"): *fp_glMinSampleShadingARB;
 	glMinmaxEXT = get_proc_address("glMinmaxEXT\0"): *fp_glMinmaxEXT;
-	glMultMatrixd = get_proc_address("glMultMatrixd\0"): *fp_glMultMatrixd;
-	glMultMatrixf = get_proc_address("glMultMatrixf\0"): *fp_glMultMatrixf;
 	glMultMatrixxOES = get_proc_address("glMultMatrixxOES\0"): *fp_glMultMatrixxOES;
-	glMultTransposeMatrixd = get_proc_address("glMultTransposeMatrixd\0"): *fp_glMultTransposeMatrixd;
 	glMultTransposeMatrixdARB = get_proc_address("glMultTransposeMatrixdARB\0"): *fp_glMultTransposeMatrixdARB;
-	glMultTransposeMatrixf = get_proc_address("glMultTransposeMatrixf\0"): *fp_glMultTransposeMatrixf;
 	glMultTransposeMatrixfARB = get_proc_address("glMultTransposeMatrixfARB\0"): *fp_glMultTransposeMatrixfARB;
 	glMultTransposeMatrixxOES = get_proc_address("glMultTransposeMatrixxOES\0"): *fp_glMultTransposeMatrixxOES;
 	glMultiDrawArrays = get_proc_address("glMultiDrawArrays\0"): *fp_glMultiDrawArrays;
@@ -14547,89 +13339,57 @@ export fn load() void = {
 	glMultiTexBufferEXT = get_proc_address("glMultiTexBufferEXT\0"): *fp_glMultiTexBufferEXT;
 	glMultiTexCoord1bOES = get_proc_address("glMultiTexCoord1bOES\0"): *fp_glMultiTexCoord1bOES;
 	glMultiTexCoord1bvOES = get_proc_address("glMultiTexCoord1bvOES\0"): *fp_glMultiTexCoord1bvOES;
-	glMultiTexCoord1d = get_proc_address("glMultiTexCoord1d\0"): *fp_glMultiTexCoord1d;
 	glMultiTexCoord1dARB = get_proc_address("glMultiTexCoord1dARB\0"): *fp_glMultiTexCoord1dARB;
-	glMultiTexCoord1dv = get_proc_address("glMultiTexCoord1dv\0"): *fp_glMultiTexCoord1dv;
 	glMultiTexCoord1dvARB = get_proc_address("glMultiTexCoord1dvARB\0"): *fp_glMultiTexCoord1dvARB;
-	glMultiTexCoord1f = get_proc_address("glMultiTexCoord1f\0"): *fp_glMultiTexCoord1f;
 	glMultiTexCoord1fARB = get_proc_address("glMultiTexCoord1fARB\0"): *fp_glMultiTexCoord1fARB;
-	glMultiTexCoord1fv = get_proc_address("glMultiTexCoord1fv\0"): *fp_glMultiTexCoord1fv;
 	glMultiTexCoord1fvARB = get_proc_address("glMultiTexCoord1fvARB\0"): *fp_glMultiTexCoord1fvARB;
 	glMultiTexCoord1hNV = get_proc_address("glMultiTexCoord1hNV\0"): *fp_glMultiTexCoord1hNV;
 	glMultiTexCoord1hvNV = get_proc_address("glMultiTexCoord1hvNV\0"): *fp_glMultiTexCoord1hvNV;
-	glMultiTexCoord1i = get_proc_address("glMultiTexCoord1i\0"): *fp_glMultiTexCoord1i;
 	glMultiTexCoord1iARB = get_proc_address("glMultiTexCoord1iARB\0"): *fp_glMultiTexCoord1iARB;
-	glMultiTexCoord1iv = get_proc_address("glMultiTexCoord1iv\0"): *fp_glMultiTexCoord1iv;
 	glMultiTexCoord1ivARB = get_proc_address("glMultiTexCoord1ivARB\0"): *fp_glMultiTexCoord1ivARB;
-	glMultiTexCoord1s = get_proc_address("glMultiTexCoord1s\0"): *fp_glMultiTexCoord1s;
 	glMultiTexCoord1sARB = get_proc_address("glMultiTexCoord1sARB\0"): *fp_glMultiTexCoord1sARB;
-	glMultiTexCoord1sv = get_proc_address("glMultiTexCoord1sv\0"): *fp_glMultiTexCoord1sv;
 	glMultiTexCoord1svARB = get_proc_address("glMultiTexCoord1svARB\0"): *fp_glMultiTexCoord1svARB;
 	glMultiTexCoord1xOES = get_proc_address("glMultiTexCoord1xOES\0"): *fp_glMultiTexCoord1xOES;
 	glMultiTexCoord1xvOES = get_proc_address("glMultiTexCoord1xvOES\0"): *fp_glMultiTexCoord1xvOES;
 	glMultiTexCoord2bOES = get_proc_address("glMultiTexCoord2bOES\0"): *fp_glMultiTexCoord2bOES;
 	glMultiTexCoord2bvOES = get_proc_address("glMultiTexCoord2bvOES\0"): *fp_glMultiTexCoord2bvOES;
-	glMultiTexCoord2d = get_proc_address("glMultiTexCoord2d\0"): *fp_glMultiTexCoord2d;
 	glMultiTexCoord2dARB = get_proc_address("glMultiTexCoord2dARB\0"): *fp_glMultiTexCoord2dARB;
-	glMultiTexCoord2dv = get_proc_address("glMultiTexCoord2dv\0"): *fp_glMultiTexCoord2dv;
 	glMultiTexCoord2dvARB = get_proc_address("glMultiTexCoord2dvARB\0"): *fp_glMultiTexCoord2dvARB;
-	glMultiTexCoord2f = get_proc_address("glMultiTexCoord2f\0"): *fp_glMultiTexCoord2f;
 	glMultiTexCoord2fARB = get_proc_address("glMultiTexCoord2fARB\0"): *fp_glMultiTexCoord2fARB;
-	glMultiTexCoord2fv = get_proc_address("glMultiTexCoord2fv\0"): *fp_glMultiTexCoord2fv;
 	glMultiTexCoord2fvARB = get_proc_address("glMultiTexCoord2fvARB\0"): *fp_glMultiTexCoord2fvARB;
 	glMultiTexCoord2hNV = get_proc_address("glMultiTexCoord2hNV\0"): *fp_glMultiTexCoord2hNV;
 	glMultiTexCoord2hvNV = get_proc_address("glMultiTexCoord2hvNV\0"): *fp_glMultiTexCoord2hvNV;
-	glMultiTexCoord2i = get_proc_address("glMultiTexCoord2i\0"): *fp_glMultiTexCoord2i;
 	glMultiTexCoord2iARB = get_proc_address("glMultiTexCoord2iARB\0"): *fp_glMultiTexCoord2iARB;
-	glMultiTexCoord2iv = get_proc_address("glMultiTexCoord2iv\0"): *fp_glMultiTexCoord2iv;
 	glMultiTexCoord2ivARB = get_proc_address("glMultiTexCoord2ivARB\0"): *fp_glMultiTexCoord2ivARB;
-	glMultiTexCoord2s = get_proc_address("glMultiTexCoord2s\0"): *fp_glMultiTexCoord2s;
 	glMultiTexCoord2sARB = get_proc_address("glMultiTexCoord2sARB\0"): *fp_glMultiTexCoord2sARB;
-	glMultiTexCoord2sv = get_proc_address("glMultiTexCoord2sv\0"): *fp_glMultiTexCoord2sv;
 	glMultiTexCoord2svARB = get_proc_address("glMultiTexCoord2svARB\0"): *fp_glMultiTexCoord2svARB;
 	glMultiTexCoord2xOES = get_proc_address("glMultiTexCoord2xOES\0"): *fp_glMultiTexCoord2xOES;
 	glMultiTexCoord2xvOES = get_proc_address("glMultiTexCoord2xvOES\0"): *fp_glMultiTexCoord2xvOES;
 	glMultiTexCoord3bOES = get_proc_address("glMultiTexCoord3bOES\0"): *fp_glMultiTexCoord3bOES;
 	glMultiTexCoord3bvOES = get_proc_address("glMultiTexCoord3bvOES\0"): *fp_glMultiTexCoord3bvOES;
-	glMultiTexCoord3d = get_proc_address("glMultiTexCoord3d\0"): *fp_glMultiTexCoord3d;
 	glMultiTexCoord3dARB = get_proc_address("glMultiTexCoord3dARB\0"): *fp_glMultiTexCoord3dARB;
-	glMultiTexCoord3dv = get_proc_address("glMultiTexCoord3dv\0"): *fp_glMultiTexCoord3dv;
 	glMultiTexCoord3dvARB = get_proc_address("glMultiTexCoord3dvARB\0"): *fp_glMultiTexCoord3dvARB;
-	glMultiTexCoord3f = get_proc_address("glMultiTexCoord3f\0"): *fp_glMultiTexCoord3f;
 	glMultiTexCoord3fARB = get_proc_address("glMultiTexCoord3fARB\0"): *fp_glMultiTexCoord3fARB;
-	glMultiTexCoord3fv = get_proc_address("glMultiTexCoord3fv\0"): *fp_glMultiTexCoord3fv;
 	glMultiTexCoord3fvARB = get_proc_address("glMultiTexCoord3fvARB\0"): *fp_glMultiTexCoord3fvARB;
 	glMultiTexCoord3hNV = get_proc_address("glMultiTexCoord3hNV\0"): *fp_glMultiTexCoord3hNV;
 	glMultiTexCoord3hvNV = get_proc_address("glMultiTexCoord3hvNV\0"): *fp_glMultiTexCoord3hvNV;
-	glMultiTexCoord3i = get_proc_address("glMultiTexCoord3i\0"): *fp_glMultiTexCoord3i;
 	glMultiTexCoord3iARB = get_proc_address("glMultiTexCoord3iARB\0"): *fp_glMultiTexCoord3iARB;
-	glMultiTexCoord3iv = get_proc_address("glMultiTexCoord3iv\0"): *fp_glMultiTexCoord3iv;
 	glMultiTexCoord3ivARB = get_proc_address("glMultiTexCoord3ivARB\0"): *fp_glMultiTexCoord3ivARB;
-	glMultiTexCoord3s = get_proc_address("glMultiTexCoord3s\0"): *fp_glMultiTexCoord3s;
 	glMultiTexCoord3sARB = get_proc_address("glMultiTexCoord3sARB\0"): *fp_glMultiTexCoord3sARB;
-	glMultiTexCoord3sv = get_proc_address("glMultiTexCoord3sv\0"): *fp_glMultiTexCoord3sv;
 	glMultiTexCoord3svARB = get_proc_address("glMultiTexCoord3svARB\0"): *fp_glMultiTexCoord3svARB;
 	glMultiTexCoord3xOES = get_proc_address("glMultiTexCoord3xOES\0"): *fp_glMultiTexCoord3xOES;
 	glMultiTexCoord3xvOES = get_proc_address("glMultiTexCoord3xvOES\0"): *fp_glMultiTexCoord3xvOES;
 	glMultiTexCoord4bOES = get_proc_address("glMultiTexCoord4bOES\0"): *fp_glMultiTexCoord4bOES;
 	glMultiTexCoord4bvOES = get_proc_address("glMultiTexCoord4bvOES\0"): *fp_glMultiTexCoord4bvOES;
-	glMultiTexCoord4d = get_proc_address("glMultiTexCoord4d\0"): *fp_glMultiTexCoord4d;
 	glMultiTexCoord4dARB = get_proc_address("glMultiTexCoord4dARB\0"): *fp_glMultiTexCoord4dARB;
-	glMultiTexCoord4dv = get_proc_address("glMultiTexCoord4dv\0"): *fp_glMultiTexCoord4dv;
 	glMultiTexCoord4dvARB = get_proc_address("glMultiTexCoord4dvARB\0"): *fp_glMultiTexCoord4dvARB;
-	glMultiTexCoord4f = get_proc_address("glMultiTexCoord4f\0"): *fp_glMultiTexCoord4f;
 	glMultiTexCoord4fARB = get_proc_address("glMultiTexCoord4fARB\0"): *fp_glMultiTexCoord4fARB;
-	glMultiTexCoord4fv = get_proc_address("glMultiTexCoord4fv\0"): *fp_glMultiTexCoord4fv;
 	glMultiTexCoord4fvARB = get_proc_address("glMultiTexCoord4fvARB\0"): *fp_glMultiTexCoord4fvARB;
 	glMultiTexCoord4hNV = get_proc_address("glMultiTexCoord4hNV\0"): *fp_glMultiTexCoord4hNV;
 	glMultiTexCoord4hvNV = get_proc_address("glMultiTexCoord4hvNV\0"): *fp_glMultiTexCoord4hvNV;
-	glMultiTexCoord4i = get_proc_address("glMultiTexCoord4i\0"): *fp_glMultiTexCoord4i;
 	glMultiTexCoord4iARB = get_proc_address("glMultiTexCoord4iARB\0"): *fp_glMultiTexCoord4iARB;
-	glMultiTexCoord4iv = get_proc_address("glMultiTexCoord4iv\0"): *fp_glMultiTexCoord4iv;
 	glMultiTexCoord4ivARB = get_proc_address("glMultiTexCoord4ivARB\0"): *fp_glMultiTexCoord4ivARB;
-	glMultiTexCoord4s = get_proc_address("glMultiTexCoord4s\0"): *fp_glMultiTexCoord4s;
 	glMultiTexCoord4sARB = get_proc_address("glMultiTexCoord4sARB\0"): *fp_glMultiTexCoord4sARB;
-	glMultiTexCoord4sv = get_proc_address("glMultiTexCoord4sv\0"): *fp_glMultiTexCoord4sv;
 	glMultiTexCoord4svARB = get_proc_address("glMultiTexCoord4svARB\0"): *fp_glMultiTexCoord4svARB;
 	glMultiTexCoord4xOES = get_proc_address("glMultiTexCoord4xOES\0"): *fp_glMultiTexCoord4xOES;
 	glMultiTexCoord4xvOES = get_proc_address("glMultiTexCoord4xvOES\0"): *fp_glMultiTexCoord4xvOES;
@@ -14721,26 +13481,14 @@ export fn load() void = {
 	glNamedRenderbufferStorageMultisampleCoverageEXT = get_proc_address("glNamedRenderbufferStorageMultisampleCoverageEXT\0"): *fp_glNamedRenderbufferStorageMultisampleCoverageEXT;
 	glNamedRenderbufferStorageMultisampleEXT = get_proc_address("glNamedRenderbufferStorageMultisampleEXT\0"): *fp_glNamedRenderbufferStorageMultisampleEXT;
 	glNamedStringARB = get_proc_address("glNamedStringARB\0"): *fp_glNamedStringARB;
-	glNewList = get_proc_address("glNewList\0"): *fp_glNewList;
 	glNewObjectBufferATI = get_proc_address("glNewObjectBufferATI\0"): *fp_glNewObjectBufferATI;
-	glNormal3b = get_proc_address("glNormal3b\0"): *fp_glNormal3b;
-	glNormal3bv = get_proc_address("glNormal3bv\0"): *fp_glNormal3bv;
-	glNormal3d = get_proc_address("glNormal3d\0"): *fp_glNormal3d;
-	glNormal3dv = get_proc_address("glNormal3dv\0"): *fp_glNormal3dv;
-	glNormal3f = get_proc_address("glNormal3f\0"): *fp_glNormal3f;
 	glNormal3fVertex3fSUN = get_proc_address("glNormal3fVertex3fSUN\0"): *fp_glNormal3fVertex3fSUN;
 	glNormal3fVertex3fvSUN = get_proc_address("glNormal3fVertex3fvSUN\0"): *fp_glNormal3fVertex3fvSUN;
-	glNormal3fv = get_proc_address("glNormal3fv\0"): *fp_glNormal3fv;
 	glNormal3hNV = get_proc_address("glNormal3hNV\0"): *fp_glNormal3hNV;
 	glNormal3hvNV = get_proc_address("glNormal3hvNV\0"): *fp_glNormal3hvNV;
-	glNormal3i = get_proc_address("glNormal3i\0"): *fp_glNormal3i;
-	glNormal3iv = get_proc_address("glNormal3iv\0"): *fp_glNormal3iv;
-	glNormal3s = get_proc_address("glNormal3s\0"): *fp_glNormal3s;
-	glNormal3sv = get_proc_address("glNormal3sv\0"): *fp_glNormal3sv;
 	glNormal3xOES = get_proc_address("glNormal3xOES\0"): *fp_glNormal3xOES;
 	glNormal3xvOES = get_proc_address("glNormal3xvOES\0"): *fp_glNormal3xvOES;
 	glNormalFormatNV = get_proc_address("glNormalFormatNV\0"): *fp_glNormalFormatNV;
-	glNormalPointer = get_proc_address("glNormalPointer\0"): *fp_glNormalPointer;
 	glNormalPointerEXT = get_proc_address("glNormalPointerEXT\0"): *fp_glNormalPointerEXT;
 	glNormalPointerListIBM = get_proc_address("glNormalPointerListIBM\0"): *fp_glNormalPointerListIBM;
 	glNormalPointervINTEL = get_proc_address("glNormalPointervINTEL\0"): *fp_glNormalPointervINTEL;
@@ -14758,13 +13506,11 @@ export fn load() void = {
 	glObjectPtrLabel = get_proc_address("glObjectPtrLabel\0"): *fp_glObjectPtrLabel;
 	glObjectPurgeableAPPLE = get_proc_address("glObjectPurgeableAPPLE\0"): *fp_glObjectPurgeableAPPLE;
 	glObjectUnpurgeableAPPLE = get_proc_address("glObjectUnpurgeableAPPLE\0"): *fp_glObjectUnpurgeableAPPLE;
-	glOrtho = get_proc_address("glOrtho\0"): *fp_glOrtho;
 	glOrthofOES = get_proc_address("glOrthofOES\0"): *fp_glOrthofOES;
 	glOrthoxOES = get_proc_address("glOrthoxOES\0"): *fp_glOrthoxOES;
 	glPNTrianglesfATI = get_proc_address("glPNTrianglesfATI\0"): *fp_glPNTrianglesfATI;
 	glPNTrianglesiATI = get_proc_address("glPNTrianglesiATI\0"): *fp_glPNTrianglesiATI;
 	glPassTexCoordATI = get_proc_address("glPassTexCoordATI\0"): *fp_glPassTexCoordATI;
-	glPassThrough = get_proc_address("glPassThrough\0"): *fp_glPassThrough;
 	glPassThroughxOES = get_proc_address("glPassThroughxOES\0"): *fp_glPassThroughxOES;
 	glPatchParameterfv = get_proc_address("glPatchParameterfv\0"): *fp_glPatchParameterfv;
 	glPatchParameteri = get_proc_address("glPatchParameteri\0"): *fp_glPatchParameteri;
@@ -14789,9 +13535,6 @@ export fn load() void = {
 	glPauseTransformFeedback = get_proc_address("glPauseTransformFeedback\0"): *fp_glPauseTransformFeedback;
 	glPauseTransformFeedbackNV = get_proc_address("glPauseTransformFeedbackNV\0"): *fp_glPauseTransformFeedbackNV;
 	glPixelDataRangeNV = get_proc_address("glPixelDataRangeNV\0"): *fp_glPixelDataRangeNV;
-	glPixelMapfv = get_proc_address("glPixelMapfv\0"): *fp_glPixelMapfv;
-	glPixelMapuiv = get_proc_address("glPixelMapuiv\0"): *fp_glPixelMapuiv;
-	glPixelMapusv = get_proc_address("glPixelMapusv\0"): *fp_glPixelMapusv;
 	glPixelMapx = get_proc_address("glPixelMapx\0"): *fp_glPixelMapx;
 	glPixelStoref = get_proc_address("glPixelStoref\0"): *fp_glPixelStoref;
 	glPixelStorei = get_proc_address("glPixelStorei\0"): *fp_glPixelStorei;
@@ -14801,14 +13544,11 @@ export fn load() void = {
 	glPixelTexGenParameteriSGIS = get_proc_address("glPixelTexGenParameteriSGIS\0"): *fp_glPixelTexGenParameteriSGIS;
 	glPixelTexGenParameterivSGIS = get_proc_address("glPixelTexGenParameterivSGIS\0"): *fp_glPixelTexGenParameterivSGIS;
 	glPixelTexGenSGIX = get_proc_address("glPixelTexGenSGIX\0"): *fp_glPixelTexGenSGIX;
-	glPixelTransferf = get_proc_address("glPixelTransferf\0"): *fp_glPixelTransferf;
-	glPixelTransferi = get_proc_address("glPixelTransferi\0"): *fp_glPixelTransferi;
 	glPixelTransferxOES = get_proc_address("glPixelTransferxOES\0"): *fp_glPixelTransferxOES;
 	glPixelTransformParameterfEXT = get_proc_address("glPixelTransformParameterfEXT\0"): *fp_glPixelTransformParameterfEXT;
 	glPixelTransformParameterfvEXT = get_proc_address("glPixelTransformParameterfvEXT\0"): *fp_glPixelTransformParameterfvEXT;
 	glPixelTransformParameteriEXT = get_proc_address("glPixelTransformParameteriEXT\0"): *fp_glPixelTransformParameteriEXT;
 	glPixelTransformParameterivEXT = get_proc_address("glPixelTransformParameterivEXT\0"): *fp_glPixelTransformParameterivEXT;
-	glPixelZoom = get_proc_address("glPixelZoom\0"): *fp_glPixelZoom;
 	glPixelZoomxOES = get_proc_address("glPixelZoomxOES\0"): *fp_glPixelZoomxOES;
 	glPointAlongPathNV = get_proc_address("glPointAlongPathNV\0"): *fp_glPointAlongPathNV;
 	glPointParameterf = get_proc_address("glPointParameterf\0"): *fp_glPointParameterf;
@@ -14834,19 +13574,14 @@ export fn load() void = {
 	glPolygonOffsetClampEXT = get_proc_address("glPolygonOffsetClampEXT\0"): *fp_glPolygonOffsetClampEXT;
 	glPolygonOffsetEXT = get_proc_address("glPolygonOffsetEXT\0"): *fp_glPolygonOffsetEXT;
 	glPolygonOffsetxOES = get_proc_address("glPolygonOffsetxOES\0"): *fp_glPolygonOffsetxOES;
-	glPolygonStipple = get_proc_address("glPolygonStipple\0"): *fp_glPolygonStipple;
-	glPopAttrib = get_proc_address("glPopAttrib\0"): *fp_glPopAttrib;
-	glPopClientAttrib = get_proc_address("glPopClientAttrib\0"): *fp_glPopClientAttrib;
 	glPopDebugGroup = get_proc_address("glPopDebugGroup\0"): *fp_glPopDebugGroup;
 	glPopGroupMarkerEXT = get_proc_address("glPopGroupMarkerEXT\0"): *fp_glPopGroupMarkerEXT;
-	glPopMatrix = get_proc_address("glPopMatrix\0"): *fp_glPopMatrix;
-	glPopName = get_proc_address("glPopName\0"): *fp_glPopName;
 	glPresentFrameDualFillNV = get_proc_address("glPresentFrameDualFillNV\0"): *fp_glPresentFrameDualFillNV;
 	glPresentFrameKeyedNV = get_proc_address("glPresentFrameKeyedNV\0"): *fp_glPresentFrameKeyedNV;
 	glPrimitiveBoundingBoxARB = get_proc_address("glPrimitiveBoundingBoxARB\0"): *fp_glPrimitiveBoundingBoxARB;
+	glPrimitiveRestartIndex = get_proc_address("glPrimitiveRestartIndex\0"): *fp_glPrimitiveRestartIndex;
 	glPrimitiveRestartIndexNV = get_proc_address("glPrimitiveRestartIndexNV\0"): *fp_glPrimitiveRestartIndexNV;
 	glPrimitiveRestartNV = get_proc_address("glPrimitiveRestartNV\0"): *fp_glPrimitiveRestartNV;
-	glPrioritizeTextures = get_proc_address("glPrioritizeTextures\0"): *fp_glPrioritizeTextures;
 	glPrioritizeTexturesEXT = get_proc_address("glPrioritizeTexturesEXT\0"): *fp_glPrioritizeTexturesEXT;
 	glPrioritizeTexturesxOES = get_proc_address("glPrioritizeTexturesxOES\0"): *fp_glPrioritizeTexturesxOES;
 	glProgramBinary = get_proc_address("glProgramBinary\0"): *fp_glProgramBinary;
@@ -15032,46 +13767,18 @@ export fn load() void = {
 	glProgramVertexLimitNV = get_proc_address("glProgramVertexLimitNV\0"): *fp_glProgramVertexLimitNV;
 	glProvokingVertex = get_proc_address("glProvokingVertex\0"): *fp_glProvokingVertex;
 	glProvokingVertexEXT = get_proc_address("glProvokingVertexEXT\0"): *fp_glProvokingVertexEXT;
-	glPushAttrib = get_proc_address("glPushAttrib\0"): *fp_glPushAttrib;
-	glPushClientAttrib = get_proc_address("glPushClientAttrib\0"): *fp_glPushClientAttrib;
 	glPushClientAttribDefaultEXT = get_proc_address("glPushClientAttribDefaultEXT\0"): *fp_glPushClientAttribDefaultEXT;
 	glPushDebugGroup = get_proc_address("glPushDebugGroup\0"): *fp_glPushDebugGroup;
 	glPushGroupMarkerEXT = get_proc_address("glPushGroupMarkerEXT\0"): *fp_glPushGroupMarkerEXT;
-	glPushMatrix = get_proc_address("glPushMatrix\0"): *fp_glPushMatrix;
-	glPushName = get_proc_address("glPushName\0"): *fp_glPushName;
 	glQueryCounter = get_proc_address("glQueryCounter\0"): *fp_glQueryCounter;
 	glQueryMatrixxOES = get_proc_address("glQueryMatrixxOES\0"): *fp_glQueryMatrixxOES;
 	glQueryObjectParameteruiAMD = get_proc_address("glQueryObjectParameteruiAMD\0"): *fp_glQueryObjectParameteruiAMD;
 	glQueryResourceNV = get_proc_address("glQueryResourceNV\0"): *fp_glQueryResourceNV;
 	glQueryResourceTagNV = get_proc_address("glQueryResourceTagNV\0"): *fp_glQueryResourceTagNV;
-	glRasterPos2d = get_proc_address("glRasterPos2d\0"): *fp_glRasterPos2d;
-	glRasterPos2dv = get_proc_address("glRasterPos2dv\0"): *fp_glRasterPos2dv;
-	glRasterPos2f = get_proc_address("glRasterPos2f\0"): *fp_glRasterPos2f;
-	glRasterPos2fv = get_proc_address("glRasterPos2fv\0"): *fp_glRasterPos2fv;
-	glRasterPos2i = get_proc_address("glRasterPos2i\0"): *fp_glRasterPos2i;
-	glRasterPos2iv = get_proc_address("glRasterPos2iv\0"): *fp_glRasterPos2iv;
-	glRasterPos2s = get_proc_address("glRasterPos2s\0"): *fp_glRasterPos2s;
-	glRasterPos2sv = get_proc_address("glRasterPos2sv\0"): *fp_glRasterPos2sv;
 	glRasterPos2xOES = get_proc_address("glRasterPos2xOES\0"): *fp_glRasterPos2xOES;
 	glRasterPos2xvOES = get_proc_address("glRasterPos2xvOES\0"): *fp_glRasterPos2xvOES;
-	glRasterPos3d = get_proc_address("glRasterPos3d\0"): *fp_glRasterPos3d;
-	glRasterPos3dv = get_proc_address("glRasterPos3dv\0"): *fp_glRasterPos3dv;
-	glRasterPos3f = get_proc_address("glRasterPos3f\0"): *fp_glRasterPos3f;
-	glRasterPos3fv = get_proc_address("glRasterPos3fv\0"): *fp_glRasterPos3fv;
-	glRasterPos3i = get_proc_address("glRasterPos3i\0"): *fp_glRasterPos3i;
-	glRasterPos3iv = get_proc_address("glRasterPos3iv\0"): *fp_glRasterPos3iv;
-	glRasterPos3s = get_proc_address("glRasterPos3s\0"): *fp_glRasterPos3s;
-	glRasterPos3sv = get_proc_address("glRasterPos3sv\0"): *fp_glRasterPos3sv;
 	glRasterPos3xOES = get_proc_address("glRasterPos3xOES\0"): *fp_glRasterPos3xOES;
 	glRasterPos3xvOES = get_proc_address("glRasterPos3xvOES\0"): *fp_glRasterPos3xvOES;
-	glRasterPos4d = get_proc_address("glRasterPos4d\0"): *fp_glRasterPos4d;
-	glRasterPos4dv = get_proc_address("glRasterPos4dv\0"): *fp_glRasterPos4dv;
-	glRasterPos4f = get_proc_address("glRasterPos4f\0"): *fp_glRasterPos4f;
-	glRasterPos4fv = get_proc_address("glRasterPos4fv\0"): *fp_glRasterPos4fv;
-	glRasterPos4i = get_proc_address("glRasterPos4i\0"): *fp_glRasterPos4i;
-	glRasterPos4iv = get_proc_address("glRasterPos4iv\0"): *fp_glRasterPos4iv;
-	glRasterPos4s = get_proc_address("glRasterPos4s\0"): *fp_glRasterPos4s;
-	glRasterPos4sv = get_proc_address("glRasterPos4sv\0"): *fp_glRasterPos4sv;
 	glRasterPos4xOES = get_proc_address("glRasterPos4xOES\0"): *fp_glRasterPos4xOES;
 	glRasterPos4xvOES = get_proc_address("glRasterPos4xvOES\0"): *fp_glRasterPos4xvOES;
 	glRasterSamplesEXT = get_proc_address("glRasterSamplesEXT\0"): *fp_glRasterSamplesEXT;
@@ -15080,21 +13787,12 @@ export fn load() void = {
 	glReadPixels = get_proc_address("glReadPixels\0"): *fp_glReadPixels;
 	glReadnPixels = get_proc_address("glReadnPixels\0"): *fp_glReadnPixels;
 	glReadnPixelsARB = get_proc_address("glReadnPixelsARB\0"): *fp_glReadnPixelsARB;
-	glRectd = get_proc_address("glRectd\0"): *fp_glRectd;
-	glRectdv = get_proc_address("glRectdv\0"): *fp_glRectdv;
-	glRectf = get_proc_address("glRectf\0"): *fp_glRectf;
-	glRectfv = get_proc_address("glRectfv\0"): *fp_glRectfv;
-	glRecti = get_proc_address("glRecti\0"): *fp_glRecti;
-	glRectiv = get_proc_address("glRectiv\0"): *fp_glRectiv;
-	glRects = get_proc_address("glRects\0"): *fp_glRects;
-	glRectsv = get_proc_address("glRectsv\0"): *fp_glRectsv;
 	glRectxOES = get_proc_address("glRectxOES\0"): *fp_glRectxOES;
 	glRectxvOES = get_proc_address("glRectxvOES\0"): *fp_glRectxvOES;
 	glReferencePlaneSGIX = get_proc_address("glReferencePlaneSGIX\0"): *fp_glReferencePlaneSGIX;
 	glReleaseKeyedMutexWin32EXT = get_proc_address("glReleaseKeyedMutexWin32EXT\0"): *fp_glReleaseKeyedMutexWin32EXT;
 	glReleaseShaderCompiler = get_proc_address("glReleaseShaderCompiler\0"): *fp_glReleaseShaderCompiler;
 	glRenderGpuMaskNV = get_proc_address("glRenderGpuMaskNV\0"): *fp_glRenderGpuMaskNV;
-	glRenderMode = get_proc_address("glRenderMode\0"): *fp_glRenderMode;
 	glRenderbufferStorage = get_proc_address("glRenderbufferStorage\0"): *fp_glRenderbufferStorage;
 	glRenderbufferStorageEXT = get_proc_address("glRenderbufferStorageEXT\0"): *fp_glRenderbufferStorageEXT;
 	glRenderbufferStorageMultisample = get_proc_address("glRenderbufferStorageMultisample\0"): *fp_glRenderbufferStorageMultisample;
@@ -15132,8 +13830,6 @@ export fn load() void = {
 	glResolveDepthValuesNV = get_proc_address("glResolveDepthValuesNV\0"): *fp_glResolveDepthValuesNV;
 	glResumeTransformFeedback = get_proc_address("glResumeTransformFeedback\0"): *fp_glResumeTransformFeedback;
 	glResumeTransformFeedbackNV = get_proc_address("glResumeTransformFeedbackNV\0"): *fp_glResumeTransformFeedbackNV;
-	glRotated = get_proc_address("glRotated\0"): *fp_glRotated;
-	glRotatef = get_proc_address("glRotatef\0"): *fp_glRotatef;
 	glRotatexOES = get_proc_address("glRotatexOES\0"): *fp_glRotatexOES;
 	glSampleCoverage = get_proc_address("glSampleCoverage\0"): *fp_glSampleCoverage;
 	glSampleCoverageARB = get_proc_address("glSampleCoverageARB\0"): *fp_glSampleCoverageARB;
@@ -15150,8 +13846,6 @@ export fn load() void = {
 	glSamplerParameterfv = get_proc_address("glSamplerParameterfv\0"): *fp_glSamplerParameterfv;
 	glSamplerParameteri = get_proc_address("glSamplerParameteri\0"): *fp_glSamplerParameteri;
 	glSamplerParameteriv = get_proc_address("glSamplerParameteriv\0"): *fp_glSamplerParameteriv;
-	glScaled = get_proc_address("glScaled\0"): *fp_glScaled;
-	glScalef = get_proc_address("glScalef\0"): *fp_glScalef;
 	glScalexOES = get_proc_address("glScalexOES\0"): *fp_glScalexOES;
 	glScissor = get_proc_address("glScissor\0"): *fp_glScissor;
 	glScissorArrayv = get_proc_address("glScissorArrayv\0"): *fp_glScissorArrayv;
@@ -15159,45 +13853,27 @@ export fn load() void = {
 	glScissorExclusiveNV = get_proc_address("glScissorExclusiveNV\0"): *fp_glScissorExclusiveNV;
 	glScissorIndexed = get_proc_address("glScissorIndexed\0"): *fp_glScissorIndexed;
 	glScissorIndexedv = get_proc_address("glScissorIndexedv\0"): *fp_glScissorIndexedv;
-	glSecondaryColor3b = get_proc_address("glSecondaryColor3b\0"): *fp_glSecondaryColor3b;
 	glSecondaryColor3bEXT = get_proc_address("glSecondaryColor3bEXT\0"): *fp_glSecondaryColor3bEXT;
-	glSecondaryColor3bv = get_proc_address("glSecondaryColor3bv\0"): *fp_glSecondaryColor3bv;
 	glSecondaryColor3bvEXT = get_proc_address("glSecondaryColor3bvEXT\0"): *fp_glSecondaryColor3bvEXT;
-	glSecondaryColor3d = get_proc_address("glSecondaryColor3d\0"): *fp_glSecondaryColor3d;
 	glSecondaryColor3dEXT = get_proc_address("glSecondaryColor3dEXT\0"): *fp_glSecondaryColor3dEXT;
-	glSecondaryColor3dv = get_proc_address("glSecondaryColor3dv\0"): *fp_glSecondaryColor3dv;
 	glSecondaryColor3dvEXT = get_proc_address("glSecondaryColor3dvEXT\0"): *fp_glSecondaryColor3dvEXT;
-	glSecondaryColor3f = get_proc_address("glSecondaryColor3f\0"): *fp_glSecondaryColor3f;
 	glSecondaryColor3fEXT = get_proc_address("glSecondaryColor3fEXT\0"): *fp_glSecondaryColor3fEXT;
-	glSecondaryColor3fv = get_proc_address("glSecondaryColor3fv\0"): *fp_glSecondaryColor3fv;
 	glSecondaryColor3fvEXT = get_proc_address("glSecondaryColor3fvEXT\0"): *fp_glSecondaryColor3fvEXT;
 	glSecondaryColor3hNV = get_proc_address("glSecondaryColor3hNV\0"): *fp_glSecondaryColor3hNV;
 	glSecondaryColor3hvNV = get_proc_address("glSecondaryColor3hvNV\0"): *fp_glSecondaryColor3hvNV;
-	glSecondaryColor3i = get_proc_address("glSecondaryColor3i\0"): *fp_glSecondaryColor3i;
 	glSecondaryColor3iEXT = get_proc_address("glSecondaryColor3iEXT\0"): *fp_glSecondaryColor3iEXT;
-	glSecondaryColor3iv = get_proc_address("glSecondaryColor3iv\0"): *fp_glSecondaryColor3iv;
 	glSecondaryColor3ivEXT = get_proc_address("glSecondaryColor3ivEXT\0"): *fp_glSecondaryColor3ivEXT;
-	glSecondaryColor3s = get_proc_address("glSecondaryColor3s\0"): *fp_glSecondaryColor3s;
 	glSecondaryColor3sEXT = get_proc_address("glSecondaryColor3sEXT\0"): *fp_glSecondaryColor3sEXT;
-	glSecondaryColor3sv = get_proc_address("glSecondaryColor3sv\0"): *fp_glSecondaryColor3sv;
 	glSecondaryColor3svEXT = get_proc_address("glSecondaryColor3svEXT\0"): *fp_glSecondaryColor3svEXT;
-	glSecondaryColor3ub = get_proc_address("glSecondaryColor3ub\0"): *fp_glSecondaryColor3ub;
 	glSecondaryColor3ubEXT = get_proc_address("glSecondaryColor3ubEXT\0"): *fp_glSecondaryColor3ubEXT;
-	glSecondaryColor3ubv = get_proc_address("glSecondaryColor3ubv\0"): *fp_glSecondaryColor3ubv;
 	glSecondaryColor3ubvEXT = get_proc_address("glSecondaryColor3ubvEXT\0"): *fp_glSecondaryColor3ubvEXT;
-	glSecondaryColor3ui = get_proc_address("glSecondaryColor3ui\0"): *fp_glSecondaryColor3ui;
 	glSecondaryColor3uiEXT = get_proc_address("glSecondaryColor3uiEXT\0"): *fp_glSecondaryColor3uiEXT;
-	glSecondaryColor3uiv = get_proc_address("glSecondaryColor3uiv\0"): *fp_glSecondaryColor3uiv;
 	glSecondaryColor3uivEXT = get_proc_address("glSecondaryColor3uivEXT\0"): *fp_glSecondaryColor3uivEXT;
-	glSecondaryColor3us = get_proc_address("glSecondaryColor3us\0"): *fp_glSecondaryColor3us;
 	glSecondaryColor3usEXT = get_proc_address("glSecondaryColor3usEXT\0"): *fp_glSecondaryColor3usEXT;
-	glSecondaryColor3usv = get_proc_address("glSecondaryColor3usv\0"): *fp_glSecondaryColor3usv;
 	glSecondaryColor3usvEXT = get_proc_address("glSecondaryColor3usvEXT\0"): *fp_glSecondaryColor3usvEXT;
 	glSecondaryColorFormatNV = get_proc_address("glSecondaryColorFormatNV\0"): *fp_glSecondaryColorFormatNV;
-	glSecondaryColorPointer = get_proc_address("glSecondaryColorPointer\0"): *fp_glSecondaryColorPointer;
 	glSecondaryColorPointerEXT = get_proc_address("glSecondaryColorPointerEXT\0"): *fp_glSecondaryColorPointerEXT;
 	glSecondaryColorPointerListIBM = get_proc_address("glSecondaryColorPointerListIBM\0"): *fp_glSecondaryColorPointerListIBM;
-	glSelectBuffer = get_proc_address("glSelectBuffer\0"): *fp_glSelectBuffer;
 	glSelectPerfMonitorCountersAMD = get_proc_address("glSelectPerfMonitorCountersAMD\0"): *fp_glSelectPerfMonitorCountersAMD;
 	glSemaphoreParameterivNV = get_proc_address("glSemaphoreParameterivNV\0"): *fp_glSemaphoreParameterivNV;
 	glSemaphoreParameterui64vEXT = get_proc_address("glSemaphoreParameterui64vEXT\0"): *fp_glSemaphoreParameterui64vEXT;
@@ -15208,7 +13884,6 @@ export fn load() void = {
 	glSetInvariantEXT = get_proc_address("glSetInvariantEXT\0"): *fp_glSetInvariantEXT;
 	glSetLocalConstantEXT = get_proc_address("glSetLocalConstantEXT\0"): *fp_glSetLocalConstantEXT;
 	glSetMultisamplefvAMD = get_proc_address("glSetMultisamplefvAMD\0"): *fp_glSetMultisamplefvAMD;
-	glShadeModel = get_proc_address("glShadeModel\0"): *fp_glShadeModel;
 	glShaderBinary = get_proc_address("glShaderBinary\0"): *fp_glShaderBinary;
 	glShaderOp1EXT = get_proc_address("glShaderOp1EXT\0"): *fp_glShaderOp1EXT;
 	glShaderOp2EXT = get_proc_address("glShaderOp2EXT\0"): *fp_glShaderOp2EXT;
@@ -15274,6 +13949,7 @@ export fn load() void = {
 	glTestFenceNV = get_proc_address("glTestFenceNV\0"): *fp_glTestFenceNV;
 	glTestObjectAPPLE = get_proc_address("glTestObjectAPPLE\0"): *fp_glTestObjectAPPLE;
 	glTexAttachMemoryNV = get_proc_address("glTexAttachMemoryNV\0"): *fp_glTexAttachMemoryNV;
+	glTexBuffer = get_proc_address("glTexBuffer\0"): *fp_glTexBuffer;
 	glTexBufferARB = get_proc_address("glTexBufferARB\0"): *fp_glTexBufferARB;
 	glTexBufferEXT = get_proc_address("glTexBufferEXT\0"): *fp_glTexBufferEXT;
 	glTexBufferRange = get_proc_address("glTexBufferRange\0"): *fp_glTexBufferRange;
@@ -15281,23 +13957,12 @@ export fn load() void = {
 	glTexBumpParameterivATI = get_proc_address("glTexBumpParameterivATI\0"): *fp_glTexBumpParameterivATI;
 	glTexCoord1bOES = get_proc_address("glTexCoord1bOES\0"): *fp_glTexCoord1bOES;
 	glTexCoord1bvOES = get_proc_address("glTexCoord1bvOES\0"): *fp_glTexCoord1bvOES;
-	glTexCoord1d = get_proc_address("glTexCoord1d\0"): *fp_glTexCoord1d;
-	glTexCoord1dv = get_proc_address("glTexCoord1dv\0"): *fp_glTexCoord1dv;
-	glTexCoord1f = get_proc_address("glTexCoord1f\0"): *fp_glTexCoord1f;
-	glTexCoord1fv = get_proc_address("glTexCoord1fv\0"): *fp_glTexCoord1fv;
 	glTexCoord1hNV = get_proc_address("glTexCoord1hNV\0"): *fp_glTexCoord1hNV;
 	glTexCoord1hvNV = get_proc_address("glTexCoord1hvNV\0"): *fp_glTexCoord1hvNV;
-	glTexCoord1i = get_proc_address("glTexCoord1i\0"): *fp_glTexCoord1i;
-	glTexCoord1iv = get_proc_address("glTexCoord1iv\0"): *fp_glTexCoord1iv;
-	glTexCoord1s = get_proc_address("glTexCoord1s\0"): *fp_glTexCoord1s;
-	glTexCoord1sv = get_proc_address("glTexCoord1sv\0"): *fp_glTexCoord1sv;
 	glTexCoord1xOES = get_proc_address("glTexCoord1xOES\0"): *fp_glTexCoord1xOES;
 	glTexCoord1xvOES = get_proc_address("glTexCoord1xvOES\0"): *fp_glTexCoord1xvOES;
 	glTexCoord2bOES = get_proc_address("glTexCoord2bOES\0"): *fp_glTexCoord2bOES;
 	glTexCoord2bvOES = get_proc_address("glTexCoord2bvOES\0"): *fp_glTexCoord2bvOES;
-	glTexCoord2d = get_proc_address("glTexCoord2d\0"): *fp_glTexCoord2d;
-	glTexCoord2dv = get_proc_address("glTexCoord2dv\0"): *fp_glTexCoord2dv;
-	glTexCoord2f = get_proc_address("glTexCoord2f\0"): *fp_glTexCoord2f;
 	glTexCoord2fColor3fVertex3fSUN = get_proc_address("glTexCoord2fColor3fVertex3fSUN\0"): *fp_glTexCoord2fColor3fVertex3fSUN;
 	glTexCoord2fColor3fVertex3fvSUN = get_proc_address("glTexCoord2fColor3fVertex3fvSUN\0"): *fp_glTexCoord2fColor3fVertex3fvSUN;
 	glTexCoord2fColor4fNormal3fVertex3fSUN = get_proc_address("glTexCoord2fColor4fNormal3fVertex3fSUN\0"): *fp_glTexCoord2fColor4fNormal3fVertex3fSUN;
@@ -15308,65 +13973,33 @@ export fn load() void = {
 	glTexCoord2fNormal3fVertex3fvSUN = get_proc_address("glTexCoord2fNormal3fVertex3fvSUN\0"): *fp_glTexCoord2fNormal3fVertex3fvSUN;
 	glTexCoord2fVertex3fSUN = get_proc_address("glTexCoord2fVertex3fSUN\0"): *fp_glTexCoord2fVertex3fSUN;
 	glTexCoord2fVertex3fvSUN = get_proc_address("glTexCoord2fVertex3fvSUN\0"): *fp_glTexCoord2fVertex3fvSUN;
-	glTexCoord2fv = get_proc_address("glTexCoord2fv\0"): *fp_glTexCoord2fv;
 	glTexCoord2hNV = get_proc_address("glTexCoord2hNV\0"): *fp_glTexCoord2hNV;
 	glTexCoord2hvNV = get_proc_address("glTexCoord2hvNV\0"): *fp_glTexCoord2hvNV;
-	glTexCoord2i = get_proc_address("glTexCoord2i\0"): *fp_glTexCoord2i;
-	glTexCoord2iv = get_proc_address("glTexCoord2iv\0"): *fp_glTexCoord2iv;
-	glTexCoord2s = get_proc_address("glTexCoord2s\0"): *fp_glTexCoord2s;
-	glTexCoord2sv = get_proc_address("glTexCoord2sv\0"): *fp_glTexCoord2sv;
 	glTexCoord2xOES = get_proc_address("glTexCoord2xOES\0"): *fp_glTexCoord2xOES;
 	glTexCoord2xvOES = get_proc_address("glTexCoord2xvOES\0"): *fp_glTexCoord2xvOES;
 	glTexCoord3bOES = get_proc_address("glTexCoord3bOES\0"): *fp_glTexCoord3bOES;
 	glTexCoord3bvOES = get_proc_address("glTexCoord3bvOES\0"): *fp_glTexCoord3bvOES;
-	glTexCoord3d = get_proc_address("glTexCoord3d\0"): *fp_glTexCoord3d;
-	glTexCoord3dv = get_proc_address("glTexCoord3dv\0"): *fp_glTexCoord3dv;
-	glTexCoord3f = get_proc_address("glTexCoord3f\0"): *fp_glTexCoord3f;
-	glTexCoord3fv = get_proc_address("glTexCoord3fv\0"): *fp_glTexCoord3fv;
 	glTexCoord3hNV = get_proc_address("glTexCoord3hNV\0"): *fp_glTexCoord3hNV;
 	glTexCoord3hvNV = get_proc_address("glTexCoord3hvNV\0"): *fp_glTexCoord3hvNV;
-	glTexCoord3i = get_proc_address("glTexCoord3i\0"): *fp_glTexCoord3i;
-	glTexCoord3iv = get_proc_address("glTexCoord3iv\0"): *fp_glTexCoord3iv;
-	glTexCoord3s = get_proc_address("glTexCoord3s\0"): *fp_glTexCoord3s;
-	glTexCoord3sv = get_proc_address("glTexCoord3sv\0"): *fp_glTexCoord3sv;
 	glTexCoord3xOES = get_proc_address("glTexCoord3xOES\0"): *fp_glTexCoord3xOES;
 	glTexCoord3xvOES = get_proc_address("glTexCoord3xvOES\0"): *fp_glTexCoord3xvOES;
 	glTexCoord4bOES = get_proc_address("glTexCoord4bOES\0"): *fp_glTexCoord4bOES;
 	glTexCoord4bvOES = get_proc_address("glTexCoord4bvOES\0"): *fp_glTexCoord4bvOES;
-	glTexCoord4d = get_proc_address("glTexCoord4d\0"): *fp_glTexCoord4d;
-	glTexCoord4dv = get_proc_address("glTexCoord4dv\0"): *fp_glTexCoord4dv;
-	glTexCoord4f = get_proc_address("glTexCoord4f\0"): *fp_glTexCoord4f;
 	glTexCoord4fColor4fNormal3fVertex4fSUN = get_proc_address("glTexCoord4fColor4fNormal3fVertex4fSUN\0"): *fp_glTexCoord4fColor4fNormal3fVertex4fSUN;
 	glTexCoord4fColor4fNormal3fVertex4fvSUN = get_proc_address("glTexCoord4fColor4fNormal3fVertex4fvSUN\0"): *fp_glTexCoord4fColor4fNormal3fVertex4fvSUN;
 	glTexCoord4fVertex4fSUN = get_proc_address("glTexCoord4fVertex4fSUN\0"): *fp_glTexCoord4fVertex4fSUN;
 	glTexCoord4fVertex4fvSUN = get_proc_address("glTexCoord4fVertex4fvSUN\0"): *fp_glTexCoord4fVertex4fvSUN;
-	glTexCoord4fv = get_proc_address("glTexCoord4fv\0"): *fp_glTexCoord4fv;
 	glTexCoord4hNV = get_proc_address("glTexCoord4hNV\0"): *fp_glTexCoord4hNV;
 	glTexCoord4hvNV = get_proc_address("glTexCoord4hvNV\0"): *fp_glTexCoord4hvNV;
-	glTexCoord4i = get_proc_address("glTexCoord4i\0"): *fp_glTexCoord4i;
-	glTexCoord4iv = get_proc_address("glTexCoord4iv\0"): *fp_glTexCoord4iv;
-	glTexCoord4s = get_proc_address("glTexCoord4s\0"): *fp_glTexCoord4s;
-	glTexCoord4sv = get_proc_address("glTexCoord4sv\0"): *fp_glTexCoord4sv;
 	glTexCoord4xOES = get_proc_address("glTexCoord4xOES\0"): *fp_glTexCoord4xOES;
 	glTexCoord4xvOES = get_proc_address("glTexCoord4xvOES\0"): *fp_glTexCoord4xvOES;
 	glTexCoordFormatNV = get_proc_address("glTexCoordFormatNV\0"): *fp_glTexCoordFormatNV;
-	glTexCoordPointer = get_proc_address("glTexCoordPointer\0"): *fp_glTexCoordPointer;
 	glTexCoordPointerEXT = get_proc_address("glTexCoordPointerEXT\0"): *fp_glTexCoordPointerEXT;
 	glTexCoordPointerListIBM = get_proc_address("glTexCoordPointerListIBM\0"): *fp_glTexCoordPointerListIBM;
 	glTexCoordPointervINTEL = get_proc_address("glTexCoordPointervINTEL\0"): *fp_glTexCoordPointervINTEL;
-	glTexEnvf = get_proc_address("glTexEnvf\0"): *fp_glTexEnvf;
-	glTexEnvfv = get_proc_address("glTexEnvfv\0"): *fp_glTexEnvfv;
-	glTexEnvi = get_proc_address("glTexEnvi\0"): *fp_glTexEnvi;
-	glTexEnviv = get_proc_address("glTexEnviv\0"): *fp_glTexEnviv;
 	glTexEnvxOES = get_proc_address("glTexEnvxOES\0"): *fp_glTexEnvxOES;
 	glTexEnvxvOES = get_proc_address("glTexEnvxvOES\0"): *fp_glTexEnvxvOES;
 	glTexFilterFuncSGIS = get_proc_address("glTexFilterFuncSGIS\0"): *fp_glTexFilterFuncSGIS;
-	glTexGend = get_proc_address("glTexGend\0"): *fp_glTexGend;
-	glTexGendv = get_proc_address("glTexGendv\0"): *fp_glTexGendv;
-	glTexGenf = get_proc_address("glTexGenf\0"): *fp_glTexGenf;
-	glTexGenfv = get_proc_address("glTexGenfv\0"): *fp_glTexGenfv;
-	glTexGeni = get_proc_address("glTexGeni\0"): *fp_glTexGeni;
-	glTexGeniv = get_proc_address("glTexGeniv\0"): *fp_glTexGeniv;
 	glTexGenxOES = get_proc_address("glTexGenxOES\0"): *fp_glTexGenxOES;
 	glTexGenxvOES = get_proc_address("glTexGenxvOES\0"): *fp_glTexGenxvOES;
 	glTexImage1D = get_proc_address("glTexImage1D\0"): *fp_glTexImage1D;
@@ -15380,7 +14013,9 @@ export fn load() void = {
 	glTexImage4DSGIS = get_proc_address("glTexImage4DSGIS\0"): *fp_glTexImage4DSGIS;
 	glTexPageCommitmentARB = get_proc_address("glTexPageCommitmentARB\0"): *fp_glTexPageCommitmentARB;
 	glTexPageCommitmentMemNV = get_proc_address("glTexPageCommitmentMemNV\0"): *fp_glTexPageCommitmentMemNV;
+	glTexParameterIiv = get_proc_address("glTexParameterIiv\0"): *fp_glTexParameterIiv;
 	glTexParameterIivEXT = get_proc_address("glTexParameterIivEXT\0"): *fp_glTexParameterIivEXT;
+	glTexParameterIuiv = get_proc_address("glTexParameterIuiv\0"): *fp_glTexParameterIuiv;
 	glTexParameterIuivEXT = get_proc_address("glTexParameterIuivEXT\0"): *fp_glTexParameterIuivEXT;
 	glTexParameterf = get_proc_address("glTexParameterf\0"): *fp_glTexParameterf;
 	glTexParameterfv = get_proc_address("glTexParameterfv\0"): *fp_glTexParameterfv;
@@ -15472,11 +14107,10 @@ export fn load() void = {
 	glTransformFeedbackBufferBase = get_proc_address("glTransformFeedbackBufferBase\0"): *fp_glTransformFeedbackBufferBase;
 	glTransformFeedbackBufferRange = get_proc_address("glTransformFeedbackBufferRange\0"): *fp_glTransformFeedbackBufferRange;
 	glTransformFeedbackStreamAttribsNV = get_proc_address("glTransformFeedbackStreamAttribsNV\0"): *fp_glTransformFeedbackStreamAttribsNV;
+	glTransformFeedbackVaryings = get_proc_address("glTransformFeedbackVaryings\0"): *fp_glTransformFeedbackVaryings;
 	glTransformFeedbackVaryingsEXT = get_proc_address("glTransformFeedbackVaryingsEXT\0"): *fp_glTransformFeedbackVaryingsEXT;
 	glTransformFeedbackVaryingsNV = get_proc_address("glTransformFeedbackVaryingsNV\0"): *fp_glTransformFeedbackVaryingsNV;
 	glTransformPathNV = get_proc_address("glTransformPathNV\0"): *fp_glTransformPathNV;
-	glTranslated = get_proc_address("glTranslated\0"): *fp_glTranslated;
-	glTranslatef = get_proc_address("glTranslatef\0"): *fp_glTranslatef;
 	glTranslatexOES = get_proc_address("glTranslatexOES\0"): *fp_glTranslatexOES;
 	glUniform1d = get_proc_address("glUniform1d\0"): *fp_glUniform1d;
 	glUniform1dv = get_proc_address("glUniform1dv\0"): *fp_glUniform1dv;
@@ -15492,11 +14126,13 @@ export fn load() void = {
 	glUniform1iARB = get_proc_address("glUniform1iARB\0"): *fp_glUniform1iARB;
 	glUniform1iv = get_proc_address("glUniform1iv\0"): *fp_glUniform1iv;
 	glUniform1ivARB = get_proc_address("glUniform1ivARB\0"): *fp_glUniform1ivARB;
+	glUniform1ui = get_proc_address("glUniform1ui\0"): *fp_glUniform1ui;
 	glUniform1ui64ARB = get_proc_address("glUniform1ui64ARB\0"): *fp_glUniform1ui64ARB;
 	glUniform1ui64NV = get_proc_address("glUniform1ui64NV\0"): *fp_glUniform1ui64NV;
 	glUniform1ui64vARB = get_proc_address("glUniform1ui64vARB\0"): *fp_glUniform1ui64vARB;
 	glUniform1ui64vNV = get_proc_address("glUniform1ui64vNV\0"): *fp_glUniform1ui64vNV;
 	glUniform1uiEXT = get_proc_address("glUniform1uiEXT\0"): *fp_glUniform1uiEXT;
+	glUniform1uiv = get_proc_address("glUniform1uiv\0"): *fp_glUniform1uiv;
 	glUniform1uivEXT = get_proc_address("glUniform1uivEXT\0"): *fp_glUniform1uivEXT;
 	glUniform2d = get_proc_address("glUniform2d\0"): *fp_glUniform2d;
 	glUniform2dv = get_proc_address("glUniform2dv\0"): *fp_glUniform2dv;
@@ -15512,11 +14148,13 @@ export fn load() void = {
 	glUniform2iARB = get_proc_address("glUniform2iARB\0"): *fp_glUniform2iARB;
 	glUniform2iv = get_proc_address("glUniform2iv\0"): *fp_glUniform2iv;
 	glUniform2ivARB = get_proc_address("glUniform2ivARB\0"): *fp_glUniform2ivARB;
+	glUniform2ui = get_proc_address("glUniform2ui\0"): *fp_glUniform2ui;
 	glUniform2ui64ARB = get_proc_address("glUniform2ui64ARB\0"): *fp_glUniform2ui64ARB;
 	glUniform2ui64NV = get_proc_address("glUniform2ui64NV\0"): *fp_glUniform2ui64NV;
 	glUniform2ui64vARB = get_proc_address("glUniform2ui64vARB\0"): *fp_glUniform2ui64vARB;
 	glUniform2ui64vNV = get_proc_address("glUniform2ui64vNV\0"): *fp_glUniform2ui64vNV;
 	glUniform2uiEXT = get_proc_address("glUniform2uiEXT\0"): *fp_glUniform2uiEXT;
+	glUniform2uiv = get_proc_address("glUniform2uiv\0"): *fp_glUniform2uiv;
 	glUniform2uivEXT = get_proc_address("glUniform2uivEXT\0"): *fp_glUniform2uivEXT;
 	glUniform3d = get_proc_address("glUniform3d\0"): *fp_glUniform3d;
 	glUniform3dv = get_proc_address("glUniform3dv\0"): *fp_glUniform3dv;
@@ -15532,11 +14170,13 @@ export fn load() void = {
 	glUniform3iARB = get_proc_address("glUniform3iARB\0"): *fp_glUniform3iARB;
 	glUniform3iv = get_proc_address("glUniform3iv\0"): *fp_glUniform3iv;
 	glUniform3ivARB = get_proc_address("glUniform3ivARB\0"): *fp_glUniform3ivARB;
+	glUniform3ui = get_proc_address("glUniform3ui\0"): *fp_glUniform3ui;
 	glUniform3ui64ARB = get_proc_address("glUniform3ui64ARB\0"): *fp_glUniform3ui64ARB;
 	glUniform3ui64NV = get_proc_address("glUniform3ui64NV\0"): *fp_glUniform3ui64NV;
 	glUniform3ui64vARB = get_proc_address("glUniform3ui64vARB\0"): *fp_glUniform3ui64vARB;
 	glUniform3ui64vNV = get_proc_address("glUniform3ui64vNV\0"): *fp_glUniform3ui64vNV;
 	glUniform3uiEXT = get_proc_address("glUniform3uiEXT\0"): *fp_glUniform3uiEXT;
+	glUniform3uiv = get_proc_address("glUniform3uiv\0"): *fp_glUniform3uiv;
 	glUniform3uivEXT = get_proc_address("glUniform3uivEXT\0"): *fp_glUniform3uivEXT;
 	glUniform4d = get_proc_address("glUniform4d\0"): *fp_glUniform4d;
 	glUniform4dv = get_proc_address("glUniform4dv\0"): *fp_glUniform4dv;
@@ -15552,11 +14192,13 @@ export fn load() void = {
 	glUniform4iARB = get_proc_address("glUniform4iARB\0"): *fp_glUniform4iARB;
 	glUniform4iv = get_proc_address("glUniform4iv\0"): *fp_glUniform4iv;
 	glUniform4ivARB = get_proc_address("glUniform4ivARB\0"): *fp_glUniform4ivARB;
+	glUniform4ui = get_proc_address("glUniform4ui\0"): *fp_glUniform4ui;
 	glUniform4ui64ARB = get_proc_address("glUniform4ui64ARB\0"): *fp_glUniform4ui64ARB;
 	glUniform4ui64NV = get_proc_address("glUniform4ui64NV\0"): *fp_glUniform4ui64NV;
 	glUniform4ui64vARB = get_proc_address("glUniform4ui64vARB\0"): *fp_glUniform4ui64vARB;
 	glUniform4ui64vNV = get_proc_address("glUniform4ui64vNV\0"): *fp_glUniform4ui64vNV;
 	glUniform4uiEXT = get_proc_address("glUniform4uiEXT\0"): *fp_glUniform4uiEXT;
+	glUniform4uiv = get_proc_address("glUniform4uiv\0"): *fp_glUniform4uiv;
 	glUniform4uivEXT = get_proc_address("glUniform4uivEXT\0"): *fp_glUniform4uivEXT;
 	glUniformBlockBinding = get_proc_address("glUniformBlockBinding\0"): *fp_glUniformBlockBinding;
 	glUniformBufferEXT = get_proc_address("glUniformBufferEXT\0"): *fp_glUniformBufferEXT;
@@ -15627,44 +14269,20 @@ export fn load() void = {
 	glVariantusvEXT = get_proc_address("glVariantusvEXT\0"): *fp_glVariantusvEXT;
 	glVertex2bOES = get_proc_address("glVertex2bOES\0"): *fp_glVertex2bOES;
 	glVertex2bvOES = get_proc_address("glVertex2bvOES\0"): *fp_glVertex2bvOES;
-	glVertex2d = get_proc_address("glVertex2d\0"): *fp_glVertex2d;
-	glVertex2dv = get_proc_address("glVertex2dv\0"): *fp_glVertex2dv;
-	glVertex2f = get_proc_address("glVertex2f\0"): *fp_glVertex2f;
-	glVertex2fv = get_proc_address("glVertex2fv\0"): *fp_glVertex2fv;
 	glVertex2hNV = get_proc_address("glVertex2hNV\0"): *fp_glVertex2hNV;
 	glVertex2hvNV = get_proc_address("glVertex2hvNV\0"): *fp_glVertex2hvNV;
-	glVertex2i = get_proc_address("glVertex2i\0"): *fp_glVertex2i;
-	glVertex2iv = get_proc_address("glVertex2iv\0"): *fp_glVertex2iv;
-	glVertex2s = get_proc_address("glVertex2s\0"): *fp_glVertex2s;
-	glVertex2sv = get_proc_address("glVertex2sv\0"): *fp_glVertex2sv;
 	glVertex2xOES = get_proc_address("glVertex2xOES\0"): *fp_glVertex2xOES;
 	glVertex2xvOES = get_proc_address("glVertex2xvOES\0"): *fp_glVertex2xvOES;
 	glVertex3bOES = get_proc_address("glVertex3bOES\0"): *fp_glVertex3bOES;
 	glVertex3bvOES = get_proc_address("glVertex3bvOES\0"): *fp_glVertex3bvOES;
-	glVertex3d = get_proc_address("glVertex3d\0"): *fp_glVertex3d;
-	glVertex3dv = get_proc_address("glVertex3dv\0"): *fp_glVertex3dv;
-	glVertex3f = get_proc_address("glVertex3f\0"): *fp_glVertex3f;
-	glVertex3fv = get_proc_address("glVertex3fv\0"): *fp_glVertex3fv;
 	glVertex3hNV = get_proc_address("glVertex3hNV\0"): *fp_glVertex3hNV;
 	glVertex3hvNV = get_proc_address("glVertex3hvNV\0"): *fp_glVertex3hvNV;
-	glVertex3i = get_proc_address("glVertex3i\0"): *fp_glVertex3i;
-	glVertex3iv = get_proc_address("glVertex3iv\0"): *fp_glVertex3iv;
-	glVertex3s = get_proc_address("glVertex3s\0"): *fp_glVertex3s;
-	glVertex3sv = get_proc_address("glVertex3sv\0"): *fp_glVertex3sv;
 	glVertex3xOES = get_proc_address("glVertex3xOES\0"): *fp_glVertex3xOES;
 	glVertex3xvOES = get_proc_address("glVertex3xvOES\0"): *fp_glVertex3xvOES;
 	glVertex4bOES = get_proc_address("glVertex4bOES\0"): *fp_glVertex4bOES;
 	glVertex4bvOES = get_proc_address("glVertex4bvOES\0"): *fp_glVertex4bvOES;
-	glVertex4d = get_proc_address("glVertex4d\0"): *fp_glVertex4d;
-	glVertex4dv = get_proc_address("glVertex4dv\0"): *fp_glVertex4dv;
-	glVertex4f = get_proc_address("glVertex4f\0"): *fp_glVertex4f;
-	glVertex4fv = get_proc_address("glVertex4fv\0"): *fp_glVertex4fv;
 	glVertex4hNV = get_proc_address("glVertex4hNV\0"): *fp_glVertex4hNV;
 	glVertex4hvNV = get_proc_address("glVertex4hvNV\0"): *fp_glVertex4hvNV;
-	glVertex4i = get_proc_address("glVertex4i\0"): *fp_glVertex4i;
-	glVertex4iv = get_proc_address("glVertex4iv\0"): *fp_glVertex4iv;
-	glVertex4s = get_proc_address("glVertex4s\0"): *fp_glVertex4s;
-	glVertex4sv = get_proc_address("glVertex4sv\0"): *fp_glVertex4sv;
 	glVertex4xOES = get_proc_address("glVertex4xOES\0"): *fp_glVertex4xOES;
 	glVertex4xvOES = get_proc_address("glVertex4xvOES\0"): *fp_glVertex4xvOES;
 	glVertexArrayAttribBinding = get_proc_address("glVertexArrayAttribBinding\0"): *fp_glVertexArrayAttribBinding;
@@ -15805,31 +14423,53 @@ export fn load() void = {
 	glVertexAttrib4usvARB = get_proc_address("glVertexAttrib4usvARB\0"): *fp_glVertexAttrib4usvARB;
 	glVertexAttribArrayObjectATI = get_proc_address("glVertexAttribArrayObjectATI\0"): *fp_glVertexAttribArrayObjectATI;
 	glVertexAttribBinding = get_proc_address("glVertexAttribBinding\0"): *fp_glVertexAttribBinding;
+	glVertexAttribDivisor = get_proc_address("glVertexAttribDivisor\0"): *fp_glVertexAttribDivisor;
 	glVertexAttribDivisorARB = get_proc_address("glVertexAttribDivisorARB\0"): *fp_glVertexAttribDivisorARB;
 	glVertexAttribFormat = get_proc_address("glVertexAttribFormat\0"): *fp_glVertexAttribFormat;
 	glVertexAttribFormatNV = get_proc_address("glVertexAttribFormatNV\0"): *fp_glVertexAttribFormatNV;
+	glVertexAttribI1i = get_proc_address("glVertexAttribI1i\0"): *fp_glVertexAttribI1i;
 	glVertexAttribI1iEXT = get_proc_address("glVertexAttribI1iEXT\0"): *fp_glVertexAttribI1iEXT;
+	glVertexAttribI1iv = get_proc_address("glVertexAttribI1iv\0"): *fp_glVertexAttribI1iv;
 	glVertexAttribI1ivEXT = get_proc_address("glVertexAttribI1ivEXT\0"): *fp_glVertexAttribI1ivEXT;
+	glVertexAttribI1ui = get_proc_address("glVertexAttribI1ui\0"): *fp_glVertexAttribI1ui;
 	glVertexAttribI1uiEXT = get_proc_address("glVertexAttribI1uiEXT\0"): *fp_glVertexAttribI1uiEXT;
+	glVertexAttribI1uiv = get_proc_address("glVertexAttribI1uiv\0"): *fp_glVertexAttribI1uiv;
 	glVertexAttribI1uivEXT = get_proc_address("glVertexAttribI1uivEXT\0"): *fp_glVertexAttribI1uivEXT;
+	glVertexAttribI2i = get_proc_address("glVertexAttribI2i\0"): *fp_glVertexAttribI2i;
 	glVertexAttribI2iEXT = get_proc_address("glVertexAttribI2iEXT\0"): *fp_glVertexAttribI2iEXT;
+	glVertexAttribI2iv = get_proc_address("glVertexAttribI2iv\0"): *fp_glVertexAttribI2iv;
 	glVertexAttribI2ivEXT = get_proc_address("glVertexAttribI2ivEXT\0"): *fp_glVertexAttribI2ivEXT;
+	glVertexAttribI2ui = get_proc_address("glVertexAttribI2ui\0"): *fp_glVertexAttribI2ui;
 	glVertexAttribI2uiEXT = get_proc_address("glVertexAttribI2uiEXT\0"): *fp_glVertexAttribI2uiEXT;
+	glVertexAttribI2uiv = get_proc_address("glVertexAttribI2uiv\0"): *fp_glVertexAttribI2uiv;
 	glVertexAttribI2uivEXT = get_proc_address("glVertexAttribI2uivEXT\0"): *fp_glVertexAttribI2uivEXT;
+	glVertexAttribI3i = get_proc_address("glVertexAttribI3i\0"): *fp_glVertexAttribI3i;
 	glVertexAttribI3iEXT = get_proc_address("glVertexAttribI3iEXT\0"): *fp_glVertexAttribI3iEXT;
+	glVertexAttribI3iv = get_proc_address("glVertexAttribI3iv\0"): *fp_glVertexAttribI3iv;
 	glVertexAttribI3ivEXT = get_proc_address("glVertexAttribI3ivEXT\0"): *fp_glVertexAttribI3ivEXT;
+	glVertexAttribI3ui = get_proc_address("glVertexAttribI3ui\0"): *fp_glVertexAttribI3ui;
 	glVertexAttribI3uiEXT = get_proc_address("glVertexAttribI3uiEXT\0"): *fp_glVertexAttribI3uiEXT;
+	glVertexAttribI3uiv = get_proc_address("glVertexAttribI3uiv\0"): *fp_glVertexAttribI3uiv;
 	glVertexAttribI3uivEXT = get_proc_address("glVertexAttribI3uivEXT\0"): *fp_glVertexAttribI3uivEXT;
+	glVertexAttribI4bv = get_proc_address("glVertexAttribI4bv\0"): *fp_glVertexAttribI4bv;
 	glVertexAttribI4bvEXT = get_proc_address("glVertexAttribI4bvEXT\0"): *fp_glVertexAttribI4bvEXT;
+	glVertexAttribI4i = get_proc_address("glVertexAttribI4i\0"): *fp_glVertexAttribI4i;
 	glVertexAttribI4iEXT = get_proc_address("glVertexAttribI4iEXT\0"): *fp_glVertexAttribI4iEXT;
+	glVertexAttribI4iv = get_proc_address("glVertexAttribI4iv\0"): *fp_glVertexAttribI4iv;
 	glVertexAttribI4ivEXT = get_proc_address("glVertexAttribI4ivEXT\0"): *fp_glVertexAttribI4ivEXT;
+	glVertexAttribI4sv = get_proc_address("glVertexAttribI4sv\0"): *fp_glVertexAttribI4sv;
 	glVertexAttribI4svEXT = get_proc_address("glVertexAttribI4svEXT\0"): *fp_glVertexAttribI4svEXT;
+	glVertexAttribI4ubv = get_proc_address("glVertexAttribI4ubv\0"): *fp_glVertexAttribI4ubv;
 	glVertexAttribI4ubvEXT = get_proc_address("glVertexAttribI4ubvEXT\0"): *fp_glVertexAttribI4ubvEXT;
+	glVertexAttribI4ui = get_proc_address("glVertexAttribI4ui\0"): *fp_glVertexAttribI4ui;
 	glVertexAttribI4uiEXT = get_proc_address("glVertexAttribI4uiEXT\0"): *fp_glVertexAttribI4uiEXT;
+	glVertexAttribI4uiv = get_proc_address("glVertexAttribI4uiv\0"): *fp_glVertexAttribI4uiv;
 	glVertexAttribI4uivEXT = get_proc_address("glVertexAttribI4uivEXT\0"): *fp_glVertexAttribI4uivEXT;
+	glVertexAttribI4usv = get_proc_address("glVertexAttribI4usv\0"): *fp_glVertexAttribI4usv;
 	glVertexAttribI4usvEXT = get_proc_address("glVertexAttribI4usvEXT\0"): *fp_glVertexAttribI4usvEXT;
 	glVertexAttribIFormat = get_proc_address("glVertexAttribIFormat\0"): *fp_glVertexAttribIFormat;
 	glVertexAttribIFormatNV = get_proc_address("glVertexAttribIFormatNV\0"): *fp_glVertexAttribIFormatNV;
+	glVertexAttribIPointer = get_proc_address("glVertexAttribIPointer\0"): *fp_glVertexAttribIPointer;
 	glVertexAttribIPointerEXT = get_proc_address("glVertexAttribIPointerEXT\0"): *fp_glVertexAttribIPointerEXT;
 	glVertexAttribL1d = get_proc_address("glVertexAttribL1d\0"): *fp_glVertexAttribL1d;
 	glVertexAttribL1dEXT = get_proc_address("glVertexAttribL1dEXT\0"): *fp_glVertexAttribL1dEXT;
@@ -15903,7 +14543,6 @@ export fn load() void = {
 	glVertexBlendEnvfATI = get_proc_address("glVertexBlendEnvfATI\0"): *fp_glVertexBlendEnvfATI;
 	glVertexBlendEnviATI = get_proc_address("glVertexBlendEnviATI\0"): *fp_glVertexBlendEnviATI;
 	glVertexFormatNV = get_proc_address("glVertexFormatNV\0"): *fp_glVertexFormatNV;
-	glVertexPointer = get_proc_address("glVertexPointer\0"): *fp_glVertexPointer;
 	glVertexPointerEXT = get_proc_address("glVertexPointerEXT\0"): *fp_glVertexPointerEXT;
 	glVertexPointerListIBM = get_proc_address("glVertexPointerListIBM\0"): *fp_glVertexPointerListIBM;
 	glVertexPointervINTEL = get_proc_address("glVertexPointervINTEL\0"): *fp_glVertexPointervINTEL;
@@ -15968,52 +14607,36 @@ export fn load() void = {
 	glWeightubvARB = get_proc_address("glWeightubvARB\0"): *fp_glWeightubvARB;
 	glWeightuivARB = get_proc_address("glWeightuivARB\0"): *fp_glWeightuivARB;
 	glWeightusvARB = get_proc_address("glWeightusvARB\0"): *fp_glWeightusvARB;
-	glWindowPos2d = get_proc_address("glWindowPos2d\0"): *fp_glWindowPos2d;
 	glWindowPos2dARB = get_proc_address("glWindowPos2dARB\0"): *fp_glWindowPos2dARB;
 	glWindowPos2dMESA = get_proc_address("glWindowPos2dMESA\0"): *fp_glWindowPos2dMESA;
-	glWindowPos2dv = get_proc_address("glWindowPos2dv\0"): *fp_glWindowPos2dv;
 	glWindowPos2dvARB = get_proc_address("glWindowPos2dvARB\0"): *fp_glWindowPos2dvARB;
 	glWindowPos2dvMESA = get_proc_address("glWindowPos2dvMESA\0"): *fp_glWindowPos2dvMESA;
-	glWindowPos2f = get_proc_address("glWindowPos2f\0"): *fp_glWindowPos2f;
 	glWindowPos2fARB = get_proc_address("glWindowPos2fARB\0"): *fp_glWindowPos2fARB;
 	glWindowPos2fMESA = get_proc_address("glWindowPos2fMESA\0"): *fp_glWindowPos2fMESA;
-	glWindowPos2fv = get_proc_address("glWindowPos2fv\0"): *fp_glWindowPos2fv;
 	glWindowPos2fvARB = get_proc_address("glWindowPos2fvARB\0"): *fp_glWindowPos2fvARB;
 	glWindowPos2fvMESA = get_proc_address("glWindowPos2fvMESA\0"): *fp_glWindowPos2fvMESA;
-	glWindowPos2i = get_proc_address("glWindowPos2i\0"): *fp_glWindowPos2i;
 	glWindowPos2iARB = get_proc_address("glWindowPos2iARB\0"): *fp_glWindowPos2iARB;
 	glWindowPos2iMESA = get_proc_address("glWindowPos2iMESA\0"): *fp_glWindowPos2iMESA;
-	glWindowPos2iv = get_proc_address("glWindowPos2iv\0"): *fp_glWindowPos2iv;
 	glWindowPos2ivARB = get_proc_address("glWindowPos2ivARB\0"): *fp_glWindowPos2ivARB;
 	glWindowPos2ivMESA = get_proc_address("glWindowPos2ivMESA\0"): *fp_glWindowPos2ivMESA;
-	glWindowPos2s = get_proc_address("glWindowPos2s\0"): *fp_glWindowPos2s;
 	glWindowPos2sARB = get_proc_address("glWindowPos2sARB\0"): *fp_glWindowPos2sARB;
 	glWindowPos2sMESA = get_proc_address("glWindowPos2sMESA\0"): *fp_glWindowPos2sMESA;
-	glWindowPos2sv = get_proc_address("glWindowPos2sv\0"): *fp_glWindowPos2sv;
 	glWindowPos2svARB = get_proc_address("glWindowPos2svARB\0"): *fp_glWindowPos2svARB;
 	glWindowPos2svMESA = get_proc_address("glWindowPos2svMESA\0"): *fp_glWindowPos2svMESA;
-	glWindowPos3d = get_proc_address("glWindowPos3d\0"): *fp_glWindowPos3d;
 	glWindowPos3dARB = get_proc_address("glWindowPos3dARB\0"): *fp_glWindowPos3dARB;
 	glWindowPos3dMESA = get_proc_address("glWindowPos3dMESA\0"): *fp_glWindowPos3dMESA;
-	glWindowPos3dv = get_proc_address("glWindowPos3dv\0"): *fp_glWindowPos3dv;
 	glWindowPos3dvARB = get_proc_address("glWindowPos3dvARB\0"): *fp_glWindowPos3dvARB;
 	glWindowPos3dvMESA = get_proc_address("glWindowPos3dvMESA\0"): *fp_glWindowPos3dvMESA;
-	glWindowPos3f = get_proc_address("glWindowPos3f\0"): *fp_glWindowPos3f;
 	glWindowPos3fARB = get_proc_address("glWindowPos3fARB\0"): *fp_glWindowPos3fARB;
 	glWindowPos3fMESA = get_proc_address("glWindowPos3fMESA\0"): *fp_glWindowPos3fMESA;
-	glWindowPos3fv = get_proc_address("glWindowPos3fv\0"): *fp_glWindowPos3fv;
 	glWindowPos3fvARB = get_proc_address("glWindowPos3fvARB\0"): *fp_glWindowPos3fvARB;
 	glWindowPos3fvMESA = get_proc_address("glWindowPos3fvMESA\0"): *fp_glWindowPos3fvMESA;
-	glWindowPos3i = get_proc_address("glWindowPos3i\0"): *fp_glWindowPos3i;
 	glWindowPos3iARB = get_proc_address("glWindowPos3iARB\0"): *fp_glWindowPos3iARB;
 	glWindowPos3iMESA = get_proc_address("glWindowPos3iMESA\0"): *fp_glWindowPos3iMESA;
-	glWindowPos3iv = get_proc_address("glWindowPos3iv\0"): *fp_glWindowPos3iv;
 	glWindowPos3ivARB = get_proc_address("glWindowPos3ivARB\0"): *fp_glWindowPos3ivARB;
 	glWindowPos3ivMESA = get_proc_address("glWindowPos3ivMESA\0"): *fp_glWindowPos3ivMESA;
-	glWindowPos3s = get_proc_address("glWindowPos3s\0"): *fp_glWindowPos3s;
 	glWindowPos3sARB = get_proc_address("glWindowPos3sARB\0"): *fp_glWindowPos3sARB;
 	glWindowPos3sMESA = get_proc_address("glWindowPos3sMESA\0"): *fp_glWindowPos3sMESA;
-	glWindowPos3sv = get_proc_address("glWindowPos3sv\0"): *fp_glWindowPos3sv;
 	glWindowPos3svARB = get_proc_address("glWindowPos3svARB\0"): *fp_glWindowPos3svARB;
 	glWindowPos3svMESA = get_proc_address("glWindowPos3svMESA\0"): *fp_glWindowPos3svMESA;
 	glWindowPos4dMESA = get_proc_address("glWindowPos4dMESA\0"): *fp_glWindowPos4dMESA;
@@ -16037,7 +14660,6 @@ fn call_user_get_proc_address(user_get_proc_address: *fp_get_proc_address, proc_
 };
 
 export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
-	glAccum = call_user_get_proc_address(user_get_proc_address, "glAccum\0"): *fp_glAccum;
 	glAccumxOES = call_user_get_proc_address(user_get_proc_address, "glAccumxOES\0"): *fp_glAccumxOES;
 	glAcquireKeyedMutexWin32EXT = call_user_get_proc_address(user_get_proc_address, "glAcquireKeyedMutexWin32EXT\0"): *fp_glAcquireKeyedMutexWin32EXT;
 	glActiveProgramEXT = call_user_get_proc_address(user_get_proc_address, "glActiveProgramEXT\0"): *fp_glActiveProgramEXT;
@@ -16049,15 +14671,12 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glAlphaFragmentOp1ATI = call_user_get_proc_address(user_get_proc_address, "glAlphaFragmentOp1ATI\0"): *fp_glAlphaFragmentOp1ATI;
 	glAlphaFragmentOp2ATI = call_user_get_proc_address(user_get_proc_address, "glAlphaFragmentOp2ATI\0"): *fp_glAlphaFragmentOp2ATI;
 	glAlphaFragmentOp3ATI = call_user_get_proc_address(user_get_proc_address, "glAlphaFragmentOp3ATI\0"): *fp_glAlphaFragmentOp3ATI;
-	glAlphaFunc = call_user_get_proc_address(user_get_proc_address, "glAlphaFunc\0"): *fp_glAlphaFunc;
 	glAlphaFuncxOES = call_user_get_proc_address(user_get_proc_address, "glAlphaFuncxOES\0"): *fp_glAlphaFuncxOES;
 	glAlphaToCoverageDitherControlNV = call_user_get_proc_address(user_get_proc_address, "glAlphaToCoverageDitherControlNV\0"): *fp_glAlphaToCoverageDitherControlNV;
 	glApplyFramebufferAttachmentCMAAINTEL = call_user_get_proc_address(user_get_proc_address, "glApplyFramebufferAttachmentCMAAINTEL\0"): *fp_glApplyFramebufferAttachmentCMAAINTEL;
 	glApplyTextureEXT = call_user_get_proc_address(user_get_proc_address, "glApplyTextureEXT\0"): *fp_glApplyTextureEXT;
 	glAreProgramsResidentNV = call_user_get_proc_address(user_get_proc_address, "glAreProgramsResidentNV\0"): *fp_glAreProgramsResidentNV;
-	glAreTexturesResident = call_user_get_proc_address(user_get_proc_address, "glAreTexturesResident\0"): *fp_glAreTexturesResident;
 	glAreTexturesResidentEXT = call_user_get_proc_address(user_get_proc_address, "glAreTexturesResidentEXT\0"): *fp_glAreTexturesResidentEXT;
-	glArrayElement = call_user_get_proc_address(user_get_proc_address, "glArrayElement\0"): *fp_glArrayElement;
 	glArrayElementEXT = call_user_get_proc_address(user_get_proc_address, "glArrayElementEXT\0"): *fp_glArrayElementEXT;
 	glArrayObjectATI = call_user_get_proc_address(user_get_proc_address, "glArrayObjectATI\0"): *fp_glArrayObjectATI;
 	glAsyncCopyBufferSubDataNVX = call_user_get_proc_address(user_get_proc_address, "glAsyncCopyBufferSubDataNVX\0"): *fp_glAsyncCopyBufferSubDataNVX;
@@ -16065,7 +14684,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glAsyncMarkerSGIX = call_user_get_proc_address(user_get_proc_address, "glAsyncMarkerSGIX\0"): *fp_glAsyncMarkerSGIX;
 	glAttachObjectARB = call_user_get_proc_address(user_get_proc_address, "glAttachObjectARB\0"): *fp_glAttachObjectARB;
 	glAttachShader = call_user_get_proc_address(user_get_proc_address, "glAttachShader\0"): *fp_glAttachShader;
-	glBegin = call_user_get_proc_address(user_get_proc_address, "glBegin\0"): *fp_glBegin;
+	glBeginConditionalRender = call_user_get_proc_address(user_get_proc_address, "glBeginConditionalRender\0"): *fp_glBeginConditionalRender;
 	glBeginConditionalRenderNV = call_user_get_proc_address(user_get_proc_address, "glBeginConditionalRenderNV\0"): *fp_glBeginConditionalRenderNV;
 	glBeginConditionalRenderNVX = call_user_get_proc_address(user_get_proc_address, "glBeginConditionalRenderNVX\0"): *fp_glBeginConditionalRenderNVX;
 	glBeginFragmentShaderATI = call_user_get_proc_address(user_get_proc_address, "glBeginFragmentShaderATI\0"): *fp_glBeginFragmentShaderATI;
@@ -16075,6 +14694,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBeginQuery = call_user_get_proc_address(user_get_proc_address, "glBeginQuery\0"): *fp_glBeginQuery;
 	glBeginQueryARB = call_user_get_proc_address(user_get_proc_address, "glBeginQueryARB\0"): *fp_glBeginQueryARB;
 	glBeginQueryIndexed = call_user_get_proc_address(user_get_proc_address, "glBeginQueryIndexed\0"): *fp_glBeginQueryIndexed;
+	glBeginTransformFeedback = call_user_get_proc_address(user_get_proc_address, "glBeginTransformFeedback\0"): *fp_glBeginTransformFeedback;
 	glBeginTransformFeedbackEXT = call_user_get_proc_address(user_get_proc_address, "glBeginTransformFeedbackEXT\0"): *fp_glBeginTransformFeedbackEXT;
 	glBeginTransformFeedbackNV = call_user_get_proc_address(user_get_proc_address, "glBeginTransformFeedbackNV\0"): *fp_glBeginTransformFeedbackNV;
 	glBeginVertexShaderEXT = call_user_get_proc_address(user_get_proc_address, "glBeginVertexShaderEXT\0"): *fp_glBeginVertexShaderEXT;
@@ -16093,6 +14713,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBindBufferRangeNV = call_user_get_proc_address(user_get_proc_address, "glBindBufferRangeNV\0"): *fp_glBindBufferRangeNV;
 	glBindBuffersBase = call_user_get_proc_address(user_get_proc_address, "glBindBuffersBase\0"): *fp_glBindBuffersBase;
 	glBindBuffersRange = call_user_get_proc_address(user_get_proc_address, "glBindBuffersRange\0"): *fp_glBindBuffersRange;
+	glBindFragDataLocation = call_user_get_proc_address(user_get_proc_address, "glBindFragDataLocation\0"): *fp_glBindFragDataLocation;
 	glBindFragDataLocationEXT = call_user_get_proc_address(user_get_proc_address, "glBindFragDataLocationEXT\0"): *fp_glBindFragDataLocationEXT;
 	glBindFragDataLocationIndexed = call_user_get_proc_address(user_get_proc_address, "glBindFragDataLocationIndexed\0"): *fp_glBindFragDataLocationIndexed;
 	glBindFragmentShaderATI = call_user_get_proc_address(user_get_proc_address, "glBindFragmentShaderATI\0"): *fp_glBindFragmentShaderATI;
@@ -16139,7 +14760,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBinormal3sEXT = call_user_get_proc_address(user_get_proc_address, "glBinormal3sEXT\0"): *fp_glBinormal3sEXT;
 	glBinormal3svEXT = call_user_get_proc_address(user_get_proc_address, "glBinormal3svEXT\0"): *fp_glBinormal3svEXT;
 	glBinormalPointerEXT = call_user_get_proc_address(user_get_proc_address, "glBinormalPointerEXT\0"): *fp_glBinormalPointerEXT;
-	glBitmap = call_user_get_proc_address(user_get_proc_address, "glBitmap\0"): *fp_glBitmap;
 	glBitmapxOES = call_user_get_proc_address(user_get_proc_address, "glBitmapxOES\0"): *fp_glBitmapxOES;
 	glBlendBarrierKHR = call_user_get_proc_address(user_get_proc_address, "glBlendBarrierKHR\0"): *fp_glBlendBarrierKHR;
 	glBlendBarrierNV = call_user_get_proc_address(user_get_proc_address, "glBlendBarrierNV\0"): *fp_glBlendBarrierNV;
@@ -16152,7 +14772,9 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBlendEquationSeparate = call_user_get_proc_address(user_get_proc_address, "glBlendEquationSeparate\0"): *fp_glBlendEquationSeparate;
 	glBlendEquationSeparateEXT = call_user_get_proc_address(user_get_proc_address, "glBlendEquationSeparateEXT\0"): *fp_glBlendEquationSeparateEXT;
 	glBlendEquationSeparateIndexedAMD = call_user_get_proc_address(user_get_proc_address, "glBlendEquationSeparateIndexedAMD\0"): *fp_glBlendEquationSeparateIndexedAMD;
+	glBlendEquationSeparatei = call_user_get_proc_address(user_get_proc_address, "glBlendEquationSeparatei\0"): *fp_glBlendEquationSeparatei;
 	glBlendEquationSeparateiARB = call_user_get_proc_address(user_get_proc_address, "glBlendEquationSeparateiARB\0"): *fp_glBlendEquationSeparateiARB;
+	glBlendEquationi = call_user_get_proc_address(user_get_proc_address, "glBlendEquationi\0"): *fp_glBlendEquationi;
 	glBlendEquationiARB = call_user_get_proc_address(user_get_proc_address, "glBlendEquationiARB\0"): *fp_glBlendEquationiARB;
 	glBlendFunc = call_user_get_proc_address(user_get_proc_address, "glBlendFunc\0"): *fp_glBlendFunc;
 	glBlendFuncIndexedAMD = call_user_get_proc_address(user_get_proc_address, "glBlendFuncIndexedAMD\0"): *fp_glBlendFuncIndexedAMD;
@@ -16160,7 +14782,9 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBlendFuncSeparateEXT = call_user_get_proc_address(user_get_proc_address, "glBlendFuncSeparateEXT\0"): *fp_glBlendFuncSeparateEXT;
 	glBlendFuncSeparateINGR = call_user_get_proc_address(user_get_proc_address, "glBlendFuncSeparateINGR\0"): *fp_glBlendFuncSeparateINGR;
 	glBlendFuncSeparateIndexedAMD = call_user_get_proc_address(user_get_proc_address, "glBlendFuncSeparateIndexedAMD\0"): *fp_glBlendFuncSeparateIndexedAMD;
+	glBlendFuncSeparatei = call_user_get_proc_address(user_get_proc_address, "glBlendFuncSeparatei\0"): *fp_glBlendFuncSeparatei;
 	glBlendFuncSeparateiARB = call_user_get_proc_address(user_get_proc_address, "glBlendFuncSeparateiARB\0"): *fp_glBlendFuncSeparateiARB;
+	glBlendFunci = call_user_get_proc_address(user_get_proc_address, "glBlendFunci\0"): *fp_glBlendFunci;
 	glBlendFunciARB = call_user_get_proc_address(user_get_proc_address, "glBlendFunciARB\0"): *fp_glBlendFunciARB;
 	glBlendParameteriNV = call_user_get_proc_address(user_get_proc_address, "glBlendParameteriNV\0"): *fp_glBlendParameteriNV;
 	glBlitFramebuffer = call_user_get_proc_address(user_get_proc_address, "glBlitFramebuffer\0"): *fp_glBlitFramebuffer;
@@ -16179,18 +14803,20 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glBufferSubData = call_user_get_proc_address(user_get_proc_address, "glBufferSubData\0"): *fp_glBufferSubData;
 	glBufferSubDataARB = call_user_get_proc_address(user_get_proc_address, "glBufferSubDataARB\0"): *fp_glBufferSubDataARB;
 	glCallCommandListNV = call_user_get_proc_address(user_get_proc_address, "glCallCommandListNV\0"): *fp_glCallCommandListNV;
-	glCallList = call_user_get_proc_address(user_get_proc_address, "glCallList\0"): *fp_glCallList;
-	glCallLists = call_user_get_proc_address(user_get_proc_address, "glCallLists\0"): *fp_glCallLists;
 	glCheckFramebufferStatus = call_user_get_proc_address(user_get_proc_address, "glCheckFramebufferStatus\0"): *fp_glCheckFramebufferStatus;
 	glCheckFramebufferStatusEXT = call_user_get_proc_address(user_get_proc_address, "glCheckFramebufferStatusEXT\0"): *fp_glCheckFramebufferStatusEXT;
 	glCheckNamedFramebufferStatus = call_user_get_proc_address(user_get_proc_address, "glCheckNamedFramebufferStatus\0"): *fp_glCheckNamedFramebufferStatus;
 	glCheckNamedFramebufferStatusEXT = call_user_get_proc_address(user_get_proc_address, "glCheckNamedFramebufferStatusEXT\0"): *fp_glCheckNamedFramebufferStatusEXT;
+	glClampColor = call_user_get_proc_address(user_get_proc_address, "glClampColor\0"): *fp_glClampColor;
 	glClampColorARB = call_user_get_proc_address(user_get_proc_address, "glClampColorARB\0"): *fp_glClampColorARB;
 	glClear = call_user_get_proc_address(user_get_proc_address, "glClear\0"): *fp_glClear;
-	glClearAccum = call_user_get_proc_address(user_get_proc_address, "glClearAccum\0"): *fp_glClearAccum;
 	glClearAccumxOES = call_user_get_proc_address(user_get_proc_address, "glClearAccumxOES\0"): *fp_glClearAccumxOES;
 	glClearBufferData = call_user_get_proc_address(user_get_proc_address, "glClearBufferData\0"): *fp_glClearBufferData;
 	glClearBufferSubData = call_user_get_proc_address(user_get_proc_address, "glClearBufferSubData\0"): *fp_glClearBufferSubData;
+	glClearBufferfi = call_user_get_proc_address(user_get_proc_address, "glClearBufferfi\0"): *fp_glClearBufferfi;
+	glClearBufferfv = call_user_get_proc_address(user_get_proc_address, "glClearBufferfv\0"): *fp_glClearBufferfv;
+	glClearBufferiv = call_user_get_proc_address(user_get_proc_address, "glClearBufferiv\0"): *fp_glClearBufferiv;
+	glClearBufferuiv = call_user_get_proc_address(user_get_proc_address, "glClearBufferuiv\0"): *fp_glClearBufferuiv;
 	glClearColor = call_user_get_proc_address(user_get_proc_address, "glClearColor\0"): *fp_glClearColor;
 	glClearColorIiEXT = call_user_get_proc_address(user_get_proc_address, "glClearColorIiEXT\0"): *fp_glClearColorIiEXT;
 	glClearColorIuiEXT = call_user_get_proc_address(user_get_proc_address, "glClearColorIuiEXT\0"): *fp_glClearColorIuiEXT;
@@ -16200,7 +14826,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glClearDepthf = call_user_get_proc_address(user_get_proc_address, "glClearDepthf\0"): *fp_glClearDepthf;
 	glClearDepthfOES = call_user_get_proc_address(user_get_proc_address, "glClearDepthfOES\0"): *fp_glClearDepthfOES;
 	glClearDepthxOES = call_user_get_proc_address(user_get_proc_address, "glClearDepthxOES\0"): *fp_glClearDepthxOES;
-	glClearIndex = call_user_get_proc_address(user_get_proc_address, "glClearIndex\0"): *fp_glClearIndex;
 	glClearNamedBufferData = call_user_get_proc_address(user_get_proc_address, "glClearNamedBufferData\0"): *fp_glClearNamedBufferData;
 	glClearNamedBufferDataEXT = call_user_get_proc_address(user_get_proc_address, "glClearNamedBufferDataEXT\0"): *fp_glClearNamedBufferDataEXT;
 	glClearNamedBufferSubData = call_user_get_proc_address(user_get_proc_address, "glClearNamedBufferSubData\0"): *fp_glClearNamedBufferSubData;
@@ -16212,62 +14837,28 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glClearStencil = call_user_get_proc_address(user_get_proc_address, "glClearStencil\0"): *fp_glClearStencil;
 	glClearTexImage = call_user_get_proc_address(user_get_proc_address, "glClearTexImage\0"): *fp_glClearTexImage;
 	glClearTexSubImage = call_user_get_proc_address(user_get_proc_address, "glClearTexSubImage\0"): *fp_glClearTexSubImage;
-	glClientActiveTexture = call_user_get_proc_address(user_get_proc_address, "glClientActiveTexture\0"): *fp_glClientActiveTexture;
 	glClientActiveTextureARB = call_user_get_proc_address(user_get_proc_address, "glClientActiveTextureARB\0"): *fp_glClientActiveTextureARB;
 	glClientActiveVertexStreamATI = call_user_get_proc_address(user_get_proc_address, "glClientActiveVertexStreamATI\0"): *fp_glClientActiveVertexStreamATI;
 	glClientAttribDefaultEXT = call_user_get_proc_address(user_get_proc_address, "glClientAttribDefaultEXT\0"): *fp_glClientAttribDefaultEXT;
 	glClientWaitSemaphoreui64NVX = call_user_get_proc_address(user_get_proc_address, "glClientWaitSemaphoreui64NVX\0"): *fp_glClientWaitSemaphoreui64NVX;
 	glClientWaitSync = call_user_get_proc_address(user_get_proc_address, "glClientWaitSync\0"): *fp_glClientWaitSync;
 	glClipControl = call_user_get_proc_address(user_get_proc_address, "glClipControl\0"): *fp_glClipControl;
-	glClipPlane = call_user_get_proc_address(user_get_proc_address, "glClipPlane\0"): *fp_glClipPlane;
 	glClipPlanefOES = call_user_get_proc_address(user_get_proc_address, "glClipPlanefOES\0"): *fp_glClipPlanefOES;
 	glClipPlanexOES = call_user_get_proc_address(user_get_proc_address, "glClipPlanexOES\0"): *fp_glClipPlanexOES;
-	glColor3b = call_user_get_proc_address(user_get_proc_address, "glColor3b\0"): *fp_glColor3b;
-	glColor3bv = call_user_get_proc_address(user_get_proc_address, "glColor3bv\0"): *fp_glColor3bv;
-	glColor3d = call_user_get_proc_address(user_get_proc_address, "glColor3d\0"): *fp_glColor3d;
-	glColor3dv = call_user_get_proc_address(user_get_proc_address, "glColor3dv\0"): *fp_glColor3dv;
-	glColor3f = call_user_get_proc_address(user_get_proc_address, "glColor3f\0"): *fp_glColor3f;
 	glColor3fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glColor3fVertex3fSUN\0"): *fp_glColor3fVertex3fSUN;
 	glColor3fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glColor3fVertex3fvSUN\0"): *fp_glColor3fVertex3fvSUN;
-	glColor3fv = call_user_get_proc_address(user_get_proc_address, "glColor3fv\0"): *fp_glColor3fv;
 	glColor3hNV = call_user_get_proc_address(user_get_proc_address, "glColor3hNV\0"): *fp_glColor3hNV;
 	glColor3hvNV = call_user_get_proc_address(user_get_proc_address, "glColor3hvNV\0"): *fp_glColor3hvNV;
-	glColor3i = call_user_get_proc_address(user_get_proc_address, "glColor3i\0"): *fp_glColor3i;
-	glColor3iv = call_user_get_proc_address(user_get_proc_address, "glColor3iv\0"): *fp_glColor3iv;
-	glColor3s = call_user_get_proc_address(user_get_proc_address, "glColor3s\0"): *fp_glColor3s;
-	glColor3sv = call_user_get_proc_address(user_get_proc_address, "glColor3sv\0"): *fp_glColor3sv;
-	glColor3ub = call_user_get_proc_address(user_get_proc_address, "glColor3ub\0"): *fp_glColor3ub;
-	glColor3ubv = call_user_get_proc_address(user_get_proc_address, "glColor3ubv\0"): *fp_glColor3ubv;
-	glColor3ui = call_user_get_proc_address(user_get_proc_address, "glColor3ui\0"): *fp_glColor3ui;
-	glColor3uiv = call_user_get_proc_address(user_get_proc_address, "glColor3uiv\0"): *fp_glColor3uiv;
-	glColor3us = call_user_get_proc_address(user_get_proc_address, "glColor3us\0"): *fp_glColor3us;
-	glColor3usv = call_user_get_proc_address(user_get_proc_address, "glColor3usv\0"): *fp_glColor3usv;
 	glColor3xOES = call_user_get_proc_address(user_get_proc_address, "glColor3xOES\0"): *fp_glColor3xOES;
 	glColor3xvOES = call_user_get_proc_address(user_get_proc_address, "glColor3xvOES\0"): *fp_glColor3xvOES;
-	glColor4b = call_user_get_proc_address(user_get_proc_address, "glColor4b\0"): *fp_glColor4b;
-	glColor4bv = call_user_get_proc_address(user_get_proc_address, "glColor4bv\0"): *fp_glColor4bv;
-	glColor4d = call_user_get_proc_address(user_get_proc_address, "glColor4d\0"): *fp_glColor4d;
-	glColor4dv = call_user_get_proc_address(user_get_proc_address, "glColor4dv\0"): *fp_glColor4dv;
-	glColor4f = call_user_get_proc_address(user_get_proc_address, "glColor4f\0"): *fp_glColor4f;
 	glColor4fNormal3fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glColor4fNormal3fVertex3fSUN\0"): *fp_glColor4fNormal3fVertex3fSUN;
 	glColor4fNormal3fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glColor4fNormal3fVertex3fvSUN\0"): *fp_glColor4fNormal3fVertex3fvSUN;
-	glColor4fv = call_user_get_proc_address(user_get_proc_address, "glColor4fv\0"): *fp_glColor4fv;
 	glColor4hNV = call_user_get_proc_address(user_get_proc_address, "glColor4hNV\0"): *fp_glColor4hNV;
 	glColor4hvNV = call_user_get_proc_address(user_get_proc_address, "glColor4hvNV\0"): *fp_glColor4hvNV;
-	glColor4i = call_user_get_proc_address(user_get_proc_address, "glColor4i\0"): *fp_glColor4i;
-	glColor4iv = call_user_get_proc_address(user_get_proc_address, "glColor4iv\0"): *fp_glColor4iv;
-	glColor4s = call_user_get_proc_address(user_get_proc_address, "glColor4s\0"): *fp_glColor4s;
-	glColor4sv = call_user_get_proc_address(user_get_proc_address, "glColor4sv\0"): *fp_glColor4sv;
-	glColor4ub = call_user_get_proc_address(user_get_proc_address, "glColor4ub\0"): *fp_glColor4ub;
 	glColor4ubVertex2fSUN = call_user_get_proc_address(user_get_proc_address, "glColor4ubVertex2fSUN\0"): *fp_glColor4ubVertex2fSUN;
 	glColor4ubVertex2fvSUN = call_user_get_proc_address(user_get_proc_address, "glColor4ubVertex2fvSUN\0"): *fp_glColor4ubVertex2fvSUN;
 	glColor4ubVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glColor4ubVertex3fSUN\0"): *fp_glColor4ubVertex3fSUN;
 	glColor4ubVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glColor4ubVertex3fvSUN\0"): *fp_glColor4ubVertex3fvSUN;
-	glColor4ubv = call_user_get_proc_address(user_get_proc_address, "glColor4ubv\0"): *fp_glColor4ubv;
-	glColor4ui = call_user_get_proc_address(user_get_proc_address, "glColor4ui\0"): *fp_glColor4ui;
-	glColor4uiv = call_user_get_proc_address(user_get_proc_address, "glColor4uiv\0"): *fp_glColor4uiv;
-	glColor4us = call_user_get_proc_address(user_get_proc_address, "glColor4us\0"): *fp_glColor4us;
-	glColor4usv = call_user_get_proc_address(user_get_proc_address, "glColor4usv\0"): *fp_glColor4usv;
 	glColor4xOES = call_user_get_proc_address(user_get_proc_address, "glColor4xOES\0"): *fp_glColor4xOES;
 	glColor4xvOES = call_user_get_proc_address(user_get_proc_address, "glColor4xvOES\0"): *fp_glColor4xvOES;
 	glColorFormatNV = call_user_get_proc_address(user_get_proc_address, "glColorFormatNV\0"): *fp_glColorFormatNV;
@@ -16276,8 +14867,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glColorFragmentOp3ATI = call_user_get_proc_address(user_get_proc_address, "glColorFragmentOp3ATI\0"): *fp_glColorFragmentOp3ATI;
 	glColorMask = call_user_get_proc_address(user_get_proc_address, "glColorMask\0"): *fp_glColorMask;
 	glColorMaskIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glColorMaskIndexedEXT\0"): *fp_glColorMaskIndexedEXT;
-	glColorMaterial = call_user_get_proc_address(user_get_proc_address, "glColorMaterial\0"): *fp_glColorMaterial;
-	glColorPointer = call_user_get_proc_address(user_get_proc_address, "glColorPointer\0"): *fp_glColorPointer;
+	glColorMaski = call_user_get_proc_address(user_get_proc_address, "glColorMaski\0"): *fp_glColorMaski;
 	glColorPointerEXT = call_user_get_proc_address(user_get_proc_address, "glColorPointerEXT\0"): *fp_glColorPointerEXT;
 	glColorPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glColorPointerListIBM\0"): *fp_glColorPointerListIBM;
 	glColorPointervINTEL = call_user_get_proc_address(user_get_proc_address, "glColorPointervINTEL\0"): *fp_glColorPointervINTEL;
@@ -16349,7 +14939,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glCopyMultiTexSubImage3DEXT = call_user_get_proc_address(user_get_proc_address, "glCopyMultiTexSubImage3DEXT\0"): *fp_glCopyMultiTexSubImage3DEXT;
 	glCopyNamedBufferSubData = call_user_get_proc_address(user_get_proc_address, "glCopyNamedBufferSubData\0"): *fp_glCopyNamedBufferSubData;
 	glCopyPathNV = call_user_get_proc_address(user_get_proc_address, "glCopyPathNV\0"): *fp_glCopyPathNV;
-	glCopyPixels = call_user_get_proc_address(user_get_proc_address, "glCopyPixels\0"): *fp_glCopyPixels;
 	glCopyTexImage1D = call_user_get_proc_address(user_get_proc_address, "glCopyTexImage1D\0"): *fp_glCopyTexImage1D;
 	glCopyTexImage1DEXT = call_user_get_proc_address(user_get_proc_address, "glCopyTexImage1DEXT\0"): *fp_glCopyTexImage1DEXT;
 	glCopyTexImage2D = call_user_get_proc_address(user_get_proc_address, "glCopyTexImage2D\0"): *fp_glCopyTexImage2D;
@@ -16421,7 +15010,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDeleteFragmentShaderATI = call_user_get_proc_address(user_get_proc_address, "glDeleteFragmentShaderATI\0"): *fp_glDeleteFragmentShaderATI;
 	glDeleteFramebuffers = call_user_get_proc_address(user_get_proc_address, "glDeleteFramebuffers\0"): *fp_glDeleteFramebuffers;
 	glDeleteFramebuffersEXT = call_user_get_proc_address(user_get_proc_address, "glDeleteFramebuffersEXT\0"): *fp_glDeleteFramebuffersEXT;
-	glDeleteLists = call_user_get_proc_address(user_get_proc_address, "glDeleteLists\0"): *fp_glDeleteLists;
 	glDeleteMemoryObjectsEXT = call_user_get_proc_address(user_get_proc_address, "glDeleteMemoryObjectsEXT\0"): *fp_glDeleteMemoryObjectsEXT;
 	glDeleteNamedStringARB = call_user_get_proc_address(user_get_proc_address, "glDeleteNamedStringARB\0"): *fp_glDeleteNamedStringARB;
 	glDeleteNamesAMD = call_user_get_proc_address(user_get_proc_address, "glDeleteNamesAMD\0"): *fp_glDeleteNamesAMD;
@@ -16468,7 +15056,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDetachShader = call_user_get_proc_address(user_get_proc_address, "glDetachShader\0"): *fp_glDetachShader;
 	glDetailTexFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glDetailTexFuncSGIS\0"): *fp_glDetailTexFuncSGIS;
 	glDisable = call_user_get_proc_address(user_get_proc_address, "glDisable\0"): *fp_glDisable;
-	glDisableClientState = call_user_get_proc_address(user_get_proc_address, "glDisableClientState\0"): *fp_glDisableClientState;
 	glDisableClientStateIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glDisableClientStateIndexedEXT\0"): *fp_glDisableClientStateIndexedEXT;
 	glDisableClientStateiEXT = call_user_get_proc_address(user_get_proc_address, "glDisableClientStateiEXT\0"): *fp_glDisableClientStateiEXT;
 	glDisableIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glDisableIndexedEXT\0"): *fp_glDisableIndexedEXT;
@@ -16479,12 +15066,14 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDisableVertexAttribAPPLE = call_user_get_proc_address(user_get_proc_address, "glDisableVertexAttribAPPLE\0"): *fp_glDisableVertexAttribAPPLE;
 	glDisableVertexAttribArray = call_user_get_proc_address(user_get_proc_address, "glDisableVertexAttribArray\0"): *fp_glDisableVertexAttribArray;
 	glDisableVertexAttribArrayARB = call_user_get_proc_address(user_get_proc_address, "glDisableVertexAttribArrayARB\0"): *fp_glDisableVertexAttribArrayARB;
+	glDisablei = call_user_get_proc_address(user_get_proc_address, "glDisablei\0"): *fp_glDisablei;
 	glDispatchCompute = call_user_get_proc_address(user_get_proc_address, "glDispatchCompute\0"): *fp_glDispatchCompute;
 	glDispatchComputeGroupSizeARB = call_user_get_proc_address(user_get_proc_address, "glDispatchComputeGroupSizeARB\0"): *fp_glDispatchComputeGroupSizeARB;
 	glDispatchComputeIndirect = call_user_get_proc_address(user_get_proc_address, "glDispatchComputeIndirect\0"): *fp_glDispatchComputeIndirect;
 	glDrawArrays = call_user_get_proc_address(user_get_proc_address, "glDrawArrays\0"): *fp_glDrawArrays;
 	glDrawArraysEXT = call_user_get_proc_address(user_get_proc_address, "glDrawArraysEXT\0"): *fp_glDrawArraysEXT;
 	glDrawArraysIndirect = call_user_get_proc_address(user_get_proc_address, "glDrawArraysIndirect\0"): *fp_glDrawArraysIndirect;
+	glDrawArraysInstanced = call_user_get_proc_address(user_get_proc_address, "glDrawArraysInstanced\0"): *fp_glDrawArraysInstanced;
 	glDrawArraysInstancedARB = call_user_get_proc_address(user_get_proc_address, "glDrawArraysInstancedARB\0"): *fp_glDrawArraysInstancedARB;
 	glDrawArraysInstancedBaseInstance = call_user_get_proc_address(user_get_proc_address, "glDrawArraysInstancedBaseInstance\0"): *fp_glDrawArraysInstancedBaseInstance;
 	glDrawArraysInstancedEXT = call_user_get_proc_address(user_get_proc_address, "glDrawArraysInstancedEXT\0"): *fp_glDrawArraysInstancedEXT;
@@ -16501,6 +15090,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDrawElements = call_user_get_proc_address(user_get_proc_address, "glDrawElements\0"): *fp_glDrawElements;
 	glDrawElementsBaseVertex = call_user_get_proc_address(user_get_proc_address, "glDrawElementsBaseVertex\0"): *fp_glDrawElementsBaseVertex;
 	glDrawElementsIndirect = call_user_get_proc_address(user_get_proc_address, "glDrawElementsIndirect\0"): *fp_glDrawElementsIndirect;
+	glDrawElementsInstanced = call_user_get_proc_address(user_get_proc_address, "glDrawElementsInstanced\0"): *fp_glDrawElementsInstanced;
 	glDrawElementsInstancedARB = call_user_get_proc_address(user_get_proc_address, "glDrawElementsInstancedARB\0"): *fp_glDrawElementsInstancedARB;
 	glDrawElementsInstancedBaseInstance = call_user_get_proc_address(user_get_proc_address, "glDrawElementsInstancedBaseInstance\0"): *fp_glDrawElementsInstancedBaseInstance;
 	glDrawElementsInstancedBaseVertex = call_user_get_proc_address(user_get_proc_address, "glDrawElementsInstancedBaseVertex\0"): *fp_glDrawElementsInstancedBaseVertex;
@@ -16509,7 +15099,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDrawMeshArraysSUN = call_user_get_proc_address(user_get_proc_address, "glDrawMeshArraysSUN\0"): *fp_glDrawMeshArraysSUN;
 	glDrawMeshTasksIndirectNV = call_user_get_proc_address(user_get_proc_address, "glDrawMeshTasksIndirectNV\0"): *fp_glDrawMeshTasksIndirectNV;
 	glDrawMeshTasksNV = call_user_get_proc_address(user_get_proc_address, "glDrawMeshTasksNV\0"): *fp_glDrawMeshTasksNV;
-	glDrawPixels = call_user_get_proc_address(user_get_proc_address, "glDrawPixels\0"): *fp_glDrawPixels;
 	glDrawRangeElementArrayAPPLE = call_user_get_proc_address(user_get_proc_address, "glDrawRangeElementArrayAPPLE\0"): *fp_glDrawRangeElementArrayAPPLE;
 	glDrawRangeElementArrayATI = call_user_get_proc_address(user_get_proc_address, "glDrawRangeElementArrayATI\0"): *fp_glDrawRangeElementArrayATI;
 	glDrawRangeElements = call_user_get_proc_address(user_get_proc_address, "glDrawRangeElements\0"): *fp_glDrawRangeElements;
@@ -16524,16 +15113,12 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glDrawVkImageNV = call_user_get_proc_address(user_get_proc_address, "glDrawVkImageNV\0"): *fp_glDrawVkImageNV;
 	glEGLImageTargetTexStorageEXT = call_user_get_proc_address(user_get_proc_address, "glEGLImageTargetTexStorageEXT\0"): *fp_glEGLImageTargetTexStorageEXT;
 	glEGLImageTargetTextureStorageEXT = call_user_get_proc_address(user_get_proc_address, "glEGLImageTargetTextureStorageEXT\0"): *fp_glEGLImageTargetTextureStorageEXT;
-	glEdgeFlag = call_user_get_proc_address(user_get_proc_address, "glEdgeFlag\0"): *fp_glEdgeFlag;
 	glEdgeFlagFormatNV = call_user_get_proc_address(user_get_proc_address, "glEdgeFlagFormatNV\0"): *fp_glEdgeFlagFormatNV;
-	glEdgeFlagPointer = call_user_get_proc_address(user_get_proc_address, "glEdgeFlagPointer\0"): *fp_glEdgeFlagPointer;
 	glEdgeFlagPointerEXT = call_user_get_proc_address(user_get_proc_address, "glEdgeFlagPointerEXT\0"): *fp_glEdgeFlagPointerEXT;
 	glEdgeFlagPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glEdgeFlagPointerListIBM\0"): *fp_glEdgeFlagPointerListIBM;
-	glEdgeFlagv = call_user_get_proc_address(user_get_proc_address, "glEdgeFlagv\0"): *fp_glEdgeFlagv;
 	glElementPointerAPPLE = call_user_get_proc_address(user_get_proc_address, "glElementPointerAPPLE\0"): *fp_glElementPointerAPPLE;
 	glElementPointerATI = call_user_get_proc_address(user_get_proc_address, "glElementPointerATI\0"): *fp_glElementPointerATI;
 	glEnable = call_user_get_proc_address(user_get_proc_address, "glEnable\0"): *fp_glEnable;
-	glEnableClientState = call_user_get_proc_address(user_get_proc_address, "glEnableClientState\0"): *fp_glEnableClientState;
 	glEnableClientStateIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glEnableClientStateIndexedEXT\0"): *fp_glEnableClientStateIndexedEXT;
 	glEnableClientStateiEXT = call_user_get_proc_address(user_get_proc_address, "glEnableClientStateiEXT\0"): *fp_glEnableClientStateiEXT;
 	glEnableIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glEnableIndexedEXT\0"): *fp_glEnableIndexedEXT;
@@ -16544,42 +15129,30 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glEnableVertexAttribAPPLE = call_user_get_proc_address(user_get_proc_address, "glEnableVertexAttribAPPLE\0"): *fp_glEnableVertexAttribAPPLE;
 	glEnableVertexAttribArray = call_user_get_proc_address(user_get_proc_address, "glEnableVertexAttribArray\0"): *fp_glEnableVertexAttribArray;
 	glEnableVertexAttribArrayARB = call_user_get_proc_address(user_get_proc_address, "glEnableVertexAttribArrayARB\0"): *fp_glEnableVertexAttribArrayARB;
-	glEnd = call_user_get_proc_address(user_get_proc_address, "glEnd\0"): *fp_glEnd;
+	glEnablei = call_user_get_proc_address(user_get_proc_address, "glEnablei\0"): *fp_glEnablei;
+	glEndConditionalRender = call_user_get_proc_address(user_get_proc_address, "glEndConditionalRender\0"): *fp_glEndConditionalRender;
 	glEndConditionalRenderNV = call_user_get_proc_address(user_get_proc_address, "glEndConditionalRenderNV\0"): *fp_glEndConditionalRenderNV;
 	glEndConditionalRenderNVX = call_user_get_proc_address(user_get_proc_address, "glEndConditionalRenderNVX\0"): *fp_glEndConditionalRenderNVX;
 	glEndFragmentShaderATI = call_user_get_proc_address(user_get_proc_address, "glEndFragmentShaderATI\0"): *fp_glEndFragmentShaderATI;
-	glEndList = call_user_get_proc_address(user_get_proc_address, "glEndList\0"): *fp_glEndList;
 	glEndOcclusionQueryNV = call_user_get_proc_address(user_get_proc_address, "glEndOcclusionQueryNV\0"): *fp_glEndOcclusionQueryNV;
 	glEndPerfMonitorAMD = call_user_get_proc_address(user_get_proc_address, "glEndPerfMonitorAMD\0"): *fp_glEndPerfMonitorAMD;
 	glEndPerfQueryINTEL = call_user_get_proc_address(user_get_proc_address, "glEndPerfQueryINTEL\0"): *fp_glEndPerfQueryINTEL;
 	glEndQuery = call_user_get_proc_address(user_get_proc_address, "glEndQuery\0"): *fp_glEndQuery;
 	glEndQueryARB = call_user_get_proc_address(user_get_proc_address, "glEndQueryARB\0"): *fp_glEndQueryARB;
 	glEndQueryIndexed = call_user_get_proc_address(user_get_proc_address, "glEndQueryIndexed\0"): *fp_glEndQueryIndexed;
+	glEndTransformFeedback = call_user_get_proc_address(user_get_proc_address, "glEndTransformFeedback\0"): *fp_glEndTransformFeedback;
 	glEndTransformFeedbackEXT = call_user_get_proc_address(user_get_proc_address, "glEndTransformFeedbackEXT\0"): *fp_glEndTransformFeedbackEXT;
 	glEndTransformFeedbackNV = call_user_get_proc_address(user_get_proc_address, "glEndTransformFeedbackNV\0"): *fp_glEndTransformFeedbackNV;
 	glEndVertexShaderEXT = call_user_get_proc_address(user_get_proc_address, "glEndVertexShaderEXT\0"): *fp_glEndVertexShaderEXT;
 	glEndVideoCaptureNV = call_user_get_proc_address(user_get_proc_address, "glEndVideoCaptureNV\0"): *fp_glEndVideoCaptureNV;
-	glEvalCoord1d = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1d\0"): *fp_glEvalCoord1d;
-	glEvalCoord1dv = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1dv\0"): *fp_glEvalCoord1dv;
-	glEvalCoord1f = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1f\0"): *fp_glEvalCoord1f;
-	glEvalCoord1fv = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1fv\0"): *fp_glEvalCoord1fv;
 	glEvalCoord1xOES = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1xOES\0"): *fp_glEvalCoord1xOES;
 	glEvalCoord1xvOES = call_user_get_proc_address(user_get_proc_address, "glEvalCoord1xvOES\0"): *fp_glEvalCoord1xvOES;
-	glEvalCoord2d = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2d\0"): *fp_glEvalCoord2d;
-	glEvalCoord2dv = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2dv\0"): *fp_glEvalCoord2dv;
-	glEvalCoord2f = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2f\0"): *fp_glEvalCoord2f;
-	glEvalCoord2fv = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2fv\0"): *fp_glEvalCoord2fv;
 	glEvalCoord2xOES = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2xOES\0"): *fp_glEvalCoord2xOES;
 	glEvalCoord2xvOES = call_user_get_proc_address(user_get_proc_address, "glEvalCoord2xvOES\0"): *fp_glEvalCoord2xvOES;
 	glEvalMapsNV = call_user_get_proc_address(user_get_proc_address, "glEvalMapsNV\0"): *fp_glEvalMapsNV;
-	glEvalMesh1 = call_user_get_proc_address(user_get_proc_address, "glEvalMesh1\0"): *fp_glEvalMesh1;
-	glEvalMesh2 = call_user_get_proc_address(user_get_proc_address, "glEvalMesh2\0"): *fp_glEvalMesh2;
-	glEvalPoint1 = call_user_get_proc_address(user_get_proc_address, "glEvalPoint1\0"): *fp_glEvalPoint1;
-	glEvalPoint2 = call_user_get_proc_address(user_get_proc_address, "glEvalPoint2\0"): *fp_glEvalPoint2;
 	glEvaluateDepthValuesARB = call_user_get_proc_address(user_get_proc_address, "glEvaluateDepthValuesARB\0"): *fp_glEvaluateDepthValuesARB;
 	glExecuteProgramNV = call_user_get_proc_address(user_get_proc_address, "glExecuteProgramNV\0"): *fp_glExecuteProgramNV;
 	glExtractComponentEXT = call_user_get_proc_address(user_get_proc_address, "glExtractComponentEXT\0"): *fp_glExtractComponentEXT;
-	glFeedbackBuffer = call_user_get_proc_address(user_get_proc_address, "glFeedbackBuffer\0"): *fp_glFeedbackBuffer;
 	glFeedbackBufferxOES = call_user_get_proc_address(user_get_proc_address, "glFeedbackBufferxOES\0"): *fp_glFeedbackBufferxOES;
 	glFenceSync = call_user_get_proc_address(user_get_proc_address, "glFenceSync\0"): *fp_glFenceSync;
 	glFinalCombinerInputNV = call_user_get_proc_address(user_get_proc_address, "glFinalCombinerInputNV\0"): *fp_glFinalCombinerInputNV;
@@ -16600,24 +15173,15 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glFlushVertexArrayRangeAPPLE = call_user_get_proc_address(user_get_proc_address, "glFlushVertexArrayRangeAPPLE\0"): *fp_glFlushVertexArrayRangeAPPLE;
 	glFlushVertexArrayRangeNV = call_user_get_proc_address(user_get_proc_address, "glFlushVertexArrayRangeNV\0"): *fp_glFlushVertexArrayRangeNV;
 	glFogCoordFormatNV = call_user_get_proc_address(user_get_proc_address, "glFogCoordFormatNV\0"): *fp_glFogCoordFormatNV;
-	glFogCoordPointer = call_user_get_proc_address(user_get_proc_address, "glFogCoordPointer\0"): *fp_glFogCoordPointer;
 	glFogCoordPointerEXT = call_user_get_proc_address(user_get_proc_address, "glFogCoordPointerEXT\0"): *fp_glFogCoordPointerEXT;
 	glFogCoordPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glFogCoordPointerListIBM\0"): *fp_glFogCoordPointerListIBM;
-	glFogCoordd = call_user_get_proc_address(user_get_proc_address, "glFogCoordd\0"): *fp_glFogCoordd;
 	glFogCoorddEXT = call_user_get_proc_address(user_get_proc_address, "glFogCoorddEXT\0"): *fp_glFogCoorddEXT;
-	glFogCoorddv = call_user_get_proc_address(user_get_proc_address, "glFogCoorddv\0"): *fp_glFogCoorddv;
 	glFogCoorddvEXT = call_user_get_proc_address(user_get_proc_address, "glFogCoorddvEXT\0"): *fp_glFogCoorddvEXT;
-	glFogCoordf = call_user_get_proc_address(user_get_proc_address, "glFogCoordf\0"): *fp_glFogCoordf;
 	glFogCoordfEXT = call_user_get_proc_address(user_get_proc_address, "glFogCoordfEXT\0"): *fp_glFogCoordfEXT;
-	glFogCoordfv = call_user_get_proc_address(user_get_proc_address, "glFogCoordfv\0"): *fp_glFogCoordfv;
 	glFogCoordfvEXT = call_user_get_proc_address(user_get_proc_address, "glFogCoordfvEXT\0"): *fp_glFogCoordfvEXT;
 	glFogCoordhNV = call_user_get_proc_address(user_get_proc_address, "glFogCoordhNV\0"): *fp_glFogCoordhNV;
 	glFogCoordhvNV = call_user_get_proc_address(user_get_proc_address, "glFogCoordhvNV\0"): *fp_glFogCoordhvNV;
 	glFogFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glFogFuncSGIS\0"): *fp_glFogFuncSGIS;
-	glFogf = call_user_get_proc_address(user_get_proc_address, "glFogf\0"): *fp_glFogf;
-	glFogfv = call_user_get_proc_address(user_get_proc_address, "glFogfv\0"): *fp_glFogfv;
-	glFogi = call_user_get_proc_address(user_get_proc_address, "glFogi\0"): *fp_glFogi;
-	glFogiv = call_user_get_proc_address(user_get_proc_address, "glFogiv\0"): *fp_glFogiv;
 	glFogxOES = call_user_get_proc_address(user_get_proc_address, "glFogxOES\0"): *fp_glFogxOES;
 	glFogxvOES = call_user_get_proc_address(user_get_proc_address, "glFogxvOES\0"): *fp_glFogxvOES;
 	glFragmentColorMaterialSGIX = call_user_get_proc_address(user_get_proc_address, "glFragmentColorMaterialSGIX\0"): *fp_glFragmentColorMaterialSGIX;
@@ -16647,6 +15211,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glFramebufferSampleLocationsfvARB = call_user_get_proc_address(user_get_proc_address, "glFramebufferSampleLocationsfvARB\0"): *fp_glFramebufferSampleLocationsfvARB;
 	glFramebufferSampleLocationsfvNV = call_user_get_proc_address(user_get_proc_address, "glFramebufferSampleLocationsfvNV\0"): *fp_glFramebufferSampleLocationsfvNV;
 	glFramebufferSamplePositionsfvAMD = call_user_get_proc_address(user_get_proc_address, "glFramebufferSamplePositionsfvAMD\0"): *fp_glFramebufferSamplePositionsfvAMD;
+	glFramebufferTexture = call_user_get_proc_address(user_get_proc_address, "glFramebufferTexture\0"): *fp_glFramebufferTexture;
 	glFramebufferTexture1D = call_user_get_proc_address(user_get_proc_address, "glFramebufferTexture1D\0"): *fp_glFramebufferTexture1D;
 	glFramebufferTexture1DEXT = call_user_get_proc_address(user_get_proc_address, "glFramebufferTexture1DEXT\0"): *fp_glFramebufferTexture1DEXT;
 	glFramebufferTexture2D = call_user_get_proc_address(user_get_proc_address, "glFramebufferTexture2D\0"): *fp_glFramebufferTexture2D;
@@ -16663,7 +15228,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glFramebufferTextureMultiviewOVR = call_user_get_proc_address(user_get_proc_address, "glFramebufferTextureMultiviewOVR\0"): *fp_glFramebufferTextureMultiviewOVR;
 	glFreeObjectBufferATI = call_user_get_proc_address(user_get_proc_address, "glFreeObjectBufferATI\0"): *fp_glFreeObjectBufferATI;
 	glFrontFace = call_user_get_proc_address(user_get_proc_address, "glFrontFace\0"): *fp_glFrontFace;
-	glFrustum = call_user_get_proc_address(user_get_proc_address, "glFrustum\0"): *fp_glFrustum;
 	glFrustumfOES = call_user_get_proc_address(user_get_proc_address, "glFrustumfOES\0"): *fp_glFrustumfOES;
 	glFrustumxOES = call_user_get_proc_address(user_get_proc_address, "glFrustumxOES\0"): *fp_glFrustumxOES;
 	glGenAsyncMarkersSGIX = call_user_get_proc_address(user_get_proc_address, "glGenAsyncMarkersSGIX\0"): *fp_glGenAsyncMarkersSGIX;
@@ -16674,7 +15238,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGenFragmentShadersATI = call_user_get_proc_address(user_get_proc_address, "glGenFragmentShadersATI\0"): *fp_glGenFragmentShadersATI;
 	glGenFramebuffers = call_user_get_proc_address(user_get_proc_address, "glGenFramebuffers\0"): *fp_glGenFramebuffers;
 	glGenFramebuffersEXT = call_user_get_proc_address(user_get_proc_address, "glGenFramebuffersEXT\0"): *fp_glGenFramebuffersEXT;
-	glGenLists = call_user_get_proc_address(user_get_proc_address, "glGenLists\0"): *fp_glGenLists;
 	glGenNamesAMD = call_user_get_proc_address(user_get_proc_address, "glGenNamesAMD\0"): *fp_glGenNamesAMD;
 	glGenOcclusionQueriesNV = call_user_get_proc_address(user_get_proc_address, "glGenOcclusionQueriesNV\0"): *fp_glGenOcclusionQueriesNV;
 	glGenPathsNV = call_user_get_proc_address(user_get_proc_address, "glGenPathsNV\0"): *fp_glGenPathsNV;
@@ -16722,7 +15285,9 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetAttribLocation = call_user_get_proc_address(user_get_proc_address, "glGetAttribLocation\0"): *fp_glGetAttribLocation;
 	glGetAttribLocationARB = call_user_get_proc_address(user_get_proc_address, "glGetAttribLocationARB\0"): *fp_glGetAttribLocationARB;
 	glGetBooleanIndexedvEXT = call_user_get_proc_address(user_get_proc_address, "glGetBooleanIndexedvEXT\0"): *fp_glGetBooleanIndexedvEXT;
+	glGetBooleani_v = call_user_get_proc_address(user_get_proc_address, "glGetBooleani_v\0"): *fp_glGetBooleani_v;
 	glGetBooleanv = call_user_get_proc_address(user_get_proc_address, "glGetBooleanv\0"): *fp_glGetBooleanv;
+	glGetBufferParameteri64v = call_user_get_proc_address(user_get_proc_address, "glGetBufferParameteri64v\0"): *fp_glGetBufferParameteri64v;
 	glGetBufferParameteriv = call_user_get_proc_address(user_get_proc_address, "glGetBufferParameteriv\0"): *fp_glGetBufferParameteriv;
 	glGetBufferParameterivARB = call_user_get_proc_address(user_get_proc_address, "glGetBufferParameterivARB\0"): *fp_glGetBufferParameterivARB;
 	glGetBufferParameterui64vNV = call_user_get_proc_address(user_get_proc_address, "glGetBufferParameterui64vNV\0"): *fp_glGetBufferParameterui64vNV;
@@ -16730,7 +15295,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetBufferPointervARB = call_user_get_proc_address(user_get_proc_address, "glGetBufferPointervARB\0"): *fp_glGetBufferPointervARB;
 	glGetBufferSubData = call_user_get_proc_address(user_get_proc_address, "glGetBufferSubData\0"): *fp_glGetBufferSubData;
 	glGetBufferSubDataARB = call_user_get_proc_address(user_get_proc_address, "glGetBufferSubDataARB\0"): *fp_glGetBufferSubDataARB;
-	glGetClipPlane = call_user_get_proc_address(user_get_proc_address, "glGetClipPlane\0"): *fp_glGetClipPlane;
 	glGetClipPlanefOES = call_user_get_proc_address(user_get_proc_address, "glGetClipPlanefOES\0"): *fp_glGetClipPlanefOES;
 	glGetClipPlanexOES = call_user_get_proc_address(user_get_proc_address, "glGetClipPlanexOES\0"): *fp_glGetClipPlanexOES;
 	glGetColorTableEXT = call_user_get_proc_address(user_get_proc_address, "glGetColorTableEXT\0"): *fp_glGetColorTableEXT;
@@ -16776,6 +15340,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetFloatv = call_user_get_proc_address(user_get_proc_address, "glGetFloatv\0"): *fp_glGetFloatv;
 	glGetFogFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glGetFogFuncSGIS\0"): *fp_glGetFogFuncSGIS;
 	glGetFragDataIndex = call_user_get_proc_address(user_get_proc_address, "glGetFragDataIndex\0"): *fp_glGetFragDataIndex;
+	glGetFragDataLocation = call_user_get_proc_address(user_get_proc_address, "glGetFragDataLocation\0"): *fp_glGetFragDataLocation;
 	glGetFragDataLocationEXT = call_user_get_proc_address(user_get_proc_address, "glGetFragDataLocationEXT\0"): *fp_glGetFragDataLocationEXT;
 	glGetFragmentLightfvSGIX = call_user_get_proc_address(user_get_proc_address, "glGetFragmentLightfvSGIX\0"): *fp_glGetFragmentLightfvSGIX;
 	glGetFragmentLightivSGIX = call_user_get_proc_address(user_get_proc_address, "glGetFragmentLightivSGIX\0"): *fp_glGetFragmentLightivSGIX;
@@ -16800,6 +15365,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetImageTransformParameterivHP = call_user_get_proc_address(user_get_proc_address, "glGetImageTransformParameterivHP\0"): *fp_glGetImageTransformParameterivHP;
 	glGetInfoLogARB = call_user_get_proc_address(user_get_proc_address, "glGetInfoLogARB\0"): *fp_glGetInfoLogARB;
 	glGetInstrumentsSGIX = call_user_get_proc_address(user_get_proc_address, "glGetInstrumentsSGIX\0"): *fp_glGetInstrumentsSGIX;
+	glGetInteger64i_v = call_user_get_proc_address(user_get_proc_address, "glGetInteger64i_v\0"): *fp_glGetInteger64i_v;
 	glGetInteger64v = call_user_get_proc_address(user_get_proc_address, "glGetInteger64v\0"): *fp_glGetInteger64v;
 	glGetIntegerIndexedvEXT = call_user_get_proc_address(user_get_proc_address, "glGetIntegerIndexedvEXT\0"): *fp_glGetIntegerIndexedvEXT;
 	glGetIntegeri_v = call_user_get_proc_address(user_get_proc_address, "glGetIntegeri_v\0"): *fp_glGetIntegeri_v;
@@ -16812,8 +15378,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetInvariantBooleanvEXT = call_user_get_proc_address(user_get_proc_address, "glGetInvariantBooleanvEXT\0"): *fp_glGetInvariantBooleanvEXT;
 	glGetInvariantFloatvEXT = call_user_get_proc_address(user_get_proc_address, "glGetInvariantFloatvEXT\0"): *fp_glGetInvariantFloatvEXT;
 	glGetInvariantIntegervEXT = call_user_get_proc_address(user_get_proc_address, "glGetInvariantIntegervEXT\0"): *fp_glGetInvariantIntegervEXT;
-	glGetLightfv = call_user_get_proc_address(user_get_proc_address, "glGetLightfv\0"): *fp_glGetLightfv;
-	glGetLightiv = call_user_get_proc_address(user_get_proc_address, "glGetLightiv\0"): *fp_glGetLightiv;
 	glGetLightxOES = call_user_get_proc_address(user_get_proc_address, "glGetLightxOES\0"): *fp_glGetLightxOES;
 	glGetListParameterfvSGIX = call_user_get_proc_address(user_get_proc_address, "glGetListParameterfvSGIX\0"): *fp_glGetListParameterfvSGIX;
 	glGetListParameterivSGIX = call_user_get_proc_address(user_get_proc_address, "glGetListParameterivSGIX\0"): *fp_glGetListParameterivSGIX;
@@ -16825,12 +15389,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetMapControlPointsNV = call_user_get_proc_address(user_get_proc_address, "glGetMapControlPointsNV\0"): *fp_glGetMapControlPointsNV;
 	glGetMapParameterfvNV = call_user_get_proc_address(user_get_proc_address, "glGetMapParameterfvNV\0"): *fp_glGetMapParameterfvNV;
 	glGetMapParameterivNV = call_user_get_proc_address(user_get_proc_address, "glGetMapParameterivNV\0"): *fp_glGetMapParameterivNV;
-	glGetMapdv = call_user_get_proc_address(user_get_proc_address, "glGetMapdv\0"): *fp_glGetMapdv;
-	glGetMapfv = call_user_get_proc_address(user_get_proc_address, "glGetMapfv\0"): *fp_glGetMapfv;
-	glGetMapiv = call_user_get_proc_address(user_get_proc_address, "glGetMapiv\0"): *fp_glGetMapiv;
 	glGetMapxvOES = call_user_get_proc_address(user_get_proc_address, "glGetMapxvOES\0"): *fp_glGetMapxvOES;
-	glGetMaterialfv = call_user_get_proc_address(user_get_proc_address, "glGetMaterialfv\0"): *fp_glGetMaterialfv;
-	glGetMaterialiv = call_user_get_proc_address(user_get_proc_address, "glGetMaterialiv\0"): *fp_glGetMaterialiv;
 	glGetMaterialxOES = call_user_get_proc_address(user_get_proc_address, "glGetMaterialxOES\0"): *fp_glGetMaterialxOES;
 	glGetMemoryObjectDetachedResourcesuivNV = call_user_get_proc_address(user_get_proc_address, "glGetMemoryObjectDetachedResourcesuivNV\0"): *fp_glGetMemoryObjectDetachedResourcesuivNV;
 	glGetMemoryObjectParameterivEXT = call_user_get_proc_address(user_get_proc_address, "glGetMemoryObjectParameterivEXT\0"): *fp_glGetMemoryObjectParameterivEXT;
@@ -16904,9 +15463,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetPerfQueryDataINTEL = call_user_get_proc_address(user_get_proc_address, "glGetPerfQueryDataINTEL\0"): *fp_glGetPerfQueryDataINTEL;
 	glGetPerfQueryIdByNameINTEL = call_user_get_proc_address(user_get_proc_address, "glGetPerfQueryIdByNameINTEL\0"): *fp_glGetPerfQueryIdByNameINTEL;
 	glGetPerfQueryInfoINTEL = call_user_get_proc_address(user_get_proc_address, "glGetPerfQueryInfoINTEL\0"): *fp_glGetPerfQueryInfoINTEL;
-	glGetPixelMapfv = call_user_get_proc_address(user_get_proc_address, "glGetPixelMapfv\0"): *fp_glGetPixelMapfv;
-	glGetPixelMapuiv = call_user_get_proc_address(user_get_proc_address, "glGetPixelMapuiv\0"): *fp_glGetPixelMapuiv;
-	glGetPixelMapusv = call_user_get_proc_address(user_get_proc_address, "glGetPixelMapusv\0"): *fp_glGetPixelMapusv;
 	glGetPixelMapxv = call_user_get_proc_address(user_get_proc_address, "glGetPixelMapxv\0"): *fp_glGetPixelMapxv;
 	glGetPixelTexGenParameterfvSGIS = call_user_get_proc_address(user_get_proc_address, "glGetPixelTexGenParameterfvSGIS\0"): *fp_glGetPixelTexGenParameterfvSGIS;
 	glGetPixelTexGenParameterivSGIS = call_user_get_proc_address(user_get_proc_address, "glGetPixelTexGenParameterivSGIS\0"): *fp_glGetPixelTexGenParameterivSGIS;
@@ -16916,7 +15472,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetPointeri_vEXT = call_user_get_proc_address(user_get_proc_address, "glGetPointeri_vEXT\0"): *fp_glGetPointeri_vEXT;
 	glGetPointerv = call_user_get_proc_address(user_get_proc_address, "glGetPointerv\0"): *fp_glGetPointerv;
 	glGetPointervEXT = call_user_get_proc_address(user_get_proc_address, "glGetPointervEXT\0"): *fp_glGetPointervEXT;
-	glGetPolygonStipple = call_user_get_proc_address(user_get_proc_address, "glGetPolygonStipple\0"): *fp_glGetPolygonStipple;
 	glGetProgramBinary = call_user_get_proc_address(user_get_proc_address, "glGetProgramBinary\0"): *fp_glGetProgramBinary;
 	glGetProgramEnvParameterIivNV = call_user_get_proc_address(user_get_proc_address, "glGetProgramEnvParameterIivNV\0"): *fp_glGetProgramEnvParameterIivNV;
 	glGetProgramEnvParameterIuivNV = call_user_get_proc_address(user_get_proc_address, "glGetProgramEnvParameterIuivNV\0"): *fp_glGetProgramEnvParameterIuivNV;
@@ -16981,24 +15536,22 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetSharpenTexFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glGetSharpenTexFuncSGIS\0"): *fp_glGetSharpenTexFuncSGIS;
 	glGetStageIndexNV = call_user_get_proc_address(user_get_proc_address, "glGetStageIndexNV\0"): *fp_glGetStageIndexNV;
 	glGetString = call_user_get_proc_address(user_get_proc_address, "glGetString\0"): *fp_glGetString;
+	glGetStringi = call_user_get_proc_address(user_get_proc_address, "glGetStringi\0"): *fp_glGetStringi;
 	glGetSubroutineIndex = call_user_get_proc_address(user_get_proc_address, "glGetSubroutineIndex\0"): *fp_glGetSubroutineIndex;
 	glGetSubroutineUniformLocation = call_user_get_proc_address(user_get_proc_address, "glGetSubroutineUniformLocation\0"): *fp_glGetSubroutineUniformLocation;
 	glGetSynciv = call_user_get_proc_address(user_get_proc_address, "glGetSynciv\0"): *fp_glGetSynciv;
 	glGetTexBumpParameterfvATI = call_user_get_proc_address(user_get_proc_address, "glGetTexBumpParameterfvATI\0"): *fp_glGetTexBumpParameterfvATI;
 	glGetTexBumpParameterivATI = call_user_get_proc_address(user_get_proc_address, "glGetTexBumpParameterivATI\0"): *fp_glGetTexBumpParameterivATI;
-	glGetTexEnvfv = call_user_get_proc_address(user_get_proc_address, "glGetTexEnvfv\0"): *fp_glGetTexEnvfv;
-	glGetTexEnviv = call_user_get_proc_address(user_get_proc_address, "glGetTexEnviv\0"): *fp_glGetTexEnviv;
 	glGetTexEnvxvOES = call_user_get_proc_address(user_get_proc_address, "glGetTexEnvxvOES\0"): *fp_glGetTexEnvxvOES;
 	glGetTexFilterFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glGetTexFilterFuncSGIS\0"): *fp_glGetTexFilterFuncSGIS;
-	glGetTexGendv = call_user_get_proc_address(user_get_proc_address, "glGetTexGendv\0"): *fp_glGetTexGendv;
-	glGetTexGenfv = call_user_get_proc_address(user_get_proc_address, "glGetTexGenfv\0"): *fp_glGetTexGenfv;
-	glGetTexGeniv = call_user_get_proc_address(user_get_proc_address, "glGetTexGeniv\0"): *fp_glGetTexGeniv;
 	glGetTexGenxvOES = call_user_get_proc_address(user_get_proc_address, "glGetTexGenxvOES\0"): *fp_glGetTexGenxvOES;
 	glGetTexImage = call_user_get_proc_address(user_get_proc_address, "glGetTexImage\0"): *fp_glGetTexImage;
 	glGetTexLevelParameterfv = call_user_get_proc_address(user_get_proc_address, "glGetTexLevelParameterfv\0"): *fp_glGetTexLevelParameterfv;
 	glGetTexLevelParameteriv = call_user_get_proc_address(user_get_proc_address, "glGetTexLevelParameteriv\0"): *fp_glGetTexLevelParameteriv;
 	glGetTexLevelParameterxvOES = call_user_get_proc_address(user_get_proc_address, "glGetTexLevelParameterxvOES\0"): *fp_glGetTexLevelParameterxvOES;
+	glGetTexParameterIiv = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterIiv\0"): *fp_glGetTexParameterIiv;
 	glGetTexParameterIivEXT = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterIivEXT\0"): *fp_glGetTexParameterIivEXT;
+	glGetTexParameterIuiv = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterIuiv\0"): *fp_glGetTexParameterIuiv;
 	glGetTexParameterIuivEXT = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterIuivEXT\0"): *fp_glGetTexParameterIuivEXT;
 	glGetTexParameterPointervAPPLE = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterPointervAPPLE\0"): *fp_glGetTexParameterPointervAPPLE;
 	glGetTexParameterfv = call_user_get_proc_address(user_get_proc_address, "glGetTexParameterfv\0"): *fp_glGetTexParameterfv;
@@ -17024,6 +15577,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetTextureSamplerHandleNV = call_user_get_proc_address(user_get_proc_address, "glGetTextureSamplerHandleNV\0"): *fp_glGetTextureSamplerHandleNV;
 	glGetTextureSubImage = call_user_get_proc_address(user_get_proc_address, "glGetTextureSubImage\0"): *fp_glGetTextureSubImage;
 	glGetTrackMatrixivNV = call_user_get_proc_address(user_get_proc_address, "glGetTrackMatrixivNV\0"): *fp_glGetTrackMatrixivNV;
+	glGetTransformFeedbackVarying = call_user_get_proc_address(user_get_proc_address, "glGetTransformFeedbackVarying\0"): *fp_glGetTransformFeedbackVarying;
 	glGetTransformFeedbackVaryingEXT = call_user_get_proc_address(user_get_proc_address, "glGetTransformFeedbackVaryingEXT\0"): *fp_glGetTransformFeedbackVaryingEXT;
 	glGetTransformFeedbackVaryingNV = call_user_get_proc_address(user_get_proc_address, "glGetTransformFeedbackVaryingNV\0"): *fp_glGetTransformFeedbackVaryingNV;
 	glGetTransformFeedbacki64_v = call_user_get_proc_address(user_get_proc_address, "glGetTransformFeedbacki64_v\0"): *fp_glGetTransformFeedbacki64_v;
@@ -17045,6 +15599,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetUniformivARB = call_user_get_proc_address(user_get_proc_address, "glGetUniformivARB\0"): *fp_glGetUniformivARB;
 	glGetUniformui64vARB = call_user_get_proc_address(user_get_proc_address, "glGetUniformui64vARB\0"): *fp_glGetUniformui64vARB;
 	glGetUniformui64vNV = call_user_get_proc_address(user_get_proc_address, "glGetUniformui64vNV\0"): *fp_glGetUniformui64vNV;
+	glGetUniformuiv = call_user_get_proc_address(user_get_proc_address, "glGetUniformuiv\0"): *fp_glGetUniformuiv;
 	glGetUniformuivEXT = call_user_get_proc_address(user_get_proc_address, "glGetUniformuivEXT\0"): *fp_glGetUniformuivEXT;
 	glGetUnsignedBytei_vEXT = call_user_get_proc_address(user_get_proc_address, "glGetUnsignedBytei_vEXT\0"): *fp_glGetUnsignedBytei_vEXT;
 	glGetUnsignedBytevEXT = call_user_get_proc_address(user_get_proc_address, "glGetUnsignedBytevEXT\0"): *fp_glGetUnsignedBytevEXT;
@@ -17064,7 +15619,9 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glGetVertexArrayiv = call_user_get_proc_address(user_get_proc_address, "glGetVertexArrayiv\0"): *fp_glGetVertexArrayiv;
 	glGetVertexAttribArrayObjectfvATI = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribArrayObjectfvATI\0"): *fp_glGetVertexAttribArrayObjectfvATI;
 	glGetVertexAttribArrayObjectivATI = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribArrayObjectivATI\0"): *fp_glGetVertexAttribArrayObjectivATI;
+	glGetVertexAttribIiv = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribIiv\0"): *fp_glGetVertexAttribIiv;
 	glGetVertexAttribIivEXT = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribIivEXT\0"): *fp_glGetVertexAttribIivEXT;
+	glGetVertexAttribIuiv = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribIuiv\0"): *fp_glGetVertexAttribIuiv;
 	glGetVertexAttribIuivEXT = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribIuivEXT\0"): *fp_glGetVertexAttribIuivEXT;
 	glGetVertexAttribLdv = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribLdv\0"): *fp_glGetVertexAttribLdv;
 	glGetVertexAttribLdvEXT = call_user_get_proc_address(user_get_proc_address, "glGetVertexAttribLdvEXT\0"): *fp_glGetVertexAttribLdvEXT;
@@ -17128,28 +15685,14 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glImportSyncEXT = call_user_get_proc_address(user_get_proc_address, "glImportSyncEXT\0"): *fp_glImportSyncEXT;
 	glIndexFormatNV = call_user_get_proc_address(user_get_proc_address, "glIndexFormatNV\0"): *fp_glIndexFormatNV;
 	glIndexFuncEXT = call_user_get_proc_address(user_get_proc_address, "glIndexFuncEXT\0"): *fp_glIndexFuncEXT;
-	glIndexMask = call_user_get_proc_address(user_get_proc_address, "glIndexMask\0"): *fp_glIndexMask;
 	glIndexMaterialEXT = call_user_get_proc_address(user_get_proc_address, "glIndexMaterialEXT\0"): *fp_glIndexMaterialEXT;
-	glIndexPointer = call_user_get_proc_address(user_get_proc_address, "glIndexPointer\0"): *fp_glIndexPointer;
 	glIndexPointerEXT = call_user_get_proc_address(user_get_proc_address, "glIndexPointerEXT\0"): *fp_glIndexPointerEXT;
 	glIndexPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glIndexPointerListIBM\0"): *fp_glIndexPointerListIBM;
-	glIndexd = call_user_get_proc_address(user_get_proc_address, "glIndexd\0"): *fp_glIndexd;
-	glIndexdv = call_user_get_proc_address(user_get_proc_address, "glIndexdv\0"): *fp_glIndexdv;
-	glIndexf = call_user_get_proc_address(user_get_proc_address, "glIndexf\0"): *fp_glIndexf;
-	glIndexfv = call_user_get_proc_address(user_get_proc_address, "glIndexfv\0"): *fp_glIndexfv;
-	glIndexi = call_user_get_proc_address(user_get_proc_address, "glIndexi\0"): *fp_glIndexi;
-	glIndexiv = call_user_get_proc_address(user_get_proc_address, "glIndexiv\0"): *fp_glIndexiv;
-	glIndexs = call_user_get_proc_address(user_get_proc_address, "glIndexs\0"): *fp_glIndexs;
-	glIndexsv = call_user_get_proc_address(user_get_proc_address, "glIndexsv\0"): *fp_glIndexsv;
-	glIndexub = call_user_get_proc_address(user_get_proc_address, "glIndexub\0"): *fp_glIndexub;
-	glIndexubv = call_user_get_proc_address(user_get_proc_address, "glIndexubv\0"): *fp_glIndexubv;
 	glIndexxOES = call_user_get_proc_address(user_get_proc_address, "glIndexxOES\0"): *fp_glIndexxOES;
 	glIndexxvOES = call_user_get_proc_address(user_get_proc_address, "glIndexxvOES\0"): *fp_glIndexxvOES;
-	glInitNames = call_user_get_proc_address(user_get_proc_address, "glInitNames\0"): *fp_glInitNames;
 	glInsertComponentEXT = call_user_get_proc_address(user_get_proc_address, "glInsertComponentEXT\0"): *fp_glInsertComponentEXT;
 	glInsertEventMarkerEXT = call_user_get_proc_address(user_get_proc_address, "glInsertEventMarkerEXT\0"): *fp_glInsertEventMarkerEXT;
 	glInstrumentsBufferSGIX = call_user_get_proc_address(user_get_proc_address, "glInstrumentsBufferSGIX\0"): *fp_glInstrumentsBufferSGIX;
-	glInterleavedArrays = call_user_get_proc_address(user_get_proc_address, "glInterleavedArrays\0"): *fp_glInterleavedArrays;
 	glInterpolatePathsNV = call_user_get_proc_address(user_get_proc_address, "glInterpolatePathsNV\0"): *fp_glInterpolatePathsNV;
 	glInvalidateBufferData = call_user_get_proc_address(user_get_proc_address, "glInvalidateBufferData\0"): *fp_glInvalidateBufferData;
 	glInvalidateBufferSubData = call_user_get_proc_address(user_get_proc_address, "glInvalidateBufferSubData\0"): *fp_glInvalidateBufferSubData;
@@ -17166,13 +15709,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glIsCommandListNV = call_user_get_proc_address(user_get_proc_address, "glIsCommandListNV\0"): *fp_glIsCommandListNV;
 	glIsEnabled = call_user_get_proc_address(user_get_proc_address, "glIsEnabled\0"): *fp_glIsEnabled;
 	glIsEnabledIndexedEXT = call_user_get_proc_address(user_get_proc_address, "glIsEnabledIndexedEXT\0"): *fp_glIsEnabledIndexedEXT;
+	glIsEnabledi = call_user_get_proc_address(user_get_proc_address, "glIsEnabledi\0"): *fp_glIsEnabledi;
 	glIsFenceAPPLE = call_user_get_proc_address(user_get_proc_address, "glIsFenceAPPLE\0"): *fp_glIsFenceAPPLE;
 	glIsFenceNV = call_user_get_proc_address(user_get_proc_address, "glIsFenceNV\0"): *fp_glIsFenceNV;
 	glIsFramebuffer = call_user_get_proc_address(user_get_proc_address, "glIsFramebuffer\0"): *fp_glIsFramebuffer;
 	glIsFramebufferEXT = call_user_get_proc_address(user_get_proc_address, "glIsFramebufferEXT\0"): *fp_glIsFramebufferEXT;
 	glIsImageHandleResidentARB = call_user_get_proc_address(user_get_proc_address, "glIsImageHandleResidentARB\0"): *fp_glIsImageHandleResidentARB;
 	glIsImageHandleResidentNV = call_user_get_proc_address(user_get_proc_address, "glIsImageHandleResidentNV\0"): *fp_glIsImageHandleResidentNV;
-	glIsList = call_user_get_proc_address(user_get_proc_address, "glIsList\0"): *fp_glIsList;
 	glIsMemoryObjectEXT = call_user_get_proc_address(user_get_proc_address, "glIsMemoryObjectEXT\0"): *fp_glIsMemoryObjectEXT;
 	glIsNameAMD = call_user_get_proc_address(user_get_proc_address, "glIsNameAMD\0"): *fp_glIsNameAMD;
 	glIsNamedBufferResidentNV = call_user_get_proc_address(user_get_proc_address, "glIsNamedBufferResidentNV\0"): *fp_glIsNamedBufferResidentNV;
@@ -17210,39 +15753,23 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glLGPUNamedBufferSubDataNVX = call_user_get_proc_address(user_get_proc_address, "glLGPUNamedBufferSubDataNVX\0"): *fp_glLGPUNamedBufferSubDataNVX;
 	glLabelObjectEXT = call_user_get_proc_address(user_get_proc_address, "glLabelObjectEXT\0"): *fp_glLabelObjectEXT;
 	glLightEnviSGIX = call_user_get_proc_address(user_get_proc_address, "glLightEnviSGIX\0"): *fp_glLightEnviSGIX;
-	glLightModelf = call_user_get_proc_address(user_get_proc_address, "glLightModelf\0"): *fp_glLightModelf;
-	glLightModelfv = call_user_get_proc_address(user_get_proc_address, "glLightModelfv\0"): *fp_glLightModelfv;
-	glLightModeli = call_user_get_proc_address(user_get_proc_address, "glLightModeli\0"): *fp_glLightModeli;
-	glLightModeliv = call_user_get_proc_address(user_get_proc_address, "glLightModeliv\0"): *fp_glLightModeliv;
 	glLightModelxOES = call_user_get_proc_address(user_get_proc_address, "glLightModelxOES\0"): *fp_glLightModelxOES;
 	glLightModelxvOES = call_user_get_proc_address(user_get_proc_address, "glLightModelxvOES\0"): *fp_glLightModelxvOES;
-	glLightf = call_user_get_proc_address(user_get_proc_address, "glLightf\0"): *fp_glLightf;
-	glLightfv = call_user_get_proc_address(user_get_proc_address, "glLightfv\0"): *fp_glLightfv;
-	glLighti = call_user_get_proc_address(user_get_proc_address, "glLighti\0"): *fp_glLighti;
-	glLightiv = call_user_get_proc_address(user_get_proc_address, "glLightiv\0"): *fp_glLightiv;
 	glLightxOES = call_user_get_proc_address(user_get_proc_address, "glLightxOES\0"): *fp_glLightxOES;
 	glLightxvOES = call_user_get_proc_address(user_get_proc_address, "glLightxvOES\0"): *fp_glLightxvOES;
-	glLineStipple = call_user_get_proc_address(user_get_proc_address, "glLineStipple\0"): *fp_glLineStipple;
 	glLineWidth = call_user_get_proc_address(user_get_proc_address, "glLineWidth\0"): *fp_glLineWidth;
 	glLineWidthxOES = call_user_get_proc_address(user_get_proc_address, "glLineWidthxOES\0"): *fp_glLineWidthxOES;
 	glLinkProgram = call_user_get_proc_address(user_get_proc_address, "glLinkProgram\0"): *fp_glLinkProgram;
 	glLinkProgramARB = call_user_get_proc_address(user_get_proc_address, "glLinkProgramARB\0"): *fp_glLinkProgramARB;
-	glListBase = call_user_get_proc_address(user_get_proc_address, "glListBase\0"): *fp_glListBase;
 	glListDrawCommandsStatesClientNV = call_user_get_proc_address(user_get_proc_address, "glListDrawCommandsStatesClientNV\0"): *fp_glListDrawCommandsStatesClientNV;
 	glListParameterfSGIX = call_user_get_proc_address(user_get_proc_address, "glListParameterfSGIX\0"): *fp_glListParameterfSGIX;
 	glListParameterfvSGIX = call_user_get_proc_address(user_get_proc_address, "glListParameterfvSGIX\0"): *fp_glListParameterfvSGIX;
 	glListParameteriSGIX = call_user_get_proc_address(user_get_proc_address, "glListParameteriSGIX\0"): *fp_glListParameteriSGIX;
 	glListParameterivSGIX = call_user_get_proc_address(user_get_proc_address, "glListParameterivSGIX\0"): *fp_glListParameterivSGIX;
-	glLoadIdentity = call_user_get_proc_address(user_get_proc_address, "glLoadIdentity\0"): *fp_glLoadIdentity;
 	glLoadIdentityDeformationMapSGIX = call_user_get_proc_address(user_get_proc_address, "glLoadIdentityDeformationMapSGIX\0"): *fp_glLoadIdentityDeformationMapSGIX;
-	glLoadMatrixd = call_user_get_proc_address(user_get_proc_address, "glLoadMatrixd\0"): *fp_glLoadMatrixd;
-	glLoadMatrixf = call_user_get_proc_address(user_get_proc_address, "glLoadMatrixf\0"): *fp_glLoadMatrixf;
 	glLoadMatrixxOES = call_user_get_proc_address(user_get_proc_address, "glLoadMatrixxOES\0"): *fp_glLoadMatrixxOES;
-	glLoadName = call_user_get_proc_address(user_get_proc_address, "glLoadName\0"): *fp_glLoadName;
 	glLoadProgramNV = call_user_get_proc_address(user_get_proc_address, "glLoadProgramNV\0"): *fp_glLoadProgramNV;
-	glLoadTransposeMatrixd = call_user_get_proc_address(user_get_proc_address, "glLoadTransposeMatrixd\0"): *fp_glLoadTransposeMatrixd;
 	glLoadTransposeMatrixdARB = call_user_get_proc_address(user_get_proc_address, "glLoadTransposeMatrixdARB\0"): *fp_glLoadTransposeMatrixdARB;
-	glLoadTransposeMatrixf = call_user_get_proc_address(user_get_proc_address, "glLoadTransposeMatrixf\0"): *fp_glLoadTransposeMatrixf;
 	glLoadTransposeMatrixfARB = call_user_get_proc_address(user_get_proc_address, "glLoadTransposeMatrixfARB\0"): *fp_glLoadTransposeMatrixfARB;
 	glLoadTransposeMatrixxOES = call_user_get_proc_address(user_get_proc_address, "glLoadTransposeMatrixxOES\0"): *fp_glLoadTransposeMatrixxOES;
 	glLockArraysEXT = call_user_get_proc_address(user_get_proc_address, "glLockArraysEXT\0"): *fp_glLockArraysEXT;
@@ -17259,21 +15786,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glMakeTextureHandleNonResidentNV = call_user_get_proc_address(user_get_proc_address, "glMakeTextureHandleNonResidentNV\0"): *fp_glMakeTextureHandleNonResidentNV;
 	glMakeTextureHandleResidentARB = call_user_get_proc_address(user_get_proc_address, "glMakeTextureHandleResidentARB\0"): *fp_glMakeTextureHandleResidentARB;
 	glMakeTextureHandleResidentNV = call_user_get_proc_address(user_get_proc_address, "glMakeTextureHandleResidentNV\0"): *fp_glMakeTextureHandleResidentNV;
-	glMap1d = call_user_get_proc_address(user_get_proc_address, "glMap1d\0"): *fp_glMap1d;
-	glMap1f = call_user_get_proc_address(user_get_proc_address, "glMap1f\0"): *fp_glMap1f;
 	glMap1xOES = call_user_get_proc_address(user_get_proc_address, "glMap1xOES\0"): *fp_glMap1xOES;
-	glMap2d = call_user_get_proc_address(user_get_proc_address, "glMap2d\0"): *fp_glMap2d;
-	glMap2f = call_user_get_proc_address(user_get_proc_address, "glMap2f\0"): *fp_glMap2f;
 	glMap2xOES = call_user_get_proc_address(user_get_proc_address, "glMap2xOES\0"): *fp_glMap2xOES;
 	glMapBuffer = call_user_get_proc_address(user_get_proc_address, "glMapBuffer\0"): *fp_glMapBuffer;
 	glMapBufferARB = call_user_get_proc_address(user_get_proc_address, "glMapBufferARB\0"): *fp_glMapBufferARB;
 	glMapBufferRange = call_user_get_proc_address(user_get_proc_address, "glMapBufferRange\0"): *fp_glMapBufferRange;
 	glMapControlPointsNV = call_user_get_proc_address(user_get_proc_address, "glMapControlPointsNV\0"): *fp_glMapControlPointsNV;
-	glMapGrid1d = call_user_get_proc_address(user_get_proc_address, "glMapGrid1d\0"): *fp_glMapGrid1d;
-	glMapGrid1f = call_user_get_proc_address(user_get_proc_address, "glMapGrid1f\0"): *fp_glMapGrid1f;
 	glMapGrid1xOES = call_user_get_proc_address(user_get_proc_address, "glMapGrid1xOES\0"): *fp_glMapGrid1xOES;
-	glMapGrid2d = call_user_get_proc_address(user_get_proc_address, "glMapGrid2d\0"): *fp_glMapGrid2d;
-	glMapGrid2f = call_user_get_proc_address(user_get_proc_address, "glMapGrid2f\0"): *fp_glMapGrid2f;
 	glMapGrid2xOES = call_user_get_proc_address(user_get_proc_address, "glMapGrid2xOES\0"): *fp_glMapGrid2xOES;
 	glMapNamedBuffer = call_user_get_proc_address(user_get_proc_address, "glMapNamedBuffer\0"): *fp_glMapNamedBuffer;
 	glMapNamedBufferEXT = call_user_get_proc_address(user_get_proc_address, "glMapNamedBufferEXT\0"): *fp_glMapNamedBufferEXT;
@@ -17287,10 +15806,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glMapVertexAttrib1fAPPLE = call_user_get_proc_address(user_get_proc_address, "glMapVertexAttrib1fAPPLE\0"): *fp_glMapVertexAttrib1fAPPLE;
 	glMapVertexAttrib2dAPPLE = call_user_get_proc_address(user_get_proc_address, "glMapVertexAttrib2dAPPLE\0"): *fp_glMapVertexAttrib2dAPPLE;
 	glMapVertexAttrib2fAPPLE = call_user_get_proc_address(user_get_proc_address, "glMapVertexAttrib2fAPPLE\0"): *fp_glMapVertexAttrib2fAPPLE;
-	glMaterialf = call_user_get_proc_address(user_get_proc_address, "glMaterialf\0"): *fp_glMaterialf;
-	glMaterialfv = call_user_get_proc_address(user_get_proc_address, "glMaterialfv\0"): *fp_glMaterialfv;
-	glMateriali = call_user_get_proc_address(user_get_proc_address, "glMateriali\0"): *fp_glMateriali;
-	glMaterialiv = call_user_get_proc_address(user_get_proc_address, "glMaterialiv\0"): *fp_glMaterialiv;
 	glMaterialxOES = call_user_get_proc_address(user_get_proc_address, "glMaterialxOES\0"): *fp_glMaterialxOES;
 	glMaterialxvOES = call_user_get_proc_address(user_get_proc_address, "glMaterialxvOES\0"): *fp_glMaterialxvOES;
 	glMatrixFrustumEXT = call_user_get_proc_address(user_get_proc_address, "glMatrixFrustumEXT\0"): *fp_glMatrixFrustumEXT;
@@ -17306,7 +15821,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glMatrixLoadTransposefEXT = call_user_get_proc_address(user_get_proc_address, "glMatrixLoadTransposefEXT\0"): *fp_glMatrixLoadTransposefEXT;
 	glMatrixLoaddEXT = call_user_get_proc_address(user_get_proc_address, "glMatrixLoaddEXT\0"): *fp_glMatrixLoaddEXT;
 	glMatrixLoadfEXT = call_user_get_proc_address(user_get_proc_address, "glMatrixLoadfEXT\0"): *fp_glMatrixLoadfEXT;
-	glMatrixMode = call_user_get_proc_address(user_get_proc_address, "glMatrixMode\0"): *fp_glMatrixMode;
 	glMatrixMult3x2fNV = call_user_get_proc_address(user_get_proc_address, "glMatrixMult3x2fNV\0"): *fp_glMatrixMult3x2fNV;
 	glMatrixMult3x3fNV = call_user_get_proc_address(user_get_proc_address, "glMatrixMult3x3fNV\0"): *fp_glMatrixMult3x3fNV;
 	glMatrixMultTranspose3x3fNV = call_user_get_proc_address(user_get_proc_address, "glMatrixMultTranspose3x3fNV\0"): *fp_glMatrixMultTranspose3x3fNV;
@@ -17329,14 +15843,11 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glMemoryBarrierByRegion = call_user_get_proc_address(user_get_proc_address, "glMemoryBarrierByRegion\0"): *fp_glMemoryBarrierByRegion;
 	glMemoryBarrierEXT = call_user_get_proc_address(user_get_proc_address, "glMemoryBarrierEXT\0"): *fp_glMemoryBarrierEXT;
 	glMemoryObjectParameterivEXT = call_user_get_proc_address(user_get_proc_address, "glMemoryObjectParameterivEXT\0"): *fp_glMemoryObjectParameterivEXT;
+	glMinSampleShading = call_user_get_proc_address(user_get_proc_address, "glMinSampleShading\0"): *fp_glMinSampleShading;
 	glMinSampleShadingARB = call_user_get_proc_address(user_get_proc_address, "glMinSampleShadingARB\0"): *fp_glMinSampleShadingARB;
 	glMinmaxEXT = call_user_get_proc_address(user_get_proc_address, "glMinmaxEXT\0"): *fp_glMinmaxEXT;
-	glMultMatrixd = call_user_get_proc_address(user_get_proc_address, "glMultMatrixd\0"): *fp_glMultMatrixd;
-	glMultMatrixf = call_user_get_proc_address(user_get_proc_address, "glMultMatrixf\0"): *fp_glMultMatrixf;
 	glMultMatrixxOES = call_user_get_proc_address(user_get_proc_address, "glMultMatrixxOES\0"): *fp_glMultMatrixxOES;
-	glMultTransposeMatrixd = call_user_get_proc_address(user_get_proc_address, "glMultTransposeMatrixd\0"): *fp_glMultTransposeMatrixd;
 	glMultTransposeMatrixdARB = call_user_get_proc_address(user_get_proc_address, "glMultTransposeMatrixdARB\0"): *fp_glMultTransposeMatrixdARB;
-	glMultTransposeMatrixf = call_user_get_proc_address(user_get_proc_address, "glMultTransposeMatrixf\0"): *fp_glMultTransposeMatrixf;
 	glMultTransposeMatrixfARB = call_user_get_proc_address(user_get_proc_address, "glMultTransposeMatrixfARB\0"): *fp_glMultTransposeMatrixfARB;
 	glMultTransposeMatrixxOES = call_user_get_proc_address(user_get_proc_address, "glMultTransposeMatrixxOES\0"): *fp_glMultTransposeMatrixxOES;
 	glMultiDrawArrays = call_user_get_proc_address(user_get_proc_address, "glMultiDrawArrays\0"): *fp_glMultiDrawArrays;
@@ -17363,89 +15874,57 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glMultiTexBufferEXT = call_user_get_proc_address(user_get_proc_address, "glMultiTexBufferEXT\0"): *fp_glMultiTexBufferEXT;
 	glMultiTexCoord1bOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1bOES\0"): *fp_glMultiTexCoord1bOES;
 	glMultiTexCoord1bvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1bvOES\0"): *fp_glMultiTexCoord1bvOES;
-	glMultiTexCoord1d = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1d\0"): *fp_glMultiTexCoord1d;
 	glMultiTexCoord1dARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1dARB\0"): *fp_glMultiTexCoord1dARB;
-	glMultiTexCoord1dv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1dv\0"): *fp_glMultiTexCoord1dv;
 	glMultiTexCoord1dvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1dvARB\0"): *fp_glMultiTexCoord1dvARB;
-	glMultiTexCoord1f = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1f\0"): *fp_glMultiTexCoord1f;
 	glMultiTexCoord1fARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1fARB\0"): *fp_glMultiTexCoord1fARB;
-	glMultiTexCoord1fv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1fv\0"): *fp_glMultiTexCoord1fv;
 	glMultiTexCoord1fvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1fvARB\0"): *fp_glMultiTexCoord1fvARB;
 	glMultiTexCoord1hNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1hNV\0"): *fp_glMultiTexCoord1hNV;
 	glMultiTexCoord1hvNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1hvNV\0"): *fp_glMultiTexCoord1hvNV;
-	glMultiTexCoord1i = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1i\0"): *fp_glMultiTexCoord1i;
 	glMultiTexCoord1iARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1iARB\0"): *fp_glMultiTexCoord1iARB;
-	glMultiTexCoord1iv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1iv\0"): *fp_glMultiTexCoord1iv;
 	glMultiTexCoord1ivARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1ivARB\0"): *fp_glMultiTexCoord1ivARB;
-	glMultiTexCoord1s = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1s\0"): *fp_glMultiTexCoord1s;
 	glMultiTexCoord1sARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1sARB\0"): *fp_glMultiTexCoord1sARB;
-	glMultiTexCoord1sv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1sv\0"): *fp_glMultiTexCoord1sv;
 	glMultiTexCoord1svARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1svARB\0"): *fp_glMultiTexCoord1svARB;
 	glMultiTexCoord1xOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1xOES\0"): *fp_glMultiTexCoord1xOES;
 	glMultiTexCoord1xvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord1xvOES\0"): *fp_glMultiTexCoord1xvOES;
 	glMultiTexCoord2bOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2bOES\0"): *fp_glMultiTexCoord2bOES;
 	glMultiTexCoord2bvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2bvOES\0"): *fp_glMultiTexCoord2bvOES;
-	glMultiTexCoord2d = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2d\0"): *fp_glMultiTexCoord2d;
 	glMultiTexCoord2dARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2dARB\0"): *fp_glMultiTexCoord2dARB;
-	glMultiTexCoord2dv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2dv\0"): *fp_glMultiTexCoord2dv;
 	glMultiTexCoord2dvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2dvARB\0"): *fp_glMultiTexCoord2dvARB;
-	glMultiTexCoord2f = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2f\0"): *fp_glMultiTexCoord2f;
 	glMultiTexCoord2fARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2fARB\0"): *fp_glMultiTexCoord2fARB;
-	glMultiTexCoord2fv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2fv\0"): *fp_glMultiTexCoord2fv;
 	glMultiTexCoord2fvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2fvARB\0"): *fp_glMultiTexCoord2fvARB;
 	glMultiTexCoord2hNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2hNV\0"): *fp_glMultiTexCoord2hNV;
 	glMultiTexCoord2hvNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2hvNV\0"): *fp_glMultiTexCoord2hvNV;
-	glMultiTexCoord2i = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2i\0"): *fp_glMultiTexCoord2i;
 	glMultiTexCoord2iARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2iARB\0"): *fp_glMultiTexCoord2iARB;
-	glMultiTexCoord2iv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2iv\0"): *fp_glMultiTexCoord2iv;
 	glMultiTexCoord2ivARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2ivARB\0"): *fp_glMultiTexCoord2ivARB;
-	glMultiTexCoord2s = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2s\0"): *fp_glMultiTexCoord2s;
 	glMultiTexCoord2sARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2sARB\0"): *fp_glMultiTexCoord2sARB;
-	glMultiTexCoord2sv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2sv\0"): *fp_glMultiTexCoord2sv;
 	glMultiTexCoord2svARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2svARB\0"): *fp_glMultiTexCoord2svARB;
 	glMultiTexCoord2xOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2xOES\0"): *fp_glMultiTexCoord2xOES;
 	glMultiTexCoord2xvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord2xvOES\0"): *fp_glMultiTexCoord2xvOES;
 	glMultiTexCoord3bOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3bOES\0"): *fp_glMultiTexCoord3bOES;
 	glMultiTexCoord3bvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3bvOES\0"): *fp_glMultiTexCoord3bvOES;
-	glMultiTexCoord3d = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3d\0"): *fp_glMultiTexCoord3d;
 	glMultiTexCoord3dARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3dARB\0"): *fp_glMultiTexCoord3dARB;
-	glMultiTexCoord3dv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3dv\0"): *fp_glMultiTexCoord3dv;
 	glMultiTexCoord3dvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3dvARB\0"): *fp_glMultiTexCoord3dvARB;
-	glMultiTexCoord3f = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3f\0"): *fp_glMultiTexCoord3f;
 	glMultiTexCoord3fARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3fARB\0"): *fp_glMultiTexCoord3fARB;
-	glMultiTexCoord3fv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3fv\0"): *fp_glMultiTexCoord3fv;
 	glMultiTexCoord3fvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3fvARB\0"): *fp_glMultiTexCoord3fvARB;
 	glMultiTexCoord3hNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3hNV\0"): *fp_glMultiTexCoord3hNV;
 	glMultiTexCoord3hvNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3hvNV\0"): *fp_glMultiTexCoord3hvNV;
-	glMultiTexCoord3i = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3i\0"): *fp_glMultiTexCoord3i;
 	glMultiTexCoord3iARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3iARB\0"): *fp_glMultiTexCoord3iARB;
-	glMultiTexCoord3iv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3iv\0"): *fp_glMultiTexCoord3iv;
 	glMultiTexCoord3ivARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3ivARB\0"): *fp_glMultiTexCoord3ivARB;
-	glMultiTexCoord3s = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3s\0"): *fp_glMultiTexCoord3s;
 	glMultiTexCoord3sARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3sARB\0"): *fp_glMultiTexCoord3sARB;
-	glMultiTexCoord3sv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3sv\0"): *fp_glMultiTexCoord3sv;
 	glMultiTexCoord3svARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3svARB\0"): *fp_glMultiTexCoord3svARB;
 	glMultiTexCoord3xOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3xOES\0"): *fp_glMultiTexCoord3xOES;
 	glMultiTexCoord3xvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord3xvOES\0"): *fp_glMultiTexCoord3xvOES;
 	glMultiTexCoord4bOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4bOES\0"): *fp_glMultiTexCoord4bOES;
 	glMultiTexCoord4bvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4bvOES\0"): *fp_glMultiTexCoord4bvOES;
-	glMultiTexCoord4d = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4d\0"): *fp_glMultiTexCoord4d;
 	glMultiTexCoord4dARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4dARB\0"): *fp_glMultiTexCoord4dARB;
-	glMultiTexCoord4dv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4dv\0"): *fp_glMultiTexCoord4dv;
 	glMultiTexCoord4dvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4dvARB\0"): *fp_glMultiTexCoord4dvARB;
-	glMultiTexCoord4f = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4f\0"): *fp_glMultiTexCoord4f;
 	glMultiTexCoord4fARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4fARB\0"): *fp_glMultiTexCoord4fARB;
-	glMultiTexCoord4fv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4fv\0"): *fp_glMultiTexCoord4fv;
 	glMultiTexCoord4fvARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4fvARB\0"): *fp_glMultiTexCoord4fvARB;
 	glMultiTexCoord4hNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4hNV\0"): *fp_glMultiTexCoord4hNV;
 	glMultiTexCoord4hvNV = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4hvNV\0"): *fp_glMultiTexCoord4hvNV;
-	glMultiTexCoord4i = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4i\0"): *fp_glMultiTexCoord4i;
 	glMultiTexCoord4iARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4iARB\0"): *fp_glMultiTexCoord4iARB;
-	glMultiTexCoord4iv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4iv\0"): *fp_glMultiTexCoord4iv;
 	glMultiTexCoord4ivARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4ivARB\0"): *fp_glMultiTexCoord4ivARB;
-	glMultiTexCoord4s = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4s\0"): *fp_glMultiTexCoord4s;
 	glMultiTexCoord4sARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4sARB\0"): *fp_glMultiTexCoord4sARB;
-	glMultiTexCoord4sv = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4sv\0"): *fp_glMultiTexCoord4sv;
 	glMultiTexCoord4svARB = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4svARB\0"): *fp_glMultiTexCoord4svARB;
 	glMultiTexCoord4xOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4xOES\0"): *fp_glMultiTexCoord4xOES;
 	glMultiTexCoord4xvOES = call_user_get_proc_address(user_get_proc_address, "glMultiTexCoord4xvOES\0"): *fp_glMultiTexCoord4xvOES;
@@ -17537,26 +16016,14 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glNamedRenderbufferStorageMultisampleCoverageEXT = call_user_get_proc_address(user_get_proc_address, "glNamedRenderbufferStorageMultisampleCoverageEXT\0"): *fp_glNamedRenderbufferStorageMultisampleCoverageEXT;
 	glNamedRenderbufferStorageMultisampleEXT = call_user_get_proc_address(user_get_proc_address, "glNamedRenderbufferStorageMultisampleEXT\0"): *fp_glNamedRenderbufferStorageMultisampleEXT;
 	glNamedStringARB = call_user_get_proc_address(user_get_proc_address, "glNamedStringARB\0"): *fp_glNamedStringARB;
-	glNewList = call_user_get_proc_address(user_get_proc_address, "glNewList\0"): *fp_glNewList;
 	glNewObjectBufferATI = call_user_get_proc_address(user_get_proc_address, "glNewObjectBufferATI\0"): *fp_glNewObjectBufferATI;
-	glNormal3b = call_user_get_proc_address(user_get_proc_address, "glNormal3b\0"): *fp_glNormal3b;
-	glNormal3bv = call_user_get_proc_address(user_get_proc_address, "glNormal3bv\0"): *fp_glNormal3bv;
-	glNormal3d = call_user_get_proc_address(user_get_proc_address, "glNormal3d\0"): *fp_glNormal3d;
-	glNormal3dv = call_user_get_proc_address(user_get_proc_address, "glNormal3dv\0"): *fp_glNormal3dv;
-	glNormal3f = call_user_get_proc_address(user_get_proc_address, "glNormal3f\0"): *fp_glNormal3f;
 	glNormal3fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glNormal3fVertex3fSUN\0"): *fp_glNormal3fVertex3fSUN;
 	glNormal3fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glNormal3fVertex3fvSUN\0"): *fp_glNormal3fVertex3fvSUN;
-	glNormal3fv = call_user_get_proc_address(user_get_proc_address, "glNormal3fv\0"): *fp_glNormal3fv;
 	glNormal3hNV = call_user_get_proc_address(user_get_proc_address, "glNormal3hNV\0"): *fp_glNormal3hNV;
 	glNormal3hvNV = call_user_get_proc_address(user_get_proc_address, "glNormal3hvNV\0"): *fp_glNormal3hvNV;
-	glNormal3i = call_user_get_proc_address(user_get_proc_address, "glNormal3i\0"): *fp_glNormal3i;
-	glNormal3iv = call_user_get_proc_address(user_get_proc_address, "glNormal3iv\0"): *fp_glNormal3iv;
-	glNormal3s = call_user_get_proc_address(user_get_proc_address, "glNormal3s\0"): *fp_glNormal3s;
-	glNormal3sv = call_user_get_proc_address(user_get_proc_address, "glNormal3sv\0"): *fp_glNormal3sv;
 	glNormal3xOES = call_user_get_proc_address(user_get_proc_address, "glNormal3xOES\0"): *fp_glNormal3xOES;
 	glNormal3xvOES = call_user_get_proc_address(user_get_proc_address, "glNormal3xvOES\0"): *fp_glNormal3xvOES;
 	glNormalFormatNV = call_user_get_proc_address(user_get_proc_address, "glNormalFormatNV\0"): *fp_glNormalFormatNV;
-	glNormalPointer = call_user_get_proc_address(user_get_proc_address, "glNormalPointer\0"): *fp_glNormalPointer;
 	glNormalPointerEXT = call_user_get_proc_address(user_get_proc_address, "glNormalPointerEXT\0"): *fp_glNormalPointerEXT;
 	glNormalPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glNormalPointerListIBM\0"): *fp_glNormalPointerListIBM;
 	glNormalPointervINTEL = call_user_get_proc_address(user_get_proc_address, "glNormalPointervINTEL\0"): *fp_glNormalPointervINTEL;
@@ -17574,13 +16041,11 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glObjectPtrLabel = call_user_get_proc_address(user_get_proc_address, "glObjectPtrLabel\0"): *fp_glObjectPtrLabel;
 	glObjectPurgeableAPPLE = call_user_get_proc_address(user_get_proc_address, "glObjectPurgeableAPPLE\0"): *fp_glObjectPurgeableAPPLE;
 	glObjectUnpurgeableAPPLE = call_user_get_proc_address(user_get_proc_address, "glObjectUnpurgeableAPPLE\0"): *fp_glObjectUnpurgeableAPPLE;
-	glOrtho = call_user_get_proc_address(user_get_proc_address, "glOrtho\0"): *fp_glOrtho;
 	glOrthofOES = call_user_get_proc_address(user_get_proc_address, "glOrthofOES\0"): *fp_glOrthofOES;
 	glOrthoxOES = call_user_get_proc_address(user_get_proc_address, "glOrthoxOES\0"): *fp_glOrthoxOES;
 	glPNTrianglesfATI = call_user_get_proc_address(user_get_proc_address, "glPNTrianglesfATI\0"): *fp_glPNTrianglesfATI;
 	glPNTrianglesiATI = call_user_get_proc_address(user_get_proc_address, "glPNTrianglesiATI\0"): *fp_glPNTrianglesiATI;
 	glPassTexCoordATI = call_user_get_proc_address(user_get_proc_address, "glPassTexCoordATI\0"): *fp_glPassTexCoordATI;
-	glPassThrough = call_user_get_proc_address(user_get_proc_address, "glPassThrough\0"): *fp_glPassThrough;
 	glPassThroughxOES = call_user_get_proc_address(user_get_proc_address, "glPassThroughxOES\0"): *fp_glPassThroughxOES;
 	glPatchParameterfv = call_user_get_proc_address(user_get_proc_address, "glPatchParameterfv\0"): *fp_glPatchParameterfv;
 	glPatchParameteri = call_user_get_proc_address(user_get_proc_address, "glPatchParameteri\0"): *fp_glPatchParameteri;
@@ -17605,9 +16070,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glPauseTransformFeedback = call_user_get_proc_address(user_get_proc_address, "glPauseTransformFeedback\0"): *fp_glPauseTransformFeedback;
 	glPauseTransformFeedbackNV = call_user_get_proc_address(user_get_proc_address, "glPauseTransformFeedbackNV\0"): *fp_glPauseTransformFeedbackNV;
 	glPixelDataRangeNV = call_user_get_proc_address(user_get_proc_address, "glPixelDataRangeNV\0"): *fp_glPixelDataRangeNV;
-	glPixelMapfv = call_user_get_proc_address(user_get_proc_address, "glPixelMapfv\0"): *fp_glPixelMapfv;
-	glPixelMapuiv = call_user_get_proc_address(user_get_proc_address, "glPixelMapuiv\0"): *fp_glPixelMapuiv;
-	glPixelMapusv = call_user_get_proc_address(user_get_proc_address, "glPixelMapusv\0"): *fp_glPixelMapusv;
 	glPixelMapx = call_user_get_proc_address(user_get_proc_address, "glPixelMapx\0"): *fp_glPixelMapx;
 	glPixelStoref = call_user_get_proc_address(user_get_proc_address, "glPixelStoref\0"): *fp_glPixelStoref;
 	glPixelStorei = call_user_get_proc_address(user_get_proc_address, "glPixelStorei\0"): *fp_glPixelStorei;
@@ -17617,14 +16079,11 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glPixelTexGenParameteriSGIS = call_user_get_proc_address(user_get_proc_address, "glPixelTexGenParameteriSGIS\0"): *fp_glPixelTexGenParameteriSGIS;
 	glPixelTexGenParameterivSGIS = call_user_get_proc_address(user_get_proc_address, "glPixelTexGenParameterivSGIS\0"): *fp_glPixelTexGenParameterivSGIS;
 	glPixelTexGenSGIX = call_user_get_proc_address(user_get_proc_address, "glPixelTexGenSGIX\0"): *fp_glPixelTexGenSGIX;
-	glPixelTransferf = call_user_get_proc_address(user_get_proc_address, "glPixelTransferf\0"): *fp_glPixelTransferf;
-	glPixelTransferi = call_user_get_proc_address(user_get_proc_address, "glPixelTransferi\0"): *fp_glPixelTransferi;
 	glPixelTransferxOES = call_user_get_proc_address(user_get_proc_address, "glPixelTransferxOES\0"): *fp_glPixelTransferxOES;
 	glPixelTransformParameterfEXT = call_user_get_proc_address(user_get_proc_address, "glPixelTransformParameterfEXT\0"): *fp_glPixelTransformParameterfEXT;
 	glPixelTransformParameterfvEXT = call_user_get_proc_address(user_get_proc_address, "glPixelTransformParameterfvEXT\0"): *fp_glPixelTransformParameterfvEXT;
 	glPixelTransformParameteriEXT = call_user_get_proc_address(user_get_proc_address, "glPixelTransformParameteriEXT\0"): *fp_glPixelTransformParameteriEXT;
 	glPixelTransformParameterivEXT = call_user_get_proc_address(user_get_proc_address, "glPixelTransformParameterivEXT\0"): *fp_glPixelTransformParameterivEXT;
-	glPixelZoom = call_user_get_proc_address(user_get_proc_address, "glPixelZoom\0"): *fp_glPixelZoom;
 	glPixelZoomxOES = call_user_get_proc_address(user_get_proc_address, "glPixelZoomxOES\0"): *fp_glPixelZoomxOES;
 	glPointAlongPathNV = call_user_get_proc_address(user_get_proc_address, "glPointAlongPathNV\0"): *fp_glPointAlongPathNV;
 	glPointParameterf = call_user_get_proc_address(user_get_proc_address, "glPointParameterf\0"): *fp_glPointParameterf;
@@ -17650,19 +16109,14 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glPolygonOffsetClampEXT = call_user_get_proc_address(user_get_proc_address, "glPolygonOffsetClampEXT\0"): *fp_glPolygonOffsetClampEXT;
 	glPolygonOffsetEXT = call_user_get_proc_address(user_get_proc_address, "glPolygonOffsetEXT\0"): *fp_glPolygonOffsetEXT;
 	glPolygonOffsetxOES = call_user_get_proc_address(user_get_proc_address, "glPolygonOffsetxOES\0"): *fp_glPolygonOffsetxOES;
-	glPolygonStipple = call_user_get_proc_address(user_get_proc_address, "glPolygonStipple\0"): *fp_glPolygonStipple;
-	glPopAttrib = call_user_get_proc_address(user_get_proc_address, "glPopAttrib\0"): *fp_glPopAttrib;
-	glPopClientAttrib = call_user_get_proc_address(user_get_proc_address, "glPopClientAttrib\0"): *fp_glPopClientAttrib;
 	glPopDebugGroup = call_user_get_proc_address(user_get_proc_address, "glPopDebugGroup\0"): *fp_glPopDebugGroup;
 	glPopGroupMarkerEXT = call_user_get_proc_address(user_get_proc_address, "glPopGroupMarkerEXT\0"): *fp_glPopGroupMarkerEXT;
-	glPopMatrix = call_user_get_proc_address(user_get_proc_address, "glPopMatrix\0"): *fp_glPopMatrix;
-	glPopName = call_user_get_proc_address(user_get_proc_address, "glPopName\0"): *fp_glPopName;
 	glPresentFrameDualFillNV = call_user_get_proc_address(user_get_proc_address, "glPresentFrameDualFillNV\0"): *fp_glPresentFrameDualFillNV;
 	glPresentFrameKeyedNV = call_user_get_proc_address(user_get_proc_address, "glPresentFrameKeyedNV\0"): *fp_glPresentFrameKeyedNV;
 	glPrimitiveBoundingBoxARB = call_user_get_proc_address(user_get_proc_address, "glPrimitiveBoundingBoxARB\0"): *fp_glPrimitiveBoundingBoxARB;
+	glPrimitiveRestartIndex = call_user_get_proc_address(user_get_proc_address, "glPrimitiveRestartIndex\0"): *fp_glPrimitiveRestartIndex;
 	glPrimitiveRestartIndexNV = call_user_get_proc_address(user_get_proc_address, "glPrimitiveRestartIndexNV\0"): *fp_glPrimitiveRestartIndexNV;
 	glPrimitiveRestartNV = call_user_get_proc_address(user_get_proc_address, "glPrimitiveRestartNV\0"): *fp_glPrimitiveRestartNV;
-	glPrioritizeTextures = call_user_get_proc_address(user_get_proc_address, "glPrioritizeTextures\0"): *fp_glPrioritizeTextures;
 	glPrioritizeTexturesEXT = call_user_get_proc_address(user_get_proc_address, "glPrioritizeTexturesEXT\0"): *fp_glPrioritizeTexturesEXT;
 	glPrioritizeTexturesxOES = call_user_get_proc_address(user_get_proc_address, "glPrioritizeTexturesxOES\0"): *fp_glPrioritizeTexturesxOES;
 	glProgramBinary = call_user_get_proc_address(user_get_proc_address, "glProgramBinary\0"): *fp_glProgramBinary;
@@ -17848,46 +16302,18 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glProgramVertexLimitNV = call_user_get_proc_address(user_get_proc_address, "glProgramVertexLimitNV\0"): *fp_glProgramVertexLimitNV;
 	glProvokingVertex = call_user_get_proc_address(user_get_proc_address, "glProvokingVertex\0"): *fp_glProvokingVertex;
 	glProvokingVertexEXT = call_user_get_proc_address(user_get_proc_address, "glProvokingVertexEXT\0"): *fp_glProvokingVertexEXT;
-	glPushAttrib = call_user_get_proc_address(user_get_proc_address, "glPushAttrib\0"): *fp_glPushAttrib;
-	glPushClientAttrib = call_user_get_proc_address(user_get_proc_address, "glPushClientAttrib\0"): *fp_glPushClientAttrib;
 	glPushClientAttribDefaultEXT = call_user_get_proc_address(user_get_proc_address, "glPushClientAttribDefaultEXT\0"): *fp_glPushClientAttribDefaultEXT;
 	glPushDebugGroup = call_user_get_proc_address(user_get_proc_address, "glPushDebugGroup\0"): *fp_glPushDebugGroup;
 	glPushGroupMarkerEXT = call_user_get_proc_address(user_get_proc_address, "glPushGroupMarkerEXT\0"): *fp_glPushGroupMarkerEXT;
-	glPushMatrix = call_user_get_proc_address(user_get_proc_address, "glPushMatrix\0"): *fp_glPushMatrix;
-	glPushName = call_user_get_proc_address(user_get_proc_address, "glPushName\0"): *fp_glPushName;
 	glQueryCounter = call_user_get_proc_address(user_get_proc_address, "glQueryCounter\0"): *fp_glQueryCounter;
 	glQueryMatrixxOES = call_user_get_proc_address(user_get_proc_address, "glQueryMatrixxOES\0"): *fp_glQueryMatrixxOES;
 	glQueryObjectParameteruiAMD = call_user_get_proc_address(user_get_proc_address, "glQueryObjectParameteruiAMD\0"): *fp_glQueryObjectParameteruiAMD;
 	glQueryResourceNV = call_user_get_proc_address(user_get_proc_address, "glQueryResourceNV\0"): *fp_glQueryResourceNV;
 	glQueryResourceTagNV = call_user_get_proc_address(user_get_proc_address, "glQueryResourceTagNV\0"): *fp_glQueryResourceTagNV;
-	glRasterPos2d = call_user_get_proc_address(user_get_proc_address, "glRasterPos2d\0"): *fp_glRasterPos2d;
-	glRasterPos2dv = call_user_get_proc_address(user_get_proc_address, "glRasterPos2dv\0"): *fp_glRasterPos2dv;
-	glRasterPos2f = call_user_get_proc_address(user_get_proc_address, "glRasterPos2f\0"): *fp_glRasterPos2f;
-	glRasterPos2fv = call_user_get_proc_address(user_get_proc_address, "glRasterPos2fv\0"): *fp_glRasterPos2fv;
-	glRasterPos2i = call_user_get_proc_address(user_get_proc_address, "glRasterPos2i\0"): *fp_glRasterPos2i;
-	glRasterPos2iv = call_user_get_proc_address(user_get_proc_address, "glRasterPos2iv\0"): *fp_glRasterPos2iv;
-	glRasterPos2s = call_user_get_proc_address(user_get_proc_address, "glRasterPos2s\0"): *fp_glRasterPos2s;
-	glRasterPos2sv = call_user_get_proc_address(user_get_proc_address, "glRasterPos2sv\0"): *fp_glRasterPos2sv;
 	glRasterPos2xOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos2xOES\0"): *fp_glRasterPos2xOES;
 	glRasterPos2xvOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos2xvOES\0"): *fp_glRasterPos2xvOES;
-	glRasterPos3d = call_user_get_proc_address(user_get_proc_address, "glRasterPos3d\0"): *fp_glRasterPos3d;
-	glRasterPos3dv = call_user_get_proc_address(user_get_proc_address, "glRasterPos3dv\0"): *fp_glRasterPos3dv;
-	glRasterPos3f = call_user_get_proc_address(user_get_proc_address, "glRasterPos3f\0"): *fp_glRasterPos3f;
-	glRasterPos3fv = call_user_get_proc_address(user_get_proc_address, "glRasterPos3fv\0"): *fp_glRasterPos3fv;
-	glRasterPos3i = call_user_get_proc_address(user_get_proc_address, "glRasterPos3i\0"): *fp_glRasterPos3i;
-	glRasterPos3iv = call_user_get_proc_address(user_get_proc_address, "glRasterPos3iv\0"): *fp_glRasterPos3iv;
-	glRasterPos3s = call_user_get_proc_address(user_get_proc_address, "glRasterPos3s\0"): *fp_glRasterPos3s;
-	glRasterPos3sv = call_user_get_proc_address(user_get_proc_address, "glRasterPos3sv\0"): *fp_glRasterPos3sv;
 	glRasterPos3xOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos3xOES\0"): *fp_glRasterPos3xOES;
 	glRasterPos3xvOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos3xvOES\0"): *fp_glRasterPos3xvOES;
-	glRasterPos4d = call_user_get_proc_address(user_get_proc_address, "glRasterPos4d\0"): *fp_glRasterPos4d;
-	glRasterPos4dv = call_user_get_proc_address(user_get_proc_address, "glRasterPos4dv\0"): *fp_glRasterPos4dv;
-	glRasterPos4f = call_user_get_proc_address(user_get_proc_address, "glRasterPos4f\0"): *fp_glRasterPos4f;
-	glRasterPos4fv = call_user_get_proc_address(user_get_proc_address, "glRasterPos4fv\0"): *fp_glRasterPos4fv;
-	glRasterPos4i = call_user_get_proc_address(user_get_proc_address, "glRasterPos4i\0"): *fp_glRasterPos4i;
-	glRasterPos4iv = call_user_get_proc_address(user_get_proc_address, "glRasterPos4iv\0"): *fp_glRasterPos4iv;
-	glRasterPos4s = call_user_get_proc_address(user_get_proc_address, "glRasterPos4s\0"): *fp_glRasterPos4s;
-	glRasterPos4sv = call_user_get_proc_address(user_get_proc_address, "glRasterPos4sv\0"): *fp_glRasterPos4sv;
 	glRasterPos4xOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos4xOES\0"): *fp_glRasterPos4xOES;
 	glRasterPos4xvOES = call_user_get_proc_address(user_get_proc_address, "glRasterPos4xvOES\0"): *fp_glRasterPos4xvOES;
 	glRasterSamplesEXT = call_user_get_proc_address(user_get_proc_address, "glRasterSamplesEXT\0"): *fp_glRasterSamplesEXT;
@@ -17896,21 +16322,12 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glReadPixels = call_user_get_proc_address(user_get_proc_address, "glReadPixels\0"): *fp_glReadPixels;
 	glReadnPixels = call_user_get_proc_address(user_get_proc_address, "glReadnPixels\0"): *fp_glReadnPixels;
 	glReadnPixelsARB = call_user_get_proc_address(user_get_proc_address, "glReadnPixelsARB\0"): *fp_glReadnPixelsARB;
-	glRectd = call_user_get_proc_address(user_get_proc_address, "glRectd\0"): *fp_glRectd;
-	glRectdv = call_user_get_proc_address(user_get_proc_address, "glRectdv\0"): *fp_glRectdv;
-	glRectf = call_user_get_proc_address(user_get_proc_address, "glRectf\0"): *fp_glRectf;
-	glRectfv = call_user_get_proc_address(user_get_proc_address, "glRectfv\0"): *fp_glRectfv;
-	glRecti = call_user_get_proc_address(user_get_proc_address, "glRecti\0"): *fp_glRecti;
-	glRectiv = call_user_get_proc_address(user_get_proc_address, "glRectiv\0"): *fp_glRectiv;
-	glRects = call_user_get_proc_address(user_get_proc_address, "glRects\0"): *fp_glRects;
-	glRectsv = call_user_get_proc_address(user_get_proc_address, "glRectsv\0"): *fp_glRectsv;
 	glRectxOES = call_user_get_proc_address(user_get_proc_address, "glRectxOES\0"): *fp_glRectxOES;
 	glRectxvOES = call_user_get_proc_address(user_get_proc_address, "glRectxvOES\0"): *fp_glRectxvOES;
 	glReferencePlaneSGIX = call_user_get_proc_address(user_get_proc_address, "glReferencePlaneSGIX\0"): *fp_glReferencePlaneSGIX;
 	glReleaseKeyedMutexWin32EXT = call_user_get_proc_address(user_get_proc_address, "glReleaseKeyedMutexWin32EXT\0"): *fp_glReleaseKeyedMutexWin32EXT;
 	glReleaseShaderCompiler = call_user_get_proc_address(user_get_proc_address, "glReleaseShaderCompiler\0"): *fp_glReleaseShaderCompiler;
 	glRenderGpuMaskNV = call_user_get_proc_address(user_get_proc_address, "glRenderGpuMaskNV\0"): *fp_glRenderGpuMaskNV;
-	glRenderMode = call_user_get_proc_address(user_get_proc_address, "glRenderMode\0"): *fp_glRenderMode;
 	glRenderbufferStorage = call_user_get_proc_address(user_get_proc_address, "glRenderbufferStorage\0"): *fp_glRenderbufferStorage;
 	glRenderbufferStorageEXT = call_user_get_proc_address(user_get_proc_address, "glRenderbufferStorageEXT\0"): *fp_glRenderbufferStorageEXT;
 	glRenderbufferStorageMultisample = call_user_get_proc_address(user_get_proc_address, "glRenderbufferStorageMultisample\0"): *fp_glRenderbufferStorageMultisample;
@@ -17948,8 +16365,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glResolveDepthValuesNV = call_user_get_proc_address(user_get_proc_address, "glResolveDepthValuesNV\0"): *fp_glResolveDepthValuesNV;
 	glResumeTransformFeedback = call_user_get_proc_address(user_get_proc_address, "glResumeTransformFeedback\0"): *fp_glResumeTransformFeedback;
 	glResumeTransformFeedbackNV = call_user_get_proc_address(user_get_proc_address, "glResumeTransformFeedbackNV\0"): *fp_glResumeTransformFeedbackNV;
-	glRotated = call_user_get_proc_address(user_get_proc_address, "glRotated\0"): *fp_glRotated;
-	glRotatef = call_user_get_proc_address(user_get_proc_address, "glRotatef\0"): *fp_glRotatef;
 	glRotatexOES = call_user_get_proc_address(user_get_proc_address, "glRotatexOES\0"): *fp_glRotatexOES;
 	glSampleCoverage = call_user_get_proc_address(user_get_proc_address, "glSampleCoverage\0"): *fp_glSampleCoverage;
 	glSampleCoverageARB = call_user_get_proc_address(user_get_proc_address, "glSampleCoverageARB\0"): *fp_glSampleCoverageARB;
@@ -17966,8 +16381,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glSamplerParameterfv = call_user_get_proc_address(user_get_proc_address, "glSamplerParameterfv\0"): *fp_glSamplerParameterfv;
 	glSamplerParameteri = call_user_get_proc_address(user_get_proc_address, "glSamplerParameteri\0"): *fp_glSamplerParameteri;
 	glSamplerParameteriv = call_user_get_proc_address(user_get_proc_address, "glSamplerParameteriv\0"): *fp_glSamplerParameteriv;
-	glScaled = call_user_get_proc_address(user_get_proc_address, "glScaled\0"): *fp_glScaled;
-	glScalef = call_user_get_proc_address(user_get_proc_address, "glScalef\0"): *fp_glScalef;
 	glScalexOES = call_user_get_proc_address(user_get_proc_address, "glScalexOES\0"): *fp_glScalexOES;
 	glScissor = call_user_get_proc_address(user_get_proc_address, "glScissor\0"): *fp_glScissor;
 	glScissorArrayv = call_user_get_proc_address(user_get_proc_address, "glScissorArrayv\0"): *fp_glScissorArrayv;
@@ -17975,45 +16388,27 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glScissorExclusiveNV = call_user_get_proc_address(user_get_proc_address, "glScissorExclusiveNV\0"): *fp_glScissorExclusiveNV;
 	glScissorIndexed = call_user_get_proc_address(user_get_proc_address, "glScissorIndexed\0"): *fp_glScissorIndexed;
 	glScissorIndexedv = call_user_get_proc_address(user_get_proc_address, "glScissorIndexedv\0"): *fp_glScissorIndexedv;
-	glSecondaryColor3b = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3b\0"): *fp_glSecondaryColor3b;
 	glSecondaryColor3bEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3bEXT\0"): *fp_glSecondaryColor3bEXT;
-	glSecondaryColor3bv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3bv\0"): *fp_glSecondaryColor3bv;
 	glSecondaryColor3bvEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3bvEXT\0"): *fp_glSecondaryColor3bvEXT;
-	glSecondaryColor3d = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3d\0"): *fp_glSecondaryColor3d;
 	glSecondaryColor3dEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3dEXT\0"): *fp_glSecondaryColor3dEXT;
-	glSecondaryColor3dv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3dv\0"): *fp_glSecondaryColor3dv;
 	glSecondaryColor3dvEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3dvEXT\0"): *fp_glSecondaryColor3dvEXT;
-	glSecondaryColor3f = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3f\0"): *fp_glSecondaryColor3f;
 	glSecondaryColor3fEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3fEXT\0"): *fp_glSecondaryColor3fEXT;
-	glSecondaryColor3fv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3fv\0"): *fp_glSecondaryColor3fv;
 	glSecondaryColor3fvEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3fvEXT\0"): *fp_glSecondaryColor3fvEXT;
 	glSecondaryColor3hNV = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3hNV\0"): *fp_glSecondaryColor3hNV;
 	glSecondaryColor3hvNV = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3hvNV\0"): *fp_glSecondaryColor3hvNV;
-	glSecondaryColor3i = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3i\0"): *fp_glSecondaryColor3i;
 	glSecondaryColor3iEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3iEXT\0"): *fp_glSecondaryColor3iEXT;
-	glSecondaryColor3iv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3iv\0"): *fp_glSecondaryColor3iv;
 	glSecondaryColor3ivEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ivEXT\0"): *fp_glSecondaryColor3ivEXT;
-	glSecondaryColor3s = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3s\0"): *fp_glSecondaryColor3s;
 	glSecondaryColor3sEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3sEXT\0"): *fp_glSecondaryColor3sEXT;
-	glSecondaryColor3sv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3sv\0"): *fp_glSecondaryColor3sv;
 	glSecondaryColor3svEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3svEXT\0"): *fp_glSecondaryColor3svEXT;
-	glSecondaryColor3ub = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ub\0"): *fp_glSecondaryColor3ub;
 	glSecondaryColor3ubEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ubEXT\0"): *fp_glSecondaryColor3ubEXT;
-	glSecondaryColor3ubv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ubv\0"): *fp_glSecondaryColor3ubv;
 	glSecondaryColor3ubvEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ubvEXT\0"): *fp_glSecondaryColor3ubvEXT;
-	glSecondaryColor3ui = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3ui\0"): *fp_glSecondaryColor3ui;
 	glSecondaryColor3uiEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3uiEXT\0"): *fp_glSecondaryColor3uiEXT;
-	glSecondaryColor3uiv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3uiv\0"): *fp_glSecondaryColor3uiv;
 	glSecondaryColor3uivEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3uivEXT\0"): *fp_glSecondaryColor3uivEXT;
-	glSecondaryColor3us = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3us\0"): *fp_glSecondaryColor3us;
 	glSecondaryColor3usEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3usEXT\0"): *fp_glSecondaryColor3usEXT;
-	glSecondaryColor3usv = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3usv\0"): *fp_glSecondaryColor3usv;
 	glSecondaryColor3usvEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColor3usvEXT\0"): *fp_glSecondaryColor3usvEXT;
 	glSecondaryColorFormatNV = call_user_get_proc_address(user_get_proc_address, "glSecondaryColorFormatNV\0"): *fp_glSecondaryColorFormatNV;
-	glSecondaryColorPointer = call_user_get_proc_address(user_get_proc_address, "glSecondaryColorPointer\0"): *fp_glSecondaryColorPointer;
 	glSecondaryColorPointerEXT = call_user_get_proc_address(user_get_proc_address, "glSecondaryColorPointerEXT\0"): *fp_glSecondaryColorPointerEXT;
 	glSecondaryColorPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glSecondaryColorPointerListIBM\0"): *fp_glSecondaryColorPointerListIBM;
-	glSelectBuffer = call_user_get_proc_address(user_get_proc_address, "glSelectBuffer\0"): *fp_glSelectBuffer;
 	glSelectPerfMonitorCountersAMD = call_user_get_proc_address(user_get_proc_address, "glSelectPerfMonitorCountersAMD\0"): *fp_glSelectPerfMonitorCountersAMD;
 	glSemaphoreParameterivNV = call_user_get_proc_address(user_get_proc_address, "glSemaphoreParameterivNV\0"): *fp_glSemaphoreParameterivNV;
 	glSemaphoreParameterui64vEXT = call_user_get_proc_address(user_get_proc_address, "glSemaphoreParameterui64vEXT\0"): *fp_glSemaphoreParameterui64vEXT;
@@ -18024,7 +16419,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glSetInvariantEXT = call_user_get_proc_address(user_get_proc_address, "glSetInvariantEXT\0"): *fp_glSetInvariantEXT;
 	glSetLocalConstantEXT = call_user_get_proc_address(user_get_proc_address, "glSetLocalConstantEXT\0"): *fp_glSetLocalConstantEXT;
 	glSetMultisamplefvAMD = call_user_get_proc_address(user_get_proc_address, "glSetMultisamplefvAMD\0"): *fp_glSetMultisamplefvAMD;
-	glShadeModel = call_user_get_proc_address(user_get_proc_address, "glShadeModel\0"): *fp_glShadeModel;
 	glShaderBinary = call_user_get_proc_address(user_get_proc_address, "glShaderBinary\0"): *fp_glShaderBinary;
 	glShaderOp1EXT = call_user_get_proc_address(user_get_proc_address, "glShaderOp1EXT\0"): *fp_glShaderOp1EXT;
 	glShaderOp2EXT = call_user_get_proc_address(user_get_proc_address, "glShaderOp2EXT\0"): *fp_glShaderOp2EXT;
@@ -18090,6 +16484,7 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glTestFenceNV = call_user_get_proc_address(user_get_proc_address, "glTestFenceNV\0"): *fp_glTestFenceNV;
 	glTestObjectAPPLE = call_user_get_proc_address(user_get_proc_address, "glTestObjectAPPLE\0"): *fp_glTestObjectAPPLE;
 	glTexAttachMemoryNV = call_user_get_proc_address(user_get_proc_address, "glTexAttachMemoryNV\0"): *fp_glTexAttachMemoryNV;
+	glTexBuffer = call_user_get_proc_address(user_get_proc_address, "glTexBuffer\0"): *fp_glTexBuffer;
 	glTexBufferARB = call_user_get_proc_address(user_get_proc_address, "glTexBufferARB\0"): *fp_glTexBufferARB;
 	glTexBufferEXT = call_user_get_proc_address(user_get_proc_address, "glTexBufferEXT\0"): *fp_glTexBufferEXT;
 	glTexBufferRange = call_user_get_proc_address(user_get_proc_address, "glTexBufferRange\0"): *fp_glTexBufferRange;
@@ -18097,23 +16492,12 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glTexBumpParameterivATI = call_user_get_proc_address(user_get_proc_address, "glTexBumpParameterivATI\0"): *fp_glTexBumpParameterivATI;
 	glTexCoord1bOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord1bOES\0"): *fp_glTexCoord1bOES;
 	glTexCoord1bvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord1bvOES\0"): *fp_glTexCoord1bvOES;
-	glTexCoord1d = call_user_get_proc_address(user_get_proc_address, "glTexCoord1d\0"): *fp_glTexCoord1d;
-	glTexCoord1dv = call_user_get_proc_address(user_get_proc_address, "glTexCoord1dv\0"): *fp_glTexCoord1dv;
-	glTexCoord1f = call_user_get_proc_address(user_get_proc_address, "glTexCoord1f\0"): *fp_glTexCoord1f;
-	glTexCoord1fv = call_user_get_proc_address(user_get_proc_address, "glTexCoord1fv\0"): *fp_glTexCoord1fv;
 	glTexCoord1hNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord1hNV\0"): *fp_glTexCoord1hNV;
 	glTexCoord1hvNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord1hvNV\0"): *fp_glTexCoord1hvNV;
-	glTexCoord1i = call_user_get_proc_address(user_get_proc_address, "glTexCoord1i\0"): *fp_glTexCoord1i;
-	glTexCoord1iv = call_user_get_proc_address(user_get_proc_address, "glTexCoord1iv\0"): *fp_glTexCoord1iv;
-	glTexCoord1s = call_user_get_proc_address(user_get_proc_address, "glTexCoord1s\0"): *fp_glTexCoord1s;
-	glTexCoord1sv = call_user_get_proc_address(user_get_proc_address, "glTexCoord1sv\0"): *fp_glTexCoord1sv;
 	glTexCoord1xOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord1xOES\0"): *fp_glTexCoord1xOES;
 	glTexCoord1xvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord1xvOES\0"): *fp_glTexCoord1xvOES;
 	glTexCoord2bOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord2bOES\0"): *fp_glTexCoord2bOES;
 	glTexCoord2bvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord2bvOES\0"): *fp_glTexCoord2bvOES;
-	glTexCoord2d = call_user_get_proc_address(user_get_proc_address, "glTexCoord2d\0"): *fp_glTexCoord2d;
-	glTexCoord2dv = call_user_get_proc_address(user_get_proc_address, "glTexCoord2dv\0"): *fp_glTexCoord2dv;
-	glTexCoord2f = call_user_get_proc_address(user_get_proc_address, "glTexCoord2f\0"): *fp_glTexCoord2f;
 	glTexCoord2fColor3fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fColor3fVertex3fSUN\0"): *fp_glTexCoord2fColor3fVertex3fSUN;
 	glTexCoord2fColor3fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fColor3fVertex3fvSUN\0"): *fp_glTexCoord2fColor3fVertex3fvSUN;
 	glTexCoord2fColor4fNormal3fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fColor4fNormal3fVertex3fSUN\0"): *fp_glTexCoord2fColor4fNormal3fVertex3fSUN;
@@ -18124,65 +16508,33 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glTexCoord2fNormal3fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fNormal3fVertex3fvSUN\0"): *fp_glTexCoord2fNormal3fVertex3fvSUN;
 	glTexCoord2fVertex3fSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fVertex3fSUN\0"): *fp_glTexCoord2fVertex3fSUN;
 	glTexCoord2fVertex3fvSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fVertex3fvSUN\0"): *fp_glTexCoord2fVertex3fvSUN;
-	glTexCoord2fv = call_user_get_proc_address(user_get_proc_address, "glTexCoord2fv\0"): *fp_glTexCoord2fv;
 	glTexCoord2hNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord2hNV\0"): *fp_glTexCoord2hNV;
 	glTexCoord2hvNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord2hvNV\0"): *fp_glTexCoord2hvNV;
-	glTexCoord2i = call_user_get_proc_address(user_get_proc_address, "glTexCoord2i\0"): *fp_glTexCoord2i;
-	glTexCoord2iv = call_user_get_proc_address(user_get_proc_address, "glTexCoord2iv\0"): *fp_glTexCoord2iv;
-	glTexCoord2s = call_user_get_proc_address(user_get_proc_address, "glTexCoord2s\0"): *fp_glTexCoord2s;
-	glTexCoord2sv = call_user_get_proc_address(user_get_proc_address, "glTexCoord2sv\0"): *fp_glTexCoord2sv;
 	glTexCoord2xOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord2xOES\0"): *fp_glTexCoord2xOES;
 	glTexCoord2xvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord2xvOES\0"): *fp_glTexCoord2xvOES;
 	glTexCoord3bOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord3bOES\0"): *fp_glTexCoord3bOES;
 	glTexCoord3bvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord3bvOES\0"): *fp_glTexCoord3bvOES;
-	glTexCoord3d = call_user_get_proc_address(user_get_proc_address, "glTexCoord3d\0"): *fp_glTexCoord3d;
-	glTexCoord3dv = call_user_get_proc_address(user_get_proc_address, "glTexCoord3dv\0"): *fp_glTexCoord3dv;
-	glTexCoord3f = call_user_get_proc_address(user_get_proc_address, "glTexCoord3f\0"): *fp_glTexCoord3f;
-	glTexCoord3fv = call_user_get_proc_address(user_get_proc_address, "glTexCoord3fv\0"): *fp_glTexCoord3fv;
 	glTexCoord3hNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord3hNV\0"): *fp_glTexCoord3hNV;
 	glTexCoord3hvNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord3hvNV\0"): *fp_glTexCoord3hvNV;
-	glTexCoord3i = call_user_get_proc_address(user_get_proc_address, "glTexCoord3i\0"): *fp_glTexCoord3i;
-	glTexCoord3iv = call_user_get_proc_address(user_get_proc_address, "glTexCoord3iv\0"): *fp_glTexCoord3iv;
-	glTexCoord3s = call_user_get_proc_address(user_get_proc_address, "glTexCoord3s\0"): *fp_glTexCoord3s;
-	glTexCoord3sv = call_user_get_proc_address(user_get_proc_address, "glTexCoord3sv\0"): *fp_glTexCoord3sv;
 	glTexCoord3xOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord3xOES\0"): *fp_glTexCoord3xOES;
 	glTexCoord3xvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord3xvOES\0"): *fp_glTexCoord3xvOES;
 	glTexCoord4bOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord4bOES\0"): *fp_glTexCoord4bOES;
 	glTexCoord4bvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord4bvOES\0"): *fp_glTexCoord4bvOES;
-	glTexCoord4d = call_user_get_proc_address(user_get_proc_address, "glTexCoord4d\0"): *fp_glTexCoord4d;
-	glTexCoord4dv = call_user_get_proc_address(user_get_proc_address, "glTexCoord4dv\0"): *fp_glTexCoord4dv;
-	glTexCoord4f = call_user_get_proc_address(user_get_proc_address, "glTexCoord4f\0"): *fp_glTexCoord4f;
 	glTexCoord4fColor4fNormal3fVertex4fSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord4fColor4fNormal3fVertex4fSUN\0"): *fp_glTexCoord4fColor4fNormal3fVertex4fSUN;
 	glTexCoord4fColor4fNormal3fVertex4fvSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord4fColor4fNormal3fVertex4fvSUN\0"): *fp_glTexCoord4fColor4fNormal3fVertex4fvSUN;
 	glTexCoord4fVertex4fSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord4fVertex4fSUN\0"): *fp_glTexCoord4fVertex4fSUN;
 	glTexCoord4fVertex4fvSUN = call_user_get_proc_address(user_get_proc_address, "glTexCoord4fVertex4fvSUN\0"): *fp_glTexCoord4fVertex4fvSUN;
-	glTexCoord4fv = call_user_get_proc_address(user_get_proc_address, "glTexCoord4fv\0"): *fp_glTexCoord4fv;
 	glTexCoord4hNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord4hNV\0"): *fp_glTexCoord4hNV;
 	glTexCoord4hvNV = call_user_get_proc_address(user_get_proc_address, "glTexCoord4hvNV\0"): *fp_glTexCoord4hvNV;
-	glTexCoord4i = call_user_get_proc_address(user_get_proc_address, "glTexCoord4i\0"): *fp_glTexCoord4i;
-	glTexCoord4iv = call_user_get_proc_address(user_get_proc_address, "glTexCoord4iv\0"): *fp_glTexCoord4iv;
-	glTexCoord4s = call_user_get_proc_address(user_get_proc_address, "glTexCoord4s\0"): *fp_glTexCoord4s;
-	glTexCoord4sv = call_user_get_proc_address(user_get_proc_address, "glTexCoord4sv\0"): *fp_glTexCoord4sv;
 	glTexCoord4xOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord4xOES\0"): *fp_glTexCoord4xOES;
 	glTexCoord4xvOES = call_user_get_proc_address(user_get_proc_address, "glTexCoord4xvOES\0"): *fp_glTexCoord4xvOES;
 	glTexCoordFormatNV = call_user_get_proc_address(user_get_proc_address, "glTexCoordFormatNV\0"): *fp_glTexCoordFormatNV;
-	glTexCoordPointer = call_user_get_proc_address(user_get_proc_address, "glTexCoordPointer\0"): *fp_glTexCoordPointer;
 	glTexCoordPointerEXT = call_user_get_proc_address(user_get_proc_address, "glTexCoordPointerEXT\0"): *fp_glTexCoordPointerEXT;
 	glTexCoordPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glTexCoordPointerListIBM\0"): *fp_glTexCoordPointerListIBM;
 	glTexCoordPointervINTEL = call_user_get_proc_address(user_get_proc_address, "glTexCoordPointervINTEL\0"): *fp_glTexCoordPointervINTEL;
-	glTexEnvf = call_user_get_proc_address(user_get_proc_address, "glTexEnvf\0"): *fp_glTexEnvf;
-	glTexEnvfv = call_user_get_proc_address(user_get_proc_address, "glTexEnvfv\0"): *fp_glTexEnvfv;
-	glTexEnvi = call_user_get_proc_address(user_get_proc_address, "glTexEnvi\0"): *fp_glTexEnvi;
-	glTexEnviv = call_user_get_proc_address(user_get_proc_address, "glTexEnviv\0"): *fp_glTexEnviv;
 	glTexEnvxOES = call_user_get_proc_address(user_get_proc_address, "glTexEnvxOES\0"): *fp_glTexEnvxOES;
 	glTexEnvxvOES = call_user_get_proc_address(user_get_proc_address, "glTexEnvxvOES\0"): *fp_glTexEnvxvOES;
 	glTexFilterFuncSGIS = call_user_get_proc_address(user_get_proc_address, "glTexFilterFuncSGIS\0"): *fp_glTexFilterFuncSGIS;
-	glTexGend = call_user_get_proc_address(user_get_proc_address, "glTexGend\0"): *fp_glTexGend;
-	glTexGendv = call_user_get_proc_address(user_get_proc_address, "glTexGendv\0"): *fp_glTexGendv;
-	glTexGenf = call_user_get_proc_address(user_get_proc_address, "glTexGenf\0"): *fp_glTexGenf;
-	glTexGenfv = call_user_get_proc_address(user_get_proc_address, "glTexGenfv\0"): *fp_glTexGenfv;
-	glTexGeni = call_user_get_proc_address(user_get_proc_address, "glTexGeni\0"): *fp_glTexGeni;
-	glTexGeniv = call_user_get_proc_address(user_get_proc_address, "glTexGeniv\0"): *fp_glTexGeniv;
 	glTexGenxOES = call_user_get_proc_address(user_get_proc_address, "glTexGenxOES\0"): *fp_glTexGenxOES;
 	glTexGenxvOES = call_user_get_proc_address(user_get_proc_address, "glTexGenxvOES\0"): *fp_glTexGenxvOES;
 	glTexImage1D = call_user_get_proc_address(user_get_proc_address, "glTexImage1D\0"): *fp_glTexImage1D;
@@ -18196,7 +16548,9 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glTexImage4DSGIS = call_user_get_proc_address(user_get_proc_address, "glTexImage4DSGIS\0"): *fp_glTexImage4DSGIS;
 	glTexPageCommitmentARB = call_user_get_proc_address(user_get_proc_address, "glTexPageCommitmentARB\0"): *fp_glTexPageCommitmentARB;
 	glTexPageCommitmentMemNV = call_user_get_proc_address(user_get_proc_address, "glTexPageCommitmentMemNV\0"): *fp_glTexPageCommitmentMemNV;
+	glTexParameterIiv = call_user_get_proc_address(user_get_proc_address, "glTexParameterIiv\0"): *fp_glTexParameterIiv;
 	glTexParameterIivEXT = call_user_get_proc_address(user_get_proc_address, "glTexParameterIivEXT\0"): *fp_glTexParameterIivEXT;
+	glTexParameterIuiv = call_user_get_proc_address(user_get_proc_address, "glTexParameterIuiv\0"): *fp_glTexParameterIuiv;
 	glTexParameterIuivEXT = call_user_get_proc_address(user_get_proc_address, "glTexParameterIuivEXT\0"): *fp_glTexParameterIuivEXT;
 	glTexParameterf = call_user_get_proc_address(user_get_proc_address, "glTexParameterf\0"): *fp_glTexParameterf;
 	glTexParameterfv = call_user_get_proc_address(user_get_proc_address, "glTexParameterfv\0"): *fp_glTexParameterfv;
@@ -18288,11 +16642,10 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glTransformFeedbackBufferBase = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackBufferBase\0"): *fp_glTransformFeedbackBufferBase;
 	glTransformFeedbackBufferRange = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackBufferRange\0"): *fp_glTransformFeedbackBufferRange;
 	glTransformFeedbackStreamAttribsNV = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackStreamAttribsNV\0"): *fp_glTransformFeedbackStreamAttribsNV;
+	glTransformFeedbackVaryings = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackVaryings\0"): *fp_glTransformFeedbackVaryings;
 	glTransformFeedbackVaryingsEXT = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackVaryingsEXT\0"): *fp_glTransformFeedbackVaryingsEXT;
 	glTransformFeedbackVaryingsNV = call_user_get_proc_address(user_get_proc_address, "glTransformFeedbackVaryingsNV\0"): *fp_glTransformFeedbackVaryingsNV;
 	glTransformPathNV = call_user_get_proc_address(user_get_proc_address, "glTransformPathNV\0"): *fp_glTransformPathNV;
-	glTranslated = call_user_get_proc_address(user_get_proc_address, "glTranslated\0"): *fp_glTranslated;
-	glTranslatef = call_user_get_proc_address(user_get_proc_address, "glTranslatef\0"): *fp_glTranslatef;
 	glTranslatexOES = call_user_get_proc_address(user_get_proc_address, "glTranslatexOES\0"): *fp_glTranslatexOES;
 	glUniform1d = call_user_get_proc_address(user_get_proc_address, "glUniform1d\0"): *fp_glUniform1d;
 	glUniform1dv = call_user_get_proc_address(user_get_proc_address, "glUniform1dv\0"): *fp_glUniform1dv;
@@ -18308,11 +16661,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glUniform1iARB = call_user_get_proc_address(user_get_proc_address, "glUniform1iARB\0"): *fp_glUniform1iARB;
 	glUniform1iv = call_user_get_proc_address(user_get_proc_address, "glUniform1iv\0"): *fp_glUniform1iv;
 	glUniform1ivARB = call_user_get_proc_address(user_get_proc_address, "glUniform1ivARB\0"): *fp_glUniform1ivARB;
+	glUniform1ui = call_user_get_proc_address(user_get_proc_address, "glUniform1ui\0"): *fp_glUniform1ui;
 	glUniform1ui64ARB = call_user_get_proc_address(user_get_proc_address, "glUniform1ui64ARB\0"): *fp_glUniform1ui64ARB;
 	glUniform1ui64NV = call_user_get_proc_address(user_get_proc_address, "glUniform1ui64NV\0"): *fp_glUniform1ui64NV;
 	glUniform1ui64vARB = call_user_get_proc_address(user_get_proc_address, "glUniform1ui64vARB\0"): *fp_glUniform1ui64vARB;
 	glUniform1ui64vNV = call_user_get_proc_address(user_get_proc_address, "glUniform1ui64vNV\0"): *fp_glUniform1ui64vNV;
 	glUniform1uiEXT = call_user_get_proc_address(user_get_proc_address, "glUniform1uiEXT\0"): *fp_glUniform1uiEXT;
+	glUniform1uiv = call_user_get_proc_address(user_get_proc_address, "glUniform1uiv\0"): *fp_glUniform1uiv;
 	glUniform1uivEXT = call_user_get_proc_address(user_get_proc_address, "glUniform1uivEXT\0"): *fp_glUniform1uivEXT;
 	glUniform2d = call_user_get_proc_address(user_get_proc_address, "glUniform2d\0"): *fp_glUniform2d;
 	glUniform2dv = call_user_get_proc_address(user_get_proc_address, "glUniform2dv\0"): *fp_glUniform2dv;
@@ -18328,11 +16683,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glUniform2iARB = call_user_get_proc_address(user_get_proc_address, "glUniform2iARB\0"): *fp_glUniform2iARB;
 	glUniform2iv = call_user_get_proc_address(user_get_proc_address, "glUniform2iv\0"): *fp_glUniform2iv;
 	glUniform2ivARB = call_user_get_proc_address(user_get_proc_address, "glUniform2ivARB\0"): *fp_glUniform2ivARB;
+	glUniform2ui = call_user_get_proc_address(user_get_proc_address, "glUniform2ui\0"): *fp_glUniform2ui;
 	glUniform2ui64ARB = call_user_get_proc_address(user_get_proc_address, "glUniform2ui64ARB\0"): *fp_glUniform2ui64ARB;
 	glUniform2ui64NV = call_user_get_proc_address(user_get_proc_address, "glUniform2ui64NV\0"): *fp_glUniform2ui64NV;
 	glUniform2ui64vARB = call_user_get_proc_address(user_get_proc_address, "glUniform2ui64vARB\0"): *fp_glUniform2ui64vARB;
 	glUniform2ui64vNV = call_user_get_proc_address(user_get_proc_address, "glUniform2ui64vNV\0"): *fp_glUniform2ui64vNV;
 	glUniform2uiEXT = call_user_get_proc_address(user_get_proc_address, "glUniform2uiEXT\0"): *fp_glUniform2uiEXT;
+	glUniform2uiv = call_user_get_proc_address(user_get_proc_address, "glUniform2uiv\0"): *fp_glUniform2uiv;
 	glUniform2uivEXT = call_user_get_proc_address(user_get_proc_address, "glUniform2uivEXT\0"): *fp_glUniform2uivEXT;
 	glUniform3d = call_user_get_proc_address(user_get_proc_address, "glUniform3d\0"): *fp_glUniform3d;
 	glUniform3dv = call_user_get_proc_address(user_get_proc_address, "glUniform3dv\0"): *fp_glUniform3dv;
@@ -18348,11 +16705,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glUniform3iARB = call_user_get_proc_address(user_get_proc_address, "glUniform3iARB\0"): *fp_glUniform3iARB;
 	glUniform3iv = call_user_get_proc_address(user_get_proc_address, "glUniform3iv\0"): *fp_glUniform3iv;
 	glUniform3ivARB = call_user_get_proc_address(user_get_proc_address, "glUniform3ivARB\0"): *fp_glUniform3ivARB;
+	glUniform3ui = call_user_get_proc_address(user_get_proc_address, "glUniform3ui\0"): *fp_glUniform3ui;
 	glUniform3ui64ARB = call_user_get_proc_address(user_get_proc_address, "glUniform3ui64ARB\0"): *fp_glUniform3ui64ARB;
 	glUniform3ui64NV = call_user_get_proc_address(user_get_proc_address, "glUniform3ui64NV\0"): *fp_glUniform3ui64NV;
 	glUniform3ui64vARB = call_user_get_proc_address(user_get_proc_address, "glUniform3ui64vARB\0"): *fp_glUniform3ui64vARB;
 	glUniform3ui64vNV = call_user_get_proc_address(user_get_proc_address, "glUniform3ui64vNV\0"): *fp_glUniform3ui64vNV;
 	glUniform3uiEXT = call_user_get_proc_address(user_get_proc_address, "glUniform3uiEXT\0"): *fp_glUniform3uiEXT;
+	glUniform3uiv = call_user_get_proc_address(user_get_proc_address, "glUniform3uiv\0"): *fp_glUniform3uiv;
 	glUniform3uivEXT = call_user_get_proc_address(user_get_proc_address, "glUniform3uivEXT\0"): *fp_glUniform3uivEXT;
 	glUniform4d = call_user_get_proc_address(user_get_proc_address, "glUniform4d\0"): *fp_glUniform4d;
 	glUniform4dv = call_user_get_proc_address(user_get_proc_address, "glUniform4dv\0"): *fp_glUniform4dv;
@@ -18368,11 +16727,13 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glUniform4iARB = call_user_get_proc_address(user_get_proc_address, "glUniform4iARB\0"): *fp_glUniform4iARB;
 	glUniform4iv = call_user_get_proc_address(user_get_proc_address, "glUniform4iv\0"): *fp_glUniform4iv;
 	glUniform4ivARB = call_user_get_proc_address(user_get_proc_address, "glUniform4ivARB\0"): *fp_glUniform4ivARB;
+	glUniform4ui = call_user_get_proc_address(user_get_proc_address, "glUniform4ui\0"): *fp_glUniform4ui;
 	glUniform4ui64ARB = call_user_get_proc_address(user_get_proc_address, "glUniform4ui64ARB\0"): *fp_glUniform4ui64ARB;
 	glUniform4ui64NV = call_user_get_proc_address(user_get_proc_address, "glUniform4ui64NV\0"): *fp_glUniform4ui64NV;
 	glUniform4ui64vARB = call_user_get_proc_address(user_get_proc_address, "glUniform4ui64vARB\0"): *fp_glUniform4ui64vARB;
 	glUniform4ui64vNV = call_user_get_proc_address(user_get_proc_address, "glUniform4ui64vNV\0"): *fp_glUniform4ui64vNV;
 	glUniform4uiEXT = call_user_get_proc_address(user_get_proc_address, "glUniform4uiEXT\0"): *fp_glUniform4uiEXT;
+	glUniform4uiv = call_user_get_proc_address(user_get_proc_address, "glUniform4uiv\0"): *fp_glUniform4uiv;
 	glUniform4uivEXT = call_user_get_proc_address(user_get_proc_address, "glUniform4uivEXT\0"): *fp_glUniform4uivEXT;
 	glUniformBlockBinding = call_user_get_proc_address(user_get_proc_address, "glUniformBlockBinding\0"): *fp_glUniformBlockBinding;
 	glUniformBufferEXT = call_user_get_proc_address(user_get_proc_address, "glUniformBufferEXT\0"): *fp_glUniformBufferEXT;
@@ -18443,44 +16804,20 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glVariantusvEXT = call_user_get_proc_address(user_get_proc_address, "glVariantusvEXT\0"): *fp_glVariantusvEXT;
 	glVertex2bOES = call_user_get_proc_address(user_get_proc_address, "glVertex2bOES\0"): *fp_glVertex2bOES;
 	glVertex2bvOES = call_user_get_proc_address(user_get_proc_address, "glVertex2bvOES\0"): *fp_glVertex2bvOES;
-	glVertex2d = call_user_get_proc_address(user_get_proc_address, "glVertex2d\0"): *fp_glVertex2d;
-	glVertex2dv = call_user_get_proc_address(user_get_proc_address, "glVertex2dv\0"): *fp_glVertex2dv;
-	glVertex2f = call_user_get_proc_address(user_get_proc_address, "glVertex2f\0"): *fp_glVertex2f;
-	glVertex2fv = call_user_get_proc_address(user_get_proc_address, "glVertex2fv\0"): *fp_glVertex2fv;
 	glVertex2hNV = call_user_get_proc_address(user_get_proc_address, "glVertex2hNV\0"): *fp_glVertex2hNV;
 	glVertex2hvNV = call_user_get_proc_address(user_get_proc_address, "glVertex2hvNV\0"): *fp_glVertex2hvNV;
-	glVertex2i = call_user_get_proc_address(user_get_proc_address, "glVertex2i\0"): *fp_glVertex2i;
-	glVertex2iv = call_user_get_proc_address(user_get_proc_address, "glVertex2iv\0"): *fp_glVertex2iv;
-	glVertex2s = call_user_get_proc_address(user_get_proc_address, "glVertex2s\0"): *fp_glVertex2s;
-	glVertex2sv = call_user_get_proc_address(user_get_proc_address, "glVertex2sv\0"): *fp_glVertex2sv;
 	glVertex2xOES = call_user_get_proc_address(user_get_proc_address, "glVertex2xOES\0"): *fp_glVertex2xOES;
 	glVertex2xvOES = call_user_get_proc_address(user_get_proc_address, "glVertex2xvOES\0"): *fp_glVertex2xvOES;
 	glVertex3bOES = call_user_get_proc_address(user_get_proc_address, "glVertex3bOES\0"): *fp_glVertex3bOES;
 	glVertex3bvOES = call_user_get_proc_address(user_get_proc_address, "glVertex3bvOES\0"): *fp_glVertex3bvOES;
-	glVertex3d = call_user_get_proc_address(user_get_proc_address, "glVertex3d\0"): *fp_glVertex3d;
-	glVertex3dv = call_user_get_proc_address(user_get_proc_address, "glVertex3dv\0"): *fp_glVertex3dv;
-	glVertex3f = call_user_get_proc_address(user_get_proc_address, "glVertex3f\0"): *fp_glVertex3f;
-	glVertex3fv = call_user_get_proc_address(user_get_proc_address, "glVertex3fv\0"): *fp_glVertex3fv;
 	glVertex3hNV = call_user_get_proc_address(user_get_proc_address, "glVertex3hNV\0"): *fp_glVertex3hNV;
 	glVertex3hvNV = call_user_get_proc_address(user_get_proc_address, "glVertex3hvNV\0"): *fp_glVertex3hvNV;
-	glVertex3i = call_user_get_proc_address(user_get_proc_address, "glVertex3i\0"): *fp_glVertex3i;
-	glVertex3iv = call_user_get_proc_address(user_get_proc_address, "glVertex3iv\0"): *fp_glVertex3iv;
-	glVertex3s = call_user_get_proc_address(user_get_proc_address, "glVertex3s\0"): *fp_glVertex3s;
-	glVertex3sv = call_user_get_proc_address(user_get_proc_address, "glVertex3sv\0"): *fp_glVertex3sv;
 	glVertex3xOES = call_user_get_proc_address(user_get_proc_address, "glVertex3xOES\0"): *fp_glVertex3xOES;
 	glVertex3xvOES = call_user_get_proc_address(user_get_proc_address, "glVertex3xvOES\0"): *fp_glVertex3xvOES;
 	glVertex4bOES = call_user_get_proc_address(user_get_proc_address, "glVertex4bOES\0"): *fp_glVertex4bOES;
 	glVertex4bvOES = call_user_get_proc_address(user_get_proc_address, "glVertex4bvOES\0"): *fp_glVertex4bvOES;
-	glVertex4d = call_user_get_proc_address(user_get_proc_address, "glVertex4d\0"): *fp_glVertex4d;
-	glVertex4dv = call_user_get_proc_address(user_get_proc_address, "glVertex4dv\0"): *fp_glVertex4dv;
-	glVertex4f = call_user_get_proc_address(user_get_proc_address, "glVertex4f\0"): *fp_glVertex4f;
-	glVertex4fv = call_user_get_proc_address(user_get_proc_address, "glVertex4fv\0"): *fp_glVertex4fv;
 	glVertex4hNV = call_user_get_proc_address(user_get_proc_address, "glVertex4hNV\0"): *fp_glVertex4hNV;
 	glVertex4hvNV = call_user_get_proc_address(user_get_proc_address, "glVertex4hvNV\0"): *fp_glVertex4hvNV;
-	glVertex4i = call_user_get_proc_address(user_get_proc_address, "glVertex4i\0"): *fp_glVertex4i;
-	glVertex4iv = call_user_get_proc_address(user_get_proc_address, "glVertex4iv\0"): *fp_glVertex4iv;
-	glVertex4s = call_user_get_proc_address(user_get_proc_address, "glVertex4s\0"): *fp_glVertex4s;
-	glVertex4sv = call_user_get_proc_address(user_get_proc_address, "glVertex4sv\0"): *fp_glVertex4sv;
 	glVertex4xOES = call_user_get_proc_address(user_get_proc_address, "glVertex4xOES\0"): *fp_glVertex4xOES;
 	glVertex4xvOES = call_user_get_proc_address(user_get_proc_address, "glVertex4xvOES\0"): *fp_glVertex4xvOES;
 	glVertexArrayAttribBinding = call_user_get_proc_address(user_get_proc_address, "glVertexArrayAttribBinding\0"): *fp_glVertexArrayAttribBinding;
@@ -18621,31 +16958,53 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glVertexAttrib4usvARB = call_user_get_proc_address(user_get_proc_address, "glVertexAttrib4usvARB\0"): *fp_glVertexAttrib4usvARB;
 	glVertexAttribArrayObjectATI = call_user_get_proc_address(user_get_proc_address, "glVertexAttribArrayObjectATI\0"): *fp_glVertexAttribArrayObjectATI;
 	glVertexAttribBinding = call_user_get_proc_address(user_get_proc_address, "glVertexAttribBinding\0"): *fp_glVertexAttribBinding;
+	glVertexAttribDivisor = call_user_get_proc_address(user_get_proc_address, "glVertexAttribDivisor\0"): *fp_glVertexAttribDivisor;
 	glVertexAttribDivisorARB = call_user_get_proc_address(user_get_proc_address, "glVertexAttribDivisorARB\0"): *fp_glVertexAttribDivisorARB;
 	glVertexAttribFormat = call_user_get_proc_address(user_get_proc_address, "glVertexAttribFormat\0"): *fp_glVertexAttribFormat;
 	glVertexAttribFormatNV = call_user_get_proc_address(user_get_proc_address, "glVertexAttribFormatNV\0"): *fp_glVertexAttribFormatNV;
+	glVertexAttribI1i = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1i\0"): *fp_glVertexAttribI1i;
 	glVertexAttribI1iEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1iEXT\0"): *fp_glVertexAttribI1iEXT;
+	glVertexAttribI1iv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1iv\0"): *fp_glVertexAttribI1iv;
 	glVertexAttribI1ivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1ivEXT\0"): *fp_glVertexAttribI1ivEXT;
+	glVertexAttribI1ui = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1ui\0"): *fp_glVertexAttribI1ui;
 	glVertexAttribI1uiEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1uiEXT\0"): *fp_glVertexAttribI1uiEXT;
+	glVertexAttribI1uiv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1uiv\0"): *fp_glVertexAttribI1uiv;
 	glVertexAttribI1uivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI1uivEXT\0"): *fp_glVertexAttribI1uivEXT;
+	glVertexAttribI2i = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2i\0"): *fp_glVertexAttribI2i;
 	glVertexAttribI2iEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2iEXT\0"): *fp_glVertexAttribI2iEXT;
+	glVertexAttribI2iv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2iv\0"): *fp_glVertexAttribI2iv;
 	glVertexAttribI2ivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2ivEXT\0"): *fp_glVertexAttribI2ivEXT;
+	glVertexAttribI2ui = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2ui\0"): *fp_glVertexAttribI2ui;
 	glVertexAttribI2uiEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2uiEXT\0"): *fp_glVertexAttribI2uiEXT;
+	glVertexAttribI2uiv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2uiv\0"): *fp_glVertexAttribI2uiv;
 	glVertexAttribI2uivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI2uivEXT\0"): *fp_glVertexAttribI2uivEXT;
+	glVertexAttribI3i = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3i\0"): *fp_glVertexAttribI3i;
 	glVertexAttribI3iEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3iEXT\0"): *fp_glVertexAttribI3iEXT;
+	glVertexAttribI3iv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3iv\0"): *fp_glVertexAttribI3iv;
 	glVertexAttribI3ivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3ivEXT\0"): *fp_glVertexAttribI3ivEXT;
+	glVertexAttribI3ui = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3ui\0"): *fp_glVertexAttribI3ui;
 	glVertexAttribI3uiEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3uiEXT\0"): *fp_glVertexAttribI3uiEXT;
+	glVertexAttribI3uiv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3uiv\0"): *fp_glVertexAttribI3uiv;
 	glVertexAttribI3uivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI3uivEXT\0"): *fp_glVertexAttribI3uivEXT;
+	glVertexAttribI4bv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4bv\0"): *fp_glVertexAttribI4bv;
 	glVertexAttribI4bvEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4bvEXT\0"): *fp_glVertexAttribI4bvEXT;
+	glVertexAttribI4i = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4i\0"): *fp_glVertexAttribI4i;
 	glVertexAttribI4iEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4iEXT\0"): *fp_glVertexAttribI4iEXT;
+	glVertexAttribI4iv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4iv\0"): *fp_glVertexAttribI4iv;
 	glVertexAttribI4ivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4ivEXT\0"): *fp_glVertexAttribI4ivEXT;
+	glVertexAttribI4sv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4sv\0"): *fp_glVertexAttribI4sv;
 	glVertexAttribI4svEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4svEXT\0"): *fp_glVertexAttribI4svEXT;
+	glVertexAttribI4ubv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4ubv\0"): *fp_glVertexAttribI4ubv;
 	glVertexAttribI4ubvEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4ubvEXT\0"): *fp_glVertexAttribI4ubvEXT;
+	glVertexAttribI4ui = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4ui\0"): *fp_glVertexAttribI4ui;
 	glVertexAttribI4uiEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4uiEXT\0"): *fp_glVertexAttribI4uiEXT;
+	glVertexAttribI4uiv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4uiv\0"): *fp_glVertexAttribI4uiv;
 	glVertexAttribI4uivEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4uivEXT\0"): *fp_glVertexAttribI4uivEXT;
+	glVertexAttribI4usv = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4usv\0"): *fp_glVertexAttribI4usv;
 	glVertexAttribI4usvEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribI4usvEXT\0"): *fp_glVertexAttribI4usvEXT;
 	glVertexAttribIFormat = call_user_get_proc_address(user_get_proc_address, "glVertexAttribIFormat\0"): *fp_glVertexAttribIFormat;
 	glVertexAttribIFormatNV = call_user_get_proc_address(user_get_proc_address, "glVertexAttribIFormatNV\0"): *fp_glVertexAttribIFormatNV;
+	glVertexAttribIPointer = call_user_get_proc_address(user_get_proc_address, "glVertexAttribIPointer\0"): *fp_glVertexAttribIPointer;
 	glVertexAttribIPointerEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribIPointerEXT\0"): *fp_glVertexAttribIPointerEXT;
 	glVertexAttribL1d = call_user_get_proc_address(user_get_proc_address, "glVertexAttribL1d\0"): *fp_glVertexAttribL1d;
 	glVertexAttribL1dEXT = call_user_get_proc_address(user_get_proc_address, "glVertexAttribL1dEXT\0"): *fp_glVertexAttribL1dEXT;
@@ -18719,7 +17078,6 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glVertexBlendEnvfATI = call_user_get_proc_address(user_get_proc_address, "glVertexBlendEnvfATI\0"): *fp_glVertexBlendEnvfATI;
 	glVertexBlendEnviATI = call_user_get_proc_address(user_get_proc_address, "glVertexBlendEnviATI\0"): *fp_glVertexBlendEnviATI;
 	glVertexFormatNV = call_user_get_proc_address(user_get_proc_address, "glVertexFormatNV\0"): *fp_glVertexFormatNV;
-	glVertexPointer = call_user_get_proc_address(user_get_proc_address, "glVertexPointer\0"): *fp_glVertexPointer;
 	glVertexPointerEXT = call_user_get_proc_address(user_get_proc_address, "glVertexPointerEXT\0"): *fp_glVertexPointerEXT;
 	glVertexPointerListIBM = call_user_get_proc_address(user_get_proc_address, "glVertexPointerListIBM\0"): *fp_glVertexPointerListIBM;
 	glVertexPointervINTEL = call_user_get_proc_address(user_get_proc_address, "glVertexPointervINTEL\0"): *fp_glVertexPointervINTEL;
@@ -18784,52 +17142,36 @@ export fn load_with_fn(user_get_proc_address: *fp_get_proc_address) void = {
 	glWeightubvARB = call_user_get_proc_address(user_get_proc_address, "glWeightubvARB\0"): *fp_glWeightubvARB;
 	glWeightuivARB = call_user_get_proc_address(user_get_proc_address, "glWeightuivARB\0"): *fp_glWeightuivARB;
 	glWeightusvARB = call_user_get_proc_address(user_get_proc_address, "glWeightusvARB\0"): *fp_glWeightusvARB;
-	glWindowPos2d = call_user_get_proc_address(user_get_proc_address, "glWindowPos2d\0"): *fp_glWindowPos2d;
 	glWindowPos2dARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2dARB\0"): *fp_glWindowPos2dARB;
 	glWindowPos2dMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2dMESA\0"): *fp_glWindowPos2dMESA;
-	glWindowPos2dv = call_user_get_proc_address(user_get_proc_address, "glWindowPos2dv\0"): *fp_glWindowPos2dv;
 	glWindowPos2dvARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2dvARB\0"): *fp_glWindowPos2dvARB;
 	glWindowPos2dvMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2dvMESA\0"): *fp_glWindowPos2dvMESA;
-	glWindowPos2f = call_user_get_proc_address(user_get_proc_address, "glWindowPos2f\0"): *fp_glWindowPos2f;
 	glWindowPos2fARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2fARB\0"): *fp_glWindowPos2fARB;
 	glWindowPos2fMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2fMESA\0"): *fp_glWindowPos2fMESA;
-	glWindowPos2fv = call_user_get_proc_address(user_get_proc_address, "glWindowPos2fv\0"): *fp_glWindowPos2fv;
 	glWindowPos2fvARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2fvARB\0"): *fp_glWindowPos2fvARB;
 	glWindowPos2fvMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2fvMESA\0"): *fp_glWindowPos2fvMESA;
-	glWindowPos2i = call_user_get_proc_address(user_get_proc_address, "glWindowPos2i\0"): *fp_glWindowPos2i;
 	glWindowPos2iARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2iARB\0"): *fp_glWindowPos2iARB;
 	glWindowPos2iMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2iMESA\0"): *fp_glWindowPos2iMESA;
-	glWindowPos2iv = call_user_get_proc_address(user_get_proc_address, "glWindowPos2iv\0"): *fp_glWindowPos2iv;
 	glWindowPos2ivARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2ivARB\0"): *fp_glWindowPos2ivARB;
 	glWindowPos2ivMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2ivMESA\0"): *fp_glWindowPos2ivMESA;
-	glWindowPos2s = call_user_get_proc_address(user_get_proc_address, "glWindowPos2s\0"): *fp_glWindowPos2s;
 	glWindowPos2sARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2sARB\0"): *fp_glWindowPos2sARB;
 	glWindowPos2sMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2sMESA\0"): *fp_glWindowPos2sMESA;
-	glWindowPos2sv = call_user_get_proc_address(user_get_proc_address, "glWindowPos2sv\0"): *fp_glWindowPos2sv;
 	glWindowPos2svARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos2svARB\0"): *fp_glWindowPos2svARB;
 	glWindowPos2svMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos2svMESA\0"): *fp_glWindowPos2svMESA;
-	glWindowPos3d = call_user_get_proc_address(user_get_proc_address, "glWindowPos3d\0"): *fp_glWindowPos3d;
 	glWindowPos3dARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3dARB\0"): *fp_glWindowPos3dARB;
 	glWindowPos3dMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3dMESA\0"): *fp_glWindowPos3dMESA;
-	glWindowPos3dv = call_user_get_proc_address(user_get_proc_address, "glWindowPos3dv\0"): *fp_glWindowPos3dv;
 	glWindowPos3dvARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3dvARB\0"): *fp_glWindowPos3dvARB;
 	glWindowPos3dvMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3dvMESA\0"): *fp_glWindowPos3dvMESA;
-	glWindowPos3f = call_user_get_proc_address(user_get_proc_address, "glWindowPos3f\0"): *fp_glWindowPos3f;
 	glWindowPos3fARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3fARB\0"): *fp_glWindowPos3fARB;
 	glWindowPos3fMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3fMESA\0"): *fp_glWindowPos3fMESA;
-	glWindowPos3fv = call_user_get_proc_address(user_get_proc_address, "glWindowPos3fv\0"): *fp_glWindowPos3fv;
 	glWindowPos3fvARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3fvARB\0"): *fp_glWindowPos3fvARB;
 	glWindowPos3fvMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3fvMESA\0"): *fp_glWindowPos3fvMESA;
-	glWindowPos3i = call_user_get_proc_address(user_get_proc_address, "glWindowPos3i\0"): *fp_glWindowPos3i;
 	glWindowPos3iARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3iARB\0"): *fp_glWindowPos3iARB;
 	glWindowPos3iMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3iMESA\0"): *fp_glWindowPos3iMESA;
-	glWindowPos3iv = call_user_get_proc_address(user_get_proc_address, "glWindowPos3iv\0"): *fp_glWindowPos3iv;
 	glWindowPos3ivARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3ivARB\0"): *fp_glWindowPos3ivARB;
 	glWindowPos3ivMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3ivMESA\0"): *fp_glWindowPos3ivMESA;
-	glWindowPos3s = call_user_get_proc_address(user_get_proc_address, "glWindowPos3s\0"): *fp_glWindowPos3s;
 	glWindowPos3sARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3sARB\0"): *fp_glWindowPos3sARB;
 	glWindowPos3sMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3sMESA\0"): *fp_glWindowPos3sMESA;
-	glWindowPos3sv = call_user_get_proc_address(user_get_proc_address, "glWindowPos3sv\0"): *fp_glWindowPos3sv;
 	glWindowPos3svARB = call_user_get_proc_address(user_get_proc_address, "glWindowPos3svARB\0"): *fp_glWindowPos3svARB;
 	glWindowPos3svMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos3svMESA\0"): *fp_glWindowPos3svMESA;
 	glWindowPos4dMESA = call_user_get_proc_address(user_get_proc_address, "glWindowPos4dMESA\0"): *fp_glWindowPos4dMESA;
