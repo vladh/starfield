@@ -3,6 +3,7 @@ use sdl2::sdl2;
 export type graphics_state = struct {
 	vbo: uint,
 	vao: uint,
+	shader_program: uint,
 };
 
 export type engine_state = struct {

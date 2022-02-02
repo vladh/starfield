@@ -8,18 +8,34 @@ use common;
 use common::{ state };
 
 fn init_buffers(state: *state) void = {
+	gl::glGenVertexArrays(1, &state.graphics.vao);
+	gl::glBindVertexArray(state.graphics.vao);
+
 	gl::glGenBuffers(1, &state.graphics.vbo);
 	gl::glBindBuffer(gl::ARRAY_BUFFER, state.graphics.vbo);
 	gl::glBufferData(gl::ARRAY_BUFFER,
 		(len(common::VERTICES) * 3 * 4): uintptr,
 		&common::VERTICES[0]: *void,
 		gl::STATIC_DRAW);
+
+	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, 3 * 32 / 8,
+		null: *const void);
+	gl::glEnableVertexAttribArray(0);
+};
+
+fn init_shaders(state: *state) void = {
+	const vert = make_shader(VERT_SHADER, gl::VERTEX_SHADER)!;
+	const frag = make_shader(FRAG_SHADER, gl::FRAGMENT_SHADER)!;
+	state.graphics.shader_program = make_shader_program(vert, frag)!;
+	gl::glDeleteShader(vert);
+	gl::glDeleteShader(frag);
 };
 
 export fn init(state: *state) void = {
 	gl::load();
 
 	init_buffers(state);
+	init_shaders(state);
 
 	gl::glViewport(0, 0,
 		common::WINDOW_WIDTH: i32, common::WINDOW_HEIGHT: i32);
@@ -40,6 +56,9 @@ export fn init(state: *state) void = {
 
 export fn draw(state: *state) (void | sdl2::error) = {
 	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
+
+	gl::glUseProgram(state.graphics.shader_program);
+	gl::glBindVertexArray(state.graphics.vao);
 
 	// gl::glMatrixMode(gl::MODELVIEW);
 	// gl::glLoadIdentity();
