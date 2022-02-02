@@ -3,7 +3,7 @@ use fs;
 use math;
 use strings;
 
-use glm::glm::{ v3, m2 };
+use glm::{ v3, m2 };
 use sdl2::sdl2;
 
 use graphics;
@@ -23,6 +23,10 @@ export fn main() void = {
 
 fn run() (void | fs::error | sdl2::error) = {
 	sdl2::init(sdl2::init_flags::VIDEO)!;
+	sdl2::gl_set_attribute(sdl2::glattr::GL_CONTEXT_PROFILE_MASK,
+		sdl2::glprofile::GL_CONTEXT_PROFILE_CORE);
+	sdl2::gl_set_attribute(sdl2::glattr::GL_CONTEXT_MAJOR_VERSION, 4);
+	sdl2::gl_set_attribute(sdl2::glattr::GL_CONTEXT_MINOR_VERSION, 3);
 	defer sdl2::quit();
 
 	const win = sdl2::create_window("starfield",
@@ -34,6 +38,7 @@ fn run() (void | fs::error | sdl2::error) = {
 	let context = sdl2::gl_create_context(win);
 	let state = state { window = win, ... };
 	graphics::init(&state);
+	defer graphics::destroy(&state);
 
 	for (!state.should_quit) {
 		engine::update(&state)?;

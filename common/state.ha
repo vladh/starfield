@@ -1,9 +1,11 @@
+use glm::{ m4 };
 use sdl2::sdl2;
 
 export type graphics_state = struct {
 	vbo: uint,
 	vao: uint,
 	shader_program: uint,
+	perspective: m4,
 };
 
 export type engine_state = struct {
