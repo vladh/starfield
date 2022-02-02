@@ -13,3 +13,9 @@ It uses [hare-sdl2], [hare-gl] and [hare-glm].
 * Make sure to clone with submodules (`git clone --recurse-submodules git@git.sr.ht:~vladh/starfield`)
 * Install `libsdl2` and `libsdl2-image`
 * Run `make run` to run the demo
+
+## Developing
+
+If you'd like to work on the code, use `make run-nocache`, adjusting the
+path in the `Makefile` if you have a special `HARECACHE` set. This is necessary
+until [bug 569](https://todo.sr.ht/~sircmpwn/hare/569) is fixed.
