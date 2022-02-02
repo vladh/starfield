@@ -2,6 +2,7 @@ use sdl2::sdl2;
 
 use common::{ state };
 
+
 fn process_events(state: *state) (void | sdl2::error) = {
 	let ev = sdl2::event { ... };
 	for (sdl2::poll_event(&ev)? == 1) {
@@ -22,5 +23,5 @@ fn process_events(state: *state) (void | sdl2::error) = {
 export fn update(state: *state) (void | sdl2::error) = {
 	process_events(state)?;
 
-	state.rotation += 1.0;
+	state.engine_state.rotation += 1.0;
 };

@@ -37,8 +37,8 @@ export fn draw(state: *state) (void | sdl2::error) = {
 	gl::glMatrixMode(gl::MODELVIEW);
 	gl::glLoadIdentity();
 	gl::glTranslatef(0.0, 0.0, -4.0);
-	gl::glRotatef(state.rotation, 0.0, 1.0, 0.0);
-	gl::glRotatef(state.rotation / 2.0, 1.0, 0.0, 1.0);
+	gl::glRotatef(state.engine_state.rotation, 0.0, 1.0, 0.0);
+	gl::glRotatef(state.engine_state.rotation / 2.0, 1.0, 0.0, 1.0);
 
 	gl::glBegin(gl::TRIANGLES);
 	for (let i = 0z; i < len(common::VERTICES); i += 1) {
