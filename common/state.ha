@@ -5,7 +5,8 @@ export type graphics_state = struct {
 	vbo: uint,
 	vao: uint,
 	shader_program: uint,
-	perspective: m4,
+	projection: m4,
+	view: m4,
 };
 
 export type engine_state = struct {

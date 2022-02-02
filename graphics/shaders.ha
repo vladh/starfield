@@ -1,17 +1,21 @@
 use errors;
 use fmt;
 use strings;
-use types;
 
 use gl;
+use util;
 
 def VERT_SHADER: str = "
 #version 330 core
 layout (location = 0) in vec3 pos;
 
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
 void main()
 {
-	gl_Position = vec4(pos.x, pos.y, pos.z, 1.0);
+	gl_Position = projection * view * model * vec4(pos.x, pos.y, pos.z, 1.0);
 }
 \0";
 
@@ -27,7 +31,7 @@ void main()
 
 fn make_shader(source: str, kind: uint) (uint | errors::invalid) = {
 	const shader = gl::glCreateShader(kind);
-	const cstr = ((&source): *types::string).data: *const i8;
+	const cstr = util::cstr(source);
 	gl::glShaderSource(shader, 1, &cstr, null: *const i32);
 	gl::glCompileShader(shader);
 
