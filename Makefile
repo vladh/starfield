@@ -5,11 +5,11 @@ LIBS=-lc -lSDL2_image -lSDL2 -lEGL
 VARS=LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} \
 	HAREPATH=vendor/hare-sdl2:vendor/hare-glm:vendor/gl:${HAREPATH}
 
-demo:
-	$(VARS) hare build $(LIBS) cmd/demo
+starfield:
+	$(VARS) hare build $(LIBS) cmd/starfield
 
 run:
-	$(VARS) hare run $(LIBS) cmd/demo
+	$(VARS) hare run $(LIBS) cmd/starfield
 
 run-nocache:
 	@ # Bug https://todo.sr.ht/~sircmpwn/hare/569
@@ -17,6 +17,6 @@ run-nocache:
 		${HOME}/.cache/hare/common \
 		${HOME}/.cache/hare/graphics \
 		${HOME}/.cache/hare/engine
-	$(VARS) hare run $(LIBS) cmd/demo
+	$(VARS) hare run $(LIBS) cmd/starfield
 
-.PHONY: demo run
+.PHONY: starfield run run-nocache
