@@ -13,6 +13,8 @@ use common::{ state };
 export fn init(state: *state) void = {
 	gl::load();
 
+	gl::glEnable(gl::DEPTH_TEST);
+
 	init_buffers(state);
 	init_shaders(state);
 	init_matrices(state);
@@ -27,16 +29,26 @@ fn init_buffers(state: *state) void = {
 	gl::glGenVertexArrays(1, &state.graphics.vao);
 	gl::glBindVertexArray(state.graphics.vao);
 
+	const vertex_size: size = 9 * 4;
+
 	gl::glGenBuffers(1, &state.graphics.vbo);
 	gl::glBindBuffer(gl::ARRAY_BUFFER, state.graphics.vbo);
 	gl::glBufferData(gl::ARRAY_BUFFER,
-		(len(common::VERTICES) * 3 * 4): uintptr,
+		(len(common::VERTICES) * vertex_size): uintptr,
 		glm::v3_valptr(&common::VERTICES[0]): *void,
 		gl::STATIC_DRAW);
 
-	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, 3 * 4,
+	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
 		null: *const void);
 	gl::glEnableVertexAttribArray(0);
+
+	gl::glVertexAttribPointer(1, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
+		(3 * 4): uintptr: *const void);
+	gl::glEnableVertexAttribArray(1);
+
+	gl::glVertexAttribPointer(2, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
+		(6 * 4): uintptr: *const void);
+	gl::glEnableVertexAttribArray(2);
 };
 
 fn init_shaders(state: *state) void = {
@@ -66,7 +78,7 @@ export fn destroy(state: *state) void = {
 export fn draw(state: *state) (void | sdl2::error) = {
 	const shaderprog = state.graphics.shader_program;
 
-	gl::glClear(gl::COLOR_BUFFER_BIT);
+	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
 	gl::glBindVertexArray(state.graphics.vao);
 	gl::glUseProgram(shaderprog);
 
