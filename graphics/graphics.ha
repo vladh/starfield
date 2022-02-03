@@ -5,7 +5,7 @@ use util;
 use gl;
 use glm;
 use glm::{ v3, v4, m4 };
-use sdl2::sdl2;
+use sdl2;
 
 use common;
 use common::{ state };

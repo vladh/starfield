@@ -4,7 +4,7 @@ use math;
 use strings;
 
 use glm::{ v3, m2 };
-use sdl2::sdl2;
+use sdl2;
 
 use graphics;
 use engine;

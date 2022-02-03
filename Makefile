@@ -2,12 +2,14 @@
 .SUFFIXES:
 
 LIBS=-lc -lSDL2_image -lSDL2 -lEGL
+VARS=LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} \
+	HAREPATH=vendor/hare-sdl2:vendor/hare-glm:vendor/gl:${HAREPATH}
 
 demo:
-	LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} hare build $(LIBS) cmd/demo
+	$(VARS) hare build $(LIBS) cmd/demo
 
 run:
-	LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} hare run $(LIBS) cmd/demo
+	$(VARS) hare run $(LIBS) cmd/demo
 
 run-nocache:
 	@ # Bug https://todo.sr.ht/~sircmpwn/hare/569
@@ -15,6 +17,6 @@ run-nocache:
 		${HOME}/.cache/hare/common \
 		${HOME}/.cache/hare/graphics \
 		${HOME}/.cache/hare/engine
-	LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} hare run $(LIBS) cmd/demo
+	$(VARS) hare run $(LIBS) cmd/demo
 
 .PHONY: demo run

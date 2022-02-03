@@ -1,5 +1,5 @@
 use glm::{ v3, v4, m4 };
-use sdl2::sdl2;
+use sdl2;
 
 export type drawable = struct {
 	vbo: uint,

@@ -1,4 +1,4 @@
-use sdl2::sdl2;
+use sdl2;
 
 use glm::{ v3 };
 
