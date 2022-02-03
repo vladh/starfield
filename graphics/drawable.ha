@@ -8,6 +8,9 @@ use common;
 use common::{ state, drawable };
 
 fn init_buffers(drawable: *drawable) void = {
+	for (let i = 0z; i < len(common::BUNNY_INDICES); i += 1) {
+		common::BUNNY_INDICES[i] -= 1;
+	};
 	gl::glGenVertexArrays(1, &drawable.vao);
 	gl::glBindVertexArray(drawable.vao);
 
@@ -16,8 +19,15 @@ fn init_buffers(drawable: *drawable) void = {
 	gl::glGenBuffers(1, &drawable.vbo);
 	gl::glBindBuffer(gl::ARRAY_BUFFER, drawable.vbo);
 	gl::glBufferData(gl::ARRAY_BUFFER,
-		(len(common::VERTICES) * vertex_size): uintptr,
-		glm::v3_valptr(&common::VERTICES[0]): *void,
+		(len(common::BUNNY_VERTICES) * vertex_size): uintptr,
+		&common::BUNNY_VERTICES[0]: *void,
+		gl::STATIC_DRAW);
+
+	gl::glGenBuffers(1, &drawable.ebo);
+	gl::glBindBuffer(gl::ELEMENT_ARRAY_BUFFER, drawable.ebo);
+	gl::glBufferData(gl::ELEMENT_ARRAY_BUFFER,
+		(len(common::BUNNY_INDICES) * 4): uintptr,
+		&common::BUNNY_INDICES[0]: *void,
 		gl::STATIC_DRAW);
 
 	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
@@ -45,6 +55,7 @@ export fn draw_drawable(
 	color: *v3
 ) void = {
 	gl::glBindVertexArray(drawable.vao);
+	gl::glBindBuffer(gl::ELEMENT_ARRAY_BUFFER, drawable.ebo);
 	gl::glUseProgram(drawable.shader_program);
 
 	// TODO: Move to UBO
@@ -55,7 +66,8 @@ export fn draw_drawable(
 	uniformmat4fv(drawable.shader_program, "model\0", model);
 	uniform3fv(drawable.shader_program, "uniform_color\0", color);
 
-	gl::glDrawArrays(gl::TRIANGLES, 0, len(common::VERTICES): i32);
+	gl::glDrawElements(gl::TRIANGLES, len(common::BUNNY_INDICES): i32,
+		gl::UNSIGNED_INT, 0: uintptr: *void);
 };
 
 export fn destroy_drawable(drawable: *drawable) void = {

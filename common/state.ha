@@ -4,6 +4,7 @@ use sdl2::sdl2;
 export type drawable = struct {
 	vbo: uint,
 	vao: uint,
+	ebo: uint,
 	shader_program: uint,
 };
 
