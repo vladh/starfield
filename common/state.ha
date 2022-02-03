@@ -16,6 +16,7 @@ export type engine_state = struct {
 export type state = struct {
 	should_quit: bool,
 	window: *sdl2::window,
+	t: f32,
 	graphics: graphics_state,
 	engine: engine_state,
 };

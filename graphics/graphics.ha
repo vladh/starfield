@@ -1,4 +1,5 @@
 use fmt;
+use math;
 use util;
 
 use gl;
@@ -50,8 +51,10 @@ fn init_matrices(state: *state) void = {
 	const aspect = common::WINDOW_WIDTH: f32 / common::WINDOW_HEIGHT: f32;
 	glm::perspective(&state.graphics.projection, 70.0, aspect, 0.1, 100.0);
 
-	glm::m4_ident(&state.graphics.view);
-	glm::translate(&state.graphics.view, glm::v3_make(0.0, -2.0, 0.0));
+	state.graphics.view = glm::lookat(
+		&glm::v3_make(4.0, 4.0, 4.0),
+		&glm::v3_make(0.0, 0.0, 0.0),
+		&glm::v3_make(0.0, 1.0, 0.0));
 };
 
 export fn destroy(state: *state) void = {
@@ -68,7 +71,6 @@ export fn draw(state: *state) (void | sdl2::error) = {
 	gl::glUseProgram(shaderprog);
 
 	let model = glm::m4_make(1.0);
-	glm::translate(&model, glm::v3_make(0.0, 0.0, -5.0));
 
 	const uniforms = [
 		("model\0", &model),
