@@ -34,22 +34,19 @@ export fn update(state: *state) (void | sdl2::error) = {
 		&glm::v3_new(eye_x, 4.0, eye_z),
 		&glm::v3_new(0.0, 0.0, 0.0),
 		&glm::v3_new(0.0, 1.0, 0.0));
+
+	state.engine.rotations[1] = state.t;
 };
 
 export fn init(state: *state) void = {
 	state.engine.positions = [
 		glm::v3_new(0.0, 0.0, 0.0),
-		glm::v3_new(6.0, 0.0, 0.0),
-		glm::v3_new(0.0, 0.0, 8.0),
-		glm::v3_new(4.0, 0.0, 7.0),
+		glm::v3_new(3.0, 0.0, 0.0),
+		glm::v3_new(0.0, 0.0, 3.0),
+		glm::v3_new(1.5, 0.0, 2.5),
 	];
 
-	state.engine.rotations = [
-		1.0,
-		0.0,
-		0.0,
-		0.0,
-	];
+	state.engine.rotations = [0.0...];
 
 	state.engine.scales = [
 		1.0,

@@ -55,10 +55,9 @@ export fn draw(state: *state) void = {
 
 	for (let i = 0z; i < common::N_OBJECTS; i += 1) {
 		let model = glm::m4_new(1.0);
-		glm::rotate(&model,
-			state.t / 5.0 * state.engine.rotations[i],
-			&glm::v3_new(1.0, 0.0, 0.5));
 		glm::scale(&model, &glm::v3_new_fill(state.engine.scales[i]));
+		glm::rotate(&model, state.engine.rotations[i],
+			&glm::v3_new(1.0, 0.0, 0.5));
 		glm::translate(&model, &state.engine.positions[i]);
 
 		draw_drawable(&state.graphics.cube, state,
