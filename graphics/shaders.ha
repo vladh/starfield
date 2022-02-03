@@ -33,9 +33,11 @@ out vec4 out_color;
 in vec3 vs_normal;
 in vec3 vs_color;
 
+uniform float t;
+
 void main()
 {
-	out_color = vec4(vs_color, 1.0f);
+	out_color = vec4(vs_color * (((sin(t) + 1.0) / 2) + 0.3), 1.0f);
 }
 \0";
 

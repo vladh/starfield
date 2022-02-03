@@ -97,6 +97,9 @@ export fn draw(state: *state) (void | sdl2::error) = {
 		gl::glUniformMatrix4fv(loc, 1, 0, glm::m4_valptr(uniform.1));
 	};
 
+	const loc = gl::glGetUniformLocation(shaderprog, util::cstr("t\0"));
+	gl::glUniform1f(loc, state.t);
+
 	gl::glDrawArrays(gl::TRIANGLES, 0, len(common::VERTICES): i32);
 
 	sdl2::gl_swap_window(state.window);
