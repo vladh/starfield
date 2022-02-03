@@ -40,8 +40,10 @@ uniform vec3 uniform_color;
 
 void main()
 {
-	// out_color = vec4(vs_color * (((sin(t) + 1.0) / 2) + 0.3), 1.0f);
-	out_color = vec4(uniform_color, 1.0f);
+	out_color = vec4(
+		(uniform_color * 0.3) + vs_color * (((sin(t) + 1.0) / 2) + 0.3),
+		1.0f
+	);
 }
 \0";
 
@@ -55,7 +57,8 @@ fn make_shader(source: str, kind: uint) (uint | errors::invalid) = {
 	let log: [512]u8 = [0...];
 	gl::glGetShaderiv(shader, gl::COMPILE_STATUS, &success);
 	if (success == 0) {
-		gl::glGetShaderInfoLog(shader, 512, null: *const i32, &log[0]: *i8);
+		gl::glGetShaderInfoLog(shader, 512, null: *const i32,
+			&log[0]: *i8);
 		const log_str = strings::fromutf8(log);
 		fmt::printfln("Shader compilation failed: {}", log_str)!;
 		return errors::invalid;
@@ -74,7 +77,8 @@ fn make_shader_program(vert: uint, frag: uint) (uint | errors::invalid) = {
 	let log: [512]u8 = [0...];
 	gl::glGetShaderiv(program, gl::LINK_STATUS, &success);
 	if (success == 0) {
-		gl::glGetShaderInfoLog(program, 512, null: *const i32, &log[0]: *i8);
+		gl::glGetShaderInfoLog(program, 512, null: *const i32,
+			&log[0]: *i8);
 		const log_str = strings::fromutf8(log);
 		fmt::printfln("Shader program linking failed: {}", log_str)!;
 		return errors::invalid;

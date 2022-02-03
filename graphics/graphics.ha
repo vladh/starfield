@@ -56,7 +56,7 @@ export fn draw(state: *state) void = {
 	const positions = [
 		glm::v3_new(0.0, 0.0, 0.0),
 		glm::v3_new(6.0, 0.0, 0.0),
-		glm::v3_new(0.0, 0.0, 6.0),
+		glm::v3_new(0.0, 0.0, 8.0),
 		glm::v3_new(4.0, 0.0, 7.0),
 	];
 
