@@ -42,7 +42,7 @@ fn run() (void | fs::error | sdl2::error) = {
 
 	for (!state.should_quit) {
 		engine::update(&state)?;
-		graphics::draw(&state)?;
+		graphics::draw(&state);
 		sdl2::delay(1000 / 60);
 	};
 };

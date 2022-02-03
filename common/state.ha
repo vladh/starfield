@@ -1,10 +1,15 @@
 use glm::{ m4 };
 use sdl2::sdl2;
 
-export type graphics_state = struct {
+export type drawable = struct {
 	vbo: uint,
 	vao: uint,
 	shader_program: uint,
+};
+
+export type graphics_state = struct {
+	cube: drawable,
+	object_shader_prog: uint,
 	projection: m4,
 	view: m4,
 };

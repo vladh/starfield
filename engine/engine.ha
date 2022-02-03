@@ -28,12 +28,12 @@ export fn update(state: *state) (void | sdl2::error) = {
 
 	state.t += 0.01666;
 
-	const eye_x = math::sinf64(state.t) * 4.0;
-	const eye_z = math::cosf64(state.t) * 4.0;
+	const eye_x = math::sinf64(state.t / 4.0) * 6.0;
+	const eye_z = math::cosf64(state.t / 4.0) * 6.0;
 	state.graphics.view = glm::lookat(
-		&glm::v3_make(eye_x, 4.0, eye_z),
-		&glm::v3_make(0.0, 0.0, 0.0),
-		&glm::v3_make(0.0, 1.0, 0.0));
+		&glm::v3_new(eye_x, 4.0, eye_z),
+		&glm::v3_new(0.0, 0.0, 0.0),
+		&glm::v3_new(0.0, 1.0, 0.0));
 
 	state.engine.rotation += 1.0;
 };

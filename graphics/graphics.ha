@@ -15,9 +15,10 @@ export fn init(state: *state) void = {
 
 	gl::glEnable(gl::DEPTH_TEST);
 
-	init_buffers(state);
-	init_shaders(state);
+	state.graphics.object_shader_prog = init_shaders(state);
 	init_matrices(state);
+
+	init_drawable(&state.graphics.cube, state.graphics.object_shader_prog);
 
 	gl::glViewport(0, 0,
 		common::WINDOW_WIDTH: i32, common::WINDOW_HEIGHT: i32);
@@ -25,38 +26,13 @@ export fn init(state: *state) void = {
 	gl::glClearColor(1.0, 1.0, 1.0, 1.0);
 };
 
-fn init_buffers(state: *state) void = {
-	gl::glGenVertexArrays(1, &state.graphics.vao);
-	gl::glBindVertexArray(state.graphics.vao);
-
-	const vertex_size: size = 9 * 4;
-
-	gl::glGenBuffers(1, &state.graphics.vbo);
-	gl::glBindBuffer(gl::ARRAY_BUFFER, state.graphics.vbo);
-	gl::glBufferData(gl::ARRAY_BUFFER,
-		(len(common::VERTICES) * vertex_size): uintptr,
-		glm::v3_valptr(&common::VERTICES[0]): *void,
-		gl::STATIC_DRAW);
-
-	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
-		null: *const void);
-	gl::glEnableVertexAttribArray(0);
-
-	gl::glVertexAttribPointer(1, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
-		(3 * 4): uintptr: *const void);
-	gl::glEnableVertexAttribArray(1);
-
-	gl::glVertexAttribPointer(2, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
-		(6 * 4): uintptr: *const void);
-	gl::glEnableVertexAttribArray(2);
-};
-
-fn init_shaders(state: *state) void = {
+fn init_shaders(state: *state) uint = {
 	const vert = make_shader(VERT_SHADER, gl::VERTEX_SHADER)!;
 	const frag = make_shader(FRAG_SHADER, gl::FRAGMENT_SHADER)!;
-	state.graphics.shader_program = make_shader_program(vert, frag)!;
+	const prog = make_shader_program(vert, frag)!;
 	gl::glDeleteShader(vert);
 	gl::glDeleteShader(frag);
+	return prog;
 };
 
 fn init_matrices(state: *state) void = {
@@ -64,38 +40,57 @@ fn init_matrices(state: *state) void = {
 	glm::perspective(&state.graphics.projection, 70.0, aspect, 0.1, 100.0);
 
 	state.graphics.view = glm::lookat(
-		&glm::v3_make(4.0, 4.0, 4.0),
-		&glm::v3_make(0.0, 0.0, 0.0),
-		&glm::v3_make(0.0, 1.0, 0.0));
+		&glm::v3_new(4.0, 4.0, 4.0),
+		&glm::v3_new(0.0, 0.0, 0.0),
+		&glm::v3_new(0.0, 1.0, 0.0));
 };
 
 export fn destroy(state: *state) void = {
-	gl::glDeleteVertexArrays(1, &state.graphics.vao);
-	gl::glDeleteBuffers(1, &state.graphics.vbo);
-	gl::glDeleteProgram(state.graphics.shader_program);
+	gl::glDeleteProgram(state.graphics.object_shader_prog);
+	destroy_drawable(&state.graphics.cube);
 };
 
-export fn draw(state: *state) (void | sdl2::error) = {
-	const prog = state.graphics.shader_program;
-
+export fn draw(state: *state) void = {
 	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
-	gl::glBindVertexArray(state.graphics.vao);
-	gl::glUseProgram(prog);
 
-	let model = glm::m4_make(1.0);
-	glm::rotate(&model, state.t / 5.0, &glm::v3_make(1.0, 0.0, 0.5));
+	const positions = [
+		glm::v3_new(0.0, 0.0, 0.0),
+		glm::v3_new(6.0, 0.0, 0.0),
+		glm::v3_new(0.0, 0.0, 6.0),
+		glm::v3_new(4.0, 0.0, 7.0),
+	];
 
-	const color = glm::v3_make(1.0, math::absf64(math::sinf64(state.t)), 1.0);
+	const rotations = [
+		1.0,
+		0.0,
+		0.0,
+		0.0,
+	];
 
-	// TODO: Move to UBO
-	uniformmat4fv(prog, "view\0", &state.graphics.view);
-	uniformmat4fv(prog, "projection\0", &state.graphics.projection);
-	uniform1f(prog, "t\0", state.t);
+	const scales = [
+		1.0,
+		0.5,
+		0.4,
+		0.3,
+	];
 
-	uniformmat4fv(prog, "model\0", &model);
-	uniform3fv(prog, "uniform_color\0", &color);
+	const colors = [
+		glm::v3_new(1.0, 0.0, 1.0),
+		glm::v3_new(1.0, 0.0, 0.0),
+		glm::v3_new(0.0, 1.0, 0.0),
+		glm::v3_new(0.0, 0.0, 1.0),
+	];
 
-	gl::glDrawArrays(gl::TRIANGLES, 0, len(common::VERTICES): i32);
+	for (let i = 0z; i < len(positions); i += 1) {
+		let model = glm::m4_new(1.0);
+		glm::rotate(&model,
+			state.t / 5.0 * rotations[i],
+			&glm::v3_new(1.0, 0.0, 0.5));
+		glm::scale(&model, &glm::v3_new_fill(scales[i]));
+		glm::translate(&model, &positions[i]);
+
+		draw_drawable(&state.graphics.cube, state, &model, &colors[i]);
+	};
 
 	sdl2::gl_swap_window(state.window);
 };

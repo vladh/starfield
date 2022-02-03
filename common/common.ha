@@ -2,8 +2,8 @@ use sdl2::sdl2;
 
 use glm::{ v3 };
 
-export def WINDOW_WIDTH: int = 800;
-export def WINDOW_HEIGHT: int = 600;
+export def WINDOW_WIDTH: int = 1024;
+export def WINDOW_HEIGHT: int = 800;
 export const VERTICES: [36][9]f32 = [
 	// pos              normal             color
 	[-1.0, -1.0, -1.0,  -1.0,  0.0,  0.0,   1.0,  0.0,  0.0],
