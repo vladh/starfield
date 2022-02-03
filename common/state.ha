@@ -1,4 +1,4 @@
-use glm::{ m4 };
+use glm::{ v3, v4, m4 };
 use sdl2::sdl2;
 
 export type drawable = struct {
@@ -15,7 +15,10 @@ export type graphics_state = struct {
 };
 
 export type engine_state = struct {
-	rotation: f32,
+	positions: [N_OBJECTS]v3,
+	rotations: [N_OBJECTS]f32,
+	scales: [N_OBJECTS]f32,
+	colors: [N_OBJECTS]v3,
 };
 
 export type state = struct {

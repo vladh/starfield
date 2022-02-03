@@ -53,43 +53,16 @@ export fn destroy(state: *state) void = {
 export fn draw(state: *state) void = {
 	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
 
-	const positions = [
-		glm::v3_new(0.0, 0.0, 0.0),
-		glm::v3_new(6.0, 0.0, 0.0),
-		glm::v3_new(0.0, 0.0, 8.0),
-		glm::v3_new(4.0, 0.0, 7.0),
-	];
-
-	const rotations = [
-		1.0,
-		0.0,
-		0.0,
-		0.0,
-	];
-
-	const scales = [
-		1.0,
-		0.5,
-		0.4,
-		0.3,
-	];
-
-	const colors = [
-		glm::v3_new(1.0, 0.0, 1.0),
-		glm::v3_new(1.0, 0.0, 0.0),
-		glm::v3_new(0.0, 1.0, 0.0),
-		glm::v3_new(0.0, 0.0, 1.0),
-	];
-
-	for (let i = 0z; i < len(positions); i += 1) {
+	for (let i = 0z; i < common::N_OBJECTS; i += 1) {
 		let model = glm::m4_new(1.0);
 		glm::rotate(&model,
-			state.t / 5.0 * rotations[i],
+			state.t / 5.0 * state.engine.rotations[i],
 			&glm::v3_new(1.0, 0.0, 0.5));
-		glm::scale(&model, &glm::v3_new_fill(scales[i]));
-		glm::translate(&model, &positions[i]);
+		glm::scale(&model, &glm::v3_new_fill(state.engine.scales[i]));
+		glm::translate(&model, &state.engine.positions[i]);
 
-		draw_drawable(&state.graphics.cube, state, &model, &colors[i]);
+		draw_drawable(&state.graphics.cube, state,
+			&model, &state.engine.colors[i]);
 	};
 
 	sdl2::gl_swap_window(state.window);

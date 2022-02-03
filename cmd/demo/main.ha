@@ -39,6 +39,7 @@ fn run() (void | fs::error | sdl2::error) = {
 	let state = state { window = win, ... };
 	graphics::init(&state);
 	defer graphics::destroy(&state);
+	engine::init(&state);
 
 	for (!state.should_quit) {
 		engine::update(&state)?;
