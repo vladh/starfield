@@ -71,6 +71,7 @@ export fn draw(state: *state) (void | sdl2::error) = {
 	gl::glUseProgram(shaderprog);
 
 	let model = glm::m4_make(1.0);
+	glm::rotate(&model, state.t / 5.0, &glm::v3_make(1.0, 0.0, 0.5));
 
 	const uniforms = [
 		("model\0", &model),
