@@ -76,29 +76,24 @@ export fn destroy(state: *state) void = {
 };
 
 export fn draw(state: *state) (void | sdl2::error) = {
-	const shaderprog = state.graphics.shader_program;
+	const prog = state.graphics.shader_program;
 
 	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
 	gl::glBindVertexArray(state.graphics.vao);
-	gl::glUseProgram(shaderprog);
+	gl::glUseProgram(prog);
 
 	let model = glm::m4_make(1.0);
 	glm::rotate(&model, state.t / 5.0, &glm::v3_make(1.0, 0.0, 0.5));
 
-	const uniforms = [
-		("model\0", &model),
-		("view\0", &state.graphics.view),
-		("projection\0", &state.graphics.projection),
-	];
-	for (let i = 0z; i < len(uniforms); i += 1) {
-		const uniform = uniforms[i];
-		const loc = gl::glGetUniformLocation(shaderprog,
-			util::cstr(uniform.0));
-		gl::glUniformMatrix4fv(loc, 1, 0, glm::m4_valptr(uniform.1));
-	};
+	const color = glm::v3_make(1.0, math::absf64(math::sinf64(state.t)), 1.0);
 
-	const loc = gl::glGetUniformLocation(shaderprog, util::cstr("t\0"));
-	gl::glUniform1f(loc, state.t);
+	// TODO: Move to UBO
+	uniformmat4fv(prog, "view\0", &state.graphics.view);
+	uniformmat4fv(prog, "projection\0", &state.graphics.projection);
+	uniform1f(prog, "t\0", state.t);
+
+	uniformmat4fv(prog, "model\0", &model);
+	uniform3fv(prog, "uniform_color\0", &color);
 
 	gl::glDrawArrays(gl::TRIANGLES, 0, len(common::VERTICES): i32);
 

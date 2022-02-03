@@ -3,6 +3,8 @@ use fmt;
 use strings;
 
 use gl;
+use glm;
+use glm::{ v3, v4, m4 };
 use util;
 
 def VERT_SHADER: str = "
@@ -34,10 +36,12 @@ in vec3 vs_normal;
 in vec3 vs_color;
 
 uniform float t;
+uniform vec3 uniform_color;
 
 void main()
 {
-	out_color = vec4(vs_color * (((sin(t) + 1.0) / 2) + 0.3), 1.0f);
+	// out_color = vec4(vs_color * (((sin(t) + 1.0) / 2) + 0.3), 1.0f);
+	out_color = vec4(uniform_color, 1.0f);
 }
 \0";
 
@@ -77,4 +81,19 @@ fn make_shader_program(vert: uint, frag: uint) (uint | errors::invalid) = {
 	};
 
 	return program;
+};
+
+fn uniformmat4fv(prog: u32, name: str, val: *m4) void = {
+	const loc = gl::glGetUniformLocation(prog, util::cstr(name));
+	gl::glUniformMatrix4fv(loc, 1, 0, glm::m4_valptr(val));
+};
+
+fn uniform3fv(prog: u32, name: str, val: *v3) void = {
+	const loc = gl::glGetUniformLocation(prog, util::cstr(name));
+	gl::glUniform3fv(loc, 1, glm::v3_valptr(val));
+};
+
+fn uniform1f(prog: u32, name: str, val: f32) void = {
+	const loc = gl::glGetUniformLocation(prog, util::cstr(name));
+	gl::glUniform1f(loc, val);
 };
