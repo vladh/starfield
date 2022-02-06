@@ -17,28 +17,28 @@ fn init_buffers(drawable: *drawable) void = {
 	const vertex_size: size = 9 * 4;
 
 	gl::glGenBuffers(1, &drawable.vbo);
-	gl::glBindBuffer(gl::ARRAY_BUFFER, drawable.vbo);
-	gl::glBufferData(gl::ARRAY_BUFFER,
+	gl::glBindBuffer(gl::GL_ARRAY_BUFFER, drawable.vbo);
+	gl::glBufferData(gl::GL_ARRAY_BUFFER,
 		(len(common::BUNNY_VERTICES) * vertex_size): uintptr,
 		&common::BUNNY_VERTICES[0]: *void,
-		gl::STATIC_DRAW);
+		gl::GL_STATIC_DRAW);
 
 	gl::glGenBuffers(1, &drawable.ebo);
-	gl::glBindBuffer(gl::ELEMENT_ARRAY_BUFFER, drawable.ebo);
-	gl::glBufferData(gl::ELEMENT_ARRAY_BUFFER,
+	gl::glBindBuffer(gl::GL_ELEMENT_ARRAY_BUFFER, drawable.ebo);
+	gl::glBufferData(gl::GL_ELEMENT_ARRAY_BUFFER,
 		(len(common::BUNNY_INDICES) * 4): uintptr,
 		&common::BUNNY_INDICES[0]: *void,
-		gl::STATIC_DRAW);
+		gl::GL_STATIC_DRAW);
 
-	gl::glVertexAttribPointer(0, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
+	gl::glVertexAttribPointer(0, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
 		null: *const void);
 	gl::glEnableVertexAttribArray(0);
 
-	gl::glVertexAttribPointer(1, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
+	gl::glVertexAttribPointer(1, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
 		(3 * 4): uintptr: *const void);
 	gl::glEnableVertexAttribArray(1);
 
-	gl::glVertexAttribPointer(2, 3, gl::FLOAT, gl::FALSE, vertex_size: i32,
+	gl::glVertexAttribPointer(2, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
 		(6 * 4): uintptr: *const void);
 	gl::glEnableVertexAttribArray(2);
 };
@@ -55,7 +55,7 @@ export fn draw_drawable(
 	color: *v3
 ) void = {
 	gl::glBindVertexArray(drawable.vao);
-	gl::glBindBuffer(gl::ELEMENT_ARRAY_BUFFER, drawable.ebo);
+	gl::glBindBuffer(gl::GL_ELEMENT_ARRAY_BUFFER, drawable.ebo);
 	gl::glUseProgram(drawable.shader_program);
 
 	// TODO: Move to UBO
@@ -66,8 +66,8 @@ export fn draw_drawable(
 	uniformmat4fv(drawable.shader_program, "model\0", model);
 	uniform3fv(drawable.shader_program, "uniform_color\0", color);
 
-	gl::glDrawElements(gl::TRIANGLES, len(common::BUNNY_INDICES): i32,
-		gl::UNSIGNED_INT, 0: uintptr: *void);
+	gl::glDrawElements(gl::GL_TRIANGLES, len(common::BUNNY_INDICES): i32,
+		gl::GL_UNSIGNED_INT, 0: uintptr: *void);
 };
 
 export fn destroy_drawable(drawable: *drawable) void = {

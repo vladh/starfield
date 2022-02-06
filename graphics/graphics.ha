@@ -13,7 +13,7 @@ use common::{ state };
 export fn init(state: *state) void = {
 	gl::load();
 
-	gl::glEnable(gl::DEPTH_TEST);
+	gl::glEnable(gl::GL_DEPTH_TEST);
 
 	state.graphics.object_shader_prog = init_shaders(state);
 	init_matrices(state);
@@ -27,8 +27,8 @@ export fn init(state: *state) void = {
 };
 
 fn init_shaders(state: *state) uint = {
-	const vert = make_shader(VERT_SHADER, gl::VERTEX_SHADER)!;
-	const frag = make_shader(FRAG_SHADER, gl::FRAGMENT_SHADER)!;
+	const vert = make_shader(VERT_SHADER, gl::GL_VERTEX_SHADER)!;
+	const frag = make_shader(FRAG_SHADER, gl::GL_FRAGMENT_SHADER)!;
 	const prog = make_shader_program(vert, frag)!;
 	gl::glDeleteShader(vert);
 	gl::glDeleteShader(frag);
@@ -51,7 +51,7 @@ export fn destroy(state: *state) void = {
 };
 
 export fn draw(state: *state) void = {
-	gl::glClear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
+	gl::glClear(gl::GL_COLOR_BUFFER_BIT | gl::GL_DEPTH_BUFFER_BIT);
 
 	for (let i = 0z; i < common::N_OBJECTS; i += 1) {
 		let model = glm::m4_new(1.0);

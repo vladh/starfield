@@ -56,7 +56,7 @@ fn make_shader(source: str, kind: uint) (uint | errors::invalid) = {
 
 	let success: i32 = 1;
 	let log: [512]u8 = [0...];
-	gl::glGetShaderiv(shader, gl::COMPILE_STATUS, &success);
+	gl::glGetShaderiv(shader, gl::GL_COMPILE_STATUS, &success);
 	if (success == 0) {
 		gl::glGetShaderInfoLog(shader, 512, null: *const i32,
 			&log[0]: *i8);
@@ -76,7 +76,7 @@ fn make_shader_program(vert: uint, frag: uint) (uint | errors::invalid) = {
 
 	let success: i32 = 1;
 	let log: [512]u8 = [0...];
-	gl::glGetShaderiv(program, gl::LINK_STATUS, &success);
+	gl::glGetShaderiv(program, gl::GL_LINK_STATUS, &success);
 	if (success == 0) {
 		gl::glGetShaderInfoLog(program, 512, null: *const i32,
 			&log[0]: *i8);
