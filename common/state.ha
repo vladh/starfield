@@ -1,3 +1,5 @@
+use math::random;
+
 use glm::{ v3, v4, m4 };
 use sdl2;
 
@@ -25,7 +27,9 @@ export type engine_state = struct {
 export type state = struct {
 	should_quit: bool,
 	window: *sdl2::window,
+	rng: random::random,
 	t: f32,
+	dt: f32,
 	graphics: graphics_state,
 	engine: engine_state,
 };

@@ -1,4 +1,6 @@
+use fmt;
 use math;
+use math::random;
 
 use glm;
 use glm::{ v3, v4, m4 };
@@ -6,6 +8,11 @@ use sdl2;
 
 use common;
 use common::{ state };
+
+def STAR_SPEED: f32 = 0.6;
+def STAR_Z_MAX: f32 = 10.0;
+def STAR_Z_MIN: f32 = -4000.0;
+def STAR_XY_EXTENT: f32 = 3000.0;
 
 fn process_events(state: *state) (void | sdl2::error) = {
 	let ev = sdl2::event { ... };
@@ -27,41 +34,45 @@ fn process_events(state: *state) (void | sdl2::error) = {
 export fn update(state: *state) (void | sdl2::error) = {
 	process_events(state)?;
 
-	state.t += 0.01666;
+	state.t += state.dt;
 
-	const eye_x = math::sinf64(state.t / 2.0) * 8.0;
-	const eye_z = math::cosf64(state.t / 2.0) * 8.0;
-	state.graphics.view = glm::lookat(
-		&glm::v3_new(eye_x, 4.0, eye_z),
-		&glm::v3_new(0.0, 0.0, 0.0),
-		&glm::v3_new(0.0, 1.0, 0.0));
+	for (let i = 0z; i < common::N_OBJECTS; i += 1) {
+		state.engine.positions[i][2] += STAR_SPEED * state.dt;
+		if (state.engine.positions[i][2] > STAR_Z_MAX) {
+			randomize_object_xy(state, i);
+			state.engine.positions[i][2] = STAR_Z_MIN;
+		};
+	};
+};
 
-	for (let i = 1z; i < common::N_OBJECTS; i += 1) {
-		state.engine.rotations[i] = state.t * i: i32: f32;
+fn randomize_object_xy(state: *state, idx: size) void = {
+	state.engine.positions[idx][0] =
+		(random::next(&state.rng) % STAR_XY_EXTENT: i32: u32): i64: f32 -
+		(STAR_XY_EXTENT / 2.0);
+	state.engine.positions[idx][1] =
+		(random::next(&state.rng) % STAR_XY_EXTENT: i32: u32): i64: f32 -
+		(STAR_XY_EXTENT / 2.0);
+};
+
+fn randomize_object_z(state: *state, idx: size) void = {
+	const extent = (math::absf64(STAR_Z_MIN) +
+		math::absf64(STAR_Z_MAX)): i64: u64;
+	state.engine.positions[idx][2] =
+		(random::next(&state.rng) % extent): i64: f32 + STAR_Z_MIN;
+};
+
+fn init_objects(state: *state) void = {
+	state.engine.positions = [glm::v3_new(0.0, 0.0, 0.0)...];
+	state.engine.rotations = [0.0...];
+	state.engine.scales = [0.1...];
+	state.engine.colors = [glm::v3_new(1.0, 1.0, 1.0)...];
+
+	for (let i = 0z; i < common::N_OBJECTS; i += 1) {
+		randomize_object_xy(state, i);
+		randomize_object_z(state, i);
 	};
 };
 
 export fn init(state: *state) void = {
-	state.engine.positions = [
-		glm::v3_new(0.0, -2.0, 0.0),
-		glm::v3_new(-5.0, 0.0, 0.0),
-		glm::v3_new(0.0, 0.0, -4.0),
-		glm::v3_new(-4.5, 0.0, -3.5),
-	];
-
-	state.engine.rotations = [0.0...];
-
-	state.engine.scales = [
-		0.1,
-		0.05,
-		0.04,
-		0.03,
-	];
-
-	state.engine.colors = [
-		glm::v3_new(1.0, 0.0, 1.0),
-		glm::v3_new(1.0, 0.0, 0.0),
-		glm::v3_new(0.0, 1.0, 0.0),
-		glm::v3_new(0.0, 0.0, 1.0),
-	];
+	init_objects(state);
 };

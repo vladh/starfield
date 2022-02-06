@@ -1,6 +1,7 @@
 use fmt;
 use fs;
 use math;
+use math::random;
 use strings;
 
 use glm::{ v3, m2 };
@@ -21,6 +22,12 @@ export fn main() void = {
 	};
 };
 
+fn init_state(state: *state, win: *sdl2::window) void = {
+	state.window = win;
+	state.dt = 1000.0 / 60.0;
+	state.rng = random::init(0);
+};
+
 fn run() (void | fs::error | sdl2::error) = {
 	sdl2::init(sdl2::init_flags::VIDEO)!;
 	sdl2::gl_set_attribute(sdl2::glattr::GL_CONTEXT_PROFILE_MASK,
@@ -36,14 +43,18 @@ fn run() (void | fs::error | sdl2::error) = {
 	defer sdl2::destroy_window(win);
 
 	let context = sdl2::gl_create_context(win);
-	let state = state { window = win, ... };
+
+	let state = state { ... };
+	init_state(&state, win);
+
 	graphics::init(&state);
 	defer graphics::destroy(&state);
+
 	engine::init(&state);
 
 	for (!state.should_quit) {
 		engine::update(&state)?;
 		graphics::draw(&state);
-		sdl2::delay(1000 / 60);
+		sdl2::delay(state.dt: i32: u32);
 	};
 };

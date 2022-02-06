@@ -1,7 +1,9 @@
 # starfield
 
-This is the Windows 3.1 “starfield” screensaver, implemented in [Hare].
-It uses [hare-sdl2], [hare-gl] and [hare-glm].
+This is the Windows 3.1 “starfield” screensaver,
+except the stars are rabbits. :)
+
+It's implemented in [Hare] and uses [hare-sdl2], [hare-gl] and [hare-glm].
 
 [Hare]: https://harelang.org
 [hare-sdl2]: https://git.sr.ht/~sircmpwn/hare-sdl2
@@ -16,6 +18,6 @@ It uses [hare-sdl2], [hare-gl] and [hare-glm].
 
 ## Developing
 
-If you'd like to work on the code, use `make run-nocache`, adjusting the
-path in the `Makefile` if you have a special `HARECACHE` set. This is necessary
-until [bug 569](https://todo.sr.ht/~sircmpwn/hare/569) is fixed.
+Please note that `make run` will delete some cache directories in
+`~/.cache/hare/` due to [bug 569](https://todo.sr.ht/~sircmpwn/hare/569).
+You may want to adjust the `Makefile` if you have a special `HARECACHE` set.

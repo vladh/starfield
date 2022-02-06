@@ -9,9 +9,6 @@ starfield:
 	$(VARS) hare build $(LIBS) cmd/starfield
 
 run:
-	$(VARS) hare run $(LIBS) cmd/starfield
-
-run-nocache:
 	@ # Bug https://todo.sr.ht/~sircmpwn/hare/569
 	rm -rf \
 		${HOME}/.cache/hare/common \
@@ -19,4 +16,4 @@ run-nocache:
 		${HOME}/.cache/hare/engine
 	$(VARS) hare run $(LIBS) cmd/starfield
 
-.PHONY: starfield run run-nocache
+.PHONY: starfield run
