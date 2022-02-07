@@ -26,7 +26,7 @@ export type engine_state = struct {
 
 export type state = struct {
 	should_quit: bool,
-	window: *sdl2::window,
+	window: *sdl2::SDL_Window,
 	rng: random::random,
 	t: f32,
 	dt: f32,

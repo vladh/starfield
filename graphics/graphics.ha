@@ -69,5 +69,5 @@ export fn draw(state: *state) void = {
 			&model, &state.engine.colors[i]);
 	};
 
-	sdl2::gl_swap_window(state.window);
+	sdl2::SDL_GL_SwapWindow(state.window);
 };
