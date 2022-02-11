@@ -13,7 +13,7 @@ It's implemented in [Hare] and uses [hare-sdl2], [hare-gl] and [hare-glm].
 ## Usage
 
 * Make sure to clone with submodules (`git clone --recurse-submodules git@git.sr.ht:~vladh/starfield`)
-* Install `libsdl2` and `libsdl2-image`
+* Install `libsdl2`
 * Run `make run` to run the demo
 
 ## Developing

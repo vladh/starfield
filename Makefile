@@ -1,7 +1,7 @@
 .POSIX:
 .SUFFIXES:
 
-LIBS=-lc -lSDL2_image -lSDL2 -lEGL
+LIBS=-lc -lSDL2 -lEGL
 VARS=LD_LIBRARY_PATH=/usr/lib:${LD_LIBRARY_PATH} \
 	HAREPATH=vendor/hare-sdl2:vendor/hare-glm:vendor/gl:${HAREPATH}
 
