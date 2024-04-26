@@ -1,6 +1,6 @@
 [submodule "sdl2"]
 	path = vendor/hare-sdl2
-	url = git@git.sr.ht:~vladh/hare-sdl2
+	url = https://git.sr.ht/~sircmpwn/hare-sdl2
 [submodule "glm"]
 	path = vendor/hare-glm
-	url = git@git.sr.ht:~vladh/hare-glm
+	url = https://git.sr.ht/~vladh/hare-glm

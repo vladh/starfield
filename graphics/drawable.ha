@@ -20,26 +20,26 @@ fn init_buffers(drawable: *drawable) void = {
 	gl::glBindBuffer(gl::GL_ARRAY_BUFFER, drawable.vbo);
 	gl::glBufferData(gl::GL_ARRAY_BUFFER,
 		(len(common::BUNNY_VERTICES) * vertex_size): uintptr,
-		&common::BUNNY_VERTICES[0]: *void,
+		&common::BUNNY_VERTICES[0]: *opaque,
 		gl::GL_STATIC_DRAW);
 
 	gl::glGenBuffers(1, &drawable.ebo);
 	gl::glBindBuffer(gl::GL_ELEMENT_ARRAY_BUFFER, drawable.ebo);
 	gl::glBufferData(gl::GL_ELEMENT_ARRAY_BUFFER,
 		(len(common::BUNNY_INDICES) * 4): uintptr,
-		&common::BUNNY_INDICES[0]: *void,
+		&common::BUNNY_INDICES[0]: *opaque,
 		gl::GL_STATIC_DRAW);
 
 	gl::glVertexAttribPointer(0, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
-		null: *const void);
+		null: *const opaque);
 	gl::glEnableVertexAttribArray(0);
 
 	gl::glVertexAttribPointer(1, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
-		(3 * 4): uintptr: *const void);
+		(3 * 4): uintptr: *const opaque);
 	gl::glEnableVertexAttribArray(1);
 
 	gl::glVertexAttribPointer(2, 3, gl::GL_FLOAT, gl::GL_FALSE, vertex_size: i32,
-		(6 * 4): uintptr: *const void);
+		(6 * 4): uintptr: *const opaque);
 	gl::glEnableVertexAttribArray(2);
 };
 
@@ -67,7 +67,7 @@ export fn draw_drawable(
 	uniform3fv(drawable.shader_program, "uniform_color\0", color);
 
 	gl::glDrawElements(gl::GL_TRIANGLES, len(common::BUNNY_INDICES): i32,
-		gl::GL_UNSIGNED_INT, 0: uintptr: *void);
+		gl::GL_UNSIGNED_INT, 0: uintptr: *opaque);
 };
 
 export fn destroy_drawable(drawable: *drawable) void = {

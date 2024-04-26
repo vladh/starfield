@@ -29,7 +29,7 @@ fn init_state(state: *state, win: *sdl2::SDL_Window) void = {
 };
 
 fn run() (void | fs::error | sdl2::error) = {
-	sdl2::SDL_Init(sdl2::init_flags::VIDEO)!;
+	sdl2::SDL_Init(sdl2::SDL_INIT_VIDEO)!;
 	sdl2::SDL_GL_SetAttribute(sdl2::SDL_GLattr::GL_CONTEXT_PROFILE_MASK,
 		sdl2::SDL_GLprofile::GL_CONTEXT_PROFILE_CORE);
 	sdl2::SDL_GL_SetAttribute(sdl2::SDL_GLattr::GL_CONTEXT_MAJOR_VERSION, 4);
@@ -44,7 +44,10 @@ fn run() (void | fs::error | sdl2::error) = {
 
 	let context = sdl2::SDL_GL_CreateContext(win);
 
-	let state = state { ... };
+	let state = state {
+		window = win,
+		...
+	};
 	init_state(&state, win);
 
 	graphics::init(&state);

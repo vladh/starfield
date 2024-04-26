@@ -1,6 +1,7 @@
 use errors;
 use fmt;
 use strings;
+use types::c;
 
 use gl;
 use glm;
@@ -50,8 +51,9 @@ void main()
 
 fn make_shader(source: str, kind: uint) (uint | errors::invalid) = {
 	const shader = gl::glCreateShader(kind);
-	const cstr = util::cstr(source);
-	gl::glShaderSource(shader, 1, &cstr, null: *const i32);
+	const cstr = c::nulstr(source): *const i8;
+	// Not entirely clear why this cast is necessary...
+	gl::glShaderSource(shader, 1, &cstr: nullable *const nullable *const i8, null: *const i32);
 	gl::glCompileShader(shader);
 
 	let success: i32 = 1;
@@ -60,7 +62,7 @@ fn make_shader(source: str, kind: uint) (uint | errors::invalid) = {
 	if (success == 0) {
 		gl::glGetShaderInfoLog(shader, 512, null: *const i32,
 			&log[0]: *i8);
-		const log_str = strings::fromutf8(log);
+		const log_str = strings::fromutf8(log)!;
 		fmt::printfln("Shader compilation failed: {}", log_str)!;
 		return errors::invalid;
 	};
@@ -80,7 +82,7 @@ fn make_shader_program(vert: uint, frag: uint) (uint | errors::invalid) = {
 	if (success == 0) {
 		gl::glGetShaderInfoLog(program, 512, null: *const i32,
 			&log[0]: *i8);
-		const log_str = strings::fromutf8(log);
+		const log_str = strings::fromutf8(log)!;
 		fmt::printfln("Shader program linking failed: {}", log_str)!;
 		return errors::invalid;
 	};
